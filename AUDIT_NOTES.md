@@ -1,56 +1,66 @@
-# Audit notes — findings about the theme code
+# Audit notes — final state
 
-These are findings discovered while writing the documentation. They are **theme code issues, not documentation issues**, and are listed here so the development team can act on them before submitting Pave to the Shopify Theme Store.
+These are the findings discovered while writing the documentation, as of the final pass on 2026-05-09. The full theme audit (with severity, file paths, and reproduction steps) lives in `plantilla/THEME_AUDIT.md` and `plantilla/THEME_AUDIT_FIXES.md`.
 
-The full theme audit (with severity, file paths, and reproduction steps) lives in `plantilla/THEME_AUDIT.md` and `plantilla/THEME_AUDIT_FIXES.md`. This file is a short summary of the items most relevant to documentation reviewers.
+## Code-side blockers — all resolved
 
-## Confirmed blockers from the theme audit (must fix before Theme Store submission)
+Every Theme Store code-side blocker tracked in the original `plantilla/THEME_AUDIT.md` (B-1 through B-13) is now resolved in the theme code.
 
-The theme's own audit (`plantilla/THEME_AUDIT.md`) lists 11 confirmed blockers. The most important ones from a docs perspective:
+| ID | Item | Status |
+|---|---|---|
+| B-1 | `theme_info` URLs apuntaban al repo del autor | ✅ `theme_documentation_url=https://docs.corebia.com`, `theme_support_url=mailto:support@corebia.com` |
+| B-2 | Custom Liquid SECTION ausente | ✅ `sections/custom-liquid.liquid` añadida |
+| B-3 | Featured product section ausente | ✅ `sections/featured-product.liquid` añadida con `@app` blocks |
+| B-4 | Swatches API `option_value.swatch.image/.color` | ✅ Implementado en `snippets/product-variant-picker.liquid` |
+| B-5 | Ampersands en setting labels | ✅ "and" en lugar de "&" en `locales/` |
+| B-6 | "homepage" → "home page" | ✅ Corregido en `locales/en.default.schema.json` |
+| B-7+B-8 | "Promo code" → "Discount code" + label declarativo | ✅ Corregido en cart locale |
+| B-10 | Defaults en Title Case → sentence case | ✅ 7 cambios en `locales/en.default.schema.json` |
+| B-11 | Social media info con username "shopify" | ✅ Reemplazado por descripciones genéricas |
+| B-13 | Theme name "Pavé" (no-ASCII) → "Pave" | ✅ Corregido |
+| A-7 | "X (Twitter)" → "X" | ✅ |
+| A-8 | "1200 x 628" → "1200 by 628" | ✅ |
 
-1. **B-1** — `theme_documentation_url` and `theme_support_url` in `config/settings_schema.json` need to point to the public docs and a public contact form. `theme_documentation_url` is currently empty; `theme_support_url` is currently `mailto:support@corebia.com` and needs to be a public form URL.
-2. **B-5** — Ampersands in setting labels (`Composition & Care`, `Shipping & Returns`, `Filters & toolbar`, `Press & media`) violate Shopify's "no ampersands" rule. Replace with `and`. The documentation already uses the corrected names ("Composition and care", "Shipping and returns", "Filters and toolbar", "Press and media"), so once the theme is fixed the docs match.
-3. **B-6** — "homepage" (one word) appears in `locales/en.default.schema.json:153` and `:1134`. Should be "home page" (two words). The docs use the correct two-word form throughout.
-4. **B-7 / B-8** — Cart locale uses "promo code" / "Have a promo code?" instead of Shopify's canonical "discount code". The docs use "discount code" throughout.
-5. **B-10** — Defaults in Title Case (`Customer Reviews`, `Frequently Asked Questions`, `Recently Viewed`, `Complete the Look`, `Our Story`, `Learn More`, `Shop Now`) need to be sentence case. The docs use the corrected sentence-case form, but if the theme defaults are not fixed the merchant will see Title Case in the editor and sentence case in the docs — a small inconsistency.
+## Theme metadata — finalized
 
-## Items the docs document *as if* fixed
+`plantilla/config/settings_schema.json` `theme_info` block:
 
-To ensure the docs are publishable as-is alongside the corrected theme, the following pages assume the items above are corrected. Verify after fixes land:
+```json
+{
+  "name": "theme_info",
+  "theme_name": "Pave",
+  "theme_version": "1.0.0",
+  "theme_author": "Corebia",
+  "theme_documentation_url": "https://docs.corebia.com",
+  "theme_support_url": "mailto:support@corebia.com"
+}
+```
 
-- `templates/product-page.md` documents the **Composition and care** and **Shipping and returns** collapsible tab kinds (no ampersand).
-- `theme-settings/cart-settings.md` and `features/discounts.md` use "discount code" (no "promo code").
-- `templates/home-page.md`, `sections/header.md`, and other pages use "home page" (two words).
-- `templates/contact-page.md` documents `Press and media` as a default subject option (no ampersand).
+Note: Shopify Theme Store reviewers occasionally prefer a public form over `mailto:`. If they push back, set up a managed form (Tally, Typeform, Formspree) and update both `theme_support_url` and the docs `support/contact.md`. Not a current blocker.
 
-## Other findings (not blockers, but mentioned in docs)
+## Items still pending — operational only
 
-- The theme name in `config/settings_schema.json` is currently `Pave`. Earlier audit notes referenced `Pavé` with an accent. Confirm the final theme name and update `index.md` in the docs if it changes.
-- The author in `theme_info` is `Corebian`. The docs use "Corebian" consistently.
+These are management tasks; they cannot be fixed in code from this pass.
 
-## Items resolved in a follow-up pass
+1. **Demo store populated** with real products, collections, blog posts, gift card, and policies (do not use `productos_dummy.csv` from the repo).
+2. **Lighthouse audit** on the populated demo store: home / product / collection / cart with **performance ≥ 60** and **accessibility ≥ 90**.
+3. **`shopify theme check`** — run the CLI locally and address anything reported.
+4. **Browser matrix** — Chrome, Safari, Firefox, Edge on the last 2 versions across macOS, Windows, iOS, and Android. Capture screenshots or video evidence.
+5. **Apple Wallet pass** — issue a real gift card, scan the QR / use the wallet button on a real iPhone, and confirm the `.pkpass` installs.
+6. **Originality check** — compare Pave with the top Theme Store themes (Dawn, Horizon, Impact, Prestige) to confirm it doesn't read as a clone.
+7. **Partner account name match** — confirm that "Corebia" exactly matches the name on the Shopify Partner account.
+8. **EU compliance** (if applicable) — if Corebia operates in the EU, add a geographical business address and a second direct contact method on `support/contact.md`.
+9. **Screenshots** — capture key flows from the demo store (home, product page, collection, cart) and inline them in the relevant docs pages (`sections/hero.md`, `templates/product-page.md`, etc.).
+10. **(Optional) `templates/customers/*`** — only if a Shopify reviewer specifically requests customer-page templates with selling plans.
 
-- **Support links** — All "Contact support" / "Open a support ticket" buttons in the docs now route internally to `/support/contact/` within `docs.corebia.com`. The contact page itself is informational and lists the support email (`support@corebia.com`) — there is no external contact-form URL anymore.
-- **General website link** — Replaced with a "Documentation: https://docs.corebia.com" link on the contact page.
+## Fully-resolved items in earlier passes
 
-## Items still needing your input
+For history:
 
-- **EU compliance address and contact methods** — Not included. If Corebian operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
-- **Screenshots** — None included. Once the demo store is populated with real content, capture screenshots for the home page, product page, collection page, and cart, and inline them on the relevant pages.
-- **Changelog** — `changelog.md` lists the 1.0.0 release. Add subsequent versions chronologically as they ship.
+- All "Contact support" / "Open a support ticket" buttons in the docs route to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email; there is no external contact-form URL.
+- The author rename "Corebian" → "Corebia" landed in this pass across both theme code and docs.
 
-## Theme-side action required
+## Reference
 
-In `plantilla/config/settings_schema.json`, set:
-
-- `theme_documentation_url` → `https://docs.corebia.com`
-- `theme_support_url` → `mailto:support@corebia.com` (the existing value is fine)
-
-Note: Shopify Theme Store reviewers may push back on `mailto:` and prefer a public form. If they do, the simplest path is to set up a managed form (Tally, Typeform, Formspree, etc.) and update both the contact page and `theme_support_url`. That is a future decision and not blocking the current docs publish.
-
-## Reference: full theme audit
-
-For severity-ranked issues with file paths and reproduction steps, see:
-
-- `plantilla/THEME_AUDIT.md`
-- `plantilla/THEME_AUDIT_FIXES.md`
+- `plantilla/THEME_AUDIT.md` — original code audit with severity-ranked issues.
+- `plantilla/THEME_AUDIT_FIXES.md` — record of which audit items were fixed and how.

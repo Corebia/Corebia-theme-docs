@@ -2,14 +2,14 @@
 title: Home
 layout: default
 nav_order: 1
-description: "Official documentation for the Pave Shopify theme by Corebian."
+description: "Official documentation for the Pave Shopify theme by Corebia."
 permalink: /
 ---
 
 # Pave theme documentation
 {: .fs-9 }
 
-Pave is a minimalist editorial Shopify theme by Corebian, designed for fashion, lifestyle, and homeware merchants who want a refined, gallery-style storefront with a focus on typography and product imagery.
+Pave is a minimalist editorial Shopify theme by Corebia, designed for fashion, lifestyle, and homeware merchants who want a refined, gallery-style storefront with a focus on typography and product imagery.
 {: .fs-5 .fw-300 }
 
 [Get started](getting-started/installation/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

@@ -82,7 +82,7 @@ Open the [contact form](../contact/) and include your store URL, theme version, 
 
 ### How do I request a refund?
 
-Themes purchased from the Shopify Theme Store are final sale. Refund requests are handled by Shopify Support, not by Corebian. Contact [Shopify Support](https://help.shopify.com/support) directly for refund inquiries.
+Themes purchased from the Shopify Theme Store are final sale. Refund requests are handled by Shopify Support, not by Corebia. Contact [Shopify Support](https://help.shopify.com/support) directly for refund inquiries.
 
 ### Is the theme compatible with [Shopify feature X]?
 

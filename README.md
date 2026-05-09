@@ -1,6 +1,6 @@
 # Pave theme documentation
 
-This repository hosts the public documentation for the **Pave** Shopify theme by Corebian. The site is built with [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://just-the-docs.com/) remote theme, and is served via GitHub Pages at [docs.corebia.com](https://docs.corebia.com).
+This repository hosts the public documentation for the **Pave** Shopify theme by Corebia. The site is built with [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://just-the-docs.com/) remote theme, and is served via GitHub Pages at [docs.corebia.com](https://docs.corebia.com).
 
 ## What this is
 

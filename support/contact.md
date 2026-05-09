@@ -8,7 +8,7 @@ permalink: /support/contact/
 
 # Contact
 
-Pave is supported directly by Corebian. To reach our team, send an email to **[support@corebia.com](mailto:support@corebia.com)** with the details listed below. Every message is read and answered within the timeframe described in the [support policy](../support-policy/).
+Pave is supported directly by Corebia. To reach our team, send an email to **[support@corebia.com](mailto:support@corebia.com)** with the details listed below. Every message is read and answered within the timeframe described in the [support policy](../support-policy/).
 
 ## What to include
 
@@ -30,9 +30,9 @@ Our team reviews every incoming request. We respond within **2 business days**, 
 
 For requests that go beyond what's covered by support — design changes, new features, integrations — we recommend hiring a [Shopify Partner](https://www.shopify.com/partners/directory). They can extend Pave to your exact requirements. See [Custom code](../../customization/custom-code/) for context.
 
-## Corebian contact details
+## Corebia contact details
 
-Corebian — Pave theme developer.
+Corebia — Pave theme developer.
 
 - **Support email:** [support@corebia.com](mailto:support@corebia.com)
 - **Documentation:** [https://docs.corebia.com](https://docs.corebia.com)

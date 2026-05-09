@@ -8,7 +8,7 @@ permalink: /support/
 
 # Support
 
-Pave is supported directly by Corebian. The pages below explain what we cover, how to reach us, and the most common questions.
+Pave is supported directly by Corebia. The pages below explain what we cover, how to reach us, and the most common questions.
 
 - [Support policy](support-policy/)
 - [Contact](contact/)

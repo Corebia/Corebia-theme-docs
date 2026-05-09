@@ -1,5 +1,5 @@
 title: Pave theme documentation
-description: Official documentation for the Pave Shopify theme by Corebian.
+description: Official documentation for the Pave Shopify theme by Corebia.
 url: https://docs.corebia.com
 baseurl: ""
 
@@ -26,7 +26,7 @@ aux_links:
 
 aux_links_new_tab: false
 
-footer_content: 'Pave theme &copy; Corebian. Documentation last updated <span class="d-inline-block">{{ site.time | date: "%B %Y" }}</span>.'
+footer_content: 'Pave theme &copy; Corebia. Documentation last updated <span class="d-inline-block">{{ site.time | date: "%B %Y" }}</span>.'
 
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y at %I:%M %p"

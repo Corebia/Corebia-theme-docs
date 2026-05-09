@@ -8,7 +8,7 @@ permalink: /support/support-policy/
 
 # Support policy
 
-This page outlines the support Corebian provides for the Pave theme. Please read it before opening a ticket so you know what to expect.
+This page outlines the support Corebia provides for the Pave theme. Please read it before opening a ticket so you know what to expect.
 
 ## What support covers
 
@@ -59,7 +59,7 @@ We provide support in **English**. Tickets in other languages may take longer wh
 
 ## Refunds
 
-Themes purchased from the Shopify Theme Store are final sale. Refunds are handled by Shopify Support, not by Corebian. To request a refund, contact [Shopify Support](https://help.shopify.com/support) directly.
+Themes purchased from the Shopify Theme Store are final sale. Refunds are handled by Shopify Support, not by Corebia. To request a refund, contact [Shopify Support](https://help.shopify.com/support) directly.
 
 ## Updates and new versions
 

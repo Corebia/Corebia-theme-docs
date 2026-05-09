@@ -1,6 +1,6 @@
 # Documentation build report
 
-This report summarizes the documentation generated for the **Pave** theme (v1.0.0, by Corebian) in this run. It complements `AUDIT_NOTES.md`, which lists theme-code findings that require dev team action.
+This report summarizes the documentation generated for the **Pave** theme (v1.0.0, by Corebia) in this run. It complements `AUDIT_NOTES.md`, which lists theme-code findings that require dev team action.
 
 ## Pages created
 
@@ -149,17 +149,28 @@ These are theme-code issues, not documentation issues. See `AUDIT_NOTES.md` for 
 - **"Promo code" → "Discount code"** in cart locale. Documentation uses "discount code" throughout.
 - **Title Case headings in defaults** (e.g., `Customer Reviews`). Documentation uses sentence case throughout to match Shopify's settings-text guidelines, but the live editor will currently show the Title Case until the theme is fixed.
 
-## Items resolved after the initial publish
+## Items resolved across passes
 
-- **Support links** — All "Contact support" and "Open a support ticket" buttons now route internally to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email (`support@corebia.com`); there is no separate external contact-form URL.
+- **Support links** — All "Contact support" and "Open a support ticket" buttons now route internally to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email (`support@corebia.com`).
 - **General website link** — Replaced with "Documentation: https://docs.corebia.com" on the contact page.
+- **Author rename** — "Corebian" → "Corebia" applied across both the theme code (`plantilla/config/settings_schema.json`) and every docs page that mentioned the company.
+- **Theme metadata** — `theme_documentation_url` set to `https://docs.corebia.com`. `theme_author` set to `Corebia`. `theme_support_url` confirmed as `mailto:support@corebia.com`.
+- **All code-side blockers** from `plantilla/THEME_AUDIT.md` (B-1 through B-13) — closed.
 
-## Pending items needing your input
+## Pending items — operational only (not code-fixable)
 
-1. **EU geographical address and second contact method** — Not included. If Corebian operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
-2. **Screenshots** — None inlined. Capture screenshots from the demo store after it is populated with real content, and add them to the section and template pages where they would help (especially `sections/hero.md`, `sections/new-arrivals.md`, `templates/product-page.md`).
-3. **Theme name confirmation** — `config/settings_schema.json:4` shows `Pave` (no accent). Earlier audit notes referenced `Pavé`. Confirm the final theme name and update `index.md` if it changes.
-4. **Officially supported languages** — `support/support-policy.md` claims support is in English. Confirm and add additional languages if applicable.
+These are management tasks; nothing in this repo blocks them.
+
+1. **Demo store populated** with real products, collections, blog posts, gift card, and policies (do not use `productos_dummy.csv`).
+2. **Lighthouse audit** on the populated demo store: home, product, collection, cart with **performance ≥ 60** and **accessibility ≥ 90**.
+3. **`shopify theme check`** — run the CLI locally and address any issues.
+4. **Browser matrix** — Chrome, Safari, Firefox, Edge across the last 2 versions on macOS, Windows, iOS, and Android. Capture screenshots/video.
+5. **Apple Wallet pass** — issue a real gift card and verify the `.pkpass` installs on a real iPhone.
+6. **Originality check** — compare visually against the top Theme Store themes (Dawn, Horizon, Impact, Prestige).
+7. **Partner account name match** — confirm "Corebia" matches the Shopify Partner account name exactly.
+8. **EU compliance** (if applicable) — if Corebia operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
+9. **Screenshots** — capture from the populated demo store and inline in `sections/hero.md`, `sections/new-arrivals.md`, `templates/product-page.md`, etc.
+10. **Officially supported languages** — `support/support-policy.md` claims support is in English. Confirm and add additional languages if applicable.
 
 ## QA checks passed
 
@@ -189,4 +200,14 @@ Phase 5 checklist:
 3. **Wait for the build** — first build takes 1–3 minutes. You'll see the URL in the Pages settings once ready.
 4. **Verify the custom domain** — `CNAME` already contains `docs.corebia.com`. In your DNS provider, ensure `docs.corebia.com` has a `CNAME` record pointing to `<github-username>.github.io` (or use the four GitHub Pages `A` records for an apex domain).
 5. **Open the site** at https://docs.corebia.com to confirm the build looks correct and the search works.
-6. **Update Shopify** — In `plantilla/config/settings_schema.json`, set `theme_documentation_url` to `https://docs.corebia.com` and `theme_support_url` to `mailto:support@corebia.com`. Submit the theme to the Shopify Theme Store. If Shopify reviewers ask for a public form instead of a `mailto:`, set up a managed form (Tally, Typeform, Formspree, etc.), update the contact page, and re-submit.
+6. **Submit the theme** to the Shopify Theme Store. The `theme_info` block in `plantilla/config/settings_schema.json` is already finalized:
+   ```json
+   {
+     "theme_name": "Pave",
+     "theme_version": "1.0.0",
+     "theme_author": "Corebia",
+     "theme_documentation_url": "https://docs.corebia.com",
+     "theme_support_url": "mailto:support@corebia.com"
+   }
+   ```
+   If Shopify reviewers ask for a public form instead of `mailto:`, set up a managed form (Tally, Typeform, Formspree), update the contact page (`support/contact.md`), and re-submit.
