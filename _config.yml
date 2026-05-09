@@ -20,11 +20,11 @@ heading_anchors: true
 
 aux_links:
   Contact support:
-    - "https://corebia.com/support"
+    - "/support/contact/"
   Theme Store listing:
     - "https://themes.shopify.com"
 
-aux_links_new_tab: true
+aux_links_new_tab: false
 
 footer_content: 'Pave theme &copy; Corebian. Documentation last updated <span class="d-inline-block">{{ site.time | date: "%B %Y" }}</span>.'
 

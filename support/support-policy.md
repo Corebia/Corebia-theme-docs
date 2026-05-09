@@ -41,20 +41,17 @@ We respond to all tickets **within 2 business days** (Monday to Friday, excludin
 
 ## How to reach us
 
-The only supported channel is the contact form linked from this site:
+The supported channel is documented on the [Contact](../contact/) page. Send a message with the details listed there and our team will respond within the timeframe above.
 
-[**Open a support ticket**](https://corebia.com/support){: .btn .btn-primary }
+[**Open a support ticket**](../contact/){: .btn .btn-primary }
 
 We do not provide support via:
 
 - Phone
 - Live chat
-- Direct email (use the form so requests are tracked)
 - Social media (DMs, mentions, comments)
 
-When you submit the form, you'll receive an automatic acknowledgement confirming we have your ticket. The reply with our response follows within the timeframe above.
-
-See [Contact](../contact/) for what to include when opening a ticket.
+See [Contact](../contact/) for what to include when reaching out.
 
 ## Supported languages
 

@@ -13,7 +13,7 @@ Pave is a minimalist editorial Shopify theme by Corebian, designed for fashion, 
 {: .fs-5 .fw-300 }
 
 [Get started](getting-started/installation/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Contact support](https://corebia.com/support){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Contact support](support/contact/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 

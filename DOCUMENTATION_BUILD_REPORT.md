@@ -149,16 +149,17 @@ These are theme-code issues, not documentation issues. See `AUDIT_NOTES.md` for 
 - **"Promo code" → "Discount code"** in cart locale. Documentation uses "discount code" throughout.
 - **Title Case headings in defaults** (e.g., `Customer Reviews`). Documentation uses sentence case throughout to match Shopify's settings-text guidelines, but the live editor will currently show the Title Case until the theme is fixed.
 
+## Items resolved after the initial publish
+
+- **Support links** — All "Contact support" and "Open a support ticket" buttons now route internally to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email (`support@corebia.com`); there is no separate external contact-form URL.
+- **General website link** — Replaced with "Documentation: https://docs.corebia.com" on the contact page.
+
 ## Pending items needing your input
 
-The following data was not in the theme code and could not be invented. Replace before going live:
-
-1. **Public contact form URL** — Used `https://corebia.com/support` as a placeholder throughout the docs (notably `index.md`, `support/contact.md`, `support/support-policy.md`, `_config.yml`). Replace with the real form URL. Use a global search-and-replace.
-2. **Corebian general website URL** — Used `https://corebia.com` as a placeholder.
-3. **EU geographical address and second contact method** — Not included. If Corebian operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
-4. **Screenshots** — None inlined. Capture screenshots from the demo store after it is populated with real content, and add them to the section and template pages where they would help (especially `sections/hero.md`, `sections/new-arrivals.md`, `templates/product-page.md`).
-5. **Theme name confirmation** — `config/settings_schema.json:4` shows `Pave` (no accent). Earlier audit notes referenced `Pavé`. Confirm the final theme name and update `index.md` if it changes.
-6. **Officially supported languages** — `support/support-policy.md` claims support is in English. Confirm and add additional languages if applicable.
+1. **EU geographical address and second contact method** — Not included. If Corebian operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
+2. **Screenshots** — None inlined. Capture screenshots from the demo store after it is populated with real content, and add them to the section and template pages where they would help (especially `sections/hero.md`, `sections/new-arrivals.md`, `templates/product-page.md`).
+3. **Theme name confirmation** — `config/settings_schema.json:4` shows `Pave` (no accent). Earlier audit notes referenced `Pavé`. Confirm the final theme name and update `index.md` if it changes.
+4. **Officially supported languages** — `support/support-policy.md` claims support is in English. Confirm and add additional languages if applicable.
 
 ## QA checks passed
 
@@ -188,5 +189,4 @@ Phase 5 checklist:
 3. **Wait for the build** — first build takes 1–3 minutes. You'll see the URL in the Pages settings once ready.
 4. **Verify the custom domain** — `CNAME` already contains `docs.corebia.com`. In your DNS provider, ensure `docs.corebia.com` has a `CNAME` record pointing to `<github-username>.github.io` (or use the four GitHub Pages `A` records for an apex domain).
 5. **Open the site** at https://docs.corebia.com to confirm the build looks correct and the search works.
-6. **Replace placeholders** — Update `https://corebia.com/support` with the real public contact form URL across the repo, then commit and push again.
-7. **Update Shopify** — In `plantilla/config/settings_schema.json`, set `theme_documentation_url` to `https://docs.corebia.com` and `theme_support_url` to your public contact form URL. Submit the theme to the Shopify Theme Store.
+6. **Update Shopify** — In `plantilla/config/settings_schema.json`, set `theme_documentation_url` to `https://docs.corebia.com` and `theme_support_url` to `mailto:support@corebia.com`. Submit the theme to the Shopify Theme Store. If Shopify reviewers ask for a public form instead of a `mailto:`, set up a managed form (Tally, Typeform, Formspree, etc.), update the contact page, and re-submit.

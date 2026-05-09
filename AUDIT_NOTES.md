@@ -28,15 +28,25 @@ To ensure the docs are publishable as-is alongside the corrected theme, the foll
 - The theme name in `config/settings_schema.json` is currently `Pave`. Earlier audit notes referenced `Pavé` with an accent. Confirm the final theme name and update `index.md` in the docs if it changes.
 - The author in `theme_info` is `Corebian`. The docs use "Corebian" consistently.
 
-## Items I had to invent / placeholder
+## Items resolved in a follow-up pass
 
-When writing the docs, the following items were assumed because the relevant data is not available in the theme code:
+- **Support links** — All "Contact support" / "Open a support ticket" buttons in the docs now route internally to `/support/contact/` within `docs.corebia.com`. The contact page itself is informational and lists the support email (`support@corebia.com`) — there is no external contact-form URL anymore.
+- **General website link** — Replaced with a "Documentation: https://docs.corebia.com" link on the contact page.
 
-- **Public contact form URL** — Used `https://corebia.com/support` as a placeholder. The user must replace this with the real public contact form URL. Search and replace `https://corebia.com/support` across the docs once the URL is finalized.
-- **Corebian general website** — Used `https://corebia.com` as a placeholder.
+## Items still needing your input
+
 - **EU compliance address and contact methods** — Not included. If Corebian operates in the EU, add a business address and a second direct contact method on `support/contact.md`.
 - **Screenshots** — None included. Once the demo store is populated with real content, capture screenshots for the home page, product page, collection page, and cart, and inline them on the relevant pages.
 - **Changelog** — `changelog.md` lists the 1.0.0 release. Add subsequent versions chronologically as they ship.
+
+## Theme-side action required
+
+In `plantilla/config/settings_schema.json`, set:
+
+- `theme_documentation_url` → `https://docs.corebia.com`
+- `theme_support_url` → `mailto:support@corebia.com` (the existing value is fine)
+
+Note: Shopify Theme Store reviewers may push back on `mailto:` and prefer a public form. If they do, the simplest path is to set up a managed form (Tally, Typeform, Formspree, etc.) and update both the contact page and `theme_support_url`. That is a future decision and not blocking the current docs publish.
 
 ## Reference: full theme audit
 
