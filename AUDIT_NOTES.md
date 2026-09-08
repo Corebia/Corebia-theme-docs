@@ -30,9 +30,44 @@ From `plantilla/config/settings_schema.json`:
 
 ## Known gaps
 
-1. **No contact form.** §21 of the Theme Store requirements asks for a public contact form carrying name, email, store URL (with an example), a description text area, file upload, an auto-responder, the theme name and a subject. `support/contact.md` currently routes to an email address instead. This is a submission blocker and needs a hosted form.
+1. **The contact form is not live yet.** The page is built for it; the form itself has to be created. See below.
 2. **No screenshots.** Every reference page is text. Screenshots of the sections in place would help, and can only be taken once a demo store exists.
 3. **English only.** Matches the theme, which ships `en.default` alone.
+
+## Building the contact form
+
+`support/contact.md` includes `_includes/contact-form.html`, which currently renders an email fallback. Replacing that file's contents with Tally's generated embed code puts the form live. **A contact email on its own does not satisfy §21** — the requirement is a form.
+
+### Fields §21 requires
+
+| Field | Requirement |
+|---|---|
+| Name | First and last |
+| Email address | — |
+| Store URL | Must show an example, such as `http://www.storename.myshopify.com`. Put it in the field's placeholder or help text |
+| Description of problem | Must be a **text area**, not a single-line input |
+| File upload | So merchants can attach screenshots |
+| Auto-responder | Fires on submit. It exists so merchants don't write again asking whether the message arrived — Shopify names that as the reason |
+| Theme name | *"if you offer multiple themes"*. Corebia ships one, so this is **not required** |
+| Subject | Conditional: if included, it must populate the email subject line |
+
+So six required fields, and two that don't apply while Pave is the only theme.
+
+Do **not** ask for budget, phone number or project type. §21 names those as the fields to avoid — that is an agency enquiry form, not a support form.
+
+### Tally setup
+
+1. Build the form with the six fields, and put the example URL in the store URL field's placeholder.
+2. Turn on the file upload question type.
+3. Under **Integrations > Email**, set an auto-reply to the respondent. This is the auto-responder requirement; without it the form does not conform.
+4. **Share > Embed > Standard embed**: turn on *Dynamic height* and *Align content to the left*, then **Get the code** and paste it into `_includes/contact-form.html`, replacing the whole fallback block.
+5. If you use a popup rather than an inline embed, §21 adds that it must be mobile friendly and linkable from the Theme Store.
+
+### Where the URL goes afterwards
+
+- **Theme Store listing**, under *Merchant support > Contact and documentation*: the form URL, and `https://docs.corebia.com` for the documentation. This is the link a reviewer checks.
+- **`theme_support_url`** in `plantilla/config/settings_schema.json` currently points at `https://docs.corebia.com/support/`, the support hub, which carries a contact button and the FAQ above it. That deflects tickets, and is the reason it is not pointed straight at the form. Either target conforms — `shopify.dev` only says "a URL where merchants can find support for the theme" — so this is a choice, not a requirement.
+- Note that `theme_support_email` and `theme_support_url` are mutually exclusive. Setting both is an error.
 
 ## Things the theme does that are worth knowing when writing docs
 

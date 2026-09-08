@@ -8,36 +8,34 @@ permalink: /support/contact/
 
 # Contact
 
-Pave is supported directly by Corebia. To reach our team, send an email to **[support@corebia.com](mailto:support@corebia.com)** with the details listed below. Every message is read and answered within the timeframe described in the [support policy](../support-policy/).
+Pave is supported directly by Corebia. Send us the details below and we'll reply within **2 business days**, as set out in the [support policy](../support-policy/). Most requests are answered the next working day, and anything that takes a storefront offline or blocks checkout is handled immediately.
+
+{% include contact-form.html %}
 
 ## What to include
 
-A complete request gets a faster, better answer. Please include:
+A complete request gets a faster, better answer.
 
-- **Your store URL** — In the format `https://store-name.myshopify.com`. If you have a custom domain, please share both the custom domain and the `myshopify.com` URL — we use the latter to find your store in the Shopify Partner system.
-- **Theme version** — Find it in `Shopify admin > Online Store > Themes`. Click on Pave to see the version. The current version is also listed at the top of the [changelog](../../changelog/).
-- **Description of the problem** — One paragraph explaining what you expected and what happened instead.
-- **Steps to reproduce** — Click-by-click steps that lead to the problem so we can replicate it on our end.
-- **Screenshots or screen recordings** — A picture is worth a thousand support emails. Use the browser screenshot tool or your operating system's screen recorder.
-- **Browser and device** — "Chrome on macOS Sonoma 14.5" or "Safari on iPhone 15 (iOS 18)".
-- **The page URL where the problem appears** — Direct link to the affected page on your storefront.
+- **Your store URL** — in the form `https://store-name.myshopify.com`. If you use a custom domain, send both: we find your store by the `myshopify.com` one.
+- **The page it happens on** — a direct link to the affected page on your storefront.
+- **What you expected, and what happened instead** — a paragraph is plenty.
+- **The steps that lead to it** — click by click, so we can reproduce it here.
+- **A screenshot or a screen recording** — the single most useful thing you can attach.
+- **Browser and device** — "Chrome on macOS 15", "Safari on iPhone 15".
+- **Theme version** — in `Shopify admin > Online Store > Themes`, click Pave. The current version is at the top of the [changelog](../../changelog/).
 
-## After you write
+## Before you write
 
-Our team reviews every incoming request. We respond within **2 business days**, as outlined in the [support policy](../support-policy/). Most requests are answered the next business day. Critical issues — anything that takes the storefront offline or blocks checkout — are addressed immediately.
+Two things answer most questions faster than we can:
+
+- The **[FAQ](../faq/)**, for the questions we get most often.
+- The **documentation** — every setting in the theme is documented under [Theme settings](../../theme-settings/), [Sections](../../sections/) and [Templates](../../templates/). If a setting isn't doing what you expect, its page usually says why.
 
 ## Need a customization?
 
-For requests that go beyond what's covered by support — design changes, new features, integrations — we recommend hiring a [Shopify Partner](https://www.shopify.com/partners/directory). They can extend Pave to your exact requirements. See [Custom code](../../customization/custom-code/) for context.
-
-## Corebia contact details
-
-Corebia — Pave theme developer.
-
-- **Support email:** [support@corebia.com](mailto:support@corebia.com)
-- **Documentation:** [https://docs.corebia.com](https://docs.corebia.com)
+Support covers the theme as it ships. For design changes, new features or integrations, hire a [Shopify Partner](https://www.shopify.com/partners/directory) — they can extend Pave to your requirements. [Custom code](../../customization/custom-code/) explains where the line falls.
 
 ## Related
 
-- [Support policy](../support-policy/) — What is and isn't covered.
-- [FAQ](../faq/) — Common questions answered without needing to open a ticket.
+- [Support policy](../support-policy/) — what is and isn't covered.
+- [FAQ](../faq/) — answers without opening a ticket.
