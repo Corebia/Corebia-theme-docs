@@ -1,6 +1,16 @@
 # Documentation build report
 
-This report summarizes the documentation generated for the **Pave** theme (v1.0.0, by Corebia) in this run. It complements `AUDIT_NOTES.md`, which lists theme-code findings that require dev team action.
+> **Superseded — historical record only.** This describes the documentation as
+> first generated on 2026-05-09. The reference pages were rewritten against the
+> theme's own schemas on 2026-09-08, after four months of drift, so the page
+> descriptions below no longer match what this site contains and several of the
+> theme facts recorded here are out of date. It also cites
+> `plantilla/THEME_AUDIT.md` and `plantilla/THEME_AUDIT_FIXES.md`, which no
+> longer exist in the theme repository.
+>
+> For the current state, see `AUDIT_NOTES.md`.
+
+This report summarized the documentation generated for the **Pave** theme (v1.0.0, by Corebia) in that run. It complemented `AUDIT_NOTES.md`, which listed theme-code findings requiring dev team action.
 
 ## Pages created
 

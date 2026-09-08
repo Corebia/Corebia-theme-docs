@@ -8,88 +8,56 @@ permalink: /templates/contact-page/
 
 # Contact page
 
-The **Contact page** is a dedicated template for a contact form. It uses the `page.contact.json` template, an alternate page template that combines a form with brand contact details.
+An alternate page template, `page.contact.json`, using the **Contact form** section: a form on one side, your contact details on the other.
 
-## URL
+To use it, create a page in `Shopify admin > Content > Pages` and set its **Theme template** to `contact`.
 
-Whichever page you create with the contact template assigned. The conventional URL is `/pages/contact`.
-
-## Sections included by default
-
-1. **Contact form** — The contact form section with form fields and brand details.
-
-## Contact form section
+## Section settings
 
 ### Header
 
-- **Show subtitle** — Toggle the small uppercase text above the heading.
-- **Subtitle** — Default: `GET IN TOUCH`.
-- **Show description** — Toggle the description paragraph.
+- **Show subheading** — Default: on.
+- **Subheading** — Default: `Get in touch`.
+- **Show description** — Default: on.
 - **Description** — Default: `We'd love to hear from you. Send us a message and we'll respond as soon as possible.`
 
 ### Contact details
 
-A side panel with brand contact information.
+The panel beside the form. Each line can be hidden.
 
-- **Show email** — Toggle.
-- **Email address** — Default: `hello@yourstore.com`.
+- **Show email** — Default: on.
+- **Email address** — Default: `hello@yourstore.com`. **Change this before launch.**
 - **Email label** — Default: `Email`.
-- **Show location** — Toggle.
-- **Location** — Default: `New York, NY`.
+- **Show location** — Default: on.
+- **Location** — Default: `City, Country`. **Change this before launch.**
 - **Location label** — Default: `Location`.
-- **Phone number (display)** — Clickable phone number shown in the info panel. Leave blank to hide.
-- **Show response time** — Toggle.
-- **Response time** — Default: `Within 24 hours`.
+- **Phone number (display)** — A clickable phone number in the info panel. Leave blank to hide.
+- **Show response time** — Default: on.
+- **Response time** — Empty by default. For example, `Within 2 business days`.
 - **Response time label** — Default: `Response time`.
-- **Show trust message** — Toggle.
-- **Trust message** — Shown below the contact details to build trust. Default: `Every message is read and responded to personally — we value your time.`
+- **Show trust message** — Default: on.
+- **Trust message** — Shown below the contact details. Leave blank to hide.
 
 ### Form
 
-- **Show phone field** — Adds a phone field to the form. Toggle.
+- **Show phone field** — Default: on.
 - **Phone field label** — Default: `Phone`.
-- **Subject options** — One option per line. The form will show a Subject dropdown using these. Leave blank to hide the dropdown. Default:
-  ```
-  General inquiry
-  Order support
-  Press and media
-  Wholesale
-  Careers
-  ```
-- **Privacy reassurance** — Shown as small text below the submit button. Leave blank to hide. Default: `We respect your privacy. Your information will not be shared.`
+- **Subject options** — One option per line. The form shows a Subject dropdown built from these. Leave blank to hide the dropdown. Defaults: General inquiry, Order support, Press and media, Wholesale, Careers.
+- **Privacy reassurance** — Small text below the submit button. Leave blank to hide.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-2.
+- **Color scheme** — Default: scheme-1.
 
-## How submissions work
+## Where messages go
 
-The form posts to Shopify's built-in contact endpoint. Submissions are sent as emails to the **Sender email** configured in `Shopify admin > Settings > Notifications > Sender email`.
+Submissions arrive by email at the address in `Shopify admin > Settings > Store details > Sender email`, not at the address shown on the page. Those are two different things, and it is worth checking the first one actually reaches someone.
 
-If you want submissions to go to a different inbox, change the **Customer email** in your store settings, or install a third-party form app.
-
-## Setting up the contact page
-
-1. In `Shopify admin > Online Store > Pages`, create a new page titled "Contact".
-2. Under **Theme template**, choose **page.contact**.
-3. Save.
-4. Open the theme editor and customize the contact form section's settings.
-5. Add a link to the contact page from your main menu and footer menu.
-
-## Sections that can be added
-
-In addition to **Contact form**, you can add any of these sections:
-
-- [FAQ](../../sections/faq/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [Newsletter](../../sections/newsletter/)
-- [Custom Liquid](../../sections/custom-liquid/)
+The form is protected by Shopify's own spam check, which can ask a shopper to confirm they're human before the message sends.
 
 ## Tips
 
-- **Update the placeholder details** — `hello@yourstore.com` and `New York, NY` are placeholders; customers will not trust contact details that look like demo content.
-- **Set realistic response times.** A "Within 24 hours" promise that you don't keep is worse than no promise.
-- **Phone number** — Only show if you actually answer it. A phone number that goes to voicemail erodes trust.
-- **Subject options** — Cap at 4–6 options. Long lists feel overwhelming.
+- **Replace the placeholder details.** `hello@yourstore.com` and `City, Country` ship as examples and will go live if you leave them.
+- **Only promise a response time you can keep.** An unanswered promise on the contact page generates more mail, not less.
+- **Trim the subject options** to the ones you actually route differently. Five choices where two would do makes the form feel longer than it is.
+- **Some markets require a business address** on the storefront. If yours does, the location line here and a Contact block in the [Footer](../../sections/footer/) are the two conventional places for it.

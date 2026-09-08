@@ -8,9 +8,7 @@ permalink: /templates/
 
 # Templates
 
-A **template** is the layout used to render a specific kind of page on your storefront. Pave ships templates for every page type Shopify recognizes. Most templates are JSON-based, which means you can add, remove, and reorder sections from the theme editor.
-
-The pages below document each template the theme ships.
+A **template** is the layout used to render one kind of page. Pave ships a template for every page type Shopify recognises. Most are JSON templates, which means their sections can be added, removed and reordered from the theme editor.
 
 - [Home page](home-page/)
 - [Product page](product-page/)
@@ -29,6 +27,21 @@ The pages below document each template the theme ships.
 - [Policy page](policy-page/)
 - [Customer pages](customer-pages/)
 
+## Which are editable in the theme editor
+
+| Template | Type | Sections |
+|---|---|---|
+| Home, product, collection, catalog, collections list, cart, search, blog, article, page, contact, 404, password | JSON | Add, remove and reorder freely |
+| Gift card, policy | Liquid | Fixed layout, no editor sections |
+| Customer pages | — | Rendered by Shopify; see [Customer pages](customer-pages/) |
+
 ## Alternate templates
 
-For some content types, Shopify supports alternate templates: variants of the default template you can assign per product, page, or article. Pave does not ship alternate templates out of the box, but you can create your own from the theme editor by clicking **Create template** in the **Templates** picker. See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).
+An alternate template is a variant you assign to individual products, collections, pages or articles, leaving the rest on the default.
+
+Pave ships two:
+
+- **Catalog** (`collection.all.json`) — the `/collections/all` page, documented as [Catalog page](catalog-page/).
+- **Contact** (`page.contact.json`) — documented as [Contact page](contact-page/).
+
+To make your own, open the theme editor's template picker and choose **Create template**, then assign it to a product or page under that item's **Theme template** setting in the Shopify admin. See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).

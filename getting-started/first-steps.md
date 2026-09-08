@@ -22,8 +22,8 @@ See [Logo](../../theme-settings/logo/) and [Favicon](../../theme-settings/favico
 
 ## 2. Configure colors and typography
 
-- **Colors** — Open the **Colors** category in **Theme settings**. Pave ships with three color schemes that you can apply to any section. Edit the schemes to match your brand. See [Colors](../../theme-settings/colors/).
-- **Typography** — Open the **Typography** category. Choose a heading font and a body font from the Shopify-hosted Google Fonts library, and adjust **Title size** and **Text size** as needed. See [Typography](../../theme-settings/typography/).
+- **Colors** — Open the **Colors** category in **Theme settings**. Pave ships with two colour schemes; edit them, rename them or add more, and each section then picks the one it uses. See [Colors](../../theme-settings/colors/).
+- **Typography** — Open the **Typography** category. Choose a heading font and a body font from Shopify's font library, and adjust **Heading size** and **Text size** as needed. See [Typography](../../theme-settings/typography/).
 
 ## 3. Create your menus
 

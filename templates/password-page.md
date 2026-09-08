@@ -8,66 +8,49 @@ permalink: /templates/password-page/
 
 # Password page
 
-The **Password page** is shown to visitors when your store is password-protected (in `Shopify admin > Online Store > Preferences > Password protection`). It uses the `password.json` template.
+What visitors see while the store is password-protected. It uses the **Password page** section, which can carry a countdown to launch and an email signup — so the wait can collect an audience rather than just block one.
 
-The password page is its own self-contained layout — it does not show the storefront header, footer, or navigation. Customers who enter the correct password are redirected to your store.
+Turn password protection on and off under `Shopify admin > Online Store > Preferences`, at the bottom.
 
-## URL
+## Section settings
 
-When password protection is enabled, every URL on the storefront redirects to the password page until the password is entered. After entering the correct password, the customer accesses the storefront normally.
-
-## Sections included by default
-
-1. **Password page** — The full password page with branding, message, optional countdown, and email signup.
-
-## Password page section
+- **Color scheme** — Default: scheme-1.
 
 ### Branding
 
-- **Show logo** — Display your shop logo above the headline. Reads from **Theme settings > Logo**.
+- **Show logo** — Uses the logo from [Logo](../../theme-settings/logo/). Default: on. With no logo uploaded it falls back to the shop name.
 
 ### Content
 
-- **Headline** — The main heading. Default: `Opening Soon`.
-- **Message** — The supporting message. Default: `We're putting the finishing touches on something new. Enter the password below for early access.`
+- **Heading** — Default: `Opening soon`.
+- **Message** — Default: `We're putting the finishing touches on something new. Enter the password below for early access.`
 
 ### Countdown
 
-A live countdown to your launch date. Leave the date blank to hide the countdown.
-
-- **Launch date** — Format: `YYYY-MM-DD` (e.g. `2026-06-01`). Leave blank to hide the countdown.
-- **Launch time** — Format: `HH:MM` in 24-hour time (e.g. `09:00`). Used together with the date and timezone.
-- **Timezone** — The timezone in which the launch date and time are interpreted.
+- **Launch date** — Format: `YYYY-MM-DD`, for example `2026-06-01`. Leave blank to hide the countdown.
+- **Launch time** — Format: `HH:MM` in 24-hour time, for example `09:00`. Used together with the date and timezone. Default: `00:00`.
+- **Timezone** — The timezone the launch date and time are read in. Default: UTC. The list covers major zones from Auckland to Los Angeles.
 
 ### Email signup
 
-- **Show email signup form** — Toggle.
+- **Show email signup form** — Default: off.
 - **Signup prompt text** — Default: `Be the first to know when we launch`.
 
 ### Background
 
-- **Background image** — Recommended: `1920 by 1080 px` or larger. A gradient overlay is applied automatically.
+- **Background image** — 1920 x 1080px recommended. A gradient overlay is applied automatically.
 
-### Other
+## The password itself
 
-- **Color scheme** — Default: scheme-3.
+Set under `Shopify admin > Online Store > Preferences`, not in the theme. The page always shows the entry field; these settings control everything around it.
 
-## Special behaviors
+## Where signups go
 
-- **Password input** — Always present at the bottom of the page; this is the access mechanism. The password itself is configured in `Shopify admin > Online Store > Preferences > Password protection`.
-- **Email signups** — When enabled, captured emails go to your customer database tagged as accepting marketing, just like the normal newsletter signup.
-- **Auto-launch** — When the countdown reaches zero, nothing technically happens — you must still toggle off password protection in your admin to make the store live. The countdown is informational.
-
-## Setting up password protection
-
-1. In `Shopify admin > Online Store > Preferences`, scroll to **Password protection**.
-2. Enable **Restrict access to visitors with the password**.
-3. Set the password and the message that appears on the password page (this Shopify-level message is separate from the **Message** in this section, which has priority).
-4. Save.
+Addresses collected here land in `Shopify admin > Customers`, tagged as accepting marketing — the same place the [Newsletter](../../sections/newsletter/) section sends them. A pre-launch list is usually the most valuable one a store ever builds, so it is worth turning the form on even for a short closed period.
 
 ## Tips
 
-- **Use a striking background image.** This is a brand moment — every visitor sees this page until you go live.
-- **Set a real launch date.** A countdown to a credible date builds anticipation. A vague "Coming soon" is less engaging.
-- **Capture emails.** A pre-launch email list is the highest-value marketing asset for a soft-launch. Enable the email signup.
-- **Test the page** at the password URL before going live to make sure all settings render correctly.
+- **Set the timezone.** It defaults to UTC, which is the wrong local hour almost everywhere. A countdown that hits zero at the wrong time is worse than none.
+- **Turn the countdown off unless the date is firm.** A countdown that expires with the store still closed reads badly.
+- **Use one strong image.** This page is one screen with no scrolling; it is the whole first impression.
+- **Preview it while logged out.** Signed in to your admin you bypass the password, so use a private window to see what visitors see.

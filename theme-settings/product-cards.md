@@ -8,39 +8,30 @@ permalink: /theme-settings/product-cards/
 
 # Product cards
 
-The **Product cards** category in **Theme settings** controls the appearance of every product card across your storefront — in collection grids, search results, recommended products, and the home page.
+These settings apply to the product card wherever it appears — collection pages, the catalog, search results, New arrivals, recommendations and recently viewed. Setting them once here keeps every grid in the store consistent.
 
 ## Settings
 
-- **Image ratio** — The aspect ratio of the product image area on every product card. Choose from:
-  - **Adapt to image** — Each card uses the natural aspect ratio of its featured product image. Cards in the same grid will have varying heights.
-  - **Portrait (3:4)** — Tall product images. Best for fashion and apparel.
-  - **Square (1:1)** — Equal width and height. Default. Works for any product type.
-  - **Landscape (4:3)** — Wide product images. Best for furniture, accessories shot on a side.
+- **Image ratio** — **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
+- **Show quick add button** — Adds a `+` button to product cards. Products with one variant are added straight to the cart; products with several add the first available variant. Default: on.
+- **Show color swatches on cards** — Shows up to 5 colors as selectable swatches. Choosing one updates the card's image, price and link. Any colors beyond the fifth are counted in a `+N` indicator. Default: on.
+- **Days to show the new badge** — Products created within this many days show a **new** badge on cards. Range: 0 to 90 days. Default: 30. Set to 0 to hide the badge. The sale badge takes priority over the new badge.
 
-  Default: **Square (1:1)**.
+## A note on Image ratio
 
-## Where this setting applies
+**Adapt to image** keeps every product's own proportions, which is honest but gives an uneven grid unless your photography is already consistent. The three fixed ratios crop to a common shape, which is what makes a grid look deliberate.
 
-The Image ratio is used in every product grid in the theme:
+If your catalog is shot to one standard, choose the ratio that matches it and nothing gets cropped. If it isn't, choose the ratio that suits most of it and set focal points on the images that suffer — see [Product media](../../features/product-media/).
 
-- New arrivals (home page).
-- Featured product cards.
-- Collection page grid.
-- Catalog page grid.
-- Search results.
-- Product recommendations.
-- Complementary products.
-- Recently viewed.
-- 404 page featured products.
+## A note on swatches
 
-## Recommendations
+Card swatches read a product's color option and show it as a real color or image. They rely on Shopify's swatch data, which is set per option value under `Shopify admin > Settings > Metafields and metaobjects`, or automatically from color names. See [Swatches](../../features/swatches/) for the full setup.
 
-- **Match your photography.** If your products are shot on portrait crops, pick **Portrait**. If they are shot square, pick **Square**. Mixing ratios in your photo workflow with the wrong card setting causes ugly white space or aggressive crops.
-- **Adapt to image** is rarely the right choice for a polished store — varying card heights break the visual rhythm of grids. Use it only if you have intentionally varied photography styles.
-- **Square** is the safest default for a mixed catalog.
-- **Portrait** is the editorial-fashion default — Pave is designed with this option in mind.
+Products without a color option simply show no swatches; nothing needs turning off per product.
 
-## Note on collection-card images
+## Tips
 
-The **Collection list** section has its own **Image ratio** setting that overrides this one for collection cards specifically. Product cards everywhere else follow this setting.
+- **Quick add earns its place on repeat-purchase catalogs** — consumables, refills, basics. On a considered-purchase catalog it can short-circuit a decision the product page was going to help with.
+- **Quick add on a multi-variant product picks the first available variant.** That is right for a product where the variants are sizes of the same thing, and wrong for one where they are meaningfully different. Consider turning it off if your catalog is mostly the latter.
+- **30 days is a sensible new badge.** Long enough that a shopper sees it, short enough that it still means something. Stores that add stock rarely may want 60; stores adding daily may want 7.
+- **The two badges never stack.** A product that is both new and on sale shows the sale badge, because that is the one that moves a decision.

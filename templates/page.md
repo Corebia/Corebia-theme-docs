@@ -8,56 +8,38 @@ permalink: /templates/page/
 
 # Page
 
-The **Page** template renders a Shopify page (created in `Shopify admin > Online Store > Pages`). It uses the `page.json` template. Use it for content like About, FAQ, Sustainability, or any other static page.
+The default template for any page you create in `Shopify admin > Content > Pages` — About, Stockists, Size guide, Shipping information. It uses the **Main page** section, which renders the page's title and body.
 
-## URL
+## Section settings
 
-`https://yourstore.com/pages/<page-handle>`
-
-## Sections included by default
-
-1. **Main page** — The page body, rendering the title and rich text content from the Shopify admin.
-2. **Newsletter** — Email signup form below the content.
-
-## Main page section
-
-- **Show back link and breadcrumb** — Toggle.
+- **Show back link and breadcrumb** — Default: on.
 - **Color scheme** — Default: scheme-1.
 
-The page title and body content come from `Shopify admin > Online Store > Pages > [page] > Title` and **Content**.
+## Blocks
 
-## Sections that can be added
+- **App block** — Any block offered by an installed app.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
 
-In addition to **Main page**, you can add any of these sections:
+## Building richer pages
 
-- [Newsletter](../../sections/newsletter/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [FAQ](../../sections/faq/)
-- [Featured product](../../sections/featured-product/)
-- [Customer reviews](../../sections/customer-reviews/)
-- [Collection list](../../sections/collection-list/)
-- [Custom Liquid](../../sections/custom-liquid/)
+The page body is a rich text field, which is enough for text and images but not for layout. For a landing page — an About page with a full-bleed image, a lookbook, a campaign page — add sections above and below the Main page section in the theme editor:
 
-## Special use: contact page
+- [Hero banner](../../sections/hero/) for an opening image
+- [Brand message](../../sections/brand-message/) and [Rich text with image](../../sections/rich-text-image/) for image-and-copy blocks
+- [Brand image](../../sections/brand-image/) for a full-width photograph or video
+- [Featured product](../../sections/featured-product/) to make one product buyable in place
+- [FAQ](../../sections/faq/) for questions
 
-A separate template, `page.contact.json`, is used for the contact page. See [Contact page](../contact-page/).
+Sections you add this way apply to **every** page using this template. To give one page its own arrangement, create an alternate template.
 
 ## Alternate templates
 
-If you want a specific page to use a different layout (for example, a long-form sustainability page with a hero banner), you can create an alternate template:
+In the theme editor's template picker, choose **Create template** and base it on `page`. Then set that template on the page under its **Theme template** setting in the admin.
 
-1. In the theme editor, click the page selector dropdown at the top.
-2. Choose **Pages > Create template**.
-3. Name your template (for example, `sustainability`).
-4. Customize the sections.
-5. In `Shopify admin > Online Store > Pages > [page] > Theme template`, pick your custom template.
-
-See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).
+Pave ships one alternate page template already: [Contact page](../contact-page/).
 
 ## Tips
 
-- **Replace the default newsletter** with a more contextual section if the page is about a specific topic (for example, an FAQ section on a help page).
-- **Use rich text formatting** in the Shopify admin to structure your page content. Pave styles headings, lists, and quotes for editorial readability.
-- **Don't put long-form copy in a Hero banner.** That's not what hero is designed for. Use the Page content area for body text.
+- **Use the page body for words and sections for layout.** Trying to lay out a page inside the rich text editor is where most of the frustration with Shopify pages comes from.
+- **Turn the back link off on landing pages.** A breadcrumb above a full-bleed hero undercuts it.
+- **Name templates for their shape, not their content** — `page.wide`, `page.lookbook` — so the next page of that shape can reuse them.

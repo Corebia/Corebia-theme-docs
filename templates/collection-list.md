@@ -8,48 +8,40 @@ permalink: /templates/collection-list/
 
 # Collections list page
 
-The **Collections list page** is the index of every collection in your store. It uses the `list-collections.json` template.
+The page at `/collections` — every collection in the store, as a grid. It uses the **Main list collections** section.
 
-## URL
+This is the template. For a hand-picked selection of collections on the home page, use the [Collection list](../../sections/collection-list/) section instead.
 
-`https://yourstore.com/collections`
+## Section settings
 
-## Sections included by default
-
-1. **Main list collections** — The grid of all collections in the store.
-
-## Main list collections section
-
-- **Show back link and breadcrumb** — Toggle.
-- **Heading** — The page heading. Default: `Collections`.
-- **Subheading** — Optional supporting text.
-- **Heading alignment** — Options: **Left**, **Center**, **Right**.
-- **Image ratio** — Aspect ratio of each collection card image. Options: **Adapt to image**, **Square (1:1)**, **Portrait (3:4)**, **Landscape (4:3)**.
-- **Desktop columns** — Range slider.
-- **Mobile columns** — Options: **1 column**, **2 columns**.
-- **Sort collections by** — Options: **Admin order**, **A–Z**, **Most products first**.
-- **Show product count** — Display the number of products in each collection on the card.
-- **Show empty collections** — Toggle whether collections with zero products are listed.
+- **Show back link and breadcrumb** — Default: on.
+- **Heading** — Default: `Collections`.
+- **Subheading** — Optional.
+- **Heading alignment** — **Left**, **Center** (default) or **Right**.
+- **Image ratio** — **Adapt to image**, **Square (1:1)**, **Portrait (3:4)** (default) or **Landscape (4:3)**.
+- **Desktop columns** — Range: 2 to 5. Default: 3.
+- **Mobile columns** — **1 column** or **2 columns** (default).
+- **Sort collections by** — **Manual order** (default), **A–Z** or **Most products first**.
+- **Show product count** — Shows how many products each collection holds. Default: off.
+- **Show empty collections** — Default: off.
 - **Color scheme** — Default: scheme-1.
-- **Top padding** and **Bottom padding**.
+- **Top padding** / **Bottom padding** — Range: 0 to 100 px in 4 px steps. Default: 60 px each.
 
-## Sections that can be added
+## Sorting
 
-In addition to **Main list collections**, you can add any of these sections:
+**Manual order** follows the order collections are arranged in `Shopify admin > Products > Collections`. It is the default because it is the only one you control: A–Z is alphabetical accident, and Most products first ranks by inventory rather than by importance.
 
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [Newsletter](../../sections/newsletter/)
-- [FAQ](../../sections/faq/)
-- [Custom Liquid](../../sections/custom-liquid/)
+Use manual order and put your strongest collections first.
+
+## Empty collections
+
+Hidden by default. A collection with no products in it is usually one that is seasonal, being prepared, or driven by rules that currently match nothing — none of which a shopper benefits from clicking into.
+
+Turn them on only if you want an empty collection visible as a placeholder for something coming.
 
 ## Tips
 
-- **Sort collections by Admin order** if you've manually arranged collections in `Shopify admin > Products > Collections`. The default sort is alphabetical, which may not match your intended hierarchy.
-- **Hide empty collections** by setting **Show empty collections** to off — empty collections look like errors to customers.
-- **Mobile columns** — On mobile, **1 column** gives each collection a hero-like presence; **2 columns** keeps the page short. Pick based on the number of collections.
-
-## Related
-
-- For a curated list of collections on the home page, use the [Collection list section](../../sections/collection-list/) instead.
+- **Give every collection an image.** This page is almost entirely images; a collection without one falls back to its first product, which is rarely the crop you'd choose.
+- **Show product count only if the numbers flatter you.** "3 products" beside a collection tells a shopper not to bother.
+- **Two mobile columns** keeps the page scannable on a phone. One column suits a store with only a handful of collections and strong photography.
+- **This page is often better linked than navigated to.** Many stores point their menu straight at individual collections and use this page as a fallback route.

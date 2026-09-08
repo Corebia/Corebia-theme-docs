@@ -2,38 +2,36 @@
 title: Recently viewed
 layout: default
 parent: Sections
-nav_order: 13
+nav_order: 15
 permalink: /sections/recently-viewed/
 ---
 
 # Recently viewed
 
-The **Recently viewed** section shows products the customer has previously visited on your store. Useful on the cart page or the product page to remind customers of items they considered.
+**Recently viewed** shows the products this shopper has already looked at. The list is kept in their own browser, so no sign-in is needed and nothing is stored on your store.
 
-The section is hidden when the customer has no view history (for example, on a first visit).
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Heading** — The section heading. Default: `Recently viewed`.
-- **Subheading** — Optional supporting text.
-- **Heading alignment** — Options: **Left**, **Center**, **Right**.
-- **Maximum products to show** — Cap on how many products to display.
-- **Show vendor** — When enabled, displays the product vendor on each card.
+- **Heading** — Default: `Recently viewed`.
+- **Maximum products to show** — Range: 4 to 12. Default: 8.
+- **Color scheme** — Default: scheme-1.
 
-The section also exposes spacing settings.
+### Spacing
 
-## How recently viewed is tracked
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
-Pave stores recently viewed product handles in the customer's browser (`localStorage`). Each product page visit appends to the list. The section reads that list on render and pulls the corresponding products from Shopify.
+## How the list is built
 
-This means:
-
-- **No login required** — Tracking works for guests and signed-in customers.
-- **Local to the browser** — Customers who switch devices or browsers do not see their previous history on the new device.
-- **Cleared with browser data** — Clearing the browser's storage clears the recently viewed list.
+- Products are recorded as the shopper visits them, in their browser's local storage.
+- The product currently being viewed is excluded, so the section never shows the page it sits on.
+- The list is per browser and per device. The same person on a phone and a laptop has two separate lists.
+- Clearing browsing data clears the list, and the section then renders nothing at all rather than an empty shell.
 
 ## Tips
 
-- **Cart page is the highest-converting placement.** Customers reviewing their cart often add one more item.
-- **Cap at 4–8 products.** More than 8 turns the section into an unfocused grid.
-- **Hide on the home page.** First-time visitors with no view history would see an empty section. Use it on cart and product pages where the customer has navigated to multiple products.
+- **The cart page is the strongest placement.** A shopper about to check out is the one most likely to add the thing they were undecided about.
+- **The product page is the second.** Placed below recommendations, it gives a way back to a product they nearly chose.
+- **Don't put it on the home page.** A first-time visitor has nothing to show, and a returning one is met with their own history before they have seen anything new.
+- **Eight is a good ceiling.** Twelve fills a wide screen but starts to compete with the recommendations above it.

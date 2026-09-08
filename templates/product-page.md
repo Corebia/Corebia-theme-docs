@@ -8,109 +8,149 @@ permalink: /templates/product-page/
 
 # Product page
 
-The **Product page** displays a single product with its media, variants, price, and purchase controls. It uses the `product.json` template, which is JSON-based and customizable from the theme editor.
+The product page is built from the **Main product** section: a media column and a buy box, where almost everything in the buy box is a block you add, remove and reorder.
 
-## URL
+Below it you can add any section that isn't restricted to the header or footer — [Product recommendations](../../sections/product-recommendations/), [Recently viewed](../../sections/recently-viewed/), [FAQ](../../sections/faq/) and the rest.
 
-`https://yourstore.com/products/<product-handle>`
+The same block set is available in [Featured product](../../sections/featured-product/), which puts a complete buy box on any other page.
 
-## Sections included by default
+## Section settings
 
-1. **Main product** — The core product display: media, title, price, variants, buy buttons.
-2. **Product recommendations** — Related products row.
-3. **Complementary products** — Curated cross-sell row.
-4. **Recently viewed** — Customer's recent product views.
-5. **Rich text with image** — A storytelling block (defaults to "Our story").
-6. **Customer reviews** — Placeholder section for reviews-app blocks.
-7. **FAQ** — Three-question FAQ.
+- **Show back link and breadcrumb** — Default: on.
 
-## Main product section
+### Media
 
-Inside the **Main product** section, blocks make up the product information layout. Add, remove, or reorder these blocks from the theme editor.
+- **Desktop media width** — **Small**, **Medium** (default) or **Large**.
+- **Desktop media position** — **Left** (default) or **Right**.
+- **Desktop gallery layout** — **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**.
+- **Mobile layout** — **Show thumbnails** (default), **Hide thumbnails** or **2 columns**.
+- **Use sticky product information on desktop** — Keeps the buy box in view while the media column scrolls. Default: on.
+- **Use video looping** — Loops product videos. Default: off.
 
-### Available blocks
+### General
 
-- **Vendor** — Displays the product's vendor.
-- **Title** — Displays the product title.
-- **Price** — Displays the price, with optional compare-at price and discount badge.
-  - **Show compare-at price** — Toggle.
-  - **Show discount badge** — Toggle.
-  - **Tax note text** — Text shown below the price when taxes are included. Defaults to a translated string. Default: `Tax included`.
-- **Text** — A free-form text block. Pick a text style: **Body**, **Subtitle**, **Uppercase**.
-- **SKU** — Displays the variant SKU. Same text style options.
-- **Inventory status** — Shows in-stock state and an optional low-stock alert.
-  - **Low inventory threshold** — Below this number, a low-stock indicator is shown.
-  - **Show inventory count** — Toggle to display the exact count.
-- **Quantity selector** — Lets the customer pick a quantity before adding to cart.
-- **Variant picker** — The size, color, and other option pickers.
-  - **Type** — **Dropdown** or **Buttons**.
-  - **Color option display** — **Color chip (dot + name)** or **Text buttons only**.
-  - **Size guide page** — Optional Shopify page that opens in a popup as a size guide. Appears as a link next to the size option.
-  - **Size guide link label** — Default: `Size guide`.
-  - **Show size guide for all options** — When enabled, shows the size guide link on every option row, not just size-named options.
-- **Buy buttons** — The Add to cart button and dynamic checkout buttons.
-  - **Show dynamic checkout buttons** — Adds Shop Pay, PayPal, Apple Pay, Google Pay buttons depending on what is enabled in your store.
-  - **Show recipient information form for gift card products** — Lets gift card buyers enter recipient details.
-- **Product description** — The product's HTML description from the Shopify admin.
-- **Collapsible tab** — An expandable section. Multiple tabs stack vertically.
-  - **Heading** — The tab heading. Leave blank to use the heading from the kind below.
-  - **Kind** — Pick a kind to use a translated default heading, or pick **Custom** and provide your own heading. Options: **Description**, **Composition and care**, **Shipping and returns**, **Custom**.
-  - **Use product description** — When enabled, this tab automatically displays the product description.
-  - **Tab content** — Rich text content for the tab.
-  - **Tab content from page** — If assigned, replaces the content above with a Shopify page's content.
-- **Pop-up** — A link that opens a Shopify page in a popup.
-  - **Link label** — Default: `Size guide`.
-  - **Page** — The page whose content appears in the popup.
-- **Share** — Native share button.
-  - **Show label text** — Toggle.
-  - **Label** — Default: `Share`.
-- **Product rating** — Star rating from the `reviews.rating` metafield. Displays automatically when a product has reviews populated in the metafield reviews.rating (via the Shopify Product Reviews app or any compatible third-party reviews app). Nothing is shown until reviews exist.
-- **Icon with text** — Up to three rows of an icon paired with a heading. Useful for trust signals (free shipping, secure checkout, easy returns).
-  - **Layout** — **Horizontal** or **Vertical**.
-  - **Icon / image size**.
-  - For each of the three rows: heading, icon source (**Upload image** or **Built-in icon**), icon (one of: Truck, Shield, Lock, Leaf, Package, Refresh, Heart, Star, Check, Clock, Credit card), and an upload-image option.
-- **Custom Liquid** — Free-form Liquid code for app snippets or custom HTML.
-- **App blocks** — Compatible Shopify apps can expose blocks that drop in here.
-
-### Section settings
-
-Configure the layout of the Main product section:
-
-- **Show back link and breadcrumb** — Toggle the breadcrumb at the top.
-- **Desktop media width** — How wide the media column is. Options: **Small**, **Medium**, **Large**.
-- **Desktop media position** — Whether media is on the **Left** or **Right**.
-- **Desktop gallery layout** — How the media gallery is structured. Options: **Stacked**, **2 columns**, **Thumbnails**, **Thumbnail slider**.
-- **Mobile layout** — How the gallery looks on mobile. Options: **Show thumbnails**, **Hide thumbnails**, **2 columns**.
-- **Enable sticky product information on desktop** — When enabled, the product info column stays visible while the customer scrolls through media.
-- **Enable video looping** — Auto-loop product videos.
 - **Color scheme** — Default: scheme-1.
-- **Top padding** and **Bottom padding**.
+- **Top padding** / **Bottom padding** — Range: 0 to 100 px in 4 px steps. Default: 36 px each.
 
-## Special behaviors
+## Blocks
 
-- **Variant images** — When the customer picks a variant that has its own image, the gallery jumps to that image. The URL also updates with the `variant=...` parameter so the customer can share a specific variant.
-- **Cart updates without a page reload** — Clicking **Add to cart** updates the cart count in the header instantly.
-- **Selling plans** — Subscription products display a selling plan picker above the buy buttons. See [Selling plans](../../features/selling-plans/).
-- **Pickup availability** — When local pickup is configured for any of your store locations, a pickup availability box appears below the buy buttons. See [Pickup availability](../../features/pickup-availability/).
-- **Shop Pay Installments** — When the customer's store and Shop Pay setup support installments, a Shop Pay Installments banner is rendered automatically below the buy buttons. See [Shop Pay Installments](../../features/shop-pay-installments/).
+Add, remove and reorder these in the theme editor. The order you set is the order they appear in the buy box.
 
-## Sections that can be added
+### Vendor
 
-In addition to **Main product**, you can add any of the following sections to the product page:
+Limit 1. The product's vendor. No settings.
 
-- [Product recommendations](../../sections/product-recommendations/)
-- [Complementary products](../../sections/complementary-products/)
-- [Recently viewed](../../sections/recently-viewed/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [Customer reviews](../../sections/customer-reviews/)
-- [FAQ](../../sections/faq/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Newsletter](../../sections/newsletter/)
-- [Custom Liquid](../../sections/custom-liquid/)
+### Heading
+
+Limit 1. The product title. No settings.
+
+### Price
+
+Limit 1.
+
+- **Show compare-at price** — The struck-through original. Default: on.
+- **Show discount badge** — Default: on. How the badge is written is set store-wide under [Discount display](../../theme-settings/discount-display/).
+- **Tax note text** — Shown below the price when taxes are included. Default: `Tax included`. Leave blank to use the default translation.
+
+### Text
+
+A free line of copy in the buy box.
+
+- **Text** — Inline rich text. Default: `Text block`.
+- **Text style** — **Body** (default), **Subheading** or **Uppercase**.
+
+### SKU
+
+Limit 1.
+
+- **Text style** — **Body** (default), **Subheading** or **Uppercase**.
+
+### Inventory status
+
+Limit 1.
+
+- **Text style** — **Body** (default), **Subheading** or **Uppercase**.
+- **Low inventory threshold** — Below this quantity the status reads as low stock. Range: 0 to 100. Default: 10.
+- **Show inventory count** — Shows the actual number remaining. Default: on.
+
+### Variant picker
+
+Limit 1. The picker's appearance is set store-wide under [Variant picker](../../theme-settings/variant-picker/); these settings are about the size guide.
+
+- **Size guide page** — Appears as a link next to the size option and opens in a popup. To use a different guide on one product, add the page metafield `custom.size_guide` to that product; it takes priority over this setting.
+- **Size guide link label** — Default: `Size guide`.
+- **Show size guide for all options** — Shows the link on every option, not only on options named Size. Default: off.
+
+### Buy buttons
+
+Limit 1.
+
+- **Show quantity selector** — Default: on.
+- **Show dynamic checkout buttons** — Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. Default: on. See [Accelerated checkout](../../features/accelerated-checkout/).
+- **Show recipient information form for gift card products** — Gift card products can optionally be sent direct to a recipient along with a personal message. Default: on. See [Gift cards](../../features/gift-cards/).
+
+### Product description
+
+Limit 1. The description from the product itself. No settings.
+
+### Collapsible tab
+
+An accordion row in the buy box. Add as many as you need.
+
+- **Heading** — Leave blank to use the default heading for the type below.
+- **Content type** — **Description**, **Composition and care**, **Shipping and returns**, or **Custom** (default). Choose a type to use its translated default heading, or Custom to write your own.
+- **Use product description** — The tab shows the product description instead of the content below. Default: off.
+- **Tab content** — Rich text.
+- **Tab content from page** — If assigned, replaces the content above.
+
+### Pop-up
+
+A link in the buy box that opens a page's content in a modal.
+
+- **Link label** — Default: `Size guide`.
+- **Page** — The content of this page appears in the pop-up.
+
+### Share
+
+Limit 1.
+
+- **Show label text** — Default: off.
+- **Label** — Default: `Share`. See [Social sharing](../../features/social-sharing/).
+
+### Product rating
+
+Limit 1. Shows a product's star rating once the standard `reviews.rating` metafield holds a value. Nothing appears until a product has reviews. No settings.
+
+### Icon with text
+
+A row of up to three reassurance points — shipping, payment, returns.
+
+- **Layout** — **Horizontal** (default) or **Vertical**.
+- **Icon / image size** — Range: 16 to 48 px in 2 px steps. Default: 24 px.
+
+Then the same four settings for each of the three points:
+
+- **First heading**, **Second heading**, **Third heading** — Inline rich text. Defaults: `Shipping`, `Payment`, `Returns`.
+- **First icon source**, **Second icon source**, **Third icon source** — **Upload image** (default) or **Built-in icon**.
+- **First image**, **Second image**, **Third image** — Used when that source is Upload image.
+- **First icon**, **Second icon**, **Third icon** — Used when that source is Built-in icon. Choose from Truck (shipping), Shield (security), Lock (secure payment), Leaf (sustainability), Package, Refresh (returns), Heart, Star, Check (guarantee), Clock (fast) and Credit card. Defaults: Truck, Shield, Refresh.
+
+### Custom Liquid
+
+- **Liquid code** — See [Custom Liquid](../../sections/custom-liquid/).
+
+### App block
+
+Any block offered by an app installed on your store, rendered inside the buy box.
+
+## Alternate templates
+
+To give some products a different layout, duplicate the product template in `Shopify admin > Online Store > Themes > … > Edit code`, or from the theme editor's template picker, and assign it per product under the product's **Theme template** setting.
 
 ## Tips
 
-- **Order the blocks by purchase decision order.** Customers typically read in this order: image → title → price → variants → buttons → description → details. Don't bury price below the description.
-- **Use Collapsible tabs for less critical info.** Composition, care, and shipping details are better collapsed than always-visible.
-- **Trust signals matter.** The Icon with text block at the bottom of the description is a high-converting placement for shipping and returns reassurance.
+- **Order the blocks the way the decision is made.** Heading, price, variant picker, buy buttons is the spine. Everything else supports it and belongs below.
+- **Sticky product information pays off on long pages.** With a tall media column, it keeps the add-to-cart button reachable without scrolling back.
+- **Use collapsible tabs for what most shoppers skip.** Care instructions and returns policy belong there; the thing that sells the product does not.
+- **Set the size guide once.** The section setting covers the whole catalog; the `custom.size_guide` metafield handles the products that need their own.
+- **Three icons, not six.** The row is reassurance, not a feature list, and past three it stops being read.

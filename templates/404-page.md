@@ -8,45 +8,29 @@ permalink: /templates/404-page/
 
 # 404 page
 
-The **404 page** is shown when a customer visits a URL that does not exist. It uses the `404.json` template.
+Shown when a shopper reaches a URL that doesn't exist — a deleted product, a mistyped address, an old link from elsewhere. It uses the **404 page** section, which offers a message, a way back and a row of products.
 
-## URL
+## Section settings
 
-Any URL that does not match a real page on the storefront. Customers do not navigate here intentionally; they arrive via a typo or an outdated link.
-
-## Sections included by default
-
-1. **404 page** — The error message and navigation back, optionally with a featured collection.
-
-## 404 page section
-
-### Content
-
-- **Heading** — The headline shown to the customer. Default: `We can't find that page`.
-- **Subtext** — Supporting text. Default: `It looks like the page you were looking for has moved or no longer exists.`
-- **Button label** — Call-to-action button text. Default: `Back to home page`.
-- **Button link** — The URL the button points to. Defaults to the home page if left empty.
-
-### Featured collection
-
-The 404 page can show a row of products from a chosen collection to keep the customer engaged.
-
-- **Featured collection** — The collection to feature.
-- **Number of products** — Range: 0 to 12.
+- **Heading** — Default: `We can't find that page`.
+- **Subheading** — Default: `It looks like the page you were looking for has moved or no longer exists.`
+- **Button label** — Default: `Back to home page`.
+- **Button link** — Where the button goes. Leave empty for the home page.
+- **Featured collection** — The collection whose products are offered below the message.
+- **Number of products** — Range: 2 to 8. Default: 4.
 - **Products section heading** — Default: `You might like`.
-- **Show product vendor** — Toggle.
-
-### Other
-
+- **Show product vendor** — Default: off.
 - **Color scheme** — Default: scheme-1.
 
-## Special behaviors
+## Why the product row matters
 
-- **Built-in HTTP 404 status** — The 404 template is automatically associated with HTTP 404 responses. Search engines recognize this so unknown URLs are not mistakenly indexed.
-- **Search box in the header** — Customers can immediately search from the header even on the 404 page.
+A 404 is a shopper who wanted something specific and didn't get it. Without a route onward, most of them leave.
+
+Setting **Featured collection** turns the page into a soft landing: an apology, a way home, and something to look at. Choose a broad collection — best sellers or new arrivals — because you have no idea what the shopper was after.
 
 ## Tips
 
-- **Feature your top sellers** in the featured collection. Most customers landing on a 404 are mistakenly typing a URL or following a stale link; a strong product surface keeps them on the store.
-- **Don't be apologetic to the point of being long.** A short heading and one supporting sentence works. Long apologetic copy reads as theatrical.
-- **Test the page** by visiting a non-existent URL like `https://yourstore.com/this-doesnt-exist`.
+- **Keep the message plain.** A 404 is a small failure on your side; humour lands badly on a shopper who has been sent somewhere that doesn't exist.
+- **Set up redirects for URLs you retire.** A 404 is the fallback, not the plan. When you delete a product or rename a collection, add a redirect under `Shopify admin > Online Store > Navigation > URL redirects` so the old link still works.
+- **Check it after a catalog change.** Deleting products in bulk is the usual way a store starts generating 404s.
+- **Four products is plenty.** This page is a recovery, not a collection page.

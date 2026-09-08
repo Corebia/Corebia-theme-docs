@@ -8,58 +8,54 @@ permalink: /templates/search-page/
 
 # Search page
 
-The **Search page** displays the results of a customer's search query. It uses the `search.json` template.
+Where a shopper lands after pressing Enter in the header's search field. It uses the **Main search** section: the same filterable, sortable grid as a collection page, plus an empty state for searches that return nothing.
 
-## URL
+The dropdown that appears while typing is configured separately, in [Predictive search](../../sections/predictive-search/).
 
-`https://yourstore.com/search?q=<query>`
+## Section settings
 
-## Sections included by default
-
-1. **Main search** — The results grid with filters, sort, and an empty-state featured collection.
-
-## Main search section
+- **Show back link and breadcrumb** — Default: on.
 
 ### Filters and toolbar
 
-- **Show filters** — Toggle the filter panel. Filters are inferred from search results.
-- **Show sort options** — Toggle the sort dropdown.
+- **Show filters** — Default: on.
+- **Show sort options** — Default: on.
 
 ### Product grid
 
-- **Products per page** — How many products to load per page.
-- **Desktop columns** — Options: **2 columns**, **3 columns**, **4 columns**.
-- **Show vendor** — Display vendor on each card.
-- **Show second image on hover** — Displays alternate product image on hover.
+- **Products per page** — Range: 8 to 48 in steps of 4. Default: 24.
+- **Desktop columns** — **2**, **3** or **4 columns** (default).
+- **Show vendor** — Default: off.
+- **Show second image on hover** — Default: on.
 
 ### Empty state
 
-- **Featured collection (shown when no results)** — When a search returns no products, this collection is shown as a fallback. Default: leave blank to show no fallback.
+- **Featured collection (shown when no results)** — The collection whose products are offered when a search returns nothing.
 
-### Other
+### Colors
 
-- **Show back link and breadcrumb** — Toggle.
 - **Color scheme** — Default: scheme-1.
 
-## Special behaviors
+## Filtering search results
 
-- **What gets searched** — Products, blog articles, and pages, as configured in `Shopify admin > Online Store > Navigation > Search and discovery`.
-- **Predictive search** — As the customer types in the header search box, predictive suggestions appear inline. The full Search page is the destination after pressing Enter or clicking through. See [Search](../../features/search/).
-- **Filter persistence** — Selected filters appear in the URL.
-- **Empty state** — When a search returns no results, an empty state encourages further exploration. The optional **Featured collection** appears below.
+Search results carry the same filters as a collection page, configured in Shopify's free [Search & Discovery](https://apps.shopify.com/search-and-discovery) app. This is a Theme Store requirement and it is on by default: a shopper who searches "shirt" and gets ninety results needs to narrow them the same way they would in a collection.
 
-## Sections that can be added
+## The empty state
 
-You can add any of these sections below the **Main search** section:
+A search with no matches is a moment where shoppers leave. Setting **Featured collection** turns a dead end into a route back: the page explains that nothing matched and offers that collection's products instead.
 
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Newsletter](../../sections/newsletter/)
-- [FAQ](../../sections/faq/)
-- [Custom Liquid](../../sections/custom-liquid/)
+Pick something broad — best sellers, new arrivals, or the catalog's most popular category. A narrow collection here is unlikely to match what the shopper was after.
+
+## Improving what search finds
+
+What matches, and in what order, is Shopify's, not the theme's. To improve it:
+
+- Write product titles the way shoppers describe things, not the way your supplier does.
+- Add synonyms in Search & Discovery, so "trainers" finds "sneakers".
+- Use product types and tags consistently; both are searched.
 
 ## Tips
 
-- **Set a featured collection** — A blank empty state sends customers away. Featuring your top sellers or new arrivals on no-results is a quick win.
-- **Synonyms in admin** — Configure synonyms in the Search & Discovery app so common typos and alternate names map to the right products.
-- **Test searches** — Search for products by alternate names ("jumper" vs "sweater"). Surprises here mean missed sales.
+- **24 results per page suits search.** A shopper who searched has a specific intent and scans quickly; more per page means less pagination in the way.
+- **Four columns is right here** even if your collections use three. Search results are scanned rather than browsed.
+- **Set the empty state before launch.** It is invisible until it matters, and by then the shopper is already leaving.

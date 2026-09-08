@@ -8,48 +8,37 @@ permalink: /templates/cart-page/
 
 # Cart page
 
-The **Cart page** is the dedicated review-and-edit page for the shopping cart. It uses the `cart.json` template.
+The cart uses the **Main cart** section. It has almost no settings, because nearly everything on it follows your store rather than the theme.
 
-Pave does not use a slide-out cart drawer; clicking the cart icon takes the customer to this dedicated page.
-
-## URL
-
-`https://yourstore.com/cart`
-
-## Sections included by default
-
-1. **Main cart** — The full cart with line items, totals, and checkout.
-2. **Recently viewed** — A row of products the customer recently looked at.
-
-## Main cart section
+## Section settings
 
 - **Color scheme** — Default: scheme-1.
 
-The cart's structure (line items, quantities, totals, checkout button, dynamic checkout buttons) is built into the section and is not configurable from the editor.
+## Blocks
 
-## Special behaviors
+- **App block** — Any block offered by an installed app. Upsell and shipping-estimate apps usually go here.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
 
-- **Live cart updates** — Changing a quantity or removing a line updates the totals without a page reload.
-- **Discount code field** — Shown when **Enable discount code field** is on in **Theme settings > Cart**. See [Discount codes](../../features/discounts/).
-- **Selling plan summaries** — Subscription line items show their selected selling plan and the recurring delivery cadence. See [Selling plans](../../features/selling-plans/).
-- **Accelerated checkout buttons** — Shop Pay, PayPal, Apple Pay, Google Pay buttons appear under the main checkout button when those payment methods are enabled in your store. See [Accelerated checkout](../../features/accelerated-checkout/).
-- **Unit pricing** — When a product is configured with a unit price (per kg, per liter, per item), the unit price is shown next to the line item. See [Unit pricing](../../features/unit-pricing/).
-- **Cart order note** — A free-form note field where customers can leave a message for you (gift wrapping, delivery instructions). The note travels through to the order in your admin.
+## What the cart always includes
 
-## Sections that can be added
+None of these need configuring; they appear when the store or the line item calls for them.
 
-You can add any of these sections below the **Main cart** section:
+- **Line quantities**, editable in place, with a remove control.
+- **Order notes**, for a message to you with the order.
+- **A discount code field**, when **Show discount code field** is on under [Cart settings](../../theme-settings/cart-settings/).
+- **Discounts**, shown per line and on the order total as they apply. See [Discount codes](../../features/discounts/).
+- **Subscription details** on any line bought on a selling plan — the plan name and its delivery frequency. See [Selling plans](../../features/selling-plans/).
+- **Unit prices** where a product has them, for markets that require price per unit. See [Unit pricing](../../features/unit-pricing/).
+- **Accelerated checkout buttons**, showing whichever methods your store accepts. See [Accelerated checkout](../../features/accelerated-checkout/).
+- **Taxes and shipping note**, as Shopify calculates them for the shopper's market.
 
-- [Recently viewed](../../sections/recently-viewed/)
-- [Product recommendations](../../sections/product-recommendations/)
-- [FAQ](../../sections/faq/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Newsletter](../../sections/newsletter/)
-- [Custom Liquid](../../sections/custom-liquid/)
+## The empty cart
+
+An empty cart shows a message and a route back to shopping rather than a blank page. It needs no setup.
 
 ## Tips
 
-- **Recently viewed below the cart** is a high-converting placement — customers reviewing their order are primed to add one more item.
-- **Empty cart state** — When the cart is empty, the section shows a clear empty state with a link back to the storefront.
-- **Tax inclusion** — Whether prices on the cart show inclusive or exclusive of tax depends on your `Shopify admin > Settings > Taxes and duties` configuration.
+- **Keep app blocks below the totals.** An upsell above the checkout button competes with the thing the shopper came to do.
+- **Don't hide the discount field if you run promotions.** A shopper with a code who can't find where to put it will leave the checkout to look for one.
+- **Order notes are read by you, not by Shopify.** Nothing acts on them automatically — they arrive with the order in your admin.
+- **Test the cart with a subscription product** if you sell any. The plan name and frequency have to be right before a shopper commits to a recurring charge.

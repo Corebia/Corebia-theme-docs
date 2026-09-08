@@ -2,38 +2,63 @@
 title: Featured product
 layout: default
 parent: Sections
-nav_order: 14
+nav_order: 16
 permalink: /sections/featured-product/
 ---
 
 # Featured product
 
-The **Featured product** section displays a single product with full purchasing controls — variant picker, quantity selector, buy buttons — in any page that supports sections. Use it for a hero product on the home page, a single-product landing page, or a campaign focus.
+**Featured product** puts one complete, buyable product anywhere sections are allowed — a home page, a landing page, a blog article. It is the product page's buy box, moved.
 
-It is essentially the [Main product](../../templates/product-page/) section condensed for use outside the product page.
+It carries the same blocks as the [Product page](../../templates/product-page/), including the variant picker, the buy buttons and app blocks, so a shopper can choose a variant and add to cart without leaving the page they're on.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Product** — The product to display.
+- **Product** — The product to feature.
+- **Show back link and breadcrumb** — Default: on. Usually worth turning **off** here: on a home page there is nothing to go back to.
+
+### Media
+
+- **Desktop media width** — **Small**, **Medium** (default) or **Large**.
+- **Desktop media position** — **Left** (default) or **Right**.
+- **Desktop gallery layout** — **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**.
+- **Mobile layout** — **Show thumbnails** (default), **Hide thumbnails** or **2 columns**.
+- **Use sticky product information on desktop** — Keeps the buy box in view while the media column scrolls. Default: on.
+- **Use video looping** — Default: off.
+
+### General
+
+- **Color scheme** — Default: scheme-1.
+- **Top padding** / **Bottom padding** — Range: 0 to 100 px in 4 px steps. Default: 36 px each.
 
 ## Blocks
 
-The featured product section accepts the same blocks as **Main product**, including:
+The block set is identical to the product page's, and each block is documented once, there:
 
-- Vendor
-- Title
-- Price
-- Variant picker
-- Buy buttons
-- Product description
-- Collapsible tabs
-
-It also supports **app blocks** so you can drop in review summaries, size charts, or other app-provided UI.
-
-For block-by-block settings, see [Product page](../../templates/product-page/).
+| Block | Limit |
+|---|---|
+| [Vendor](../../templates/product-page/#vendor) | 1 |
+| [Heading](../../templates/product-page/#heading) | 1 |
+| [Price](../../templates/product-page/#price) | 1 |
+| [Text](../../templates/product-page/#text) | — |
+| [SKU](../../templates/product-page/#sku) | 1 |
+| [Inventory status](../../templates/product-page/#inventory-status) | 1 |
+| [Variant picker](../../templates/product-page/#variant-picker) | 1 |
+| [Buy buttons](../../templates/product-page/#buy-buttons) | 1 |
+| [Product description](../../templates/product-page/#product-description) | 1 |
+| [Collapsible tab](../../templates/product-page/#collapsible-tab) | — |
+| [Pop-up](../../templates/product-page/#pop-up) | — |
+| [Share](../../templates/product-page/#share) | 1 |
+| [Product rating](../../templates/product-page/#product-rating) | 1 |
+| [Icon with text](../../templates/product-page/#icon-with-text) | — |
+| [Custom Liquid](../../templates/product-page/#custom-liquid) | — |
+| App block | — |
 
 ## Tips
 
-- **Use it for a single hero product.** The featured product is most effective when the rest of the page is editorial — paired with a hero banner and brand story.
-- **Don't use as a replacement for product pages.** Customers expect a full product page at a unique URL for SEO and shareability. Use the featured product for promotion only.
-- **Match the section's color scheme** to surrounding content for visual continuity.
+- **Trim the blocks.** A featured product doesn't need everything the product page carries. Heading, price, variant picker and buy buttons is usually the whole job; collapsible tabs and icon rows belong on the product page itself.
+- **Turn off the back link and breadcrumb.** They are on by default because the same defaults serve the product page, where they belong.
+- **Use it for one hero product**, a launch or a bundle. For a row of several products use [New arrivals](../new-arrivals/).
+- **It is not a replacement for the product page.** Search engines index the product page, not this section, and shoppers arriving from Google land there.

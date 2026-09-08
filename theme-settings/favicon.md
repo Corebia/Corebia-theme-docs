@@ -8,57 +8,42 @@ permalink: /theme-settings/favicon/
 
 # Favicon
 
-The **Favicon** category in **Theme settings** controls the small icon that appears in browser tabs and the image that is used when your store is shared on social media.
+Two images that represent your store outside the storefront: in a browser tab, and in a link preview.
 
 ## Settings
 
-- **Favicon image** — The icon shown in browser tabs and bookmarks. `32 by 32 px .png recommended`.
-- **Social share image** — Used as the Open Graph and Twitter image when a page does not have its own. `1200 by 628 px recommended`.
+- **Favicon image** — 32 x 32px .png recommended.
+- **Social share image** — Used as the Open Graph and Twitter image when a page does not have its own. 1200 x 628px recommended.
 
-## Where each image is used
+## Favicon
 
-### Favicon image
+The small icon in the browser tab, the bookmarks bar and the mobile home screen. Shopify resizes what you upload, but 32 x 32 px is the size it is actually seen at, so design for that:
 
-Rendered in the `<link rel="icon">` tag in the page head. Browsers use it for:
+- **A mark, not a wordmark.** Text is unreadable at 32 px. Use a symbol, a monogram or a single letter.
+- **High contrast, few colors.** Fine detail turns to mud.
+- **Transparent background** so it works on light and dark browser themes.
 
-- The icon next to the page title in browser tabs.
-- The icon next to bookmarks.
-- The home screen icon when customers add your site to their phone's home screen.
+## Social share image
 
-### Social share image
+What appears when a link to your store is posted on social media or pasted into a messaging app.
 
-Rendered as the `og:image` and `twitter:image` meta tag in the page head. Used by:
+This setting is the **fallback**. A page that has its own image uses it instead:
 
-- Facebook, LinkedIn, X, WhatsApp, Slack, and other social and messaging platforms when your store URL is shared.
-- Search engine result snippets that show preview images.
+| Page | Image used |
+|---|---|
+| Product page | The product's featured image |
+| Collection page | The collection image |
+| Article | The article's featured image |
+| Page, home page, everything else | This setting |
 
-If a specific page (product, article, or page with a featured image) has its own image, that image is used for the share preview. The **Social share image** is the fallback used when a page has no image of its own (for example, the home page or a policy page).
+So the setting matters most for your home page, which is the link people share most often.
 
-## Recommendations
+- **1200 x 628 px** is the ratio most platforms crop to.
+- **Keep anything important away from the edges.** Different platforms crop differently, and the safe area is the middle.
+- **Avoid text.** It is often rendered small, and some platforms overlay their own.
 
-### Favicon
+## Tips
 
-- **Format:** `.png` with transparency.
-- **Size:** `32 by 32 px`. Browsers downscale larger images automatically, but uploading at the target size keeps the image crisp.
-- **Design:** A simple mark, monogram, or single letter works best at this size. Detailed logos turn into blurry blobs.
-
-### Social share image
-
-- **Size:** `1200 by 628 px` (1.91:1 ratio). This is the recommended Open Graph size and renders cleanly across Facebook, LinkedIn, and X.
-- **Format:** `.jpg` or `.png`. JPEG keeps file size lower for photography; PNG is better for graphics and text.
-- **Composition:** Center your important content. Some platforms crop the edges in different ways.
-- **Text overlays:** Keep text large and high-contrast. The image is often shown at small sizes (200–300 px wide) in feed previews.
-
-## How to upload
-
-1. Open the theme editor.
-2. Click **Theme settings** in the left sidebar.
-3. Open the **Favicon** category.
-4. Click **Favicon image > Select image** to upload your favicon.
-5. Click **Social share image > Select image** to upload the share image.
-6. Click **Save**.
-
-## Verifying
-
-- **Favicon:** Open your storefront in a browser. The favicon should appear in the tab. If it doesn't, hard-refresh with `Ctrl+F5` (Windows) or `Cmd+Shift+R` (Mac) to bypass the browser cache.
-- **Social share image:** Use a tool like [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) or [X Card Validator](https://cards-dev.twitter.com/validator) to test how your URL renders, and to clear the cache after updating the image.
+- **Set both before launch.** A missing favicon shows a generic globe next to your tab; a missing share image gives a link preview with no picture at all.
+- **Check the preview after changing it.** Social platforms cache aggressively. Facebook's Sharing Debugger and X's card validator will force a re-fetch.
+- **The share image is not the logo.** It has room for a photograph, and a photograph performs better in a feed than a mark on a plain background.

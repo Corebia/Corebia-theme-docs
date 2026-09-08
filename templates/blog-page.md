@@ -8,63 +8,54 @@ permalink: /templates/blog-page/
 
 # Blog page
 
-The **Blog page** lists all articles in a blog. It uses the `blog.json` template.
+The list of articles in a blog, using the **Main blog** section. Everything on the card — image, date, author, excerpt — is a switch, and every string is editable.
 
-## URL
+## Section settings
 
-`https://yourstore.com/blogs/<blog-handle>`
-
-## Sections included by default
-
-1. **Main blog** — The grid of article cards with pagination.
-
-## Main blog section
+- **Color scheme** — Default: scheme-1.
 
 ### Layout
 
-- **Heading** — The blog heading.
-- **Number of columns** — Range slider.
-- **Articles per page** — Number of articles to load per page. Pagination loads more.
-- **Image ratio** — Options: **Portrait (3:4)**, **Landscape (16:9)**, **Square (1:1)**.
+- **Heading** — Leave blank to use the blog's own title.
+- **Number of columns** — Range: 2 to 4. Default: 3.
+- **Articles per page** — Range: 3 to 24 in steps of 3. Default: 9.
+- **Image ratio** — **Portrait (3:4)** (default), **Landscape (4:3)** or **Square (1:1)**.
 
 ### Card elements
 
-Toggle which fields are shown on each article card.
-
-- **Show featured image** — Toggle.
-- **Show title** — Toggle.
-- **Show date** — Toggle.
-- **Show author** — Toggle.
-- **Show excerpt** — Toggle.
-- **Excerpt word count** — Cap on excerpt length.
-- **Date format** — Options: **January 01, 2026**, **01 January 2026**, **01/01/2026** (DMY), **01/01/2026** (MDY), **2026-01-01**.
+- **Show featured image** — Default: on.
+- **Show heading** — Default: on.
+- **Show date** — Default: on.
+- **Show author** — Default: off.
+- **Show excerpt** — Default: on.
+- **Excerpt word count** — Range: 10 to 50 in steps of 5. Default: 20.
+- **Date format** — `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
 
 ### Text content
 
-- **Article count label** — Word used after the article count. Default: `articles`.
+Every visible string, so the blog can be reworded without translations.
+
+- **Article count label** — Leave blank to show a correctly pluralized count (1 article / 2 articles).
 - **Read more button text** — Default: `Read more`.
-- **Empty state message** — Shown when the blog has no articles. Default: `No articles yet`.
+- **Empty state message** — Default: `No articles yet`.
 - **Previous page text** — Default: `Previous`.
 - **Next page text** — Default: `Next`.
 - **Pagination label** — Default: `Page`.
 
-### Other
+## Blocks
 
-- **Color scheme** — Default: scheme-1.
+- **App block** — Any block offered by an installed app.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
 
-## Sections that can be added
+## Excerpts
 
-In addition to **Main blog**, you can add any of these sections:
+The excerpt comes from the article's own **Excerpt** field in `Shopify admin > Content > Blog posts`. When that is empty, the theme takes the opening of the article body and trims it to the word count set above.
 
-- [Newsletter](../../sections/newsletter/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [FAQ](../../sections/faq/)
-- [Custom Liquid](../../sections/custom-liquid/)
+Writing a real excerpt is worth the minute: the automatic version starts wherever the article starts, which is often mid-thought.
 
 ## Tips
 
-- **Show the excerpt** to give customers a reason to click into a specific article. Without the excerpt, only the title and image carry information.
-- **Image ratio** — Pick **Landscape (16:9)** for editorial content where the image carries the article. **Portrait (3:4)** works for fashion editorials.
-- **Date format** — Match the format to your locale. The MDY and DMY formats both render as `01/01/2026` but differ in interpretation; pick the one matching customer expectation.
+- **Pick a date format and use it everywhere.** The article page has its own date format setting; two different formats across two pages of the same blog looks like an error.
+- **Author is off by default** because most store blogs are written by the store. Turn it on if you publish guest pieces or if the writer is part of the appeal.
+- **Match the image ratio to the blog's photography.** Portrait suits editorial and fashion; landscape suits how-to and product photography.
+- **Nine per page and three columns** fill three even rows. Choosing counts that divide by your column count avoids a ragged last row.

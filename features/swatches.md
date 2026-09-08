@@ -8,45 +8,61 @@ permalink: /features/swatches/
 
 # Swatches
 
-Pave's variant picker supports color swatches that display a colored chip or a small variant image alongside the option name, giving customers a visual way to pick variants.
+A swatch shows a variant's colour or material as a chip rather than as a word — so a shopper picks "the sand one" by looking at it.
 
 ## Where swatches appear
 
-- The **Variant picker** block on the [Product page](../../templates/product-page/) and [Featured product section](../../sections/featured-product/).
+- **In the variant picker**, on the [Product page](../../templates/product-page/) and in [Featured product](../../sections/featured-product/). Their size and shape are set store-wide under [Variant picker](../../theme-settings/variant-picker/).
+- **On product cards**, in every grid in the store, when **Show color swatches on cards** is on under [Product cards](../../theme-settings/product-cards/). Up to five colours show; the rest are counted in a `+N` indicator. Choosing one swaps the card's image, price and link to that variant.
 
-## Configuring swatches
+## How a swatch gets its colour
 
-Swatches are powered by Shopify's product taxonomy and option metafields. There are two ways to set up swatches:
+The theme tries four things in order, and the first that gives an answer wins.
 
-### Color name → automatic chip
+### 1. Shopify's own swatch data — the one to use
 
-When the option name is **Color**, Pave attempts to interpret common color names (black, white, red, navy, etc.) and render a colored chip automatically.
+Set under `Shopify admin > Settings > Metafields and metaobjects > Product options`, where each option value can carry a colour or an image. This is Shopify's native mechanism, it works across apps and themes, and it handles both colours and pattern or material images.
 
-### Variant image → image swatch
+An option value with an **image** here shows that image as the chip — the right choice for wood grains, marbles, tweeds and prints, which no single colour can represent.
 
-If a variant has an image assigned (in `Shopify admin > Products > [product] > Variants > [variant] > Image`), Pave can use that image as the swatch chip.
+### 2. A per-product override
 
-## Variant picker settings
+For a product whose colour names are its own, add the JSON metafield `pave.color_overrides` to it: an object mapping option value names to hex colours.
 
-In the **Variant picker** block on the product page:
+```json
+{
+  "Sand": "#D8C9AE",
+  "Ink": "#1B1D26"
+}
+```
 
-- **Type** — **Dropdown** (compact picker for many variants) or **Buttons** (visual buttons, the default for small variant counts).
-- **Color option display** — **Color chip (dot + name)** shows the swatch alongside the color name. **Text buttons only** disables swatches and shows just text.
+Keys are matched case-insensitively against the option value name. Define the metafield once under `Shopify admin > Settings > Metafields and metaobjects > Products`, then fill it in only on the products that need it.
+
+### 3. The theme's built-in colour names
+
+If neither of the above is set, the theme recognises around thirty common colour names, in English and Spanish, and draws the chip from those.
+
+This is a convenience, not a strategy: it covers the likes of `black`, `navy`, `beige`, `negro` and `crudo`, and it will not know your house names.
+
+### 4. Nothing
+
+An option value the chain can't resolve falls back to a neutral chip with the value's name beside it. The picker still works; it just isn't visual for that value.
 
 ## Tips
 
-- **Use the option name "Color"** for color options. Pave's swatch detection keys on this name. Variations like "Colour" (British spelling) or "Shade" do not trigger swatch rendering — rename them in your product admin.
-- **Set a variant image for every color**, even if the only difference is the color. Without a variant image, the swatch falls back to a CSS chip and may not exactly match your product photography.
-- **Don't mix swatch types in one option.** If half your colors have a variant image and half don't, the picker looks inconsistent. Either set images for all colors, or rely entirely on automatic chips.
-- **Keep variant counts manageable.** A 30-color variant picker is overwhelming. Consider grouping related variants into a parent product and using a separate dropdown for shade.
+- **Set Shopify's swatch data and stop there.** It is the only step of the four that is portable, that works for images as well as colours, and that doesn't need per-product work.
+- **Use images for anything that isn't flat colour.** A single hex for a leopard print or an oak veneer is worse than no swatch.
+- **Be consistent within an option.** Half the colours as real swatches and half as neutral fallbacks looks broken — more than either would alone.
+- **Treat the built-in dictionary as a safety net.** It stops a store looking unfinished before you have set anything up; it isn't meant to be the final state.
 
 ## Troubleshooting
 
-- **My swatches show as plain buttons** — Check that the option name is exactly "Color" and that **Color option display** is set to **Color chip (dot + name)** in the Variant picker block.
-- **The color chip doesn't match my product** — The chip is generated from the color name. For exact matching, upload a variant image for that variant.
-- **Swatches disappeared after a theme update** — Open the theme editor and reselect the **Variant picker** block to confirm settings still match. Swatch behavior is controlled by block settings.
+- **A swatch shows as a plain chip with the name beside it** — nothing in the chain resolved that value. Set it in Shopify's product options metafield, or add it to `pave.color_overrides` on that product.
+- **The colour is close but not right** — you are getting step 3, the built-in dictionary. Set the real value in Shopify's swatch data.
+- **No swatches at all on cards** — check **Show color swatches on cards** under [Product cards](../../theme-settings/product-cards/), and check the product actually has a colour option.
 
 ## Related
 
-- [Product page template reference](../../templates/product-page/) — Variant picker block reference.
-- [Product media](../product-media/) — How variant images are configured.
+- [Variant picker](../../theme-settings/variant-picker/) — swatch size and out-of-stock behaviour.
+- [Product cards](../../theme-settings/product-cards/) — swatches in grids.
+- [Product media](../product-media/) — variant images and how they're chosen.

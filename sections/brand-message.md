@@ -8,33 +8,36 @@ permalink: /sections/brand-message/
 
 # Brand message
 
-The **Brand message** section pairs a large editorial photograph with a heading, supporting text, and a call-to-action button. Use it for an "about us" moment, a manifesto, or a key collection promotion.
+**Brand message** pairs a block of copy with a single image, side by side. It is the section for saying something in sentences — what you make, how, or why — rather than showing a product.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-### Image
-
-- **Image** — The accompanying photograph.
-
 ### Text
 
-- **Subtitle** — Small uppercase text shown above the heading. Default: `ATELIER`.
-- **Heading** — The main heading. Default: `Crafted with intention`.
-- **Text** — Rich text body copy. Default: a sample paragraph about thoughtful design.
-- **Button label** — The call-to-action button text. Default: `Shop now`.
-- **Button link** — The URL the button points to.
+- **Subheading** — Small text above the heading. Empty by default.
+- **Heading** — Default: `Crafted with intention`.
+- **Text** — Rich text. Ships with sample copy; replace it before you go live.
+- **Button label** — Default: `Shop now`.
+- **Button link** — Default: `/collections/all`.
+
+### Image
+
+- **Image** — The image beside the text.
+- **Image position** — **Text first** (default) or **Image first**.
 
 ### Colors
 
-- **Color scheme** — The color scheme applied to the section. Default: scheme-2.
+- **Color scheme** — Default: scheme-1.
 
-### Layout
+### Spacing
 
-- **Image position** — Whether the image appears first (left) or after the text (right). Options: **Image first**, **Text first**.
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Tips
 
-- **Replace the default copy.** "Crafted with intention" is a placeholder. Pave does not ship with copy intended for production use.
-- **Subtitle is short.** It works best with one or two words in uppercase.
-- **Image cropping** — The image is rendered at a portrait crop on desktop. Use a vertical photograph or one with content in the center.
-- **Image position alternation** — If you use multiple **Brand message** sections on the same page, alternate the **Image position** to create rhythm.
+- **Replace the default copy.** The sample text ships with the theme and reads as sample text. Anything published with it still in place looks unfinished.
+- **Keep the subheading to two or three words.** It is set small and uppercase; a sentence there turns into a smudge.
+- **Alternate the image position** if you use this section more than once on a page. Two identical layouts stacked read as a repeat rather than a rhythm.
+- **One button, one job.** The button is the only call to action in the section, so send it to the one place the copy has earned.

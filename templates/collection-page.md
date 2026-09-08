@@ -8,71 +8,58 @@ permalink: /templates/collection-page/
 
 # Collection page
 
-The **Collection page** displays the products inside a single collection, with filters, sort options, and a product grid. It uses the `collection.json` template.
+The collection page is built from the **Main collection** section: an optional hero banner using the collection's own image, then a filterable, sortable product grid with a sidebar.
 
-## URL
+## Section settings
 
-`https://yourstore.com/collections/<collection-handle>`
+- **Show back link and breadcrumb** — Default: on.
 
-## Sections included by default
-
-1. **Main collection** — The collection grid with filters and sort.
-
-## Main collection section
-
-### Hero banner area
+### Hero banner
 
 - **Show hero banner** — Uses the collection image as a full-width banner. Default: on.
-- **Hero height** — Options: **Small (21:9)**, **Medium (16:9)**, **Large (16:9 tall)**.
-- **Mobile image (optional)** — Recommended ratio: 4:5 or 3:4. Falls back to collection image if empty.
-- **Image focal point** — Options: **Top**, **Center**, **Bottom**, **Left**, **Right**.
-- **Text position** — Options: **Bottom center**, **Center**, **Bottom left**.
-- **Hero overlay darkness** — Range slider.
-- **Show collection description** — Toggle the collection description text.
+- **Hero height** — **Small (35% of screen height)**, **Medium (50%)** (default) or **Large (65%)**.
+- **Mobile image (optional)** — 3:4 aspect ratio recommended. Falls back to the collection image.
+- **Image focal point** — **Use the image's focal point** (default), **Top**, **Center**, **Bottom**, **Left** or **Right**. The default follows the crop set on the image in your Files area.
+- **Text position** — **Bottom center** (default), **Center** or **Bottom left**.
+- **Hero overlay darkness** — Range: 0% to 80% in 5% steps. Default: 35%.
+- **Show collection description** — Default: on.
 
 ### Filters and toolbar
 
-- **Show filters** — Toggle the filter panel. Filters come from your Shopify admin filtering configuration. See [Search and filtering](../../features/search/).
-- **Show sort options** — Toggle the sort dropdown.
+- **Show filters** — Default: on.
+- **Sidebar navigation** — A menu shown at the top of the sidebar, above the filters.
+- **Show sort options** — Default: on.
 
 ### Product grid
 
-- **Products per page** — How many products to load per page. Pagination loads more.
-- **Desktop columns** — Options: **2 columns**, **3 columns**, **4 columns**.
-- **Show vendor** — Display vendor on each card.
-- **Show second image on hover** — Displays alternate product image on hover.
-- **Show quick view button** — Adds a quick-view button on hover.
+- **Products per page** — Range: 4 to 24 in steps of 2. Default: 12.
+- **Desktop columns** — **2**, **3** (default) or **4 columns**.
+- **Show vendor** — Default: off.
+- **Show second image on hover** — Displays the alternate product image on hover. Default: on.
+- **Show quick view button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/); this setting can only turn it off for this grid, not on.
 
-### Other
+### Colors
 
-- **Show back link and breadcrumb** — Toggle.
 - **Color scheme** — Default: scheme-1.
 
-## Special behaviors
+## Blocks
 
-- **Filter persistence** — Selected filters appear in the URL as query params, so customers can bookmark filtered views.
-- **Sort persistence** — Same as filters; sort option is reflected in the URL.
-- **Filter drawer on mobile** — Filters open in a slide-in drawer on small screens.
-- **Pagination** — Customers click through pages; the URL updates with the `page=` parameter.
-- **Empty state** — If a collection has no products that match the current filters, a clear empty state is shown with a way to clear filters.
+- **App block** — Any block offered by an installed app.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
 
-## Sections that can be added
+## Filters come from Shopify
 
-You can add any of these sections below the **Main collection** section:
+The filters in the sidebar are configured in Shopify's free [Search & Discovery](https://apps.shopify.com/search-and-discovery) app, not in the theme. Install it and open **Filters** to choose which of availability, price, product type, vendor and variant options appear, and in what order.
 
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [Newsletter](../../sections/newsletter/)
-- [FAQ](../../sections/faq/)
-- [Custom Liquid](../../sections/custom-liquid/)
+**Show filters** here only controls whether the theme renders them. With no filters configured in the app, the sidebar shows nothing to filter by.
+
+## The collection image
+
+The hero uses the image set on the collection under `Shopify admin > Products > Collections`. A collection with no image renders no hero, whatever this setting says.
 
 ## Tips
 
-- **Configure filters in your admin.** `Shopify admin > Online Store > Navigation > Search and discovery` (or via the Search & Discovery app) is where you control which filters appear.
-- **Hero banner per collection** — Each collection can have its own hero image. Set it in `Shopify admin > Products > Collections > [collection] > Image`.
-- **Products per page** — 24 to 36 is typical. Lower numbers force more pagination clicks; higher numbers slow down initial load on slow connections.
-
-## Catalog template
-
-The catalog page (`/collections/all`) uses a separate template — see [Catalog page](../catalog-page/).
+- **Set the focal point on the image, not here.** The default option follows the image's own focal point, which then applies everywhere that image is used — hero, tiles, cards.
+- **12 products per page suits most catalogs.** Fewer means more pagination; more delays the first paint on mobile without much gain.
+- **Use the sidebar navigation for sibling collections.** A shopper in "Coats" is often looking for "Jackets", and a menu at the top of the sidebar is the shortest path.
+- **Turn the hero off for utility collections.** A collection that exists to group products for a filter or a link doesn't need a banner.

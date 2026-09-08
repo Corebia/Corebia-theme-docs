@@ -31,8 +31,8 @@ The product page gallery has multiple layouts, configured in the **Main product*
 
 - **Stacked** — Media items stack vertically on desktop.
 - **2 columns** — A two-column grid.
-- **Thumbnails** — A main image with a column of thumbnails alongside.
-- **Thumbnail slider** — A main image with a horizontal thumbnail strip below.
+- **Thumbnails** — A main image with a column of thumbnails alongside. This is the default.
+- **Thumbnail slideshow** — A main image with a scrolling thumbnail strip.
 
 Mobile has its own setting: **Show thumbnails**, **Hide thumbnails**, or **2 columns**.
 

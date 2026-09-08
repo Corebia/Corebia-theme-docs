@@ -43,8 +43,8 @@ When you are ready to make Pave the live theme on your storefront:
 ## What to expect on first install
 
 - **Demo content does not transfer.** The screenshots and demo content shown on the Theme Store listing are illustrative. Your store starts with your real products, collections, and content.
-- **The chosen preset determines the initial look.** Pave ships with one default preset. After publishing, the home page shows the bundled sections (hero, new arrivals, brand message, collection list, brand image, newsletter) ready for you to populate.
-- **Sample text is left as defaults that you must edit.** Default headings such as "Crafted with intention" or "ATELIER" are placeholders intended to be replaced with your own brand copy.
+- **The chosen preset determines the initial look.** Pave ships with one preset. After publishing, the home page shows its seven bundled sections — hero banner, new arrivals, brand message, collection list, journal, brand image and newsletter — ready for you to populate. See [Home page](../../templates/home-page/).
+- **Sample text ships with the theme and must be replaced.** Default copy such as "Crafted with intention", "From the journal" and the sample paragraphs in Brand message and Rich text with image are placeholders. Anything published with them still in place reads as unfinished.
 
 ## Recommended plan and prerequisites
 

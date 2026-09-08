@@ -8,57 +8,58 @@ permalink: /theme-settings/colors/
 
 # Colors
 
-The **Colors** category in **Theme settings** controls every color used across the storefront. Pave organizes colors into reusable **color schemes**, so the same scheme can be applied to multiple sections, and editing a scheme updates every section that uses it.
+Pave uses Shopify's **color schemes**. A scheme is a complete named palette; every section then chooses which scheme it uses, through its own **Color scheme** setting. Change a color once here and it updates everywhere that scheme is in use.
 
-## How color schemes work
+The theme ships with two schemes. You can add more, rename them and delete them from the theme editor.
 
-A color scheme is a named bundle of colors (for example, "scheme-1", "scheme-2", "scheme-3"). Pave ships with three schemes by default:
-
-- **scheme-1** — Light background, dark text. The default scheme.
-- **scheme-2** — Surface background (cream), dark text.
-- **scheme-3** — Dark background, light text.
-
-In every section that has a **Color scheme** setting, you pick which scheme that section should use. Editing a scheme in **Theme settings** propagates the change everywhere it is used.
-
-To add a new scheme, click **Add color scheme** at the top of the Colors panel. To duplicate, edit, or delete a scheme, click the scheme name.
-
-## Settings inside each color scheme
-
-When you open a color scheme, you'll see the following settings, grouped under three headers.
+## Settings in a scheme
 
 ### Backgrounds
 
-- **Background** — The base background color of the scheme. Default: `#FFFFFF` (white).
-- **Background gradient** — Optional gradient layered on top of the background color. When set, takes priority over the solid background. Leave empty to use the solid background.
-- **Surface** — The secondary background color used for cards, dropdowns, and surfaces that need to stand out from the main background. Default: `#F5F5F0` (warm off-white).
+- **Background** — The page background. Default: `#FAFAF7`.
+- **Background gradient** — An optional gradient that replaces the flat background.
+- **Surface** — The second surface tier, used for cards and panels sitting on the background. Default: `#F4F2EE`.
+- **Surface elevated** — Third surface tier, for hover states and large dividers. Default: `#EDEAE3`.
 
 ### Text
 
-- **Text dark** — The primary text color, used for body copy and headings. Default: `#1A1A1A`.
-- **Text light** — The text color used on top of dark or image backgrounds (for example, the hero banner brand name). Default: `#FFFFFF`.
+- **Text dark** — The primary text color. Default: `#1A1815`.
+- **Text soft** — Secondary text: captions, supporting copy. Default: `#6B655E`.
+- **Text muted** — Metadata, microcopy, low-emphasis labels. Default: `#9C968D`.
+- **Text light** — Text placed on dark surfaces and over images. Default: `#FAFAF7`.
 
 ### Interactive
 
-- **Accent** — Used for links and inline highlights. Default: `#A66016` (warm bronze).
-- **Button fill** — The background color of primary buttons. Default: `#1A1A1A`.
-- **Button text** — The label color on primary buttons. Default: `#FFFFFF`.
-- **Outline button text** — The label color on secondary (outline) buttons. Default: `#1A1A1A`.
+- **Accent** — The theme's accent color, used for highlights and active states. Default: `#7A8F75`.
+- **Button fill** — Primary button background. Default: `#1A1815`.
+- **Button text** — Primary button label. Default: `#FAFAF7`.
+- **Outline button text** — The label on secondary, outlined buttons. Default: `#1A1815`.
 
-## Recommendations
+### Feedback states
 
-- Keep the **Text dark** color at high contrast against **Background** for accessibility. Aim for a contrast ratio of at least 4.5:1 against body text.
-- Use **Accent** sparingly. It is meant for emphasis, not as a primary surface color.
-- Pick **Outline button text** so it works against both **Background** and **Surface** — outline buttons appear on either depending on context.
-- When adding a custom scheme, copy an existing one as a starting point and tweak only the colors that need to change.
+- **Success** — Confirmations, in-stock messages. Default: `#5A7855`.
+- **Warning** — Low stock and cautions. Default: `#A66016`.
+- **Danger** — Errors, sold out, destructive actions. Default: `#8A2F2F`.
 
-## Where color schemes are used
+## Contrast is your responsibility
 
-Every Pave section that displays colored content has a **Color scheme** setting that points to one of these schemes. Examples:
+The defaults are chosen to clear the WCAG AA contrast ratio of 4.5:1 for body text. Once you change them, that is no longer guaranteed.
 
-- Header — sets the side navigation panel scheme.
-- Footer — sets the footer scheme.
-- Announcement bar — sets the bar's scheme.
-- Hero banner, Brand message, New arrivals, and most other home page sections.
-- Main product, Main collection, Main cart, and other template-level sections.
+The pairs that matter most:
 
-If you want a section to look different, change its **Color scheme** setting; you should rarely need to override individual colors.
+| Foreground | Background | Needs |
+|---|---|---|
+| Text dark | Background | 4.5:1 |
+| Text dark | Surface | 4.5:1 |
+| Text soft | Background | 4.5:1 |
+| Text light | any image overlay | 4.5:1 |
+| Button text | Button fill | 4.5:1 |
+
+Any contrast checker will tell you the ratio between two hex values. It is worth a minute per pair: low-contrast text is the most common accessibility failure on a storefront, and it costs sales before it costs anything else.
+
+## Tips
+
+- **Two schemes are usually enough.** One light, one dark, alternated down the page, gives rhythm without turning the storefront into a swatch book.
+- **Set the schemes before you build pages.** Section colors reference schemes by name, so adding a third scheme later means revisiting every section that should use it.
+- **Text muted is easy to overdo.** It is designed for metadata — a date, a SKU. Body copy set in it will fail contrast.
+- **Change Surface, not Background, when a section needs separating.** That is what the surface tiers are for, and it keeps the page background consistent.

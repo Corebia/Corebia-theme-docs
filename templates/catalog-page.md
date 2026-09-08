@@ -8,57 +8,57 @@ permalink: /templates/catalog-page/
 
 # Catalog page
 
-The **Catalog page** is the all-products view at `/collections/all`. It uses a separate `collection.all.json` template that renders the **Main catalog** section, which includes a sidebar with quick navigation and the full product grid.
+The catalog is the page at `/collections/all` — everything you sell, in one filterable grid. It uses the **Main catalog** section, which is close to the [Collection page](../collection-page/) but replaces the hero banner with a text heading and a sidebar menu.
 
-## URL
+It is an alternate template, `collection.all.json`, so editing it doesn't affect your individual collection pages.
 
-`https://yourstore.com/collections/all`
+## Section settings
 
-## Sections included by default
-
-1. **Main catalog** — The full catalog with sidebar.
-
-## Main catalog section
+- **Show back link and breadcrumb** — Default: on.
 
 ### Catalog heading
 
-- **Show catalog heading** — Display a heading above the sidebar and on mobile.
-- **Catalog heading** — The heading text. Leave empty to hide. Default: `Catalog`.
+- **Show catalog heading** — Displays a heading above the sidebar and on mobile. Default: on.
+- **Catalog heading** — Leave empty to use the collection name.
 - **Heading link** — Optional URL the heading links to.
-- **Quick navigation menu** — Menu shown at the top of the sidebar. Set to a Shopify menu (for example, the main menu) to give customers a way to filter by category from the catalog page.
+- **Sidebar navigation** — A menu shown at the top of the sidebar.
 
 ### Filters and toolbar
 
-- **Show filters** — Toggle the filter panel.
-- **Show sort options** — Toggle the sort dropdown.
+- **Show filters** — Default: on.
+- **Show sort options** — Default: on.
 
 ### Product grid
 
-- **Products per page** — How many products to load per page.
-- **Desktop columns** — Options: **2 columns**, **3 columns**, **4 columns**.
-- **Show vendor** — Display vendor on each card.
-- **Show second image on hover** — Displays alternate product image on hover.
-- **Show quick view button** — Adds a quick-view button on hover.
+- **Products per page** — Range: 4 to 24 in steps of 2. Default: 12.
+- **Desktop columns** — **2**, **3** (default) or **4 columns**.
+- **Show vendor** — Default: off.
+- **Show second image on hover** — Displays the alternate product image on hover. Default: on.
+- **Show quick view button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
 
-### Other
+### Colors
 
-- **Show back link and breadcrumb** — Toggle.
 - **Color scheme** — Default: scheme-1.
 
-## Special behaviors
+## Blocks
 
-- **Sidebar navigation** — The catalog page is unique in showing a persistent left sidebar with the quick-navigation menu, filters, and sort. Customers can scope by collection without leaving the catalog view.
-- **Mobile** — The sidebar collapses into a slide-in drawer on mobile to preserve grid space.
+- **App block** — Any block offered by an installed app.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
 
-## When to use
+## Catalog or collection?
 
-The catalog page is ideal for stores where customers want to browse the full catalog rather than dive into specific collections. If your store is collection-driven (each collection has a strong identity and customers usually arrive via a collection link), you may not need to feature the catalog page at all.
+Both show a filterable grid. The difference is what a shopper arrives expecting.
 
-## When not to use
+|  | Catalog | Collection |
+|---|---|---|
+| URL | `/collections/all` | `/collections/<name>` |
+| Opens with | A heading and the sidebar | A hero banner using the collection image |
+| Suits | Browsing everything | A curated, themed group |
 
-If your catalog is small (under ~30 products), the catalog page and the home page can feel redundant. Consider using a single Collection list section on the home page instead and routing customers directly to collections.
+Link the catalog from your navigation as "Shop all" or similar, and use collections for the routes into it.
 
 ## Tips
 
-- **Quick navigation menu** — Use a flat list of top-level collection links. Avoid deep nesting in this menu — the sidebar is a quick filter, not a full menu.
-- **Heading link** — If you want the heading to link back to the home page or a marketing landing page, set the URL here. Leave blank for a non-clickable heading.
+- **Use the sidebar navigation as the main way in.** On the catalog page it is the shopper's map of your collections, and it is the one thing this template has that the collection page's hero replaces.
+- **Filters matter more here than anywhere.** This is the page with the most products on it, so it is where a shopper most needs to narrow down. Configure them in [Search & Discovery](https://apps.shopify.com/search-and-discovery).
+- **Leave the heading empty** to let it follow the collection name, unless "All products" isn't the word you'd use.

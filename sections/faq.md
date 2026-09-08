@@ -2,36 +2,43 @@
 title: FAQ
 layout: default
 parent: Sections
-nav_order: 12
+nav_order: 14
 permalink: /sections/faq/
 ---
 
 # FAQ
 
-The **FAQ** section displays a list of expandable question and answer pairs. Use it on the home page, on a product page, or on a dedicated content page to address common questions.
+**FAQ** is an accordion of questions and answers. It takes up to fifteen items, and each one can be set to open by default.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Show heading** — Toggle the section heading.
-- **Heading** — The section heading. Default: `Frequently asked questions`.
-- **Subheading** — Optional supporting text.
-- **Heading alignment** — Options: **Left**, **Center**, **Right**.
+- **Heading** — Default: `Frequently asked questions`.
+- **Subheading** — Optional.
+- **Heading alignment** — **Left** (default), **Center** or **Right**.
+- **Show heading** — Default: on. Turn it off when the section sits under a heading of its own.
+- **Color scheme** — Default: scheme-1.
 
-The section also exposes spacing settings.
+### Spacing
+
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
-Each block is a single question and answer pair. Add blocks via **Add FAQ item**.
+Up to **fifteen** FAQ item blocks.
 
-### FAQ item
-
-- **Question** — The question text. Default: `Question`.
-- **Answer** — Rich text answer. Default: `Answer to the question.`
-- **Open by default** — When enabled, this item is expanded on page load. Useful for the most-asked question.
+- **Question** — Default: `Question`.
+- **Answer** — Rich text. Shown to customers on the storefront, so replace the sample answer with your own.
+- **Open by default** — Whether this item starts expanded. Default: off.
 
 ## Tips
 
-- **Five to eight questions** is the sweet spot. Below five, FAQ feels thin; above eight, customers stop reading.
-- **Order by popularity, not category.** The first question gets the most attention.
-- **Open the most important one** by enabling **Open by default** on a single FAQ item — typically the one about returns, shipping, or sizing.
-- **Schema benefit** — When the FAQ section is on a page, the theme outputs FAQ JSON-LD structured data, which can produce rich-result snippets in Google search.
+- **Answer the questions support actually gets.** Sizing, delivery times, returns and materials cover most of them. Questions nobody asks make the section longer without making it more useful.
+- **Order by how often it's asked**, not by category. Shoppers read the first two or three and stop.
+- **Open at most one item by default.** It shows the accordion is interactive. Opening several defeats the point of having one.
+- **On a product page, keep it product-specific.** Store-wide policies belong on a dedicated page linked from the footer, not repeated under every product.
+
+## A note on rich results
+
+Earlier versions of this section published `FAQPage` structured data for Google rich results. Google retired that feature in May 2026 — the documentation was removed, and the Rich Results Test and Search Console no longer report it — so the theme no longer emits the markup. The section is unchanged for shoppers; there is simply no longer a search feature for it to feed.

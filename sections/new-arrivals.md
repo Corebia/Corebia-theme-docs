@@ -8,42 +8,42 @@ permalink: /sections/new-arrivals/
 
 # New arrivals
 
-The **New arrivals** section displays a row of product cards under a stylized two-word heading with a brush-stroke accent. Use it on the home page to feature recent or hand-picked products.
+**New arrivals** is a hand-picked product grid with a heading and an optional "view all" link. You choose the products yourself, one block each, up to six.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-### Heading
+### Content
 
-- **First word** — The first word of the section heading. Default: `NEW`.
-- **First word size** — Size scaling of the first word.
-- **Second word** — The second word of the section heading. Default: `ARRIVALS`.
-- **Second word size** — Size scaling of the second word.
-- **Heading alignment** — Alignment of the heading. Options: **Left**, **Center**, **Right**.
+- **Heading** — Default: `New arrivals`.
+- **View all label** — Default: `View all`. Leave empty to hide the link.
+- **View all link** — Where that link points, usually a collection.
 
-### Brush stroke
+### Products
 
-- **Brush stroke color** — Color of the decorative line under the heading.
-- **Brush stroke width** — Width of the decorative line.
+- **Columns on desktop** — Range: 2 to 4. Default: 4. Mobile always shows fewer.
+- **Image ratio** — **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
+- **Show vendor** — Default: off.
+- **Show second image on hover** — Shows the product's alternate image when a shopper hovers the card. Default: on.
 
 ### Colors
 
-- **Color scheme** — The color scheme applied to the section. Default: scheme-1.
+- **Color scheme** — Default: scheme-1.
 
-### Product card
+### Spacing
 
-- **Show vendor** — When enabled, displays the product vendor on each card.
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
-Each block represents a slot for a product card. Add product blocks via **Add product**.
+Up to **six** Product blocks.
 
-### Product
-
-- **Product** — The product to feature in this slot. Leave blank to let the section pick a recent product automatically.
+- **Product** — The product to show in this slot.
 
 ## Tips
 
-- **Three to four products** is the sweet spot for a row layout. Above four, cards become small on smaller laptops.
-- **Mix featured and auto-picked products.** Pin one or two flagship products by setting the **Product** field on those blocks; leave the rest blank to surface fresh inventory automatically.
-- **The two-word heading** is a brand statement, not a description. Use it to set tone (`NEW ARRIVALS`, `JUST IN`, `BEST SELLERS`).
-- **Brush stroke** — Use it for emphasis, but a colored stroke can clash with photography. Match it to your accent color or leave it neutral.
+- **Match the block count to the columns.** Four products in four columns fill one clean row; five in four columns leaves an orphan.
+- **Choose the ratio for your photography, not for the grid.** Portrait suits clothing on a model, square suits objects shot flat, and Adapt to image is the honest choice when your catalog isn't shot consistently.
+- **Point "view all" somewhere real.** If you don't have a collection worth landing on, hide the link by clearing its label rather than sending shoppers to the whole catalog.
+- **This section doesn't auto-update.** Products are picked by hand, so a "new arrivals" row goes stale unless you revisit it. If you'd rather it maintain itself, use a collection on the [Collection page](../../templates/collection-page/) and link to it from the home page instead.

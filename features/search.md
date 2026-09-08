@@ -20,22 +20,15 @@ When the customer opens the header search bar and starts typing, Pave fetches su
 
 ### What is shown
 
-By default, predictive search returns matching products, with optional inclusion of collections, pages, and articles. Configuration is in the predictive search section settings (controlled internally by the theme).
+Matching products, and optionally collections, pages and articles.
 
-### Settings (predictive search)
+### How to configure it
 
-Predictive search reads its settings from the **Predictive search** section. The settings are:
+Open the theme editor and select the **Predictive search** section, in the header group alongside the Header. Its settings are documented in full at [Predictive search](../../sections/predictive-search/):
 
-- **Show vendor** — Toggle vendor display in suggestions.
-- **Show price** — Toggle price display.
-- **Show collections** — Include collections as suggestion type.
-- **Show pages** — Include pages.
-- **Show articles** — Include articles.
-- **Product results limit** — Cap the number of product suggestions returned.
-
-### How to configure
-
-These settings are exposed in the theme editor when you select a predictive search section in the editor (typically internal — Pave wires them up automatically).
+- **Show vendor**, **Show price** — what each product result carries.
+- **Show collections**, **Show pages**, **Show articles** — which other content types appear.
+- **Product results limit** — how many products the panel shows, from 2 to 10. Default: 4.
 
 ## Faceted filtering
 

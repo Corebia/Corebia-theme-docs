@@ -9,7 +9,7 @@ permalink: /
 # Pave theme documentation
 {: .fs-9 }
 
-Pave is a minimalist editorial Shopify theme by Corebia, designed for fashion, lifestyle, and homeware merchants who want a refined, gallery-style storefront with a focus on typography and product imagery.
+Pave is an editorial Shopify theme by Corebia, built for stores that lead with photography — fashion, lifestyle and homeware merchants who want a spacious, gallery-like storefront.
 {: .fs-5 .fw-300 }
 
 [Get started](getting-started/installation/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -19,48 +19,53 @@ Pave is a minimalist editorial Shopify theme by Corebia, designed for fashion, l
 
 ## Current version
 
-**1.0.0** — see the full [changelog](changelog/) for release notes.
+**1.0.0** — see the [changelog](changelog/) for what it includes.
 
 ## What's in this guide
 
 ### Get up and running
 
-- [Installation](getting-started/installation/) — Add Pave to your store from the Shopify Theme Store.
-- [First steps](getting-started/first-steps/) — Logo, colors, navigation, products, and going live.
+- [Installation](getting-started/installation/) — Add Pave to your store.
+- [First steps](getting-started/first-steps/) — Logo, colours, navigation, products, going live.
 
 ### Configure the theme
 
-- [Colors](theme-settings/colors/) — Color schemes used across the storefront.
-- [Typography](theme-settings/typography/) — Heading and body fonts, scaling.
-- [Logo](theme-settings/logo/) — Shop logo image and width.
-- [Favicon](theme-settings/favicon/) — Browser favicon and social share image.
-- [Social media](theme-settings/social-media/) — Profile URLs for footer icons.
-- [Product cards](theme-settings/product-cards/) — Image ratio used everywhere products are listed.
-- [Cart settings](theme-settings/cart-settings/) — Discount code field toggle.
+Settings that apply everywhere at once. Worth getting right before you build pages.
+
+- [Colors](theme-settings/colors/) — Colour schemes, used by every section.
+- [Typography](theme-settings/typography/) — Fonts and the two size scales.
+- [Logo](theme-settings/logo/) — Logo image and width.
+- [Favicon](theme-settings/favicon/) — Browser icon and social share image.
+- [Social media](theme-settings/social-media/) — Profile URLs behind the footer icons.
+- [Product cards](theme-settings/product-cards/) — Image ratio, quick add, swatches, new badge.
+- [Discount display](theme-settings/discount-display/) — How sale badges are written and coloured.
+- [Variant picker](theme-settings/variant-picker/) — Swatch style and out-of-stock behaviour.
+- [Cart settings](theme-settings/cart-settings/) — The discount code field.
 
 ### Build your pages
 
-- [Sections](sections/header/) — Document for every storefront section the theme ships.
-- [Templates](templates/home-page/) — Default pages bundled with Pave.
+- [Sections](sections/) — Every section you can add, move and configure.
+- [Templates](templates/) — Every page type the theme renders.
 
 ### Theme features
 
-- [Navigation](features/navigation/) — Main menu, side panel, multi-level menus.
+- [Navigation](features/navigation/) — The side panel, menus and nesting.
 - [Search](features/search/) — Predictive search and faceted filtering.
-- [Product recommendations](features/product-recommendations/) — Related and complementary products.
-- [Product media](features/product-media/) — Variant images, video, 3D models.
-- [Swatches](features/swatches/) — Color and image swatches in the variant picker.
-- [Selling plans](features/selling-plans/) — Subscriptions in cart and customer pages.
-- [Gift cards](features/gift-cards/) — Gift card template, QR code, Apple Wallet.
-- [Pickup availability](features/pickup-availability/) — In-store pickup display.
-- [Shop Pay Installments](features/shop-pay-installments/) — Pay-in-installments banner.
-- [Follow on Shop](features/follow-on-shop/) — Shop app follow button.
+- [Product recommendations](features/product-recommendations/) — Related and complementary.
+- [Product media](features/product-media/) — Images, video, 3D models, focal points.
+- [Swatches](features/swatches/) — Where swatch colours come from.
+- [Customer accounts](features/customer-accounts/) — The account entry point.
+- [Selling plans](features/selling-plans/) — Subscriptions in the cart.
+- [Gift cards](features/gift-cards/) — QR code, Apple Wallet, print.
+- [Pickup availability](features/pickup-availability/) — In-store pickup.
+- [Shop Pay Installments](features/shop-pay-installments/) — The instalments banner.
+- [Follow on Shop](features/follow-on-shop/) — The Shop app follow button.
 - [Accelerated checkout](features/accelerated-checkout/) — Dynamic checkout buttons.
-- [Unit pricing](features/unit-pricing/) — Per-unit price display.
-- [Discount codes](features/discounts/) — Discount code field in cart and order summary.
-- [Newsletter](features/newsletter/) — Email signup form.
+- [Unit pricing](features/unit-pricing/) — Price per unit.
+- [Discount codes](features/discounts/) — Codes, automatic discounts, how savings show.
+- [Newsletter](features/newsletter/) — The three ways to collect an address.
 - [Multi-currency and language](features/multi-currency-language/) — Country and language selectors.
-- [Social sharing](features/social-sharing/) — Share button on product pages.
+- [Social sharing](features/social-sharing/) — Share control and link previews.
 
 ### Customize the theme
 
@@ -69,9 +74,9 @@ Pave is a minimalist editorial Shopify theme by Corebia, designed for fashion, l
 
 ### Support
 
-- [Support policy](support/support-policy/) — What we cover and how to reach us.
-- [Contact](support/contact/) — Open a support ticket.
-- [FAQ](support/faq/) — Common questions and answers.
+- [Support policy](support/support-policy/) — What we cover, and how fast.
+- [Contact](support/contact/) — Get in touch.
+- [FAQ](support/faq/) — Common questions.
 
 ---
 

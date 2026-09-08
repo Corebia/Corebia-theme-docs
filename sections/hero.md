@@ -8,37 +8,47 @@ permalink: /sections/hero/
 
 # Hero banner
 
-The **Hero banner** is the full-width opening image at the top of the home page (or any page that supports sections). It pairs a large editorial photograph with a brand name overlay.
+The **Hero banner** is the full-height opening image at the top of the home page, or of any template that takes sections. It pairs a large photograph with your brand name, and can add a subheading, a vertical side rail and a scroll cue.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
 ### Image
 
-- **Background image** — The desktop background image. Recommended: `2400 by 1600 px` or larger.
-- **Mobile image (optional)** — A separate image used on mobile screens. Recommended: 3:4 or 4:5 portrait ratio. Falls back to main image.
-- **Image focal point** — The vertical focal point of the desktop image when cropped. Options: **Top**, **Center**, **Bottom**. Default: Center.
-- **Mobile image focal point** — The horizontal focal point of the mobile image. Options: **Left**, **Right**.
-- **Color scheme** — The color scheme applied to the brand text overlay. Default: scheme-1.
-- **Overlay opacity** — Darkness of the overlay layer applied on top of the image to improve text readability. Range: 0% to 80%. Default: 20%.
+- **Background image** — The desktop background image.
+- **Mobile image (optional)** — 4:5 aspect ratio recommended. Falls back to the main image.
+- **Image focal point** — Where the desktop image crops. **Top** (default), **Center** or **Bottom**.
+- **Mobile image focal point** — **Top** (default), **Center**, **Bottom**, **Left** or **Right**.
+- **Overlay opacity** — Darkens the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%.
 
-### Brand name
+### Text
 
-- **Brand name** — The large brand text shown over the image. Leave blank to use your store name. Default: `ATELIER`.
-- **Font size scale** — Scales the brand text. Range: 50% to 200%.
-- **Text position** — Position of the brand text on the image. Options: **Bottom left**, **Bottom center**.
+- **Brand name** — The large text over the image. Defaults to the shop name if empty.
+- **Subheading** — Optional one-liner below the brand name. For example, `Crafted slowly. Built to last.`
+- **Font size scale** — Scales the brand text. Range: 50% to 150% in 5% steps. Default: 100%.
+- **Text position** — **Bottom left** (default) or **Bottom center**.
+- **Color scheme** — Applied to the text overlay. Default: scheme-1.
+
+### Editorial accents
+
+- **Show side rail** — A vertical metadata strip on the left edge, desktop only. Default: on.
+- **Side rail text** — Defaults to the shop name if empty.
+- **Show scroll indicator** — Default: on.
+- **Scroll indicator label** — Default: `Scroll`.
 
 ## Tips
 
-- **Use a high-resolution image.** The hero spans the full viewport on every screen. Anything smaller than 2400 px wide will look soft on large desktop displays.
-- **Plan for the brand name overlay.** Photographs with empty space at the bottom (sky, floor, plain background) work best. Busy compositions clash with the text.
-- **Mobile portrait image** — Wide desktop hero photos look squashed on mobile. Provide a portrait crop for the **Mobile image** to fix this.
-- **Overlay opacity** — Bump up to 30–40% if the brand name is hard to read against light photography.
-- **One hero per home page.** Multiple stacked hero banners feel disorienting.
+- **Use a high-resolution image.** The hero spans the full viewport on every screen; anything under about 2400 px wide goes soft on large desktop displays.
+- **Plan for the text.** Photographs with quiet space at the bottom — sky, floor, a plain wall — carry the brand name best. Busy compositions fight it.
+- **Give mobile its own crop.** A wide desktop hero squashes on a phone. A 4:5 portrait version in **Mobile image** fixes it in one step.
+- **Raise the overlay before you shrink the text.** 35% suits most photography; light or busy images usually want 45–55%.
+- **One hero per page.** Two stacked heroes read as an error rather than an intention.
 
 ## When to use
 
-The Hero banner is the visual anchor of the home page. It is intended to communicate brand at first glance — not to sell a specific product. For a featured product or collection promotion in the same visual style, use [Brand image](../brand-image/) or [Rich text with image](../rich-text-image/) instead.
+The hero is the visual anchor of the home page. Its job is to say who you are at first glance, not to sell one product. To promote a specific product or collection in the same register, use [Brand image](../brand-image/) or [Rich text with image](../rich-text-image/).
 
 ## When not to use
 
-If your storefront is more catalog-driven than brand-driven, consider opening with a [Collection list](../collection-list/) or [New arrivals](../new-arrivals/) section instead, and use the hero on category landing pages only.
+If your storefront is catalog-driven rather than brand-driven, open with [Collection list](../collection-list/) or [New arrivals](../new-arrivals/) instead and keep the hero for category landing pages.

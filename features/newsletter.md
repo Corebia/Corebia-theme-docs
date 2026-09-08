@@ -12,8 +12,19 @@ Pave's newsletter signup is a simple email form that creates a customer record i
 
 ## Where it appears
 
-- The [Newsletter section](../../sections/newsletter/) — placed by default on the home page, page template, and several other places.
-- The [Password page](../../templates/password-page/) — when **Show email signup form** is enabled.
+Pave offers three ways to collect an address, and they can all run at once:
+
+- The [Newsletter section](../../sections/newsletter/) — in the page flow, on the home page by default. Add it to any template except the header group.
+- The [Newsletter popup](../../sections/newsletter-popup/) — an overlay that opens once per visitor after a delay or a scroll. It never shows to a signed-in customer, and never to someone who has dismissed it in that browser.
+- The [Password page](../../templates/password-page/) — when **Show email signup form** is on. A pre-launch list is often the most valuable one a store builds.
+
+All three write to the same place.
+
+## Consent
+
+Both the section and the popup offer a **Show consent checkbox** setting, with editable consent text that can carry a link to your privacy policy. It is on by default in the section and off in the popup.
+
+If you sell into the EU, turn it on in both. Without the checkbox, consent is recorded on submission rather than given explicitly.
 
 ## Where signups go
 

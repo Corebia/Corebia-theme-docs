@@ -2,37 +2,39 @@
 title: Newsletter
 layout: default
 parent: Sections
-nav_order: 9
+nav_order: 10
 permalink: /sections/newsletter/
 ---
 
 # Newsletter
 
-The **Newsletter** section displays an email signup form. Submissions create a customer record in your Shopify admin tagged as accepting marketing.
+**Newsletter** is the in-page email signup. Addresses collected here land in `Shopify admin > Customers`, tagged as accepting marketing, ready for Shopify Email or any marketing app you connect.
+
+It can't be placed in the header group. For the timed overlay version, see [Newsletter popup](../newsletter-popup/).
 
 ## Settings
 
-- **Heading** — The section heading. Default: `Subscribe to the newsletter`.
-- **Subtext** — Supporting text shown below the heading. Default: `Subscribe for exclusive offers and 10% off your first order.`
-- **Social proof text** — Small text shown below the form. Leave blank to hide. Default: `Join our community`.
-- **Color scheme** — The color scheme applied to the section. Default: scheme-2.
+- **Heading** — Default: `Subscribe to the newsletter`.
+- **Subheading** — Default: `Sign up to hear about new arrivals and store news.`
+- **Social proof text** — Shown below the form. Default: `Join our community`. Leave blank to hide.
 
-## Where signups go
+### Form
 
-Newsletter signups are stored as customers in `Shopify admin > Customers`. They are automatically tagged as accepting email marketing. From there, you can:
+- **Submit style** — **Inline arrow (editorial)** (default) or **Pill button with visible label**. The inline arrow reads as a quiet editorial close; the pill button competes more assertively for attention. Both are accessible and submit identically — pick the mood the section should set in its slot.
 
-- Send campaigns from `Shopify admin > Marketing` using the **Shopify Email** app.
-- Sync to a third-party marketing platform (Klaviyo, Mailchimp, etc.) by installing the appropriate Shopify app, which will pull the same customer list.
+### Consent
 
-Pave does not integrate directly with third-party email tools. The form posts to Shopify, and apps that subscribe to customer events handle the rest.
+- **Show consent checkbox** — Default: on. Required for EU markets under GDPR. Without the checkbox, the form records consent when it's submitted.
+- **Consent text** — Inline rich text, and it may contain links. Ships pointing at `/policies/privacy-policy`.
+
+### Colors and spacing
+
+- **Color scheme** — Default: scheme-1.
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Tips
 
-- **Be honest in the offer.** If your subtext promises 10% off, send the discount code in the welcome email. Customers who don't receive the promised discount unsubscribe at high rates.
-- **Keep the subtext short.** Two short sentences work; long marketing copy hurts conversion.
-- **Social proof text** is optional. Use it for a follower count (`Join 12,000+ subscribers`) only if the number is real and impressive.
-- **GDPR / privacy compliance** — If you operate in the EU, configure customer accounts and email marketing settings in `Shopify admin > Settings > Customer accounts` and `Settings > Notifications` to ensure the signup language is compliant.
-
-## Related
-
-- For the dedicated [Newsletter feature](../../features/newsletter/) overview.
+- **Say what the shopper gets.** "Sign up" alone converts poorly. Name the thing — early access, a restock note, one email a month.
+- **Leave the consent checkbox on if you sell into the EU.** It is the difference between recorded consent and assumed consent, and it costs one line of layout.
+- **Point the consent text at a real policy.** The default link assumes you have a privacy policy published under `Shopify admin > Settings > Policies`. If you haven't, the link 404s.
+- **Pick the submit style by neighbourhood.** The inline arrow suits a newsletter sitting between two quiet editorial sections; the pill button suits one placed at the end of a busy page where it has to be found.

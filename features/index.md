@@ -8,26 +8,29 @@ permalink: /features/
 
 # Features
 
-Pave implements every feature required by the Shopify Theme Store, plus a few extras. The pages below describe each feature, where it appears, how to configure it, and what to do if it's not showing up.
+Pave implements every feature the Shopify Theme Store requires, plus a few extras. Each page below says what the feature is, where it appears, how to set it up, and what to check when it isn't showing.
 
 ## Storefront experience
 
-- [Navigation](navigation/) — Main menu, navigation panel, multi-level menus.
+- [Navigation](navigation/) — The side panel, menus and nesting.
 - [Search](search/) — Predictive search and faceted filtering.
 - [Product recommendations](product-recommendations/) — Related and complementary products.
-- [Product media](product-media/) — Variant images, video, 3D models, focal points.
-- [Swatches](swatches/) — Color and image swatches.
+- [Product media](product-media/) — Images, video, 3D models, variant images and focal points.
+- [Swatches](swatches/) — Colour and image swatches, and where their colours come from.
+- [Customer accounts](customer-accounts/) — The account entry point in the header.
 
 ## Selling
 
-- [Selling plans](selling-plans/) — Subscriptions in cart and customer pages.
-- [Gift cards](gift-cards/) — Gift card template, QR code, Apple Wallet.
-- [Pickup availability](pickup-availability/) — In-store pickup display.
-- [Shop Pay Installments](shop-pay-installments/) — Pay-in-installments banner.
-- [Follow on Shop](follow-on-shop/) — Shop app follow button.
+- [Selling plans](selling-plans/) — Subscriptions in the cart.
+- [Gift cards](gift-cards/) — The gift card page, its QR code and Apple Wallet.
+- [Pickup availability](pickup-availability/) — In-store pickup on the product page.
+- [Shop Pay Installments](shop-pay-installments/) — The pay-in-instalments banner.
+- [Follow on Shop](follow-on-shop/) — The Shop app follow button.
 - [Accelerated checkout](accelerated-checkout/) — Dynamic checkout buttons.
-- [Unit pricing](unit-pricing/) — Per-unit price display.
-- [Discount codes](discounts/) — Discount code field in cart and order summary.
-- [Newsletter](newsletter/) — Email signup form.
+- [Unit pricing](unit-pricing/) — Price per unit, where markets require it.
+- [Discount codes](discounts/) — The cart field, automatic discounts and how savings are shown.
+- [Newsletter](newsletter/) — The three places a store can collect an address.
 - [Multi-currency and language](multi-currency-language/) — Country and language selectors.
-- [Social sharing](social-sharing/) — Share button on product pages.
+- [Social sharing](social-sharing/) — The share control and link previews.
+
+Settings that shape these features live under [Theme settings](../theme-settings/); the sections that render them are under [Sections](../sections/) and [Templates](../templates/).

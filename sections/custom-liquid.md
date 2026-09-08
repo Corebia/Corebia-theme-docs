@@ -2,35 +2,42 @@
 title: Custom Liquid
 layout: default
 parent: Sections
-nav_order: 17
+nav_order: 20
 permalink: /sections/custom-liquid/
 ---
 
 # Custom Liquid
 
-The **Custom Liquid** section provides a free-form area where you can add Shopify Liquid code, app snippets, or HTML directly into a page through the theme editor.
+**Custom Liquid** is an empty section that renders whatever Liquid, HTML, CSS or JavaScript you put in it. It is the escape hatch: the place for an app snippet, or for something the theme's own sections don't cover.
 
-{: .warning }
-> Custom Liquid is an advanced feature. Invalid Liquid can break the page that contains it. Custom code added here is not covered by support — see [Custom code](../../customization/custom-code/).
+It can be added to any template that takes sections.
 
 ## Settings
 
-- **Liquid code** — The code to render. Add app snippets or custom code. Use with care: invalid Liquid can break the page.
+- **Liquid code** — Add app snippets or custom code. Use with care: invalid Liquid can break the page.
 
-## When to use
+## The block, as well as the section
 
-- **App snippets** — Some Shopify apps provide a Liquid snippet you can paste into your theme. The Custom Liquid section is the place to drop it without editing theme files.
-- **One-off announcements** — A bespoke holiday banner, a campaign-specific HTML widget, an embed from a third-party tool.
-- **Quick experiments** — Test a markup change on a single page without editing the section files.
+Several sections also offer a **Custom Liquid block**, which does the same thing inside an existing layout rather than as a section of its own. The block is available on the product page, the collection and catalog pages, the cart, articles, blog, pages, policies, customer reviews and featured product.
 
-## When not to use
+Use the **block** when the code belongs inside a section that is already there — a badge under the buy buttons, say. Use the **section** when it needs its own slot in the page.
 
-- **Recurring patterns** — If you find yourself pasting the same code into multiple Custom Liquid sections, consider asking a Shopify Partner to build a proper section instead. See [Custom code](../../customization/custom-code/).
-- **Large blocks of code** — The setting accepts up to ~50 KB of code, but anything over a few dozen lines is hard to maintain through the theme editor.
-- **Dynamic state** — JavaScript that reads or writes Shopify cart state should be added carefully. Use a Shopify Partner.
+## What to put in it
+
+Good candidates:
+
+- A snippet an app gave you to paste.
+- A one-off announcement or seasonal note that doesn't warrant a section.
+- A small piece of markup you want on one page only.
+
+Poor candidates:
+
+- **Anything you'll want on many pages.** Repeating the same snippet in ten places means changing it in ten places.
+- **Large blocks of code.** They are hard to edit inside a settings field and are invisible to anyone reading the theme's files. Put those in the theme code — see [Custom code](../../customization/custom-code/).
 
 ## Tips
 
-- **Test in a duplicate theme.** Bad Liquid raises a parse error and prevents the page from rendering. Always test changes in a duplicate before publishing.
-- **Quote everything.** Pasting code from a chat tool or document can introduce smart quotes that break Liquid syntax. Type code directly into the editor or use a plain-text source.
-- **Reference Shopify objects.** Custom Liquid in this section runs in the storefront context, so you have access to `product`, `collection`, `cart`, `shop`, etc. depending on the page.
+- **Test on a duplicate theme.** Invalid Liquid can break the page it sits on, and the theme editor will not always stop you saving it. Duplicating first costs a minute — see [Duplicate your theme](../../customization/duplicating-your-theme/).
+- **Quote your attributes.** Unquoted HTML attributes that contain Liquid output are the most common way this section breaks a layout.
+- **Liquid objects are available.** `product`, `collection`, `cart` and the rest resolve according to the page the section is on, so the same snippet can behave differently on different templates.
+- **Custom Liquid is not covered by theme support.** Code you add here is yours. See the [Support policy](../../support/support-policy/).

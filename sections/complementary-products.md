@@ -2,40 +2,40 @@
 title: Complementary products
 layout: default
 parent: Sections
-nav_order: 16
+nav_order: 18
 permalink: /sections/complementary-products/
 ---
 
 # Complementary products
 
-The **Complementary products** section displays products that complete a look or purchase: shoes with a dress, a frame with a print, a candle with a vase. Unlike algorithmic recommendations, these are curated manually for each source product.
+Complementary products are the ones you pair up yourself — the belt that goes with the trousers, the refill that goes with the bottle.
 
-## Settings
+In Pave they are **not a separate section**. They are a mode of [Product recommendations](../product-recommendations/): add that section and set **Recommendation type** to **Complementary products**. Everything else about it — heading, maximum products, color scheme — works the same way in both modes.
 
-- **Heading** — The section heading. Default: `Complete the look`.
-- **Subheading** — Optional supporting text.
-- **Heading alignment** — Options: **Left**, **Center**, **Right**.
-- **Maximum products to show** — Cap on how many products to display.
-- **Columns on desktop** — Range: 2 to 5.
-- **Color scheme** — The color scheme applied to the section. Default: scheme-1.
+## Setting them up
 
-## Curating complementary products
+1. Install Shopify's free [Search & Discovery](https://apps.shopify.com/search-and-discovery) app.
+2. In the app, open **Product recommendations**.
+3. Choose a product and add the products that complement it, in the order you want them shown.
+4. Repeat for every product that has a natural pairing.
 
-To select complementary products, install the **Shopify Search & Discovery** app from the Shopify App Store. With it installed:
+Complementary products are set per product. A product with no pairings has nothing to show.
 
-1. Open `Shopify admin > Apps > Search & Discovery > Product recommendations`.
-2. Pick a source product.
-3. Add the products you want to recommend as complementary.
-4. Save.
+## What happens when nothing is set
 
-Pave fetches these manual recommendations with `intent: complementary`. If no complementary products are configured for a source product, the section is hidden automatically on that product's page.
+The section renders **nothing at all** — no heading, no empty row, no placeholder. That is deliberate: a recommendations row with no recommendations reads as a broken page.
+
+This also means the section is safe to add to the product template before you have finished pairing everything up. It appears on the products you have done and stays invisible on the rest.
+
+## Complementary or related?
+
+- **Complementary** answers "what goes with this?" — you decide, and the answer is usually a different kind of product.
+- **Related** answers "what else is like this?" — Shopify decides from order history and product data, and the answer is usually a similar product.
+
+They serve different moments and most stores want both. See the comparison table in [Product recommendations](../product-recommendations/#how-the-two-modes-differ).
 
 ## Tips
 
-- **Curate for top sellers first.** You won't have time to set up complementary picks for every product. Start with the products that drive most traffic.
-- **Three to four products** is the typical sweet spot. Above four, the section becomes a generic grid rather than a curated complete-the-look.
-- **Cross-collection picks** — The most powerful complementary picks bridge collections. A coat from outerwear paired with a scarf from accessories drives multi-collection purchases.
-
-## Related
-
-- [Product recommendations](../product-recommendations/) — Algorithmic, related-style recommendations.
+- **Pair across categories, not within them.** Complementary works when the second product is something the shopper wouldn't have searched for.
+- **Three or four pairings per product is plenty.** The list is a suggestion, not a catalog.
+- **Start with your best sellers.** Pairing is manual work; the products that already sell are where it pays back first.

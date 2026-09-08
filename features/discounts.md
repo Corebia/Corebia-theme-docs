@@ -12,9 +12,15 @@ Pave supports the full Shopify discount stack: customer-typed discount codes, au
 
 ## Discount code field on the cart
 
-When the **Enable discount code field** setting is on (in **Theme settings > Cart**), the cart page displays a field where customers can enter a discount code before reaching checkout. The code is applied immediately, and the cart totals update.
+When the **Show discount code field** setting is on, under **Theme settings > Cart**, the cart page displays a field where customers can enter a discount code before reaching checkout. The code is applied immediately, and the cart totals update.
 
 See [Cart settings](../../theme-settings/cart-settings/).
+
+## How savings are presented
+
+How a reduced price is written — the badge wording, its colours, and the minimum discount worth badging — is set once under [Discount display](../../theme-settings/discount-display/), and applies to product cards, product pages, featured products and the cart alike.
+
+That page also covers promotion labels driven by product metafields, for offers Shopify's discount engine doesn't model.
 
 ## Discount codes at checkout
 

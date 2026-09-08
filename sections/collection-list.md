@@ -8,35 +8,33 @@ permalink: /sections/collection-list/
 
 # Collection list
 
-The **Collection list** section displays a row of collection cards. Each card shows the collection's image (or first product image as a fallback) and name, and links to the collection page.
+**Collection list** shows up to five collections as image tiles, either as an editorial mosaic or as a uniform grid. Each tile uses the collection's own image and title.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Heading** — The section heading. Default: `Collections`.
-- **Collections** — Reference text only; collections are configured per block.
-- **Number of columns on desktop** — Range: 2 to 5.
-- **Color scheme** — The color scheme applied to the section. Default: scheme-1.
-- **Image ratio** — The aspect ratio of each collection card image. Options:
-  - **Adapt to image** — Each card uses the natural ratio of its collection image.
-  - **Portrait** — 3:4.
-  - **Square** — 1:1.
-  - **Landscape** — 4:3.
+- **Heading** — Default: `Collections`.
+- **Layout** — **Editorial mosaic** (default) sizes tiles unevenly for a magazine feel; **Uniform grid** gives every collection the same weight.
+- **Image ratio** — **Portrait (4:5)** (default), **Square (1:1)** or **Landscape (3:2)**.
+- **Number of columns on desktop** — Range: 2 to 4. Default: 3.
+- **Color scheme** — Default: scheme-1.
+- **Image overlay intensity** — **Soft**, **Medium** (default) or **Strong**. Strengthens the gradient behind tile titles so they stay readable on bright or busy imagery.
+
+### Spacing
+
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
-Each block represents one collection card.
+Up to **five** Collection blocks.
 
-### Collection
-
-- **Collection** — The collection to display in this slot.
+- **Collections** — The collection this tile points to.
+- **Image crop focal point** — Where to anchor the image when it's cropped for this tile. **Auto** (default) uses the image's own focal point from Shopify admin; the other nine options pin it to a corner, edge or the center.
 
 ## Tips
 
-- **Cap at three or four collections** for the home page. Long lists better belong on the Collection list page (`/collections`).
-- **Collection images** — Make sure each collection has an image set in `Shopify admin > Products > Collections > [collection]`. Without an image, Shopify falls back to the first product's image, which can be inconsistent.
-- **Image ratio** — Match this to your photography style. Portrait works for category-style collections (Outerwear, Knitwear); landscape works for editorial collections (Spring 2026 Lookbook).
-- **Heading customization** — Replace `Collections` with something more brand-aligned (`Shop by category`, `Our world`).
-
-## Related
-
-- For the dedicated full-page collection list, see [Collections list page](../../templates/collection-list/).
+- **Set the collection image in Shopify.** The tile takes its picture from the collection itself, under `Shopify admin > Products > Collections`. A collection with no image falls back to its first product, which is rarely the crop you want.
+- **Use Auto focal point first.** Setting the focal point on the image in your Files area fixes the crop everywhere at once. Only override it here when one tile needs a different crop from the same image.
+- **Raise the overlay for bright photography.** Soft looks better on dark images; light or high-key imagery usually needs Medium or Strong for the title to hold.
+- **Three or four tiles reads best.** Five is the ceiling and it fills a wide screen, but it starts to look like a menu rather than a selection.

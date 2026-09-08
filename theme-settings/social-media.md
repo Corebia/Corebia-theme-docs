@@ -8,11 +8,11 @@ permalink: /theme-settings/social-media/
 
 # Social media
 
-The **Social media** category in **Theme settings** stores the URLs of your social media profiles. The footer reads these URLs to render social media icons.
+The profile links behind the icons in the footer. Fill in the ones you use; leave the rest empty.
 
-## Social accounts
+## Settings
 
-Each setting accepts a full URL to your profile. Leave a setting blank to hide its icon.
+Every field takes a **full URL** to your own profile.
 
 - **Instagram** — Full URL to your Instagram profile.
 - **Facebook** — Full URL to your Facebook page.
@@ -23,12 +23,13 @@ Each setting accepts a full URL to your profile. Leave a setting blank to hide i
 
 ## Where the icons appear
 
-The icons render in the footer's bottom bar when the **Show social media icons** setting is enabled in the **Footer** section.
+In the [Footer](../../sections/footer/), when its **Show social media icons** setting is on. An empty field renders no icon, so the row only ever contains accounts you actually have.
 
-To hide all icons, either disable **Show social media icons** in the footer settings, or clear all URLs in this category.
+If you fill nothing in, no icon row appears at all and the footer closes tighter.
 
-## Recommendations
+## Tips
 
-- **Use full URLs**, including `https://`. Shorthand handles like `@yourbrand` will not work.
-- **Open in new tab** — All icon links use `target="_blank"` and `rel="noopener noreferrer"` automatically. You don't need to do anything to make external links open in a new tab.
-- **Profile completeness** — Only configure profiles you actively maintain. A dead social link signals neglect to customers.
+- **Paste the whole URL**, including `https://`. A username on its own won't resolve.
+- **Link to the account you actually post to.** A dormant profile linked from every page of the storefront does more harm than an absent one.
+- **These are links out, not sharing buttons.** For letting shoppers share a product, see [Social sharing](../../features/social-sharing/).
+- **The share image is elsewhere.** What a link to your store looks like when someone posts it is controlled by the social share image under [Favicon](../favicon/).

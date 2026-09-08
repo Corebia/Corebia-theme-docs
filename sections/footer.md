@@ -8,45 +8,47 @@ permalink: /sections/footer/
 
 # Footer
 
-The **Footer** section appears at the bottom of every page. It is composed of three areas: a giant brand name, navigation columns made up of blocks, and a bottom bar with social icons, payment icons, language and country selectors, and the Follow on Shop button.
+The **Footer** closes every page. It carries a wordmark, whatever blocks you add, and — when you switch them on — your social and payment icons.
+
+The Footer lives in the `footer` section group, so it can't be removed or placed on an individual template.
 
 ## Settings
 
-- **Brand text** — The large editorial brand text shown at the top of the footer. Default: `ATELIER`.
-- **Show social media icons** — Toggle the row of social icons in the bottom bar. Reads URLs from **Theme settings > Social media**. Default: on.
-- **Show payment icons** — Toggle the row of payment provider icons. Reads enabled providers from `Shopify admin > Settings > Payments`. Default: on.
-- **Show Follow on Shop** — Toggle the Follow on Shop button. Lets customers follow your store from the Shop app. Default: on.
-- **Color scheme** — The color scheme applied to the footer. Default: scheme-1.
+- **Wordmark** — Shown as a small wordmark at the top of the footer. Falls back to your shop name if empty.
+- **Show social media icons** — Default: on. The icons come from the links you fill in under [Social media](../../theme-settings/social-media/); an empty link shows no icon.
+- **Show payment icons** — Default: on. The icons are the payment methods actually enabled on your store, so this list is managed by Shopify, not by the theme.
+- **Color scheme** — Default: scheme-1.
 
 ## Blocks
 
-The footer accepts two block types. Add blocks via **Add menu** or **Add text**. Each block becomes a column.
+### Footer navigation
 
-### Menu
-
-Renders a Shopify navigation as a column of links.
-
-- **Heading** — Column heading. Default: `Quick links`.
-- **Menu** — The Shopify navigation to render.
+- **Heading** — Default: `Quick links`.
+- **Footer menu** — The Shopify navigation to render. Default: `footer`.
 
 ### Text
 
-Renders a column of free-form rich text.
+- **Heading** — Default: `About us`.
+- **Text** — Rich text. Replace the sample copy before you go live.
 
-- **Heading** — Column heading. Default: `About us`.
-- **Text** — Rich text body. Default: `Share store details, promotions, or brand content with your customers.`
+### Contact
 
-## Fixed elements (bottom bar)
+- **Heading** — Default: `Contact`.
+- **Email** — Rendered as a `mailto:` link.
+- **Phone** — Rendered as a `tel:` link.
+- **Address** — Rich text.
 
-The bottom bar always contains:
+## Country and language selectors
 
-- **Country selector** — Shown when more than one country is configured in `Shopify admin > Settings > Markets`. See [Multi-currency and language](../../features/multi-currency-language/).
-- **Language selector** — Shown when more than one language is published. See [Multi-currency and language](../../features/multi-currency-language/).
+These appear automatically, and have no settings of their own:
 
-These are rendered automatically; there are no settings to control them in the footer section.
+- The **country and currency selector** appears once your store sells in more than one country. Set them up in `Shopify admin > Settings > Markets`.
+- The **language selector** appears once your store publishes more than one language. Add languages in `Shopify admin > Settings > Languages`.
+
+If you only sell in one country and one language, neither selector renders and the footer closes tighter. That's expected — see [Multi-currency and language](../../features/multi-currency-language/).
 
 ## Tips
 
-- **Three to four blocks** is the sweet spot for a balanced footer. With one or two columns the footer feels sparse; with six or more it crowds.
-- The **Brand text** is intentionally oversized — it acts as a closing brand statement, not a logo replacement. Use your brand name or a short tagline.
-- For a smaller footprint, disable the social and Follow on Shop rows and reduce blocks to two columns.
+- **Three or four blocks is the sweet spot.** A footer that runs past that starts to read as a sitemap rather than a close.
+- **Use the Contact block for a real address.** Some markets require a business address on the storefront, and a footer block is the conventional place for it.
+- **Build the footer menu in Shopify.** The block renders one level; sub-menus in a footer navigation are ignored.

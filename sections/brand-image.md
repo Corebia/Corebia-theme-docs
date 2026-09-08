@@ -8,24 +8,41 @@ permalink: /sections/brand-image/
 
 # Brand image
 
-The **Brand image** section is a full-bleed editorial image without text overlay. Use it as a visual breather between content sections — a single hero image, a campaign shot, an in-store photograph.
+**Brand image** is a full-width image or background video with no text over it. It is the section for letting a photograph breathe between two blocks of content.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Image** — The image to display.
-- **Image focal point** — Desktop focal point used when the image is cropped. Options: **Top**, **Center**, **Bottom**.
-- **Mobile focal point** — Mobile focal point. Options: **Top**, **Center**, **Bottom**, **Left**, **Right**.
-- **Overlay opacity** — Darkness of the overlay layer. Range: 0% to 80%. Default: 0%.
-- **Image height** — Vertical size of the section. Options: **Small**, **Medium**, **Large**.
+### Image
+
+- **Image** — Used on desktop, and on mobile when no mobile image is set. Alt text is read from the image asset itself — set it in the file editor, for screen readers and for SEO.
+- **Mobile image** — Optional. Shown on screens narrower than 750 px. Leave empty to use the same image with the mobile focal point below.
+- **Desktop focal point** — Where the image crops on screens 750 px and wider. **Top**, **Center** (default) or **Bottom**.
+- **Mobile focal point** — Where the image crops on narrower screens when no mobile image is set. **Top**, **Center** (default), **Bottom**, **Left** or **Right**.
+- **Proportion** — **Cinematic (panoramic)**, **Balanced (default)** or **Portrait (taller)**.
+- **Prioritize loading** — Use when this section is the first thing on its template. Turns off the fade-in reveal so the image appears sooner. Default: off.
+
+### Video (optional)
+
+- **Video** — When set, replaces the image with an autoplay, muted, looping background video. The image above stays as the poster and as the accessibility fallback. Respects `prefers-reduced-motion` and Data Saver.
+- **Mobile video** — Optional. Shown on screens narrower than 750 px. Leave empty to use the desktop video.
+
+### Colors
+
+- **Color scheme** — Default: scheme-1.
+
+### Spacing
+
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 0 px each, so the image meets the sections above and below edge to edge.
 
 ## Tips
 
-- **No text means strong photography.** Without copy, the image carries the entire section. Use a high-quality, brand-appropriate shot.
-- **Focal points matter** — On wide desktop and tall mobile, the image is cropped differently. Set focal points so the subject stays in frame on both.
-- **Use sparingly.** One or two Brand image sections on a long page; more breaks the pacing.
-- **Overlay opacity** — Leave at 0% in most cases. Raise it only if the image is a key part of the brand identity but you want to mute it slightly to push more attention to the next section.
+- **Turn on Prioritize loading only for the topmost section.** It exists to get the first image on screen sooner. Used further down the page it just removes an animation for no gain.
+- **Always set the poster image, even when using video.** It is what shows before the video loads, what shoppers on Data Saver see, and what a screen reader reads.
+- **No text means the photograph carries everything.** If the image needs a caption to make sense, you want [Rich text with image](../rich-text-image/) instead.
+- **Focal points beat re-cropping.** Set them here rather than uploading two crops of the same photograph.
 
-## Related
+## When not to use
 
-- For an image with text overlay, use [Hero banner](../hero/).
-- For an image with body copy and a button, use [Brand message](../brand-message/).
+Don't use it as a second hero at the top of the home page — that is what [Hero banner](../hero/) is for, and it handles the brand name, the overlay and the scroll cue that a top-of-page image needs.

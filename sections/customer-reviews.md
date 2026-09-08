@@ -2,38 +2,48 @@
 title: Customer reviews
 layout: default
 parent: Sections
-nav_order: 11
+nav_order: 13
 permalink: /sections/customer-reviews/
 ---
 
 # Customer reviews
 
-The **Customer reviews** section provides a placeholder area where you can add review-app blocks. The Pave theme itself does not collect or store reviews — it is a host for the blocks exposed by review apps.
+**Customer reviews** shows social proof. It works two ways: you can type quotes in yourself, or you can drop in the block from a reviews app you've installed and let the app fill the section.
+
+It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Show heading** — Toggle the section heading.
-- **Heading** — The section heading. Default: `Customer reviews`.
-- **Subheading** — Optional supporting text.
-- **Heading alignment** — Options: **Left**, **Center**, **Right**.
+- **Heading** — Default: `Customer reviews`.
+- **Color scheme** — Default: scheme-1.
 
-The section also exposes spacing settings.
+### Spacing
 
-## How to populate the section with reviews
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
-1. Install a Shopify reviews app from the Shopify App Store. Compatible apps include the official **Shopify Product Reviews** (free), as well as Loox, Judge.me, Yotpo, and others.
-2. After installation, the app exposes one or more **app blocks** that you can add to any section that supports app blocks (see [Custom code](../../customization/custom-code/) for the technical context).
-3. In the theme editor, open the **Customer reviews** section, click **Add block**, and pick the app block exposed by your reviews app.
-4. Configure the block per the app's documentation.
+## Blocks
 
-If you don't install a reviews app, the section renders the heading and subheading but no review content. Reviewers' UI styling is the responsibility of the app, not the theme.
+Up to **five** blocks, of any of these types.
+
+### Quote
+
+The manual option — you write the content.
+
+- **Quote** — Rich text. The customer's own words. Keep it to one short paragraph.
+- **Author** — Who said it.
+- **Source** — Optional. Where the quote came from, such as a publication name or the customer's city.
+
+### App block
+
+Any block offered by a reviews app installed on your store. What it renders and how it is configured belongs to that app, not to the theme.
+
+### Custom Liquid
+
+- **Liquid code** — For an app that gives you a snippet to paste rather than a block.
 
 ## Tips
 
-- **Pick one reviews app and stay with it.** Migrating reviews between apps usually requires manual export and re-import.
-- **Star ratings on product cards** — These come from the `reviews.rating` metafield, not from this section. Most reviews apps populate that metafield automatically; see [Product page > Product rating block](../../templates/product-page/) for how Pave displays star ratings on individual products.
-- **Hide the section if no app is installed.** A heading "Customer reviews" with no content below it confuses customers.
-
-## Related
-
-- [Product rating on the product page](../../templates/product-page/) — How star ratings render on individual product pages.
+- **Get permission before publishing a name.** A first name and a city is the usual compromise, and the **Source** field is sized for exactly that.
+- **Pick one approach and stay with it.** Hand-written quotes beside app-rendered stars in the same section look like two sections that collided.
+- **Quotes read better short.** One sentence that says something specific beats a paragraph that says the product was great.
+- **Star ratings on the product page are separate.** They come from the **Product rating** block on the [Product page](../../templates/product-page/), which reads the standard `reviews.rating` metafield.

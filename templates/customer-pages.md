@@ -8,44 +8,35 @@ permalink: /templates/customer-pages/
 
 # Customer pages
 
-**Customer pages** are the pages a signed-in customer uses to manage their account: log in, register, view orders, view a single order, and edit addresses.
+The pages a customer uses to manage their account: signing in, viewing orders, editing addresses.
 
-Pave uses Shopify's classic customer accounts, which means the visual style of customer pages follows the theme's base styling but is largely controlled by Shopify, not by per-template sections. There are no per-template editor sections for customer pages.
+**Pave ships no customer templates, and that is deliberate.** These pages are rendered by Shopify, not by the theme, so there is nothing in the theme editor to configure and no sections to add. They follow your store's branding rather than the theme's sections.
 
-## URLs
+## How customers reach their account
 
-- `https://yourstore.com/account/login` — Log in
-- `https://yourstore.com/account/register` — Create an account
-- `https://yourstore.com/account/recover` — Reset password
-- `https://yourstore.com/account` — Account home (signed in)
-- `https://yourstore.com/account/orders/<id>` — Order detail
-- `https://yourstore.com/account/addresses` — Saved addresses
+The account entry point lives in the navigation panel of the [Header](../../sections/header/). It is Shopify's own account component: it shows a signed-out or a signed-in state automatically, and needs no setup beyond enabling customer accounts.
 
-## When customer accounts are enabled
+The one thing the theme controls is which menu appears inside the account panel, through the header's **Customer account menu** setting. Leave it empty to use Shopify's default account links.
 
-Whether customers can log in at all is controlled in `Shopify admin > Settings > Customer accounts`. Three modes are available:
+## Turning accounts on
 
-- **Customer accounts not required** — Customers can check out as guests; signed-in flows are optional.
-- **Customer accounts optional** — Customers can create an account or check out as guests.
-- **Customer accounts required** — Customers must sign in to check out.
+Under `Shopify admin > Settings > Customer accounts`. Shopify offers:
 
-The header's **Account** / **Log in** link is shown when customer accounts are enabled. When disabled, the link is hidden automatically.
+- **Accounts are optional** — customers can create one or check out as a guest.
+- **Accounts are required** — customers must sign in to check out.
+- **Accounts are disabled** — guest checkout only. The account entry point in the header disappears.
 
-## New customer accounts
+Shopify's current customer accounts use a code sent by email rather than a password. Order history, order detail, addresses and profile all live on Shopify's own pages.
 
-Shopify also offers a newer **Customer accounts** experience that uses email-based passwordless login and a different account UI hosted by Shopify. If you've enabled this newer flow in your admin, customers are redirected to a Shopify-hosted account page rather than the classic theme-rendered customer pages.
+## What customers can do there
 
-Pave is compatible with both the classic and new customer accounts. Pick the flow that matches your customer expectations and store maturity in `Shopify admin > Settings > Customer accounts`.
-
-## What customers see in their account
-
-- **Order history** — Past orders with status, total, and a link to the order detail.
-- **Order detail** — Line items, shipping address, billing address, fulfillment status, tracking link, and a reorder option.
-- **Addresses** — Saved shipping addresses for faster checkout.
-- **Profile** — Email and password (classic accounts only).
+- **Order history** — past orders with status and totals.
+- **Order detail** — line items, addresses, fulfilment status and tracking.
+- **Addresses** — saved shipping addresses for faster checkout.
+- **Subscriptions** — where you sell on selling plans, the schedule and management options your subscription app provides.
 
 ## Tips
 
-- **Test the login flow** end-to-end on a development store: register, log out, log in, view an order, edit an address.
-- **Email notifications** — Account-related emails (welcome, password reset, order confirmation) are configured in `Shopify admin > Settings > Notifications`. Customize subject lines and copy from there.
-- **Selling plans (subscriptions)** are visible on the order detail page, including the recurring schedule and the ability to manage the subscription if your selling-plan app supports it.
+- **Decide before launch.** Requiring accounts reduces guest-checkout friction to zero at the cost of some conversion; optional is the safe default for most stores.
+- **Account emails are yours to write.** The sign-in code, order confirmation and shipping notifications are configured under `Shopify admin > Settings > Notifications`, not in the theme.
+- **Test signed in and signed out.** Some of the storefront changes between the two — the [Newsletter popup](../../sections/newsletter-popup/), for instance, never shows to a signed-in customer.

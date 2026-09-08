@@ -8,76 +8,87 @@ permalink: /templates/article-page/
 
 # Article page
 
-The **Article page** displays a single blog article. It uses the `article.json` template.
+A single blog post, using the **Main article** section. Like the product page, it is built from blocks you order yourself — so the byline can sit above or below the featured image, and the back link can be at the top or the end.
 
-## URL
-
-`https://yourstore.com/blogs/<blog-handle>/<article-handle>`
-
-## Sections included by default
-
-1. **Main article** — The article body with title, image, date, content, and tags.
-
-## Main article section
-
-The Main article section is built from blocks. The default layout includes:
-
-1. Title
-2. Published date
-3. Author
-4. Featured image
-5. Content
-6. Separator
-7. Tags
-8. Back button
-
-You can add, remove, and reorder these blocks from the theme editor.
-
-### Available blocks
-
-- **Featured image** — The article hero image.
-  - **Image width** — Options: **Constrained (800px)**, **Full width**.
-  - **Image ratio** — Options: **Original**, **Landscape (16:9)**, **Portrait (3:4)**.
-- **Title** — The article title.
-- **Date** — The published date.
-  - **Date format** — Options: **January 01, 2026**, **01 January 2026**, **01/01/2026** (DMY), **01/01/2026** (MDY), **2026-01-01**.
-- **Author** — The article author.
-  - **Author prefix text** — Default: `By`.
-- **Content** — The article body HTML.
-- **Tags** — The article's tags.
-  - **Tags label text** — Default: `Tags`.
-- **Separator** — A horizontal divider.
-- **Back button** — A link back to the blog index.
-  - **Back button text** — Default: `Go back`.
-- **Quote** — A pull quote inside the body.
-  - **Quote text** — The quote content.
-  - **Source / author** — The quote attribution.
-- **Comments** — The article's comments thread (when comments are enabled in `Shopify admin > Online Store > Blog posts > Comments`).
-
-### Section settings
+## Section settings
 
 - **Color scheme** — Default: scheme-1.
 
-## Special behaviors
+## Blocks
 
-- **Comments** — Whether the comments block renders depends on the blog's comment setting. With moderation, comments appear after approval.
-- **Reading time** is not built in. If you need it, install a Shopify app or add a Custom Liquid block.
-- **Article-specific Open Graph image** — The article's featured image is automatically used as the social share image when the article is shared.
+### Featured image
 
-## Sections that can be added
+- **Image width** — **Constrained (800px)** (default) or **Full width**.
+- **Image ratio** — **Original** (default), **Landscape (16:9)** or **Portrait (3:4)**.
 
-In addition to **Main article**, you can add any of these sections:
+### Heading
 
-- [Newsletter](../../sections/newsletter/)
-- [Recently viewed](../../sections/recently-viewed/)
-- [Brand image](../../sections/brand-image/)
-- [Brand message](../../sections/brand-message/)
-- [Rich text with image](../../sections/rich-text-image/)
-- [FAQ](../../sections/faq/)
-- [Custom Liquid](../../sections/custom-liquid/)
+Limit 1. The article title. No settings.
+
+### Date
+
+Limit 1.
+
+- **Date format** — `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
+
+### Author
+
+Limit 1.
+
+- **Author prefix text** — Default: `By`.
+
+### Content
+
+The article body, as written in Shopify. No settings.
+
+### Tags
+
+Limit 1.
+
+- **Tags label text** — Default: `Tags`.
+
+### Separator
+
+A horizontal rule, for pacing a long article. No settings.
+
+### Back button
+
+Limit 1.
+
+- **Back button text** — Default: `Go back`.
+
+### Quote
+
+A pull quote.
+
+- **Quote text**
+- **Source / author**
+
+### Comments
+
+Limit 1. The comment list and form. No settings.
+
+### Custom Liquid
+
+- **Liquid code** — See [Custom Liquid](../../sections/custom-liquid/).
+
+### App block
+
+Any block offered by an installed app.
+
+## Comments
+
+The Comments block renders only when comments are enabled for that blog, under `Shopify admin > Content > Blogs > Manage blog`. With them disabled, the block is silently skipped rather than showing an empty form — so it is safe to leave in the template while you decide.
+
+Shopify offers three modes: disabled, enabled with moderation, and enabled without. Moderation is the sensible default for a store blog.
+
+## Wide tables in article content
+
+Tables written in the article body scroll horizontally on narrow screens rather than being cut off, and a table that scrolls is reachable with the keyboard. This is automatic and has no setting.
 
 ## Tips
 
-- **Featured image width** — **Full width** works for editorial articles with hero photography. **Constrained** works for instructional or text-heavy articles.
-- **Pull quotes (Quote block)** — Use sparingly. One pull quote in a long article gives the reader a breather; multiple feel busy.
-- **Comments** — Disable on most stores. Comments require moderation and rarely add value compared to maintenance overhead.
+- **Constrained image width reads better for text-led posts**; full width suits a photo essay.
+- **Use Separator blocks to pace a long read.** They give the eye somewhere to rest, which excerpts and subheadings alone don't.
+- **Put the Back button at the end.** A reader who has finished wants a way onward; one who has just arrived doesn't need an exit.
+- **Match the date format to the blog page.** Both have their own setting, and they should agree.

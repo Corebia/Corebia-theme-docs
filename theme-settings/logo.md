@@ -8,35 +8,27 @@ permalink: /theme-settings/logo/
 
 # Logo
 
-The **Logo** category in **Theme settings** controls your shop's logo image and how it is displayed.
-
 ## Settings
 
-- **Logo image** — The image file used as your shop logo. Displayed in sections that have branding enabled. Uses shop name as fallback. `Transparent .png` or `.svg` recommended for best appearance against varying color schemes.
-- **Logo width** — The maximum display width of the logo, in pixels. Range: 50 to 300 px in 10 px steps. Default: 120 px.
+- **Logo image** — Shown in sections that display branding. Falls back to the shop name.
+- **Logo width** — Range: 50 to 300 px in 10 px steps. Default: 120 px.
 
 ## Where the logo appears
 
-The logo image is used as the brand mark in:
+- In the [Header](../../sections/header/), when **Show shop branding** is on. That setting is off by default, and the home page never shows the header branding — the hero carries the brand there.
+- On the [Password page](../../templates/password-page/), when its **Show logo** setting is on.
 
-- The header's fixed top-left **site brand** anchor (when **Show shop branding** is enabled in the header section, and only on pages other than the home page).
-- The password page (when **Show logo** is enabled in the password page settings).
+With no logo uploaded, both fall back to the shop name as text, styled with the theme's heading font.
 
-If no logo is uploaded, Pave falls back to the shop name as text.
+## Preparing the file
 
-## Recommendations
+- **Use a transparent PNG or an SVG.** A logo on a white rectangle will show that rectangle against every color scheme that isn't white.
+- **Upload it at roughly twice the display width.** At the 120 px default that means about 240 px wide, so it stays sharp on high-density screens.
+- **Crop the empty space out of the file.** Padding baked into the image is padding the theme can't remove, and it makes the logo look smaller than the width setting suggests.
+- **Set the alt text on the file itself**, in `Shopify admin > Content > Files`. That is what a screen reader announces.
 
-- **File format:** Use a transparent `.png` or `.svg` so the logo blends with any color scheme.
-- **Aspect ratio:** Pave is designed for horizontal logos. Tall or square logos may look awkward in tight header layouts. Recommended: 4:1 or wider.
-- **File size:** Keep the file under 100 KB. Large logo files slow down every page load.
-- **Resolution:** Upload at 2x the maximum displayed size to remain crisp on high-resolution screens (Retina, 4K). For a 120 px display width, upload a 240 px wide source.
-- **Color contrast:** The logo sits on top of the page content with a `mix-blend-mode: difference` filter on the header brand, which adapts to backgrounds. Test the logo against your hero banner and key product photography.
+## Tips
 
-## How to upload
-
-1. Open the theme editor.
-2. Click **Theme settings** in the left sidebar.
-3. Open the **Logo** category.
-4. Click **Logo image > Select image** to upload a new file or pick one from your library.
-5. Adjust **Logo width** to the desired display size.
-6. Click **Save**.
+- **Width is the only control.** Height follows the image's own proportions, so a very wide wordmark and a square mark set to the same width will not look the same size. Adjust by eye, not by number.
+- **Check it against every scheme you use.** A dark logo disappears on a dark color scheme, and the theme can't swap it for you.
+- **A wordmark often beats a logo here.** The header branding is small and sits in a corner; a detailed emblem rarely survives at that size, whereas type does.

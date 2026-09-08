@@ -8,52 +8,45 @@ permalink: /templates/policy-page/
 
 # Policy page
 
-The **Policy page** template is used for your store's policies: Privacy policy, Terms of service, Refund policy, Shipping policy, and any other policies configured in `Shopify admin > Settings > Policies`.
+Your store policies — refund, privacy, terms of service, shipping, and any others Shopify supports. Each is written in `Shopify admin > Settings > Policies` and rendered by the **Policy page** section.
 
-It uses the `policy.liquid` template (Liquid, not JSON), so it is not customizable from the theme editor section by section. Instead, the rendered look is controlled by **Main policy** section settings. The page content itself is edited in your Shopify admin.
+The content itself is not editable from the theme. These settings control the frame around it.
 
-## URL
-
-Each policy has its own URL:
-
-- `https://yourstore.com/policies/privacy-policy`
-- `https://yourstore.com/policies/terms-of-service`
-- `https://yourstore.com/policies/refund-policy`
-- `https://yourstore.com/policies/shipping-policy`
-
-## What the page shows
-
-- The policy title (from your Shopify admin).
-- The policy content (rich text from your admin).
-- An optional "last updated" date.
-- An optional back link / breadcrumb.
-
-## Settings
+## Section settings
 
 - **Color scheme** — Default: scheme-1.
-- **Show back link and breadcrumb** — Toggle.
-- **Show back link (legacy)** — A legacy back-link toggle kept for compatibility.
-- **Show divider** — A horizontal divider between the title and the content.
-- **Show last updated date** — Toggle.
-- **Last updated date** — A free-form field for the date string. Example: `January 2026`.
 
-## Editing the content
+### Content
 
-1. In your Shopify admin, go to **Settings > Policies**.
-2. Edit each policy. Shopify provides templates as a starting point.
-3. Save. Changes appear immediately on your storefront.
+- **Show back link and breadcrumb** — Default: on.
+- **Show home page link** — An additional link back to the home page. Default: off.
+- **Show divider** — A rule between the heading and the policy text. Default: on.
+- **Show last updated date** — Default: off.
+- **Last updated date** — The text to show. For example, `January 2026`.
 
-## Where policy links appear in Pave
+### Spacing
 
-Pave automatically renders policy links in two places, based on which policies are configured:
+- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
-- The **Header** navigation panel (legal footer area).
-- The **Footer** section (when added as menu blocks pointing to your policies).
+## Blocks
 
-If a policy is not configured, its link is automatically hidden.
+- **App block** — Any block offered by an installed app.
+- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
+
+## The last updated date is typed, not automatic
+
+It is a text field, so it says whatever you write and does not update itself when you edit a policy. That is a deliberate trade: Shopify does not expose a reliable edited-at date for policies, and a date that silently goes stale is worse than none.
+
+If you turn it on, put a reminder somewhere to change it when you change a policy. If you'd rather not maintain it, leave it off — nothing requires it.
+
+## Which policies appear
+
+Only the policies you have actually written. An empty policy has no page and no link, so the footer and header show links only for the ones that exist.
+
+Some markets require specific policies to be published. Shopify offers templates for each under `Settings > Policies`, and they are a starting point rather than legal advice.
 
 ## Tips
 
-- **Use the Shopify templates as a starting point** — they cover the common legal requirements but should be reviewed by your own legal counsel for the jurisdictions you sell into.
-- **Set a "last updated" date** when you make material changes. Customers who have purchased before may want to know when policies changed.
-- **Cookie consent banner** — Pave does not include a cookie banner. Use a Shopify app or `Shopify admin > Settings > Customer privacy` to configure.
+- **Write the refund policy first.** It is the one shoppers look for before buying, and the one that generates support mail when it is missing.
+- **Keep the divider on.** Policy text is long and undifferentiated; the rule gives the eye a start line.
+- **Link them from the footer**, which is where shoppers expect them. The header panel already carries them automatically.

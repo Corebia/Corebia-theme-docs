@@ -8,48 +8,54 @@ permalink: /features/product-recommendations/
 
 # Product recommendations
 
-Pave supports two kinds of cross-sell on the product page: **related products** (algorithmic) and **complementary products** (manually curated).
+Pave offers two kinds of cross-sell, and both come from **one section**: [Product recommendations](../../sections/product-recommendations/), with its **Recommendation type** setting switched between them.
+
+| Recommendation type | Who chooses | Setup |
+|---|---|---|
+| **Related products** | Shopify, from order history and product data | None |
+| **Complementary products** | You, per product | Search & Discovery app |
+
+To run both on a product page — which is the usual arrangement — add the section twice and set each instance to a different type.
 
 ## Related products
 
-Pave fetches related products using Shopify's recommendations API with `intent: related`. Shopify uses purchase history, product metadata, and store-wide browsing patterns to surface relevant products.
+Shopify generates the list from purchase history, product metadata and store-wide browsing patterns. Nothing needs configuring, and the results improve as your store accumulates orders.
 
-### Where it appears
+New stores get thin results, because there is little to learn from yet. That resolves with volume rather than with settings.
 
-- The [Product recommendations section](../../sections/product-recommendations/), placed by default on the product page below the description.
+To influence them:
 
-### How to influence the recommendations
-
-- **Build purchase history.** Shopify learns from real orders. New stores have thin recommendation data; recommendations get sharper as orders accumulate.
-- **Manually pin products** with the **Search & Discovery** app, in `Shopify admin > Apps > Search & Discovery > Recommendations`. You can override the algorithm for specific products.
-- **Hide the section** if your store is brand new and the algorithmic results aren't useful yet — you can re-enable it later.
+- **Let orders accumulate.** This is the main input, and there is no shortcut.
+- **Pin products manually** in `Shopify admin > Apps > Search & Discovery > Product recommendations`, where you can override the algorithm for a specific product.
+- **Keep product types and tags consistent.** They are part of what Shopify matches on.
 
 ## Complementary products
 
-Complementary products are manually curated cross-sells: products that complete a look or purchase. Unlike related products, they are not algorithmic — you choose them.
+Pairings you set yourself — the belt with the trousers, the refill with the bottle.
 
-### Where they appear
+1. Install Shopify's free [Search & Discovery](https://apps.shopify.com/search-and-discovery) app.
+2. Open **Product recommendations** in the app.
+3. Pick a product and add the products that complement it, in the order you want them shown.
+4. Repeat for each product with a natural pairing.
 
-- The [Complementary products section](../../sections/complementary-products/), placed by default on the product page.
+A product with no pairings shows nothing at all — no heading, no empty row — so the section is safe to add before you have finished pairing your catalog.
 
-### How to configure
+See [Complementary products](../../sections/complementary-products/) for the full walkthrough.
 
-1. Install the **Search & Discovery** app from the Shopify App Store (free, official Shopify app).
-2. Open `Shopify admin > Apps > Search & Discovery > Product recommendations`.
-3. Pick a source product.
-4. Add complementary products.
-5. Save.
+## Where to put them
 
-If a source product has no complementary products configured, the section is hidden automatically on that product's page.
+Below the product description, not above it. A shopper still reading about this product is not ready to be offered another one.
 
-## Troubleshooting
+The conventional order is complementary first — "goes with this" — then related, as "you might also like".
 
-- **No recommendations appear** — A new store with few orders has thin algorithmic data. Add complementary products manually in the meantime.
-- **The section disappears on some products** — That product has no recommendations or complementary picks configured. This is the expected behavior — Pave hides empty sections rather than showing placeholder UI.
-- **I added complementary products but don't see them** — Wait a few minutes for Shopify's API to propagate, then refresh the storefront with a hard refresh (`Ctrl+F5` / `Cmd+Shift+R`).
+## Tips
+
+- **Leave the heading blank** unless you have a better line. Each type has a default heading written for it.
+- **Four to eight products.** Ten is the ceiling and it fills a wide row, but a long list reads as a catalog rather than a suggestion.
+- **Pair your best sellers first.** Complementary pairings are manual work, and the products that already sell are where that work pays back.
 
 ## Related
 
 - [Product recommendations section](../../sections/product-recommendations/)
-- [Complementary products section](../../sections/complementary-products/)
-- [Recently viewed section](../../sections/recently-viewed/) — Different mechanism, surfaces the customer's own browsing history.
+- [Complementary products](../../sections/complementary-products/)
+- [Recently viewed](../../sections/recently-viewed/)

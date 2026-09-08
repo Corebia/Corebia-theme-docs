@@ -8,49 +8,52 @@ permalink: /templates/home-page/
 
 # Home page
 
-The **Home page** is the storefront entry point at `/`. It uses the `index.json` template, which is JSON-based, so you can fully customize the section list from the theme editor.
+The storefront entry point, at `/`. It uses `index.json`, so the entire section list is yours to arrange from the theme editor.
 
-## URL
+## Sections it ships with
 
-`https://yourstore.com/`
+A fresh install of Pave opens with these seven, in this order:
 
-## Sections included by default
+1. [Hero banner](../../sections/hero/) — a full-height photograph carrying the brand name.
+2. [New arrivals](../../sections/new-arrivals/) — a row of hand-picked products.
+3. [Brand message](../../sections/brand-message/) — copy beside an image, with a button.
+4. [Collection list](../../sections/collection-list/) — collections as image tiles.
+5. [Journal](../../sections/journal/) — up to three blog articles.
+6. [Brand image](../../sections/brand-image/) — a full-width photograph, no text.
+7. [Newsletter](../../sections/newsletter/) — email signup.
 
-When Pave is installed, the home page comes with these sections in this order:
+Select any of them in the editor to change its settings, or use **Add section** to insert others.
 
-1. **Hero banner** — Full-bleed editorial photograph with brand name overlay.
-2. **New arrivals** — Row of three featured product cards.
-3. **Brand message** — Image + heading + body + button.
-4. **Collection list** — Two collection cards.
-5. **Brand image** — Full-bleed editorial image.
-6. **Newsletter** — Email signup form.
+## Sections you can add
 
-To customize, open the theme editor and select any section to edit its settings. Use the **Add section** button to insert new sections at any position.
-
-## Sections that can be added
-
-The home page accepts any section in the **Body** group:
+Any section not restricted to the header or footer group:
 
 - [Hero banner](../../sections/hero/)
 - [New arrivals](../../sections/new-arrivals/)
 - [Brand message](../../sections/brand-message/)
-- [Brand image](../../sections/brand-image/)
 - [Collection list](../../sections/collection-list/)
+- [Brand image](../../sections/brand-image/)
+- [Journal](../../sections/journal/) — home page only
 - [Newsletter](../../sections/newsletter/)
 - [Rich text with image](../../sections/rich-text-image/)
 - [Customer reviews](../../sections/customer-reviews/)
 - [FAQ](../../sections/faq/)
 - [Recently viewed](../../sections/recently-viewed/)
 - [Featured product](../../sections/featured-product/)
+- [Product recommendations](../../sections/product-recommendations/)
 - [Custom Liquid](../../sections/custom-liquid/)
 
-## Special behaviors
+The [Newsletter popup](../../sections/newsletter-popup/) also appears here in the editor, though it overlays every page rather than sitting in the home page's flow.
 
-- **Header on home page** — The fixed branding in the top left is hidden on the home page so the hero banner can use the full screen. The hover trigger zone for the navigation panel is only active on the home page.
-- **Recently viewed on home page** — Hidden for first-time visitors who have no view history. To avoid an empty section on a fresh visit, consider not adding **Recently viewed** to the home page.
+## What the home page does differently
+
+- **The header branding is hidden.** The hero already carries the brand, so the top-left logo or wordmark is suppressed here and shown on every other page.
+- **The navigation panel opens on hover.** The hover trigger zone in the top-right corner is active only on the home page; everywhere else the panel opens on click.
 
 ## Tips
 
-- **Lead with brand, then product.** Pave's design favors a hero-first home page over a catalog-first one. Move products higher up only if your traffic is buyers, not browsers.
-- **Aim for 4–7 sections.** Too few feels sparse; too many turns the home page into a long scroll.
-- **Replace default copy.** The default headings ("Crafted with intention", "ATELIER") are placeholders. Update them before publishing.
+- **Lead with brand, then product.** Pave is designed for a hero-first home page. Move products higher only if your traffic already knows what it wants.
+- **Four to seven sections.** Fewer feels unfinished; more turns the home page into a scroll nobody reaches the end of.
+- **Replace every default string before publishing.** `Crafted with intention`, `Collections`, `From the journal` and the sample paragraphs all ship with the theme and read as sample text.
+- **Don't put Recently viewed here.** A first-time visitor has no history, so the section renders nothing; a returning one is shown their own past before anything new.
+- **Set the Journal articles when you publish.** They are chosen by hand and stay chosen until you change them.
