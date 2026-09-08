@@ -8,21 +8,21 @@ permalink: /templates/page/
 
 # Page
 
-The default template for any page you create in `Shopify admin > Content > Pages` — About, Stockists, Size guide, Shipping information. It uses the **Main page** section, which renders the page's title and body.
+The default template for any page you create in `Shopify admin > Content > Pages`: About, Stockists, Size guide, Shipping information. It uses the **Main page** section, which renders the page's title and body.
 
 ## Section settings
 
-- **Show back link and breadcrumb** — Default: on.
-- **Color scheme** — Default: scheme-1.
+- **Show back link and breadcrumb.** Default: on.
+- **Color scheme.** Default: scheme-1.
 
 ## Blocks
 
-- **App block** — Any block offered by an installed app.
-- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
+- **App block.** Any block offered by an installed app.
+- **Custom Liquid.** See [Custom Liquid](../../sections/custom-liquid/).
 
 ## Building richer pages
 
-The page body is a rich text field, which is enough for text and images but not for layout. For a landing page — an About page with a full-bleed image, a lookbook, a campaign page — add sections above and below the Main page section in the theme editor:
+The page body is a rich text field, which is enough for text and images but not for layout. For a landing page, such as an About page with a full-bleed image, a lookbook or a campaign page, add sections above and below the Main page section in the theme editor:
 
 - [Hero banner](../../sections/hero/) for an opening image
 - [Brand message](../../sections/brand-message/) and [Rich text with image](../../sections/rich-text-image/) for image-and-copy blocks
@@ -42,4 +42,4 @@ Pave ships one alternate page template already: [Contact page](../contact-page/)
 
 - **Use the page body for words and sections for layout.** Trying to lay out a page inside the rich text editor is where most of the frustration with Shopify pages comes from.
 - **Turn the back link off on landing pages.** A breadcrumb above a full-bleed hero undercuts it.
-- **Name templates for their shape, not their content** — `page.wide`, `page.lookbook` — so the next page of that shape can reuse them.
+- **Name templates for their shape, not their content.** `page.wide`, `page.lookbook`, so the next page of that shape can reuse them.

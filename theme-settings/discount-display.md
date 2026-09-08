@@ -14,8 +14,8 @@ They govern **presentation only**. The discounts themselves are created under `S
 
 ## Settings
 
-- **Show discount badge** — Shows the discount badge wherever a reduced price appears. Default: on. Strikethrough prices still show when the badge is hidden.
-- **Badge label format** — How badges are written. Default: **Minus percentage**.
+- **Show discount badge.** Shows the discount badge wherever a reduced price appears. Default: on. Strikethrough prices still show when the badge is hidden.
+- **Badge label format.** How badges are written. Default: **Minus percentage**.
 
   | Option | Reads as |
   |---|---|
@@ -26,10 +26,10 @@ They govern **presentation only**. The discounts themselves are created under `S
 
   When a product's variants are discounted by different amounts, the badge on its card reads `Up to` followed by the largest of them, in whichever format you chose.
 
-- **Minimum discount to show badge** — Discounts below this percentage don't show a badge; the strikethrough price still appears. Range: 0% to 50%. Default: 0%, meaning every discount gets a badge.
-- **Badge background color** — Defaults to the text color of the active color scheme. Set a color here to override it wherever the badge appears.
-- **Badge text color** — Defaults to the surface color of the active color scheme. Keep a contrast ratio of at least 4.5:1 against the badge background.
-- **Use a promotion label from product metafields** — Default: off. A product's promotion label replaces its sale badge, for offers set up outside Shopify discounts.
+- **Minimum discount to show badge.** Discounts below this percentage don't show a badge; the strikethrough price still appears. Range: 0% to 50%. Default: 0%, meaning every discount gets a badge.
+- **Badge background color.** Defaults to the text color of the active color scheme. Set a color here to override it wherever the badge appears.
+- **Badge text color.** Defaults to the surface color of the active color scheme. Keep a contrast ratio of at least 4.5:1 against the badge background.
+- **Use a promotion label from product metafields.** Default: off. A product's promotion label replaces its sale badge, for offers set up outside Shopify discounts.
 
 ## Promotion labels from metafields
 
@@ -42,7 +42,7 @@ With **Use a promotion label from product metafields** on, the theme reads two m
 
 Define them once under `Shopify admin > Settings > Metafields and metaobjects > Products`, then fill them in per product.
 
-This is for offers Shopify's discount engine doesn't model — a bundle handled by an app, a members' price, a seasonal promotion run outside Shopify. A product with a promotion label set shows that label in place of its calculated sale badge.
+This is for offers Shopify's discount engine doesn't model: a bundle handled by an app, a members' price, a seasonal promotion run outside Shopify. A product with a promotion label set shows that label in place of its calculated sale badge.
 
 ## Tips
 

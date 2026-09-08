@@ -12,13 +12,13 @@ Selling plans are Shopify's mechanism for subscriptions, prepaid plans, and any 
 
 ## Where selling plans appear
 
-- **Product page** — The selling plan picker appears in the **Variant picker** block. Customers choose between one-time purchase or one of the available subscription / scheduled options.
-- **Cart page** — Each cart line item that has a selling plan shows the chosen plan name and the recurring schedule.
-- **Customer order detail page** — Past orders with selling plans show the plan and the recurring details.
+- **Product page.** The selling plan picker appears in the **Variant picker** block. Customers choose between one-time purchase or one of the available subscription / scheduled options.
+- **Cart page.** Each cart line item that has a selling plan shows the chosen plan name and the recurring schedule.
+- **Customer order detail page.** Past orders with selling plans show the plan and the recurring details.
 
 ## Prerequisites
 
-To use selling plans, you need a **subscription app** installed in your store. Shopify itself does not provide a subscription engine — apps like:
+To use selling plans, you need a **subscription app** installed in your store. Shopify itself does not provide a subscription engine. Apps such as:
 
 - **Shopify Subscriptions** (free, official Shopify app)
 - Recharge
@@ -34,7 +34,7 @@ After the app is installed, configure plans:
 3. Attach the plan group to the products you want to make subscribable.
 4. Save.
 
-Pave reads the selling plans from the products automatically — no theme configuration is needed.
+Pave reads the selling plans from the products automatically, so no theme configuration is needed.
 
 ## How customers buy with a selling plan
 
@@ -50,19 +50,19 @@ Customers manage their subscriptions through the subscription app, typically fro
 
 ## Tips
 
-- **Pick a single subscription app and stick with it.** Migrating between apps is painful — selling plan IDs are app-specific.
+- **Pick a single subscription app and stick with it.** Migrating between apps is painful, because selling plan IDs are app-specific.
 - **Be explicit about the savings.** "Subscribe and save 10%" performs better than "Subscribe".
 - **Allow easy cancellation.** Subscription apps that hide cancellation hurt long-term trust. Customers who can cancel easily come back.
 - **Test the full flow** end-to-end before launching: pick plan, checkout, receive confirmation, find the manage-subscription link.
 
 ## Troubleshooting
 
-- **No selling plan options appear on a product** — Confirm the product is included in a selling plan group inside the subscription app, and that the plan group is active.
-- **Selling plan price isn't updating** — Hard refresh the storefront (`Ctrl+F5` / `Cmd+Shift+R`) to clear any cached price.
-- **Customer can't manage their subscription** — Check the subscription app's customer-facing settings; some require a separate URL or a customer account login.
+- **No selling plan options appear on a product.** Confirm the product is included in a selling plan group inside the subscription app, and that the plan group is active.
+- **Selling plan price isn't updating.** Hard refresh the storefront (`Ctrl+F5` / `Cmd+Shift+R`) to clear any cached price.
+- **Customer can't manage their subscription.** Check the subscription app's customer-facing settings; some require a separate URL or a customer account login.
 
 ## Related
 
-- [Product page template reference](../../templates/product-page/) — Variant picker block.
+- [Product page template reference](../../templates/product-page/): Variant picker block.
 - [Cart page template reference](../../templates/cart-page/)
 - [Customer pages template reference](../../templates/customer-pages/)

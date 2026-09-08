@@ -47,9 +47,9 @@ If a variant is out of stock at every pickup location, the availability section 
 
 ## Troubleshooting
 
-- **The pickup section doesn't appear** — Confirm at least one location has local pickup enabled. If no location has pickup enabled, the section is hidden.
-- **The wrong location appears as nearest** — Pave displays the location based on Shopify's data. Customers can click "Check availability at other locations" to see all locations.
-- **Variant shows as unavailable but I have stock** — Confirm the variant is assigned inventory at the pickup location in `Shopify admin > Products > [product] > Inventory`.
+- **The pickup section doesn't appear.** Confirm at least one location has local pickup enabled. If no location has pickup enabled, the section is hidden.
+- **The wrong location appears as nearest.** Pave displays the location based on Shopify's data. Customers can click "Check availability at other locations" to see all locations.
+- **Variant shows as unavailable but I have stock.** Confirm the variant is assigned inventory at the pickup location in `Shopify admin > Products > [product] > Inventory`.
 
 ## Related
 

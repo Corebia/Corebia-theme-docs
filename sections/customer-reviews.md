@@ -14,12 +14,12 @@ It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Heading** — Default: `Customer reviews`.
-- **Color scheme** — Default: scheme-1.
+- **Heading.** Default: `Customer reviews`.
+- **Color scheme.** Default: scheme-1.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
@@ -27,11 +27,11 @@ Up to **five** blocks, of any of these types.
 
 ### Quote
 
-The manual option — you write the content.
+The manual option, where you write the content yourself.
 
-- **Quote** — Rich text. The customer's own words. Keep it to one short paragraph.
-- **Author** — Who said it.
-- **Source** — Optional. Where the quote came from, such as a publication name or the customer's city.
+- **Quote.** Rich text. The customer's own words. Keep it to one short paragraph.
+- **Author.** Who said it.
+- **Source.** Optional. Where the quote came from, such as a publication name or the customer's city.
 
 ### App block
 
@@ -39,7 +39,7 @@ Any block offered by a reviews app installed on your store. What it renders and 
 
 ### Custom Liquid
 
-- **Liquid code** — For an app that gives you a snippet to paste rather than a block.
+- **Liquid code.** For an app that gives you a snippet to paste rather than a block.
 
 ## Tips
 

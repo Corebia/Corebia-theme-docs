@@ -16,30 +16,30 @@ It can't be placed in the header or footer groups.
 
 ### Content
 
-- **Heading** — Default: `New arrivals`.
-- **View all label** — Default: `View all`. Leave empty to hide the link.
-- **View all link** — Where that link points, usually a collection.
+- **Heading.** Default: `New arrivals`.
+- **View all label.** Default: `View all`. Leave empty to hide the link.
+- **View all link.** Where that link points, usually a collection.
 
 ### Products
 
-- **Columns on desktop** — Range: 2 to 4. Default: 4. Mobile always shows fewer.
-- **Image ratio** — **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
-- **Show vendor** — Default: off.
-- **Show second image on hover** — Shows the product's alternate image when a shopper hovers the card. Default: on.
+- **Columns on desktop.** Range: 2 to 4. Default: 4. Mobile always shows fewer.
+- **Image ratio.** **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
+- **Show vendor.** Default: off.
+- **Show second image on hover.** Shows the product's alternate image when a shopper hovers the card. Default: on.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
 Up to **six** Product blocks.
 
-- **Product** — The product to show in this slot.
+- **Product.** The product to show in this slot.
 
 ## Tips
 

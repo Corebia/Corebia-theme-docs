@@ -12,26 +12,26 @@ Accelerated checkout buttons let customers skip the standard checkout flow and p
 
 ## Where they appear
 
-- **Product page** — In the **Buy buttons** block, below the **Add to cart** button. Toggle with **Show dynamic checkout buttons**.
-- **Cart page** — Below the main checkout button.
+- **Product page.** In the **Buy buttons** block, below the **Add to cart** button. Toggle with **Show dynamic checkout buttons**.
+- **Cart page.** Below the main checkout button.
 
 ## Available payment methods
 
 Which buttons appear depends on what is enabled in `Shopify admin > Settings > Payments`:
 
-- **Shop Pay** — Shopify's accelerated checkout. Enabled by default with Shopify Payments.
-- **Apple Pay** — On iOS Safari and macOS Safari, when Shopify Payments is enabled.
-- **Google Pay** — On Android Chrome and desktop Chrome, when Shopify Payments is enabled.
-- **PayPal** — When PayPal is enabled as a payment method in your store.
-- **Amazon Pay** — When Amazon Pay is enabled.
+- **Shop Pay.** Shopify's accelerated checkout. Enabled by default with Shopify Payments.
+- **Apple Pay.** On iOS Safari and macOS Safari, when Shopify Payments is enabled.
+- **Google Pay.** On Android Chrome and desktop Chrome, when Shopify Payments is enabled.
+- **PayPal.** When PayPal is enabled as a payment method in your store.
+- **Amazon Pay.** When Amazon Pay is enabled.
 
 Pave doesn't pick which buttons appear; Shopify makes the choice based on what is enabled and what the customer's device supports.
 
 ## Customer experience
 
-- **One-tap purchase** — Customers with a stored payment method (for example, anyone who has used Shop Pay before) check out in one or two taps.
-- **Skip the form** — Address, payment, and shipping are all populated from the stored payment profile.
-- **Faster on mobile** — The biggest impact is on mobile, where typing checkout details on a small keyboard is the biggest source of cart abandonment.
+- **One-tap purchase.** Customers with a stored payment method (for example, anyone who has used Shop Pay before) check out in one or two taps.
+- **Skip the form.** Address, payment, and shipping are all populated from the stored payment profile.
+- **Faster on mobile.** The biggest impact is on mobile, where typing checkout details on a small keyboard is the biggest source of cart abandonment.
 
 ## Tips
 
@@ -41,9 +41,9 @@ Pave doesn't pick which buttons appear; Shopify makes the choice based on what i
 
 ## Troubleshooting
 
-- **No accelerated buttons appear** — Confirm Shopify Payments is enabled and that **Show dynamic checkout buttons** is on in the Buy buttons block. If only some buttons appear, that is expected — the set is device- and locale-specific.
-- **PayPal button doesn't appear** — Enable PayPal in `Shopify admin > Settings > Payments > Alternative payment methods`.
-- **Shop Pay button doesn't pre-fill payment** — The customer needs to be signed into Shop Pay or have a recognized device. First-time Shop Pay users still see a signup flow.
+- **No accelerated buttons appear.** Confirm Shopify Payments is enabled and that **Show dynamic checkout buttons** is on in the Buy buttons block. If only some buttons appear, that is expected: the set is device- and locale-specific.
+- **PayPal button doesn't appear.** Enable PayPal in `Shopify admin > Settings > Payments > Alternative payment methods`.
+- **Shop Pay button doesn't pre-fill payment.** The customer needs to be signed into Shop Pay or have a recognized device. First-time Shop Pay users still see a signup flow.
 
 ## Related
 

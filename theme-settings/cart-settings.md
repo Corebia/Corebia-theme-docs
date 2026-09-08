@@ -10,7 +10,7 @@ permalink: /theme-settings/cart-settings/
 
 ## Settings
 
-- **Show discount code field** — Puts a discount code field on the cart page. Default: on.
+- **Show discount code field.** Puts a discount code field on the cart page. Default: on.
 
 ## What the cart does without any settings
 
@@ -24,11 +24,11 @@ Most of the cart's behaviour isn't configurable, because it follows your store r
 
 ## Should the discount code field be on?
 
-Turning it **on** is right for most stores. Shoppers who have a code will look for somewhere to enter it, and a cart with nowhere to do so sends them out to search for one — which often means leaving the checkout to find a coupon site.
+Turning it **on** is right for most stores. Shoppers who have a code will look for somewhere to enter it, and a cart with nowhere to do so sends them out to search for one, which often means leaving the checkout to find a coupon site.
 
 Turning it **off** makes sense in two cases: if you never run code-based discounts, so the field is an empty invitation to go looking for one; or if you rely on automatic discounts, which apply without a code and show in the cart on their own.
 
-Codes can still be applied at checkout either way. Hiding the field here doesn't disable discounts — see [Discount codes](../../features/discounts/).
+Codes can still be applied at checkout either way. Hiding the field here doesn't disable discounts. See [Discount codes](../../features/discounts/).
 
 ## Tips
 

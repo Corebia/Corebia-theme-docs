@@ -18,21 +18,21 @@ The Header lives in the `header` section group, so it can't be removed or placed
 
 ### Branding
 
-- **Show shop branding** — Displays the shop logo or name in the top left of every page except the home page. Default: off.
-- **Brand text** — Defaults to the shop name if left empty. Only visible when no logo is set.
-- **Brand text size** — Range: 10 to 32 px in 1 px steps. Default: 16 px.
-- **Brand link** — Where the top-left brand element links to. Defaults to the home page if left empty.
+- **Show shop branding.** Displays the shop logo or name in the top left of every page except the home page. Default: off.
+- **Brand text.** Defaults to the shop name if left empty. Only visible when no logo is set.
+- **Brand text size.** Range: 10 to 32 px in 1 px steps. Default: 16 px.
+- **Brand link.** Where the top-left brand element links to. Defaults to the home page if left empty.
 
 ### Navigation panel
 
-- **Shop name link** — Where the large shop name inside the panel links to. Defaults to the home page if left empty.
-- **Navigation heading text** — The large heading at the top of the panel. Defaults to the shop name if left empty.
-- **Navigation heading size** — Range: 16 to 48 px in 2 px steps. Default: 28 px.
-- **Panel width** — Width of the panel as a percentage of the viewport. Range: 25% to 50% in 5% steps. Default: 35%. On mobile the panel always takes the full screen.
-- **Customer account menu** — The menu shown inside the customer account panel. Leave empty to use the default account links.
-- **Show Follow on Shop** — Lets shoppers follow your store on the Shop app from the navigation panel. Default: on.
-- **Hover trigger size** — Size of the invisible hover zone at the top right of the home page that opens the panel. Range: 80 to 300 px in 10 px steps. Default: 150 px.
-- **Color scheme** — Applied to the navigation panel. Default: scheme-1.
+- **Shop name link.** Where the large shop name inside the panel links to. Defaults to the home page if left empty.
+- **Navigation heading text.** The large heading at the top of the panel. Defaults to the shop name if left empty.
+- **Navigation heading size.** Range: 16 to 48 px in 2 px steps. Default: 28 px.
+- **Panel width.** Width of the panel as a percentage of the viewport. Range: 25% to 50% in 5% steps. Default: 35%. On mobile the panel always takes the full screen.
+- **Customer account menu.** The menu shown inside the customer account panel. Leave empty to use the default account links.
+- **Show Follow on Shop.** Lets shoppers follow your store on the Shop app from the navigation panel. Default: on.
+- **Hover trigger size.** Size of the invisible hover zone at the top right of the home page that opens the panel. Range: 80 to 300 px in 10 px steps. Default: 150 px.
+- **Color scheme.** Applied to the navigation panel. Default: scheme-1.
 
 ## Blocks
 
@@ -42,22 +42,22 @@ The header takes two block types, in any order and any mix.
 
 Renders a Shopify navigation as a vertical link list inside the panel. Three nesting levels are supported: parent, sub-menu and sub-sub-menu.
 
-- **Main menu** — The Shopify navigation to render. Default: `main-menu`.
+- **Main menu.** The Shopify navigation to render. Default: `main-menu`.
 
 ### Custom link
 
 A single inline link in the panel.
 
-- **Link label** — The text to display.
-- **Link URL** — Where it points.
+- **Link label.** The text to display.
+- **Link URL.** Where it points.
 
 ## Always present, and not configurable
 
-- **Cart link** — Reads `Cart (n)` with the live item count.
-- **Search** — An inline expandable field backed by predictive search. What it returns is configured in the [Predictive search](../predictive-search/) section.
-- **Customer account** — Shopify's own account component. It shows a signed-out or signed-in avatar automatically and needs no setup beyond enabling customer accounts in your Shopify admin. Its colors and fonts follow the theme, but its contents are rendered by Shopify, so the only thing the theme controls is which menu appears inside it — see **Customer account menu** above.
-- **Follow on Shop button** — Rendered by Shopify when **Show Follow on Shop** is on. Its colors can't be changed, by Theme Store rule.
-- **Policy links** — Privacy policy, Terms of service, Refund policy and Shipping policy. Each appears only if that policy is filled in under `Shopify admin > Settings > Policies`.
+- **Cart link.** Reads `Cart (n)` with the live item count.
+- **Search.** An inline expandable field backed by predictive search. What it returns is configured in the [Predictive search](../predictive-search/) section.
+- **Customer account.** Shopify's own account component. It shows a signed-out or signed-in avatar automatically and needs no setup beyond enabling customer accounts in your Shopify admin. Its colors and fonts follow the theme, but its contents are rendered by Shopify, so the only thing the theme controls is which menu appears inside it. See **Customer account menu** above.
+- **Follow on Shop button.** Rendered by Shopify when **Show Follow on Shop** is on. Its colors can't be changed, by Theme Store rule.
+- **Policy links.** Privacy policy, Terms of service, Refund policy and Shipping policy. Each appears only if that policy is filled in under `Shopify admin > Settings > Policies`.
 
 ## Tips
 

@@ -8,9 +8,9 @@ permalink: /sections/complementary-products/
 
 # Complementary products
 
-Complementary products are the ones you pair up yourself — the belt that goes with the trousers, the refill that goes with the bottle.
+Complementary products are the ones you pair up yourself: the belt that goes with the trousers, the refill that goes with the bottle.
 
-In Pave they are **not a separate section**. They are a mode of [Product recommendations](../product-recommendations/): add that section and set **Recommendation type** to **Complementary products**. Everything else about it — heading, maximum products, color scheme — works the same way in both modes.
+In Pave they are **not a separate section**. They are a mode of [Product recommendations](../product-recommendations/): add that section and set **Recommendation type** to **Complementary products**. Everything else about it works the same way in both modes: heading, maximum products and color scheme.
 
 ## Setting them up
 
@@ -29,8 +29,8 @@ This also means the section is safe to add to the product template before you ha
 
 ## Complementary or related?
 
-- **Complementary** answers "what goes with this?" — you decide, and the answer is usually a different kind of product.
-- **Related** answers "what else is like this?" — Shopify decides from order history and product data, and the answer is usually a similar product.
+- **Complementary** answers "what goes with this?". You decide, and the answer is usually a different kind of product.
+- **Related** answers "what else is like this?". Shopify decides from order history and product data, and the answer is usually a similar product.
 
 They serve different moments and most stores want both. See the comparison table in [Product recommendations](../product-recommendations/#how-the-two-modes-differ).
 

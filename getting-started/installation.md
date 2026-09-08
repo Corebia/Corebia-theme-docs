@@ -43,17 +43,17 @@ When you are ready to make Pave the live theme on your storefront:
 ## What to expect on first install
 
 - **Demo content does not transfer.** The screenshots and demo content shown on the Theme Store listing are illustrative. Your store starts with your real products, collections, and content.
-- **The chosen preset determines the initial look.** Pave ships with one preset. After publishing, the home page shows its seven bundled sections — hero banner, new arrivals, brand message, collection list, journal, brand image and newsletter — ready for you to populate. See [Home page](../../templates/home-page/).
+- **The chosen preset determines the initial look.** Pave ships with one preset. After publishing, the home page shows its seven bundled sections, ready for you to populate: hero banner, new arrivals, brand message, collection list, journal, brand image and newsletter. See [Home page](../../templates/home-page/).
 - **Sample text ships with the theme and must be replaced.** Default copy such as "Crafted with intention", "From the journal" and the sample paragraphs in Brand message and Rich text with image are placeholders. Anything published with them still in place reads as unfinished.
 
 ## Recommended plan and prerequisites
 
 Pave works on every Shopify plan. To unlock the full feature set:
 
-- **Shopify Payments** — required for [Shop Pay Installments](../../features/shop-pay-installments/) and [accelerated checkout](../../features/accelerated-checkout/).
-- **Markets** — required for [multi-currency and multi-language](../../features/multi-currency-language/) selectors in the footer.
-- **Shopify Search & Discovery** app — required for [complementary product](../../features/product-recommendations/) configuration.
-- **A Shopify reviews app** — required for the [Customer reviews](../../sections/customer-reviews/) section to display content. Pave is compatible with the `reviews.rating` metafield used by most reviews apps.
+- **Shopify Payments.** Required for [Shop Pay Installments](../../features/shop-pay-installments/) and [accelerated checkout](../../features/accelerated-checkout/).
+- **Markets.** Required for [multi-currency and multi-language](../../features/multi-currency-language/) selectors in the footer.
+- **Shopify Search & Discovery** app, required for [complementary product](../../features/product-recommendations/) configuration.
+- **A Shopify reviews app.** Required for the [Customer reviews](../../sections/customer-reviews/) section to display content. Pave is compatible with the `reviews.rating` metafield used by most reviews apps.
 
 For details on each, see the [Shopify Help Center](https://help.shopify.com/).
 

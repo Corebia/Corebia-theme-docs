@@ -14,9 +14,9 @@ Pave's newsletter signup is a simple email form that creates a customer record i
 
 Pave offers three ways to collect an address, and they can all run at once:
 
-- The [Newsletter section](../../sections/newsletter/) — in the page flow, on the home page by default. Add it to any template except the header group.
-- The [Newsletter popup](../../sections/newsletter-popup/) — an overlay that opens once per visitor after a delay or a scroll. It never shows to a signed-in customer, and never to someone who has dismissed it in that browser.
-- The [Password page](../../templates/password-page/) — when **Show email signup form** is on. A pre-launch list is often the most valuable one a store builds.
+- The [Newsletter section](../../sections/newsletter/), in the page flow, on the home page by default. Add it to any template except the header group.
+- The [Newsletter popup](../../sections/newsletter-popup/), an overlay that opens once per visitor after a delay or a scroll. It never shows to a signed-in customer, and never to someone who has dismissed it in that browser.
+- The [Password page](../../templates/password-page/), when **Show email signup form** is on. A pre-launch list is often the most valuable one a store builds.
 
 All three write to the same place.
 
@@ -42,15 +42,15 @@ The form does not capture name, phone, or other fields. If you need richer signu
 
 ## Tips
 
-- **Honor your offer** — If your subtext promises a 10% discount on first order, send a welcome email with the discount code. Customers who don't get the promised discount unsubscribe at high rates.
-- **Confirm subscriptions** — Many email tools support double opt-in (customer must click a confirmation link in their welcome email). Recommended for deliverability and GDPR compliance.
-- **GDPR / privacy** — In the EU, ensure your form copy and privacy policy meet GDPR consent requirements. Configure customer accounts and email marketing settings in `Shopify admin > Settings > Customer accounts` and `Settings > Notifications`.
+- **Honor your offer.** If your subtext promises a 10% discount on first order, send a welcome email with the discount code. Customers who don't get the promised discount unsubscribe at high rates.
+- **Confirm subscriptions.** Many email tools support double opt-in (customer must click a confirmation link in their welcome email). Recommended for deliverability and GDPR compliance.
+- **GDPR / privacy.** In the EU, ensure your form copy and privacy policy meet GDPR consent requirements. Configure customer accounts and email marketing settings in `Shopify admin > Settings > Customer accounts` and `Settings > Notifications`.
 
 ## Troubleshooting
 
-- **Submitting the form does nothing** — Confirm the email is valid (some browsers' autofill inserts non-email values). Check the browser console for errors and confirm Shopify customer-creation isn't blocked.
-- **Customer doesn't appear in admin** — Submissions take a moment to show up. Refresh the admin customer list. If still missing, confirm the section's form posts are reaching Shopify (check the network panel in dev tools).
-- **Welcome email doesn't go out** — Welcome emails are configured by your email tool (Shopify Email, Klaviyo, etc.). Configure the welcome flow in that tool, not the theme.
+- **Submitting the form does nothing.** Confirm the email is valid (some browsers' autofill inserts non-email values). Check the browser console for errors and confirm Shopify customer-creation isn't blocked.
+- **Customer doesn't appear in admin.** Submissions take a moment to show up. Refresh the admin customer list. If still missing, confirm the section's form posts are reaching Shopify (check the network panel in dev tools).
+- **Welcome email doesn't go out.** Welcome emails are configured by your email tool (Shopify Email, Klaviyo, etc.). Configure the welcome flow in that tool, not the theme.
 
 ## Related
 

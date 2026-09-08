@@ -23,15 +23,15 @@ The site is then available at `http://localhost:4000`.
 
 ## Repository layout
 
-- `index.md` — Landing page.
-- `getting-started/` — Installation and first-steps guides.
-- `theme-settings/` — Documentation for every category in the theme settings.
-- `sections/` — One page per storefront section.
-- `templates/` — One page per page template.
-- `features/` — Documentation for Shopify Theme Store mandatory features.
-- `customization/` — Guidance for code edits and custom modifications.
-- `support/` — Support policy, contact instructions, FAQ.
-- `changelog.md` — Theme version history.
+- `index.md`: Landing page.
+- `getting-started/`: Installation and first-steps guides.
+- `theme-settings/`: Documentation for every category in the theme settings.
+- `sections/`: One page per storefront section.
+- `templates/`: One page per page template.
+- `features/`: Documentation for Shopify Theme Store mandatory features.
+- `customization/`: Guidance for code edits and custom modifications.
+- `support/`: Support policy, contact instructions, FAQ.
+- `changelog.md`: Theme version history.
 
 ## Editing
 

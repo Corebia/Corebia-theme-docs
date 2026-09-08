@@ -14,23 +14,23 @@ It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Heading** — Default: `Collections`.
-- **Layout** — **Editorial mosaic** (default) sizes tiles unevenly for a magazine feel; **Uniform grid** gives every collection the same weight.
-- **Image ratio** — **Portrait (4:5)** (default), **Square (1:1)** or **Landscape (3:2)**.
-- **Number of columns on desktop** — Range: 2 to 4. Default: 3.
-- **Color scheme** — Default: scheme-1.
-- **Image overlay intensity** — **Soft**, **Medium** (default) or **Strong**. Strengthens the gradient behind tile titles so they stay readable on bright or busy imagery.
+- **Heading.** Default: `Collections`.
+- **Layout.** **Editorial mosaic** (default) sizes tiles unevenly for a magazine feel; **Uniform grid** gives every collection the same weight.
+- **Image ratio.** **Portrait (4:5)** (default), **Square (1:1)** or **Landscape (3:2)**.
+- **Number of columns on desktop.** Range: 2 to 4. Default: 3.
+- **Color scheme.** Default: scheme-1.
+- **Image overlay intensity.** **Soft**, **Medium** (default) or **Strong**. Strengthens the gradient behind tile titles so they stay readable on bright or busy imagery.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
 Up to **five** Collection blocks.
 
-- **Collections** — The collection this tile points to.
-- **Image crop focal point** — Where to anchor the image when it's cropped for this tile. **Auto** (default) uses the image's own focal point from Shopify admin; the other nine options pin it to a corner, edge or the center.
+- **Collections.** The collection this tile points to.
+- **Image crop focal point.** Where to anchor the image when it's cropped for this tile. **Auto** (default) uses the image's own focal point from Shopify admin; the other nine options pin it to a corner, edge or the center.
 
 ## Tips
 

@@ -22,9 +22,9 @@ Nothing beyond the setting. The button is rendered by Shopify, not by the theme,
 
 A button carrying the Shop logo and wordmark, translated to their locale. Tapping it:
 
-- **On mobile with the Shop app** — opens the app and follows your store.
-- **On mobile without it** — offers to install the app, then follows.
-- **On desktop** — opens Shop on the web, or shows a code to scan.
+- **On mobile with the Shop app.** Opens the app and follows your store.
+- **On mobile without it.** Offers to install the app, then follows.
+- **On desktop.** Opens Shop on the web, or shows a code to scan.
 
 ## Its colours can't be changed
 
@@ -38,8 +38,8 @@ The button is branded by Shopify, and the Theme Store requires that branded chec
 
 ## Troubleshooting
 
-- **The button doesn't appear** — check **Show Follow on Shop** in the Header section, then confirm Shopify Payments is set up, since Shop is part of that stack.
-- **Nothing happens on desktop** — expected. Without the app, desktop opens Shop on the web or shows a QR code.
+- **The button doesn't appear.** Check **Show Follow on Shop** in the Header section, then confirm Shopify Payments is set up, since Shop is part of that stack.
+- **Nothing happens on desktop.** Expected. Without the app, desktop opens Shop on the web or shows a QR code.
 
 ## Related
 

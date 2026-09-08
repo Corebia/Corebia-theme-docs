@@ -17,7 +17,7 @@ Pave is built for stores that lead with photography: a spacious, editorial store
 
 ### Added
 
-- **Four variant picker styles** — three swatch sizes and a dropdown for catalogs with many options — chosen once in theme settings and applied to every product page.
+- **Four variant picker styles.** Three swatch sizes and a dropdown for catalogs with many options, chosen once in theme settings and applied to every product page.
 - **Side-panel navigation** with three levels of menu nesting, predictive search, the customer account component, the cart, a Follow on Shop button and your policy links.
 - **Home page sections**: Hero banner, New arrivals, Brand message, Collection list, Brand image, Journal, Newsletter and Newsletter popup.
 - **Content sections**: Rich text with image, Customer reviews and FAQ.

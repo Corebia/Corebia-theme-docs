@@ -46,7 +46,7 @@ Pave supports **Shopify app blocks** in many sections, which lets compatible app
 
 ### Does Pave support subscriptions?
 
-Yes — Pave displays selling plans on the product page, cart, and order detail. You'll need a separate subscription app (like the free **Shopify Subscriptions** app) to create the plans. See [Selling plans](../../features/selling-plans/).
+Yes. Pave displays selling plans on the product page, cart, and order detail. You'll need a separate subscription app (like the free **Shopify Subscriptions** app) to create the plans. See [Selling plans](../../features/selling-plans/).
 
 ### How do I set up complementary products?
 
@@ -64,7 +64,7 @@ If you've only changed theme settings (colors, fonts, section settings), Shopify
 
 ### Can I transfer the theme to another store?
 
-A theme installed via the Shopify Theme Store is licensed to a single store. To use it on another store, purchase a separate license for that store. Shopify handles the licensing — see the [Shopify Help Center: Themes](https://help.shopify.com/manual/online-store/themes).
+A theme installed via the Shopify Theme Store is licensed to a single store. To use it on another store, purchase a separate license for that store. Shopify handles the licensing. See the [Shopify Help Center: Themes](https://help.shopify.com/manual/online-store/themes).
 
 ### How do I customize the theme beyond what the editor allows?
 

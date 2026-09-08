@@ -20,7 +20,7 @@ Pave stores no menus of its own. Build them under `Shopify admin > Online Store 
 |---|---|---|
 | Main menu | The **Navigation** block on the [Header](../../sections/header/) | `main-menu` |
 | Footer | The **Footer navigation** block on the [Footer](../../sections/footer/) | `footer` |
-| Customer account menu | The account panel in the header | none — optional |
+| Customer account menu | The account panel in the header | none, optional |
 
 ## Three levels in the panel
 
@@ -36,7 +36,7 @@ The footer renders **one** level. Sub-menus in a footer menu are not shown, so g
 
 ## Adding a link that isn't in a menu
 
-The header also takes **Custom link** blocks — a label and a URL, added directly in the theme editor. Use them for one-off links that don't belong in your main navigation structure.
+The header also takes **Custom link** blocks: a label and a URL, added directly in the theme editor. Use them for one-off links that don't belong in your main navigation structure.
 
 ## What is in the panel without configuration
 

@@ -58,15 +58,15 @@ If the order total exceeds the gift card balance, the customer pays the remainde
 ## Tips
 
 - **Test gift cards with a real card** issued to your own email. Walk through purchase, redemption, and balance tracking.
-- **Set a realistic gift card image** — uploading a branded gift card image (one image per denomination if you wish) makes the recipient page feel premium.
+- **Set a realistic gift card image.** Uploading a branded gift card image (one image per denomination if you wish) makes the recipient page feel premium.
 - **Configure the gift card email** in `Shopify admin > Settings > Notifications > Customer notifications > Gift card created`. The default Shopify template is functional but bland; brand it.
 - **Disable expiry** unless you have a specific reason to expire cards. Many jurisdictions regulate gift card expiry; check with your jurisdiction's rules.
 
 ## Troubleshooting
 
-- **The recipient form doesn't appear** — Confirm **Show recipient information form for gift card products** is enabled in the **Buy buttons** block, and that the product type is Gift card.
-- **Apple Wallet button doesn't appear** — Apple Wallet passes are issued by Shopify; on iOS Safari, the button should appear automatically. On other browsers, the button is not interactive in the same way.
-- **The QR code doesn't render** — The QR code uses the `qrcode.js` library shipped with the theme. If you've heavily customized the gift card template, ensure the script tag is intact.
+- **The recipient form doesn't appear.** Confirm **Show recipient information form for gift card products** is enabled in the **Buy buttons** block, and that the product type is Gift card.
+- **Apple Wallet button doesn't appear.** Apple Wallet passes are issued by Shopify; on iOS Safari, the button should appear automatically. On other browsers, the button is not interactive in the same way.
+- **The QR code doesn't render.** The QR code uses the `qrcode.js` library shipped with the theme. If you've heavily customized the gift card template, ensure the script tag is intact.
 
 ## Related
 

@@ -12,7 +12,7 @@ Pave supports multi-currency and multi-language stores via Shopify Markets. When
 
 ## Where the selectors appear
 
-- The [Footer](../../sections/footer/) bottom bar — when more than one country and/or more than one language is published.
+- The [Footer](../../sections/footer/) bottom bar, when more than one country and/or more than one language is published.
 
 If only one country is configured, the country selector is hidden. If only one language is published, the language selector is hidden. There is no theme setting to enable or disable these selectors; they appear automatically based on Shopify Markets configuration.
 
@@ -36,7 +36,7 @@ Once at least two languages are published, the language selector appears in Pave
 
 ## Pave's translation files
 
-Pave ships with English (`en.default.json`) as the default language. UI strings (button labels, accessibility text, error messages) are stored in this locale file. When you add a language to your store, you also need to translate Pave's UI strings — most translation apps do this automatically.
+Pave ships with English (`en.default.json`) as the default language. UI strings (button labels, accessibility text, error messages) are stored in this locale file. When you add a language to your store, you also need to translate Pave's UI strings. Most translation apps do this automatically.
 
 If you have only configured your store in English, no language selector appears, and all UI strings come from the English locale.
 
@@ -44,15 +44,15 @@ If you have only configured your store in English, no language selector appears,
 
 - **Markets first, language second.** Customers in a country may speak the same language; configuring markets but not languages still gives them prices in their currency.
 - **Test the currency conversion.** Switch the country and verify prices, shipping, and taxes calculate correctly.
-- **Translate everything you can** — Untranslated content (or worse, a mix) reads as unfinished.
-- **Custom translations** — Customizations to the locale file (translations) are not covered by support. See [Custom code](../../customization/custom-code/).
+- **Translate everything you can.** Untranslated content (or worse, a mix) reads as unfinished.
+- **Custom translations.** Customizations to the locale file (translations) are not covered by support. See [Custom code](../../customization/custom-code/).
 
 ## Troubleshooting
 
-- **Country selector doesn't appear** — Confirm at least two markets are configured in `Shopify admin > Settings > Markets`.
-- **Language selector doesn't appear** — Confirm at least two languages are published in `Shopify admin > Settings > Languages`.
-- **Prices don't change when I switch country** — Verify Shopify Payments is enabled and configured for the additional markets. Without Shopify Payments, multi-currency requires a third-party currency conversion app.
-- **Some text isn't translated** — Either Pave's locale file doesn't have a translation for that key (in which case translate it via your translation app or in `Shopify admin > Online Store > Themes > Edit default theme content`), or the content comes from the Shopify admin (products, collections) and needs translation in `Shopify admin > Settings > Languages > Translate`.
+- **Country selector doesn't appear.** Confirm at least two markets are configured in `Shopify admin > Settings > Markets`.
+- **Language selector doesn't appear.** Confirm at least two languages are published in `Shopify admin > Settings > Languages`.
+- **Prices don't change when I switch country.** Verify Shopify Payments is enabled and configured for the additional markets. Without Shopify Payments, multi-currency requires a third-party currency conversion app.
+- **Some text isn't translated.** Either Pave's locale file doesn't have a translation for that key (in which case translate it via your translation app or in `Shopify admin > Online Store > Themes > Edit default theme content`), or the content comes from the Shopify admin (products, collections) and needs translation in `Shopify admin > Settings > Languages > Translate`.
 
 ## Related
 

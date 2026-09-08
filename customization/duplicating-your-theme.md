@@ -13,10 +13,10 @@ permalink: /customization/duplicating-your-theme/
 
 ## Why duplicate
 
-- **Recovery** — If a code change goes wrong, you still have a clean copy to publish from.
-- **Testing** — You can preview a duplicate without affecting customers.
-- **Versioning** — Save snapshots before major changes by duplicating, naming the duplicate (for example, "Pave – before holiday rebrand"), and keeping it in your library.
-- **Updates** — When a new version of Pave is released, you install the new version on a duplicate, port your customizations, and only then publish. See [Updating to a new version](#updating-to-a-new-version).
+- **Recovery.** If a code change goes wrong, you still have a clean copy to publish from.
+- **Testing.** You can preview a duplicate without affecting customers.
+- **Versioning.** Save snapshots before major changes by duplicating, naming the duplicate (for example, "Pave – before holiday rebrand"), and keeping it in your library.
+- **Updates.** When a new version of Pave is released, you install the new version on a duplicate, port your customizations, and only then publish. See [Updating to a new version](#updating-to-a-new-version).
 
 ## How to duplicate
 
@@ -34,7 +34,7 @@ When Pave releases a new version:
 
 1. From the Theme Store, click **Update** to install the new version. It appears in your library as a fresh, default copy.
 2. Open the new version in the editor and reapply your custom theme settings (colors, fonts, social media URLs, etc.) by referencing your current published theme.
-3. If you've made code customizations, port them carefully to the new version — the underlying files may have changed.
+3. If you've made code customizations, port them carefully to the new version, because the underlying files may have changed.
 4. Test the new version by previewing it.
 5. Publish the new version when ready.
 
@@ -42,5 +42,5 @@ This process keeps you on the latest theme without risking your live storefront.
 
 ## Related
 
-- [Custom code](../custom-code/) — What is and isn't covered when you do edit theme code.
+- [Custom code](../custom-code/): What is and isn't covered when you do edit theme code.
 - [Shopify Help: Duplicate a theme](https://help.shopify.com/manual/online-store/themes/managing-themes#duplicate-a-theme)

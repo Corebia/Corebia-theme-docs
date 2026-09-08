@@ -14,13 +14,13 @@ The storefront entry point, at `/`. It uses `index.json`, so the entire section 
 
 A fresh install of Pave opens with these seven, in this order:
 
-1. [Hero banner](../../sections/hero/) — a full-height photograph carrying the brand name.
-2. [New arrivals](../../sections/new-arrivals/) — a row of hand-picked products.
-3. [Brand message](../../sections/brand-message/) — copy beside an image, with a button.
-4. [Collection list](../../sections/collection-list/) — collections as image tiles.
-5. [Journal](../../sections/journal/) — up to three blog articles.
-6. [Brand image](../../sections/brand-image/) — a full-width photograph, no text.
-7. [Newsletter](../../sections/newsletter/) — email signup.
+1. [Hero banner](../../sections/hero/): a full-height photograph carrying the brand name.
+2. [New arrivals](../../sections/new-arrivals/): a row of hand-picked products.
+3. [Brand message](../../sections/brand-message/): copy beside an image, with a button.
+4. [Collection list](../../sections/collection-list/): collections as image tiles.
+5. [Journal](../../sections/journal/): up to three blog articles.
+6. [Brand image](../../sections/brand-image/): a full-width photograph, no text.
+7. [Newsletter](../../sections/newsletter/): email signup.
 
 Select any of them in the editor to change its settings, or use **Add section** to insert others.
 
@@ -33,7 +33,7 @@ Any section not restricted to the header or footer group:
 - [Brand message](../../sections/brand-message/)
 - [Collection list](../../sections/collection-list/)
 - [Brand image](../../sections/brand-image/)
-- [Journal](../../sections/journal/) — home page only
+- [Journal](../../sections/journal/): home page only
 - [Newsletter](../../sections/newsletter/)
 - [Rich text with image](../../sections/rich-text-image/)
 - [Customer reviews](../../sections/customer-reviews/)

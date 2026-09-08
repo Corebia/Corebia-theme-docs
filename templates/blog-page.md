@@ -8,44 +8,44 @@ permalink: /templates/blog-page/
 
 # Blog page
 
-The list of articles in a blog, using the **Main blog** section. Everything on the card — image, date, author, excerpt — is a switch, and every string is editable.
+The list of articles in a blog, using the **Main blog** section. Every element on the card is a switch, and every string is editable: image, date, author and excerpt.
 
 ## Section settings
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ### Layout
 
-- **Heading** — Leave blank to use the blog's own title.
-- **Number of columns** — Range: 2 to 4. Default: 3.
-- **Articles per page** — Range: 3 to 24 in steps of 3. Default: 9.
-- **Image ratio** — **Portrait (3:4)** (default), **Landscape (4:3)** or **Square (1:1)**.
+- **Heading.** Leave blank to use the blog's own title.
+- **Number of columns.** Range: 2 to 4. Default: 3.
+- **Articles per page.** Range: 3 to 24 in steps of 3. Default: 9.
+- **Image ratio.** **Portrait (3:4)** (default), **Landscape (4:3)** or **Square (1:1)**.
 
 ### Card elements
 
-- **Show featured image** — Default: on.
-- **Show heading** — Default: on.
-- **Show date** — Default: on.
-- **Show author** — Default: off.
-- **Show excerpt** — Default: on.
-- **Excerpt word count** — Range: 10 to 50 in steps of 5. Default: 20.
-- **Date format** — `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
+- **Show featured image.** Default: on.
+- **Show heading.** Default: on.
+- **Show date.** Default: on.
+- **Show author.** Default: off.
+- **Show excerpt.** Default: on.
+- **Excerpt word count.** Range: 10 to 50 in steps of 5. Default: 20.
+- **Date format.** `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
 
 ### Text content
 
 Every visible string, so the blog can be reworded without translations.
 
-- **Article count label** — Leave blank to show a correctly pluralized count (1 article / 2 articles).
-- **Read more button text** — Default: `Read more`.
-- **Empty state message** — Default: `No articles yet`.
-- **Previous page text** — Default: `Previous`.
-- **Next page text** — Default: `Next`.
-- **Pagination label** — Default: `Page`.
+- **Article count label.** Leave blank to show a correctly pluralized count (1 article / 2 articles).
+- **Read more button text.** Default: `Read more`.
+- **Empty state message.** Default: `No articles yet`.
+- **Previous page text.** Default: `Previous`.
+- **Next page text.** Default: `Next`.
+- **Pagination label.** Default: `Page`.
 
 ## Blocks
 
-- **App block** — Any block offered by an installed app.
-- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
+- **App block.** Any block offered by an installed app.
+- **Custom Liquid.** See [Custom Liquid](../../sections/custom-liquid/).
 
 ## Excerpts
 

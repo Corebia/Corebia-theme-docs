@@ -161,10 +161,10 @@ These are theme-code issues, not documentation issues. See `AUDIT_NOTES.md` for 
 
 ## Items resolved across passes
 
-- **Support links** — All "Contact support" and "Open a support ticket" buttons now route internally to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email (`support@corebia.com`).
-- **General website link** — Replaced with "Documentation: https://docs.corebia.com" on the contact page.
-- **Author rename** — "Corebian" → "Corebia" applied across both the theme code (`plantilla/config/settings_schema.json`) and every docs page that mentioned the company.
-- **Theme metadata** — `theme_documentation_url` set to `https://docs.corebia.com`. `theme_author` set to `Corebia`. `theme_support_url` confirmed as `mailto:support@corebia.com`.
+- **Support links.** All "Contact support" and "Open a support ticket" buttons now route internally to `/support/contact/` within `docs.corebia.com`. The contact page is informational and lists the support email (`support@corebia.com`).
+- **General website link.** Replaced with "Documentation: https://docs.corebia.com" on the contact page.
+- **Author rename.** "Corebian" → "Corebia" applied across both the theme code (`plantilla/config/settings_schema.json`) and every docs page that mentioned the company.
+- **Theme metadata.** `theme_documentation_url` set to `https://docs.corebia.com`. `theme_author` set to `Corebia`. `theme_support_url` confirmed as `mailto:support@corebia.com`.
 - **All code-side blockers** from `plantilla/THEME_AUDIT.md` (B-1 through B-13) — closed.
 
 ## Pending items — operational only (not code-fixable)

@@ -72,7 +72,7 @@ If Tally ever changes that contract, their **Share > Embed > Standard embed > Ge
 | Field | Requirement |
 |---|---|
 | Name | First and last |
-| Email address | — |
+| Email address | n/a |
 | Store URL | Must show an example, such as `http://www.storename.myshopify.com`. Put it in the field's placeholder or help text |
 | Description of problem | Must be a **text area**, not a single-line input |
 | File upload | So merchants can attach screenshots |

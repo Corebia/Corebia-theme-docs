@@ -12,10 +12,10 @@ Pave's product page supports rich media: images, videos, 3D models, and external
 
 ## Supported media types
 
-- **Images** — JPG, PNG, WebP. The primary image type for product photography.
-- **Videos** — MP4 video files uploaded directly to Shopify.
-- **External videos** — YouTube and Vimeo embeds via the product's media URL field.
-- **3D models** — GLB / USDZ files uploaded to the product. Render with the model-viewer web component, supporting orbit, zoom, and AR view on mobile.
+- **Images.** JPG, PNG, WebP. The primary image type for product photography.
+- **Videos.** MP4 video files uploaded directly to Shopify.
+- **External videos.** YouTube and Vimeo embeds via the product's media URL field.
+- **3D models.** GLB / USDZ files uploaded to the product. Render with the model-viewer web component, supporting orbit, zoom, and AR view on mobile.
 
 ## How to upload media
 
@@ -29,10 +29,10 @@ Pave's product page supports rich media: images, videos, 3D models, and external
 
 The product page gallery has multiple layouts, configured in the **Main product** section settings:
 
-- **Stacked** — Media items stack vertically on desktop.
-- **2 columns** — A two-column grid.
-- **Thumbnails** — A main image with a column of thumbnails alongside. This is the default.
-- **Thumbnail slideshow** — A main image with a scrolling thumbnail strip.
+- **Stacked.** Media items stack vertically on desktop.
+- **2 columns.** A two-column grid.
+- **Thumbnails.** A main image with a column of thumbnails alongside. This is the default.
+- **Thumbnail slideshow.** A main image with a scrolling thumbnail strip.
 
 Mobile has its own setting: **Show thumbnails**, **Hide thumbnails**, or **2 columns**.
 
@@ -65,21 +65,21 @@ The **Main product** section setting **Enable video looping** (default: on) make
 
 3D models render with the model-viewer web component:
 
-- **Orbit and zoom** — Customers can rotate and zoom into the model on desktop and mobile.
-- **AR** — On iOS Safari and Android Chrome, the model can be viewed in the customer's environment via AR Quick Look (iOS) or Scene Viewer (Android), provided the GLB/USDZ files are correctly formatted.
+- **Orbit and zoom.** Customers can rotate and zoom into the model on desktop and mobile.
+- **AR.** On iOS Safari and Android Chrome, the model can be viewed in the customer's environment via AR Quick Look (iOS) or Scene Viewer (Android), provided the GLB/USDZ files are correctly formatted.
 
 ## Tips
 
-- **Image size** — Upload at least 2000 px wide for product photography. Pave generates responsive sizes automatically; uploading too small produces blurry images on high-resolution screens.
-- **One video per product, max** — Videos slow down page load. Use them where they materially help the customer (movement, fit, transformation).
-- **Variant images for color** — If you have color variants, upload one image per color, even if the only difference is color. This makes the swatch experience work correctly.
-- **3D models are optional but powerful** — They take time to produce but lift conversion for furniture, jewelry, and high-consideration products.
+- **Image size.** Upload at least 2000 px wide for product photography. Pave generates responsive sizes automatically; uploading too small produces blurry images on high-resolution screens.
+- **One video per product, max.** Videos slow down page load. Use them where they materially help the customer (movement, fit, transformation).
+- **Variant images for color.** If you have color variants, upload one image per color, even if the only difference is color. This makes the swatch experience work correctly.
+- **3D models are optional but powerful.** They take time to produce but lift conversion for furniture, jewelry, and high-consideration products.
 
 ## Troubleshooting
 
-- **My video doesn't play** — Confirm the file is MP4 and under Shopify's upload size limit (1 GB). For external videos, confirm the YouTube/Vimeo URL is public and embeddable.
-- **Variant image doesn't switch** — Confirm the variant has an image set in the variant editor (not just the product-level images).
-- **3D model loads slowly** — GLB files can be large. Reduce file size with a tool like [glTF-Transform](https://gltf-transform.donmccurdy.com/) before uploading.
+- **My video doesn't play.** Confirm the file is MP4 and under Shopify's upload size limit (1 GB). For external videos, confirm the YouTube/Vimeo URL is public and embeddable.
+- **Variant image doesn't switch.** Confirm the variant has an image set in the variant editor (not just the product-level images).
+- **3D model loads slowly.** GLB files can be large. Reduce file size with a tool like [glTF-Transform](https://gltf-transform.donmccurdy.com/) before uploading.
 
 ## Related
 

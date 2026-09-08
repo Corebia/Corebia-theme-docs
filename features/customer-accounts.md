@@ -12,7 +12,7 @@ Pave puts a customer account entry point in the header on every page, so a shopp
 
 ## Where it appears
 
-In the navigation panel of the [Header](../../sections/header/), on both desktop and mobile. It is always present — there is no setting to hide it — and it shows a signed-out or a signed-in state on its own.
+In the navigation panel of the [Header](../../sections/header/), on both desktop and mobile. It is always present, with no setting to hide it, and it shows a signed-out or a signed-in state on its own.
 
 ## It is rendered by Shopify
 
@@ -30,9 +30,9 @@ One thing: the menu shown inside the account panel, through the header's **Custo
 
 Under `Shopify admin > Settings > Customer accounts`:
 
-- **Accounts are optional** — customers can create one or check out as a guest. The safe default.
-- **Accounts are required** — customers must sign in to check out.
-- **Accounts are disabled** — guest checkout only, and the entry point disappears from the header.
+- **Accounts are optional.** Customers can create one or check out as a guest. The safe default.
+- **Accounts are required.** Customers must sign in to check out.
+- **Accounts are disabled.** Guest checkout only, and the entry point disappears from the header.
 
 Shopify's current customer accounts sign in with a code sent by email rather than a password, so there is no password to reset and nothing for the theme to render.
 

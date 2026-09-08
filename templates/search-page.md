@@ -14,27 +14,27 @@ The dropdown that appears while typing is configured separately, in [Predictive 
 
 ## Section settings
 
-- **Show back link and breadcrumb** — Default: on.
+- **Show back link and breadcrumb.** Default: on.
 
 ### Filters and toolbar
 
-- **Show filters** — Default: on.
-- **Show sort options** — Default: on.
+- **Show filters.** Default: on.
+- **Show sort options.** Default: on.
 
 ### Product grid
 
-- **Products per page** — Range: 8 to 48 in steps of 4. Default: 24.
-- **Desktop columns** — **2**, **3** or **4 columns** (default).
-- **Show vendor** — Default: off.
-- **Show second image on hover** — Default: on.
+- **Products per page.** Range: 8 to 48 in steps of 4. Default: 24.
+- **Desktop columns.** **2**, **3** or **4 columns** (default).
+- **Show vendor.** Default: off.
+- **Show second image on hover.** Default: on.
 
 ### Empty state
 
-- **Featured collection (shown when no results)** — The collection whose products are offered when a search returns nothing.
+- **Featured collection (shown when no results).** The collection whose products are offered when a search returns nothing.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ## Filtering search results
 
@@ -44,7 +44,7 @@ Search results carry the same filters as a collection page, configured in Shopif
 
 A search with no matches is a moment where shoppers leave. Setting **Featured collection** turns a dead end into a route back: the page explains that nothing matched and offers that collection's products instead.
 
-Pick something broad — best sellers, new arrivals, or the catalog's most popular category. A narrow collection here is unlikely to match what the shopper was after.
+Pick something broad: best sellers, new arrivals, or the catalog's most popular category. A narrow collection here is unlikely to match what the shopper was after.
 
 ## Improving what search finds
 

@@ -12,8 +12,8 @@ Two images that represent your store outside the storefront: in a browser tab, a
 
 ## Settings
 
-- **Favicon image** — 32 x 32px .png recommended.
-- **Social share image** — Used as the Open Graph and Twitter image when a page does not have its own. 1200 x 628px recommended.
+- **Favicon image.** 32 x 32px .png recommended.
+- **Social share image.** Used as the Open Graph and Twitter image when a page does not have its own. 1200 x 628px recommended.
 
 ## Favicon
 

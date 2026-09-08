@@ -16,38 +16,38 @@ To use it, create a page in `Shopify admin > Content > Pages` and set its **Them
 
 ### Header
 
-- **Show subheading** — Default: on.
-- **Subheading** — Default: `Get in touch`.
-- **Show description** — Default: on.
-- **Description** — Default: `We'd love to hear from you. Send us a message and we'll respond as soon as possible.`
+- **Show subheading.** Default: on.
+- **Subheading.** Default: `Get in touch`.
+- **Show description.** Default: on.
+- **Description.** Default: `We'd love to hear from you. Send us a message and we'll respond as soon as possible.`
 
 ### Contact details
 
 The panel beside the form. Each line can be hidden.
 
-- **Show email** — Default: on.
-- **Email address** — Default: `hello@yourstore.com`. **Change this before launch.**
-- **Email label** — Default: `Email`.
-- **Show location** — Default: on.
-- **Location** — Default: `City, Country`. **Change this before launch.**
-- **Location label** — Default: `Location`.
-- **Phone number (display)** — A clickable phone number in the info panel. Leave blank to hide.
-- **Show response time** — Default: on.
-- **Response time** — Empty by default. For example, `Within 2 business days`.
-- **Response time label** — Default: `Response time`.
-- **Show trust message** — Default: on.
-- **Trust message** — Shown below the contact details. Leave blank to hide.
+- **Show email.** Default: on.
+- **Email address.** Default: `hello@yourstore.com`. **Change this before launch.**
+- **Email label.** Default: `Email`.
+- **Show location.** Default: on.
+- **Location.** Default: `City, Country`. **Change this before launch.**
+- **Location label.** Default: `Location`.
+- **Phone number (display).** A clickable phone number in the info panel. Leave blank to hide.
+- **Show response time.** Default: on.
+- **Response time.** Empty by default. For example, `Within 2 business days`.
+- **Response time label.** Default: `Response time`.
+- **Show trust message.** Default: on.
+- **Trust message.** Shown below the contact details. Leave blank to hide.
 
 ### Form
 
-- **Show phone field** — Default: on.
-- **Phone field label** — Default: `Phone`.
-- **Subject options** — One option per line. The form shows a Subject dropdown built from these. Leave blank to hide the dropdown. Defaults: General inquiry, Order support, Press and media, Wholesale, Careers.
-- **Privacy reassurance** — Small text below the submit button. Leave blank to hide.
+- **Show phone field.** Default: on.
+- **Phone field label.** Default: `Phone`.
+- **Subject options.** One option per line. The form shows a Subject dropdown built from these. Leave blank to hide the dropdown. Defaults: General inquiry, Order support, Press and media, Wholesale, Careers.
+- **Privacy reassurance.** Small text below the submit button. Leave blank to hide.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ## Where messages go
 

@@ -10,12 +10,12 @@ permalink: /theme-settings/logo/
 
 ## Settings
 
-- **Logo image** — Shown in sections that display branding. Falls back to the shop name.
-- **Logo width** — Range: 50 to 300 px in 10 px steps. Default: 120 px.
+- **Logo image.** Shown in sections that display branding. Falls back to the shop name.
+- **Logo width.** Range: 50 to 300 px in 10 px steps. Default: 120 px.
 
 ## Where the logo appears
 
-- In the [Header](../../sections/header/), when **Show shop branding** is on. That setting is off by default, and the home page never shows the header branding — the hero carries the brand there.
+- In the [Header](../../sections/header/), when **Show shop branding** is on. That setting is off by default, and the home page never shows the header branding, because the hero carries the brand there.
 - On the [Password page](../../templates/password-page/), when its **Show logo** setting is on.
 
 With no logo uploaded, both fall back to the shop name as text, styled with the theme's heading font.

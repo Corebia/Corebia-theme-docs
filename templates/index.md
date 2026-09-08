@@ -33,7 +33,7 @@ A **template** is the layout used to render one kind of page. Pave ships a templ
 |---|---|---|
 | Home, product, collection, catalog, collections list, cart, search, blog, article, page, contact, 404, password | JSON | Add, remove and reorder freely |
 | Gift card, policy | Liquid | Fixed layout, no editor sections |
-| Customer pages | — | Rendered by Shopify; see [Customer pages](customer-pages/) |
+| Customer pages | n/a | Rendered by Shopify; see [Customer pages](customer-pages/) |
 
 ## Alternate templates
 
@@ -41,7 +41,7 @@ An alternate template is a variant you assign to individual products, collection
 
 Pave ships two:
 
-- **Catalog** (`collection.all.json`) — the `/collections/all` page, documented as [Catalog page](catalog-page/).
-- **Contact** (`page.contact.json`) — documented as [Contact page](contact-page/).
+- **Catalog** (`collection.all.json`), the `/collections/all` page, documented as [Catalog page](catalog-page/).
+- **Contact** (`page.contact.json`), documented as [Contact page](contact-page/).
 
 To make your own, open the theme editor's template picker and choose **Create template**, then assign it to a product or page under that item's **Theme template** setting in the Shopify admin. See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).

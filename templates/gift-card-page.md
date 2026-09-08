@@ -8,7 +8,7 @@ permalink: /templates/gift-card-page/
 
 # Gift card page
 
-The page a recipient lands on when someone buys them a gift card. It shows the balance, the code, a QR code for redeeming in person, and — on an iPhone — a button to add the card to Apple Wallet.
+The page a recipient lands on when someone buys them a gift card. It shows the balance, the code, a QR code for redeeming in person, and, on an iPhone, a button to add the card to Apple Wallet.
 
 It is a Liquid template, `gift_card.liquid`, not a JSON one, so it has **no sections and no settings**. It follows your color scheme, fonts and logo automatically.
 

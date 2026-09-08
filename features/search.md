@@ -26,9 +26,9 @@ Matching products, and optionally collections, pages and articles.
 
 Open the theme editor and select the **Predictive search** section, in the header group alongside the Header. Its settings are documented in full at [Predictive search](../../sections/predictive-search/):
 
-- **Show vendor**, **Show price** — what each product result carries.
-- **Show collections**, **Show pages**, **Show articles** — which other content types appear.
-- **Product results limit** — how many products the panel shows, from 2 to 10. Default: 4.
+- **Show vendor** and **Show price** set what each product result carries.
+- **Show collections**, **Show pages** and **Show articles** set which other content types appear.
+- **Product results limit.** How many products the panel shows, from 2 to 10. Default: 4.
 
 ## Faceted filtering
 
@@ -68,10 +68,10 @@ If a search returns no products, the **Featured collection (shown when no result
 
 ## Troubleshooting
 
-- **My filters don't appear** — Confirm **Show filters** is enabled on the relevant section, and that filters are configured in `Shopify admin > Online Store > Navigation > Search and discovery`.
-- **Predictive search shows nothing** — The customer may have typed fewer than two characters; predictive search waits for at least two. Also confirm the storefront is not in a frozen-cache state from a recent theme deploy.
-- **A product is not searchable** — Check that the product status is **Active**, and that it is published to the **Online Store** sales channel.
-- **Custom synonyms** — Configure synonyms in the Search & Discovery app so common alternate terms map to the right products.
+- **My filters don't appear.** Confirm **Show filters** is enabled on the relevant section, and that filters are configured in `Shopify admin > Online Store > Navigation > Search and discovery`.
+- **Predictive search shows nothing.** The customer may have typed fewer than two characters; predictive search waits for at least two. Also confirm the storefront is not in a frozen-cache state from a recent theme deploy.
+- **A product is not searchable.** Check that the product status is **Active**, and that it is published to the **Online Store** sales channel.
+- **Custom synonyms.** Configure synonyms in the Search & Discovery app so common alternate terms map to the right products.
 
 ## Related
 

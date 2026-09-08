@@ -18,7 +18,7 @@ See [Cart settings](../../theme-settings/cart-settings/).
 
 ## How savings are presented
 
-How a reduced price is written — the badge wording, its colours, and the minimum discount worth badging — is set once under [Discount display](../../theme-settings/discount-display/), and applies to product cards, product pages, featured products and the cart alike.
+The badge wording, its colours and the minimum discount worth badging are all set once under [Discount display](../../theme-settings/discount-display/), and applies to product cards, product pages, featured products and the cart alike.
 
 That page also covers promotion labels driven by product metafields, for offers Shopify's discount engine doesn't model.
 
@@ -28,7 +28,7 @@ Even if you've disabled the cart-side discount code field, customers can still e
 
 ## Automatic discounts
 
-Automatic discounts (configured in `Shopify admin > Discounts`) are applied at checkout based on cart contents — no code required. Pave displays automatic discount line items in the cart's order summary and on the cart page totals area.
+Automatic discounts (configured in `Shopify admin > Discounts`) are applied at checkout based on cart contents, with no code required. Pave displays automatic discount line items in the cart's order summary and on the cart page totals area.
 
 ## Discounts in the cart
 
@@ -51,13 +51,13 @@ For percentage-off, fixed-amount-off, or buy-X-get-Y discounts that apply to the
 
 - **Keep the cart discount code field enabled** unless you have a specific reason. Customers who have a code in hand expect to apply it before checkout.
 - **Use automatic discounts for storewide promotions** (free shipping, percentage off). Codes are best for personalized or campaign-specific offers.
-- **Test code discount logic** — buy-X-get-Y and complex stacking rules behave differently in cart vs. checkout. Walk a real product through the flow before launching a campaign.
+- **Test code discount logic.** Buy-X-get-Y and complex stacking rules behave differently in cart vs. checkout. Walk a real product through the flow before launching a campaign.
 
 ## Troubleshooting
 
-- **Customer reports the code is invalid** — Confirm the code is active, within its date range, and that any conditions (minimum spend, specific products, customer eligibility) are met.
-- **Discount field doesn't appear on the cart page** — Confirm **Enable discount code field** is on in **Theme settings > Cart**.
-- **Discount applied at checkout but not in cart** — Some discount types (like checkout-only buy-X-get-Y) don't pre-calculate in the cart. They appear at checkout. This is Shopify's behavior, not a theme bug.
+- **Customer reports the code is invalid.** Confirm the code is active, within its date range, and that any conditions (minimum spend, specific products, customer eligibility) are met.
+- **Discount field doesn't appear on the cart page.** Confirm **Enable discount code field** is on in **Theme settings > Cart**.
+- **Discount applied at checkout but not in cart.** Some discount types (like checkout-only buy-X-get-Y) don't pre-calculate in the cart. They appear at checkout. This is Shopify's behavior, not a theme bug.
 
 ## Related
 

@@ -14,13 +14,13 @@ It can't be placed in the header or footer groups.
 
 ## Settings
 
-- **Heading** — Default: `Recently viewed`.
-- **Maximum products to show** — Range: 4 to 12. Default: 8.
-- **Color scheme** — Default: scheme-1.
+- **Heading.** Default: `Recently viewed`.
+- **Maximum products to show.** Range: 4 to 12. Default: 8.
+- **Color scheme.** Default: scheme-1.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## How the list is built
 

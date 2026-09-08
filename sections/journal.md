@@ -14,32 +14,32 @@ It is available on the **home page only**.
 
 ## Settings
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ### Content
 
-- **Subheading** — Optional. Small uppercase text above the heading.
-- **Heading** — Default: `From the journal`.
-- **Blog** — Where the "View all" link points. The articles themselves are picked individually, in the blocks below.
-- **Show "View all" link** — Default: on.
-- **"View all" label** — Default: `View all`.
+- **Subheading.** Optional. Small uppercase text above the heading.
+- **Heading.** Default: `From the journal`.
+- **Blog.** Where the "View all" link points. The articles themselves are picked individually, in the blocks below.
+- **Show "View all" link.** Default: on.
+- **"View all" label.** Default: `View all`.
 
 ### Card
 
-- **Show editorial numerals (01, 02, 03)** — Default: on.
-- **Show article tag** — Shows the article's first tag on the card. Default: off.
-- **Show one-line excerpt** — Default: off.
-- **Image ratio** — **Landscape (3:2)** (default), **Square (1:1)** or **Portrait (4:5)**.
+- **Show editorial numerals (01, 02, 03).** Default: on.
+- **Show article tag.** Shows the article's first tag on the card. Default: off.
+- **Show one-line excerpt.** Default: off.
+- **Image ratio.** **Landscape (3:2)** (default), **Square (1:1)** or **Portrait (4:5)**.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 120 px in 4 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 120 px in 4 px steps. Default: 80 px each.
 
 ## Blocks
 
 Up to **three** Article blocks.
 
-- **Article** — The article to show in this slot.
+- **Article.** The article to show in this slot.
 
 ## Tips
 

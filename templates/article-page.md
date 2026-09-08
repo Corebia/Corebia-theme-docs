@@ -8,18 +8,18 @@ permalink: /templates/article-page/
 
 # Article page
 
-A single blog post, using the **Main article** section. Like the product page, it is built from blocks you order yourself — so the byline can sit above or below the featured image, and the back link can be at the top or the end.
+A single blog post, using the **Main article** section. Like the product page, it is built from blocks you order yourself, so the byline can sit above or below the featured image, and the back link can be at the top or the end.
 
 ## Section settings
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ## Blocks
 
 ### Featured image
 
-- **Image width** — **Constrained (800px)** (default) or **Full width**.
-- **Image ratio** — **Original** (default), **Landscape (16:9)** or **Portrait (3:4)**.
+- **Image width.** **Constrained (800px)** (default) or **Full width**.
+- **Image ratio.** **Original** (default), **Landscape (16:9)** or **Portrait (3:4)**.
 
 ### Heading
 
@@ -29,13 +29,13 @@ Limit 1. The article title. No settings.
 
 Limit 1.
 
-- **Date format** — `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
+- **Date format.** `January 01, 2026` (default), `01 January 2026`, `01/01/2026 (day/month/year)`, `01/01/2026 (month/day/year)` or `2026-01-01`.
 
 ### Author
 
 Limit 1.
 
-- **Author prefix text** — Default: `By`.
+- **Author prefix text.** Default: `By`.
 
 ### Content
 
@@ -45,7 +45,7 @@ The article body, as written in Shopify. No settings.
 
 Limit 1.
 
-- **Tags label text** — Default: `Tags`.
+- **Tags label text.** Default: `Tags`.
 
 ### Separator
 
@@ -55,7 +55,7 @@ A horizontal rule, for pacing a long article. No settings.
 
 Limit 1.
 
-- **Back button text** — Default: `Go back`.
+- **Back button text.** Default: `Go back`.
 
 ### Quote
 
@@ -70,7 +70,7 @@ Limit 1. The comment list and form. No settings.
 
 ### Custom Liquid
 
-- **Liquid code** — See [Custom Liquid](../../sections/custom-liquid/).
+- **Liquid code.** See [Custom Liquid](../../sections/custom-liquid/).
 
 ### App block
 
@@ -78,7 +78,7 @@ Any block offered by an installed app.
 
 ## Comments
 
-The Comments block renders only when comments are enabled for that blog, under `Shopify admin > Content > Blogs > Manage blog`. With them disabled, the block is silently skipped rather than showing an empty form — so it is safe to leave in the template while you decide.
+The Comments block renders only when comments are enabled for that blog, under `Shopify admin > Content > Blogs > Manage blog`. With them disabled, the block is silently skipped rather than showing an empty form, so it is safe to leave in the template while you decide.
 
 Shopify offers three modes: disabled, enabled with moderation, and enabled without. Moderation is the sensible default for a store blog.
 

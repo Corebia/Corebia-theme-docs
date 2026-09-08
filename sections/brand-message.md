@@ -8,7 +8,7 @@ permalink: /sections/brand-message/
 
 # Brand message
 
-**Brand message** pairs a block of copy with a single image, side by side. It is the section for saying something in sentences — what you make, how, or why — rather than showing a product.
+**Brand message** pairs a block of copy with a single image, side by side. It is the section for saying something in sentences, about what you make and how or why, rather than showing a product.
 
 It can't be placed in the header or footer groups.
 
@@ -16,24 +16,24 @@ It can't be placed in the header or footer groups.
 
 ### Text
 
-- **Subheading** — Small text above the heading. Empty by default.
-- **Heading** — Default: `Crafted with intention`.
-- **Text** — Rich text. Ships with sample copy; replace it before you go live.
-- **Button label** — Default: `Shop now`.
-- **Button link** — Default: `/collections/all`.
+- **Subheading.** Small text above the heading. Empty by default.
+- **Heading.** Default: `Crafted with intention`.
+- **Text.** Rich text. Ships with sample copy; replace it before you go live.
+- **Button label.** Default: `Shop now`.
+- **Button link.** Default: `/collections/all`.
 
 ### Image
 
-- **Image** — The image beside the text.
-- **Image position** — **Text first** (default) or **Image first**.
+- **Image.** The image beside the text.
+- **Image position.** **Text first** (default) or **Image first**.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Tips
 

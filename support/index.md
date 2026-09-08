@@ -20,8 +20,8 @@ We reply within **2 business days**. Anything that takes a storefront offline or
 
 Two things answer most questions faster than we can:
 
-- **[FAQ](faq/)** — the questions we get most often, with answers.
-- **The documentation** — every setting in the theme is documented, under [Theme settings](../theme-settings/), [Sections](../sections/) and [Templates](../templates/). If a setting isn't doing what you expect, its page will usually say why.
+- **[FAQ](faq/).** The questions we get most often, with answers.
+- **The documentation.** Every setting in the theme is documented, under [Theme settings](../theme-settings/), [Sections](../sections/) and [Templates](../templates/). If a setting isn't doing what you expect, its page will usually say why.
 
 ## What support covers
 
@@ -31,6 +31,6 @@ It does not cover code you or a developer have added, third-party apps, or custo
 
 ## In this section
 
-- [Support policy](support-policy/) — What we cover, what we don't, and how fast we reply.
-- [Contact](contact/) — How to reach us and what to include.
-- [FAQ](faq/) — Common questions.
+- [Support policy](support-policy/): What we cover, what we don't, and how fast we reply.
+- [Contact](contact/): How to reach us and what to include.
+- [FAQ](faq/): Common questions.

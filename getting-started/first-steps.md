@@ -14,16 +14,16 @@ Once Pave is installed, work through these steps to get your storefront ready to
 
 Open the theme editor (**Online Store > Themes > Customize** on Pave), then click **Theme settings** in the left sidebar.
 
-- **Logo** — In the **Logo** category, upload your logo image and adjust **Logo width** to suit. The logo only appears in sections that have shop branding enabled (the home page hides it by default to give the hero banner more space).
-- **Favicon** — In the **Favicon** category, upload a `32 by 32 px .png` image. This is the small icon that appears in browser tabs and bookmarks.
-- **Social share image** — Also in the **Favicon** category, upload a `1200 by 628 px` image. This is the Open Graph and Twitter image used when your store is shared on social media and a page does not have its own image.
+- **Logo.** In the **Logo** category, upload your logo image and adjust **Logo width** to suit. The logo only appears in sections that have shop branding enabled (the home page hides it by default to give the hero banner more space).
+- **Favicon.** In the **Favicon** category, upload a `32 by 32 px .png` image. This is the small icon that appears in browser tabs and bookmarks.
+- **Social share image.** Also in the **Favicon** category, upload a `1200 by 628 px` image. This is the Open Graph and Twitter image used when your store is shared on social media and a page does not have its own image.
 
 See [Logo](../../theme-settings/logo/) and [Favicon](../../theme-settings/favicon/) for the full reference.
 
 ## 2. Configure colors and typography
 
-- **Colors** — Open the **Colors** category in **Theme settings**. Pave ships with two colour schemes; edit them, rename them or add more, and each section then picks the one it uses. See [Colors](../../theme-settings/colors/).
-- **Typography** — Open the **Typography** category. Choose a heading font and a body font from Shopify's font library, and adjust **Heading size** and **Text size** as needed. See [Typography](../../theme-settings/typography/).
+- **Colors.** Open the **Colors** category in **Theme settings**. Pave ships with two colour schemes; edit them, rename them or add more, and each section then picks the one it uses. See [Colors](../../theme-settings/colors/).
+- **Typography.** Open the **Typography** category. Choose a heading font and a body font from Shopify's font library, and adjust **Heading size** and **Text size** as needed. See [Typography](../../theme-settings/typography/).
 
 ## 3. Create your menus
 
@@ -52,12 +52,12 @@ For the home page, set up at least:
 
 Open the theme editor and select sections one at a time on the home page:
 
-- **Hero banner** — Upload a desktop and (optional) mobile background image. Set the brand name overlay text.
-- **New arrivals** — The section automatically pulls your most recent products. Optionally pick specific products on each block.
-- **Brand message** — Replace the default heading and body copy with your brand voice. Add an image and link to a key collection.
-- **Collection list** — Pick two or three collections to feature.
-- **Brand image** — Upload a wide editorial image and pick a focal point.
-- **Newsletter** — Confirm the heading and subtext. The form posts to Shopify's customer database; signups become customers tagged as accepting marketing.
+- **Hero banner.** Upload a desktop and (optional) mobile background image. Set the brand name overlay text.
+- **New arrivals.** The section automatically pulls your most recent products. Optionally pick specific products on each block.
+- **Brand message.** Replace the default heading and body copy with your brand voice. Add an image and link to a key collection.
+- **Collection list.** Pick two or three collections to feature.
+- **Brand image.** Upload a wide editorial image and pick a focal point.
+- **Newsletter.** Confirm the heading and subtext. The form posts to Shopify's customer database; signups become customers tagged as accepting marketing.
 
 See [Home page](../../templates/home-page/) for the full reference.
 
@@ -65,10 +65,10 @@ See [Home page](../../templates/home-page/) for the full reference.
 
 Pave handles the storefront. Checkout, taxes, shipping, and payments are configured in your Shopify admin and are the same regardless of theme.
 
-- **Payments** — `Shopify admin > Settings > Payments`. See the [Shopify Help Center: Payments](https://help.shopify.com/en/manual/payments).
-- **Shipping** — `Shopify admin > Settings > Shipping and delivery`. See the [Shopify Help Center: Shipping](https://help.shopify.com/en/manual/shipping).
-- **Taxes** — `Shopify admin > Settings > Taxes and duties`. See the [Shopify Help Center: Taxes](https://help.shopify.com/en/manual/taxes).
-- **Markets and multi-currency** — `Shopify admin > Settings > Markets`. See [Multi-currency and language](../../features/multi-currency-language/).
+- **Payments.** `Shopify admin > Settings > Payments`. See the [Shopify Help Center: Payments](https://help.shopify.com/en/manual/payments).
+- **Shipping.** `Shopify admin > Settings > Shipping and delivery`. See the [Shopify Help Center: Shipping](https://help.shopify.com/en/manual/shipping).
+- **Taxes.** `Shopify admin > Settings > Taxes and duties`. See the [Shopify Help Center: Taxes](https://help.shopify.com/en/manual/taxes).
+- **Markets and multi-currency.** `Shopify admin > Settings > Markets`. See [Multi-currency and language](../../features/multi-currency-language/).
 
 ## 7. Configure your store policies
 
@@ -80,9 +80,9 @@ Pave automatically renders a Privacy policy, Terms of service, Refund policy, an
 
 ## 8. Set up store metadata
 
-- **Shop name** — `Shopify admin > Settings > General`. This is the fallback brand text shown anywhere a custom value is not set.
-- **Address and contact information** — `Shopify admin > Settings > General`. Used in invoices, packing slips, and the contact page.
-- **Currency** — `Shopify admin > Settings > General > Store currency`.
+- **Shop name.** `Shopify admin > Settings > General`. This is the fallback brand text shown anywhere a custom value is not set.
+- **Address and contact information.** `Shopify admin > Settings > General`. Used in invoices, packing slips, and the contact page.
+- **Currency.** `Shopify admin > Settings > General > Store currency`.
 
 ## 9. Preview every page
 

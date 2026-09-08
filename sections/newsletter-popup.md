@@ -8,39 +8,39 @@ permalink: /sections/newsletter-popup/
 
 # Newsletter popup
 
-**Newsletter popup** is the overlay version of the email signup. It opens once per visitor, after a delay or a scroll — whichever happens first — and never on page load.
+**Newsletter popup** is the overlay version of the email signup. It opens once per visitor, after a delay or a scroll, whichever happens first, and never on page load.
 
 It shows only to visitors who are **logged out** and who **haven't dismissed it in this browser**. Signed-in customers never see it.
 
 ## Settings
 
-- **Show popup** — The master switch. Default: on.
+- **Show popup.** The master switch. Default: on.
 
 ### Content
 
-- **Image** — Shown at the top of the popup. Alt text is read from the image asset itself.
-- **Black and white image** — Renders the image in greyscale. Default: on.
-- **Heading** — Default: `Sign up`.
-- **Subheading** — Default: `Be the first to know about new arrivals and store news.`
-- **Email field placeholder** — Default: `Email`.
-- **Button text** — Default: `Subscribe`.
-- **Decline link text** — Default: `No thanks`.
+- **Image.** Shown at the top of the popup. Alt text is read from the image asset itself.
+- **Black and white image.** Renders the image in greyscale. Default: on.
+- **Heading.** Default: `Sign up`.
+- **Subheading.** Default: `Be the first to know about new arrivals and store news.`
+- **Email field placeholder.** Default: `Email`.
+- **Button text.** Default: `Subscribe`.
+- **Decline link text.** Default: `No thanks`.
 
 ### Behavior
 
-- **Open after delay** — Seconds before the popup opens. Range: 0 to 60 s. Default: 5 s.
-- **Open after scroll** — Percentage of the page scrolled before it opens. Range: 0% to 100% in 5% steps. Default: 50%. Set to 0 to use the delay only.
+- **Open after delay.** Seconds before the popup opens. Range: 0 to 60 s. Default: 5 s.
+- **Open after scroll.** Percentage of the page scrolled before it opens. Range: 0% to 100% in 5% steps. Default: 50%. Set to 0 to use the delay only.
 
 Whichever of the two happens first opens the popup.
 
 ### Consent
 
-- **Show consent checkbox** — Default: off. Recommended for EU markets under GDPR. Without the checkbox, consent is recorded when the form is submitted.
-- **Consent text** — Inline rich text, and it may contain links. Ships pointing at `/policies/privacy-policy`.
+- **Show consent checkbox.** Default: off. Recommended for EU markets under GDPR. Without the checkbox, consent is recorded when the form is submitted.
+- **Consent text.** Inline rich text, and it may contain links. Ships pointing at `/policies/privacy-policy`.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ## Tips
 

@@ -15,7 +15,7 @@ Pave offers two kinds of cross-sell, and both come from **one section**: [Produc
 | **Related products** | Shopify, from order history and product data | None |
 | **Complementary products** | You, per product | Search & Discovery app |
 
-To run both on a product page — which is the usual arrangement — add the section twice and set each instance to a different type.
+To run both on a product page, which is the usual arrangement, add the section twice and set each instance to a different type.
 
 ## Related products
 
@@ -31,14 +31,14 @@ To influence them:
 
 ## Complementary products
 
-Pairings you set yourself — the belt with the trousers, the refill with the bottle.
+Pairings you set yourself: the belt with the trousers, the refill with the bottle.
 
 1. Install Shopify's free [Search & Discovery](https://apps.shopify.com/search-and-discovery) app.
 2. Open **Product recommendations** in the app.
 3. Pick a product and add the products that complement it, in the order you want them shown.
 4. Repeat for each product with a natural pairing.
 
-A product with no pairings shows nothing at all — no heading, no empty row — so the section is safe to add before you have finished pairing your catalog.
+A product with no pairings shows nothing at all: no heading and no empty row. The section is safe to add before you have finished pairing your catalog.
 
 See [Complementary products](../../sections/complementary-products/) for the full walkthrough.
 
@@ -46,7 +46,7 @@ See [Complementary products](../../sections/complementary-products/) for the ful
 
 Below the product description, not above it. A shopper still reading about this product is not ready to be offered another one.
 
-The conventional order is complementary first — "goes with this" — then related, as "you might also like".
+The conventional order is complementary first, as "goes with this", then related, as "you might also like".
 
 ## Tips
 

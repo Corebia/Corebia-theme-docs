@@ -8,42 +8,42 @@ permalink: /templates/catalog-page/
 
 # Catalog page
 
-The catalog is the page at `/collections/all` — everything you sell, in one filterable grid. It uses the **Main catalog** section, which is close to the [Collection page](../collection-page/) but replaces the hero banner with a text heading and a sidebar menu.
+The catalog is the page at `/collections/all`: everything you sell, in one filterable grid. It uses the **Main catalog** section, which is close to the [Collection page](../collection-page/) but replaces the hero banner with a text heading and a sidebar menu.
 
 It is an alternate template, `collection.all.json`, so editing it doesn't affect your individual collection pages.
 
 ## Section settings
 
-- **Show back link and breadcrumb** — Default: on.
+- **Show back link and breadcrumb.** Default: on.
 
 ### Catalog heading
 
-- **Show catalog heading** — Displays a heading above the sidebar and on mobile. Default: on.
-- **Catalog heading** — Leave empty to use the collection name.
-- **Heading link** — Optional URL the heading links to.
-- **Sidebar navigation** — A menu shown at the top of the sidebar.
+- **Show catalog heading.** Displays a heading above the sidebar and on mobile. Default: on.
+- **Catalog heading.** Leave empty to use the collection name.
+- **Heading link.** Optional URL the heading links to.
+- **Sidebar navigation.** A menu shown at the top of the sidebar.
 
 ### Filters and toolbar
 
-- **Show filters** — Default: on.
-- **Show sort options** — Default: on.
+- **Show filters.** Default: on.
+- **Show sort options.** Default: on.
 
 ### Product grid
 
-- **Products per page** — Range: 4 to 24 in steps of 2. Default: 12.
-- **Desktop columns** — **2**, **3** (default) or **4 columns**.
-- **Show vendor** — Default: off.
-- **Show second image on hover** — Displays the alternate product image on hover. Default: on.
-- **Show quick add button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
+- **Products per page.** Range: 4 to 24 in steps of 2. Default: 12.
+- **Desktop columns.** **2**, **3** (default) or **4 columns**.
+- **Show vendor.** Default: off.
+- **Show second image on hover.** Displays the alternate product image on hover. Default: on.
+- **Show quick add button.** Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ## Blocks
 
-- **App block** — Any block offered by an installed app.
-- **Custom Liquid** — See [Custom Liquid](../../sections/custom-liquid/).
+- **App block.** Any block offered by an installed app.
+- **Custom Liquid.** See [Custom Liquid](../../sections/custom-liquid/).
 
 ## Catalog or collection?
 

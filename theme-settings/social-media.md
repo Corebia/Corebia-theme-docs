@@ -14,12 +14,12 @@ The profile links behind the icons in the footer. Fill in the ones you use; leav
 
 Every field takes a **full URL** to your own profile.
 
-- **Instagram** — Full URL to your Instagram profile.
-- **Facebook** — Full URL to your Facebook page.
-- **X** — Full URL to your X profile.
-- **TikTok** — Full URL to your TikTok profile.
-- **YouTube** — Full URL to your YouTube channel.
-- **Pinterest** — Full URL to your Pinterest profile.
+- **Instagram.** Full URL to your Instagram profile.
+- **Facebook.** Full URL to your Facebook page.
+- **X.** Full URL to your X profile.
+- **TikTok.** Full URL to your TikTok profile.
+- **YouTube.** Full URL to your YouTube channel.
+- **Pinterest.** Full URL to your Pinterest profile.
 
 ## Where the icons appear
 

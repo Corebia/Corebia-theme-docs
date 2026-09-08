@@ -16,35 +16,35 @@ It can't be placed in the header or footer groups.
 
 ### Image
 
-- **Image** — The background image.
-- **Image aspect ratio** — **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**.
-- **Overlay darkness** — Higher values darken the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%. Set to 0 to remove the overlay.
+- **Image.** The background image.
+- **Image aspect ratio.** **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**.
+- **Overlay darkness.** Higher values darken the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%. Set to 0 to remove the overlay.
 
 ### Colors
 
-- **Color scheme** — Default: scheme-1.
+- **Color scheme.** Default: scheme-1.
 
 ### Spacing
 
-- **Top padding** / **Bottom padding** — Range: 0 to 300 px in 5 px steps. Default: 80 px each.
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 80 px each.
 
 ## Blocks
 
 Up to **six** blocks in total, within these per-type limits.
 
-### Heading — up to 2
+### Heading, up to 2
 
-- **Heading** — Default: `Our story`.
+- **Heading.** Default: `Our story`.
 
-### Text — up to 3
+### Text, up to 3
 
-- **Text** — Rich text. Ships with sample copy; replace it before you go live, because it is shown to customers on the storefront.
+- **Text.** Rich text. Ships with sample copy; replace it before you go live, because it is shown to customers on the storefront.
 
-### Button — up to 1
+### Button, up to 1
 
 - **Label**
 - **Link**
-- **Style** — **Primary** (default) or **Secondary**.
+- **Style.** **Primary** (default) or **Secondary**.
 
 ## Tips
 

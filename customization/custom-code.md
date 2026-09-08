@@ -71,7 +71,7 @@ If you do edit the locale file directly, the changes count as custom code and ar
 
 ## Tutorials
 
-Pave does not bundle "how to make this change" tutorials. The reasoning: every tutorial that survives in the docs becomes implicit support — customers expect us to maintain the recipe and fix it when it breaks. We choose to keep the boundary clear: built-in features are fully supported; everything beyond is on you or a partner you hire.
+Pave does not bundle "how to make this change" tutorials. The reasoning: every tutorial that survives in the docs becomes implicit support. Customers expect us to maintain the recipe and fix it when it breaks. We choose to keep the boundary clear: built-in features are fully supported; everything beyond is on you or a partner you hire.
 
 ## Related
 
