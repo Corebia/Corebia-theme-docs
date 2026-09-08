@@ -2,22 +2,24 @@
   The support contact form.
 
   ─────────────────────────────────────────────────────────────────────────────
-  TO GO LIVE: replace EVERYTHING below the `{% endcomment %}` line with the
-  embed code Tally gives you.
+  TO GO LIVE: replace this entire file with the embed code Tally gives you.
 
-  In Tally: open the form > Share > Embed > Standard embed. Set "Dynamic
-  height" on so the iframe grows with the form, and "Align content to the
-  left" so it lines up with the page text. Then click "Get the code" and paste
-  it here, over the whole fallback block.
+  In Tally: open the form, then Share > Embed > Standard embed. Turn on
+  "Dynamic height" so the iframe grows with the form, and "Align content to
+  the left" so it lines up with the page text. Click "Get the code" and paste
+  it here, replacing everything — this comment block included.
 
-  Tally generates the query string itself, so use its code verbatim rather
-  than writing the URL by hand.
+  Use Tally's own code verbatim. It builds the query string from the options
+  you picked, and a URL typed by hand silently loses them.
   ─────────────────────────────────────────────────────────────────────────────
 
-  Until then this renders an email fallback, so the page is never broken —
-  but note that a contact email on its own does NOT satisfy §21 of the Shopify
-  Theme Store requirements, which asks for a form. See AUDIT_NOTES.md for the
-  fields the form has to carry.
+  Until then this renders an email fallback, so the page is never broken. Note
+  that a contact email on its own does NOT satisfy section 21 of the Shopify
+  Theme Store requirements, which asks for a form. AUDIT_NOTES.md lists the
+  fields the form has to carry and the Tally-side setup.
+
+  Nothing in this block is served to the browser, and it must not contain
+  Liquid tags: a literal one closes the comment early and fails the build.
 {%- endcomment -%}
 
 <p>

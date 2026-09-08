@@ -28,6 +28,29 @@ From `plantilla/config/settings_schema.json`:
 
 `theme_support_url` points at the support index, so `support/index.md` is the page a merchant lands on from their Shopify admin. It has to work as a landing page, not just as a section index.
 
+## The GitHub Pages build is the only gate
+
+There is no CI on this repository and no local Jekyll toolchain, so a template
+error is not caught until Pages tries to build. **After every push, check that
+the build actually succeeded** — and check the Actions run, not the Pages API:
+
+```bash
+gh run list --repo Corebia/Corebia-theme-docs --limit 3
+gh run view <id> --repo Corebia/Corebia-theme-docs --log-failed
+```
+
+A failed build leaves the **previous** version serving, so `docs.corebia.com`
+answering 200 proves nothing about the commit you just pushed. Confirm by
+fetching a string that only exists in the new content.
+
+The Pages API is not a reliable signal on its own: a run that fails leaves
+`repos/.../pages/builds/latest` reporting `building` indefinitely.
+
+One failure has already happened this way, and it is worth knowing the shape
+of it: a literal Liquid tag written **inside** a `comment` block closes that
+block early, and the build dies on the orphaned closing tag. Instructions
+written inside a comment must not contain Liquid tags.
+
 ## Known gaps
 
 1. **The contact form is not live yet.** The page is built for it; the form itself has to be created. See below.
