@@ -36,7 +36,7 @@ The collection page is built from the **Main collection** section: an optional h
 - **Desktop columns** — **2**, **3** (default) or **4 columns**.
 - **Show vendor** — Default: off.
 - **Show second image on hover** — Displays the alternate product image on hover. Default: on.
-- **Show quick view button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/); this setting can only turn it off for this grid, not on.
+- **Show quick add button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/); this setting can only turn it off for this grid, not on.
 
 ### Colors
 

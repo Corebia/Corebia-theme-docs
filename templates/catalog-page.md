@@ -34,7 +34,7 @@ It is an alternate template, `collection.all.json`, so editing it doesn't affect
 - **Desktop columns** — **2**, **3** (default) or **4 columns**.
 - **Show vendor** — Default: off.
 - **Show second image on hover** — Displays the alternate product image on hover. Default: on.
-- **Show quick view button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
+- **Show quick add button** — Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
 
 ### Colors
 
