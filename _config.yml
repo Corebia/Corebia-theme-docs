@@ -3,6 +3,13 @@ description: Official documentation for the Pave Shopify theme by Corebia.
 url: https://docs.corebia.com
 baseurl: ""
 
+# Support contact form. Take the id from the form's share link,
+# https://tally.so/r/<id>, and put just the id here — the embed on
+# /support/contact/ builds its own URL around it. While this is empty that
+# page shows an email address instead, which does NOT satisfy section 21 of
+# the Shopify Theme Store requirements. See AUDIT_NOTES.md.
+tally_form_id: ""
+
 remote_theme: just-the-docs/just-the-docs@v0.7.0
 
 color_scheme: light

@@ -1,28 +1,61 @@
 {%- comment -%}
   The support contact form.
 
-  ─────────────────────────────────────────────────────────────────────────────
-  TO GO LIVE: replace this entire file with the embed code Tally gives you.
+  Renders the Tally embed when `tally_form_id` is set in _config.yml, and an
+  email fallback until then, so this page is never broken.
 
-  In Tally: open the form, then Share > Embed > Standard embed. Turn on
-  "Dynamic height" so the iframe grows with the form, and "Align content to
-  the left" so it lines up with the page text. Click "Get the code" and paste
-  it here, replacing everything — this comment block included.
+  Everything below is built from Tally's own embed script, tally.so/widgets/
+  embed.js, which is what defines the contract: it looks for iframes carrying
+  a data-tally-src attribute, copies that value into src, appends originPage,
+  and — when the URL carries dynamicHeight=1 — attaches a resizer so the
+  iframe grows with the form instead of scrolling inside a fixed box. It
+  exposes loadEmbeds on a global named Tally.
 
-  Use Tally's own code verbatim. It builds the query string from the options
-  you picked, and a URL typed by hand silently loses them.
-  ─────────────────────────────────────────────────────────────────────────────
-
-  Until then this renders an email fallback, so the page is never broken. Note
-  that a contact email on its own does NOT satisfy section 21 of the Shopify
-  Theme Store requirements, which asks for a form. AUDIT_NOTES.md lists the
-  fields the form has to carry and the Tally-side setup.
-
-  Nothing in this block is served to the browser, and it must not contain
-  Liquid tags: a literal one closes the comment early and fails the build.
+  Do not write a Liquid tag inside this comment. Liquid parses tags in comment
+  blocks, so a literal one closes the block early and fails the Pages build.
 {%- endcomment -%}
 
+{%- if site.tally_form_id and site.tally_form_id != "" -%}
+<iframe
+  data-tally-src="https://tally.so/embed/{{ site.tally_form_id }}?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+  loading="lazy"
+  width="100%"
+  height="500"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+  title="Contact Corebia support about the Pave theme"></iframe>
+<script>
+  (function () {
+    var d = document,
+        w = 'https://tally.so/widgets/embed.js',
+        load = function () {
+          if (typeof Tally !== 'undefined') {
+            Tally.loadEmbeds();
+            return;
+          }
+          /* Script blocked or failed: point the iframes at their own source so
+             the form still loads. It cannot resize itself without the script,
+             which is why the iframe carries a workable starting height. */
+          d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
+            e.src = e.dataset.tallySrc;
+          });
+        };
+
+    if (typeof Tally !== 'undefined') {
+      load();
+    } else if (d.querySelector('script[src="' + w + '"]') === null) {
+      var s = d.createElement('script');
+      s.src = w;
+      s.onload = load;
+      s.onerror = load;
+      d.body.appendChild(s);
+    }
+  })();
+</script>
+{%- else -%}
 <p>
   Email <a href="mailto:support@corebia.com">support@corebia.com</a> with the
   details below and we'll pick it up within two business days.
 </p>
+{%- endif -%}

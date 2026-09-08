@@ -59,7 +59,13 @@ written inside a comment must not contain Liquid tags.
 
 ## Building the contact form
 
-`support/contact.md` includes `_includes/contact-form.html`, which currently renders an email fallback. Replacing that file's contents with Tally's generated embed code puts the form live. **A contact email on its own does not satisfy §21** — the requirement is a form.
+The embed is already written. `support/contact.md` includes `_includes/contact-form.html`, which renders the Tally iframe as soon as `tally_form_id` is set in `_config.yml`, and an email fallback until then. **A contact email on its own does not satisfy §21** — the requirement is a form.
+
+So going live is one line of YAML: take the id out of the form's share link, `https://tally.so/r/<id>`, and set `tally_form_id` to just that id.
+
+The embed URL is built from Tally's own contract rather than copied from their UI, so the options are fixed in the include: `alignLeft=1`, `hideTitle=1`, `transparentBackground=1`, `dynamicHeight=1`. The last two are the ones that matter — `tally.so/widgets/embed.js` looks for `dynamicHeight=1` before attaching its resizer, without which the form scrolls inside a fixed box, and for `transparentBackground=1` before letting the page's own background show through. To change the options, edit the query string in the include.
+
+If Tally ever changes that contract, their **Share > Embed > Standard embed > Get the code** output is the authority: paste it over the whole `if` branch of the include.
 
 ### Fields §21 requires
 
@@ -80,11 +86,12 @@ Do **not** ask for budget, phone number or project type. §21 names those as the
 
 ### Tally setup
 
-1. Build the form with the six fields, and put the example URL in the store URL field's placeholder.
-2. Turn on the file upload question type.
-3. Under **Integrations > Email**, set an auto-reply to the respondent. This is the auto-responder requirement; without it the form does not conform.
-4. **Share > Embed > Standard embed**: turn on *Dynamic height* and *Align content to the left*, then **Get the code** and paste it into `_includes/contact-form.html`, replacing the whole fallback block.
-5. If you use a popup rather than an inline embed, §21 adds that it must be mobile friendly and linkable from the Theme Store.
+1. Build the form with the six fields, and put the example URL in the store URL field's placeholder — §21 asks for the example, not just the field.
+2. Use Tally's **File upload** question type for the attachment field.
+3. Under **Integrations > Email**, set an auto-reply to the respondent. **This is the auto-responder requirement, and it is the step most likely to be missed**: it is an integration, not a question, so a form that looks complete can still fail this one.
+4. Set `tally_form_id` in `_config.yml` to the id from the form's share link. Nothing else needs pasting — the embed is already written.
+5. Push, watch the Pages build, then open `/support/contact/` and submit a test message. Confirm the auto-reply arrives and that the attachment came through.
+6. Check it on a phone. The embed asks Tally for dynamic height, so the form should grow rather than scroll inside its own box.
 
 ### Where the URL goes afterwards
 
