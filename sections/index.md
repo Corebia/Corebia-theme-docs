@@ -12,7 +12,7 @@ Sections are the building blocks of every page in Pave. Most can be added, remov
 
 The pages below document every section a merchant can configure. **Header**, **Footer**, **Announcement bar** and **Predictive search** live in the header and footer groups and appear on every page; the rest are added to individual templates.
 
-Sections that make up a specific template — the product page, the cart, the blog and so on — are documented under [Templates](../templates/) instead, because they can't be moved between templates.
+Sections that make up a specific template, such as the product page, the cart and the blog, are documented under [Templates](../templates/) instead, because they can't be moved between templates.
 
 ## Global
 

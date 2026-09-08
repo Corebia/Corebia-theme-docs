@@ -50,7 +50,7 @@ Yes — Pave displays selling plans on the product page, cart, and order detail.
 
 ### How do I set up complementary products?
 
-Install the Shopify **Search & Discovery** app (free), then under `Recommendations`, manually pick complementary products for each source product. Pave fetches these and renders the **Complementary products** section automatically on the product page. See [Complementary products](../../features/product-recommendations/).
+Install the Shopify **Search & Discovery** app (free), then under `Recommendations`, pick the complementary products for each source product. In the theme, add the **Product recommendations** section to the product template and set its **Recommendation type** to **Complementary products**. A product with no pairings shows nothing at all, so the section is safe to add before you have finished pairing your catalog. See [Complementary products](../../sections/complementary-products/).
 
 ## Updates and customizations
 
@@ -88,9 +88,11 @@ Themes purchased from the Shopify Theme Store are final sale. Refund requests ar
 
 Pave supports every standard feature of Shopify Online Store 2.0, including section groups, app blocks, dynamic checkout, accelerated payment buttons, multi-currency, multi-language, gift cards, selling plans, pickup availability, and more. For a specific feature, search this documentation or reach out via the [contact form](../contact/).
 
-### Does Pave support classic customer accounts and the new customer accounts experience?
+### How do customer accounts work in Pave?
 
-Yes — Pave is compatible with both. The classic accounts render via theme-rendered customer pages; the new accounts redirect customers to a Shopify-hosted account experience. Pick the flow in `Shopify admin > Settings > Customer accounts`. See [Customer pages](../../templates/customer-pages/).
+The account entry point sits in the header's navigation panel on every page. It is Shopify's own component, so it shows a signed-out or signed-in state by itself and needs no setup beyond enabling accounts in `Shopify admin > Settings > Customer accounts`.
+
+The account pages themselves are rendered by Shopify, not by the theme. The one thing you control from the theme is which menu appears inside the account panel, through the header's **Customer account menu** setting. See [Customer accounts](../../features/customer-accounts/).
 
 ### What plan do I need?
 

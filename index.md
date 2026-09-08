@@ -9,7 +9,7 @@ permalink: /
 # Pave theme documentation
 {: .fs-9 }
 
-Pave is an editorial Shopify theme by Corebia, built for stores that lead with photography — fashion, lifestyle and homeware merchants who want a spacious, gallery-like storefront.
+Pave is an editorial Shopify theme by Corebia, built for stores that lead with photography. It suits fashion, lifestyle and homeware merchants who want a spacious, gallery-like storefront.
 {: .fs-5 .fw-300 }
 
 [Get started](getting-started/installation/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -19,7 +19,7 @@ Pave is an editorial Shopify theme by Corebia, built for stores that lead with p
 
 ## Current version
 
-**1.0.0** — see the [changelog](changelog/) for what it includes.
+**1.0.0**. See the [changelog](changelog/) for what it includes.
 
 ## What's in this guide
 
