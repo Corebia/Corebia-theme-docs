@@ -51,8 +51,8 @@ The conventional order is complementary first — "goes with this" — then rela
 ## Tips
 
 - **Leave the heading blank** unless you have a better line. Each type has a default heading written for it.
-- **Four to eight products.** Ten is the ceiling and it fills a wide row, but a long list reads as a catalog rather than a suggestion.
-- **Pair your best sellers first.** Complementary pairings are manual work, and the products that already sell are where that work pays back.
+- **Four to eight products.** Ten is the maximum and it does fill a wide row, but a long list stops looking like a suggestion and starts looking like a catalog.
+- **Pair your best sellers first.** Complementary pairings are manual work, so start with the products that already sell.
 
 ## Related
 

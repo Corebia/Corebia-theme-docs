@@ -37,7 +37,7 @@ It can't be placed in the header or footer groups.
 
 ## Tips
 
-- **Replace the default copy.** The sample text ships with the theme and reads as sample text. Anything published with it still in place looks unfinished.
+- **Replace the default copy.** The sample text ships with the theme and looks like it. Anything published with it still in place looks unfinished.
 - **Keep the subheading to two or three words.** It is set small and uppercase; a sentence there turns into a smudge.
 - **Alternate the image position** if you use this section more than once on a page. Two identical layouts stacked read as a repeat rather than a rhythm.
 - **One button, one job.** The button is the only call to action in the section, so send it to the one place the copy has earned.

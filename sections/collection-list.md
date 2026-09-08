@@ -37,4 +37,4 @@ Up to **five** Collection blocks.
 - **Set the collection image in Shopify.** The tile takes its picture from the collection itself, under `Shopify admin > Products > Collections`. A collection with no image falls back to its first product, which is rarely the crop you want.
 - **Use Auto focal point first.** Setting the focal point on the image in your Files area fixes the crop everywhere at once. Only override it here when one tile needs a different crop from the same image.
 - **Raise the overlay for bright photography.** Soft looks better on dark images; light or high-key imagery usually needs Medium or Strong for the title to hold.
-- **Three or four tiles reads best.** Five is the ceiling and it fills a wide screen, but it starts to look like a menu rather than a selection.
+- **Three or four tiles is the comfortable range.** Five is the maximum and it does fill a wide screen, but the row stops looking like a selection and starts looking like a menu.

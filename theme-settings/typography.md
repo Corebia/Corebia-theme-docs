@@ -37,5 +37,5 @@ Custom fonts of your own aren't available through this setting. Adding one means
 
 - **Change size before you change font.** Most "this doesn't feel right" reactions are about scale, not typeface. The two scales move everything together and keep the proportions the theme was designed around.
 - **Scale headings and body separately.** Raising only **Heading size** gives a more editorial, magazine-like page; raising only **Text size** helps readability for an older audience without shouting.
-- **Two fonts, not three.** The theme offers one heading and one body font on purpose. If you want a third voice, get it from weight and case rather than from another family.
+- **Two fonts, not three.** The theme offers one heading font and one body font, and no more. If you want a third voice, get it from weight and case rather than from another family.
 - **Check the extremes.** At 130% a long product title can wrap to three lines on a phone; at 80% metadata gets close to unreadable. Look at a real product page at both ends before settling.

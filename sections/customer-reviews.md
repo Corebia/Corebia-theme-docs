@@ -45,5 +45,5 @@ Any block offered by a reviews app installed on your store. What it renders and 
 
 - **Get permission before publishing a name.** A first name and a city is the usual compromise, and the **Source** field is sized for exactly that.
 - **Pick one approach and stay with it.** Hand-written quotes beside app-rendered stars in the same section look like two sections that collided.
-- **Quotes read better short.** One sentence that says something specific beats a paragraph that says the product was great.
+- **Quotes work better short.** One sentence saying something specific will do more than a paragraph saying the product was great.
 - **Star ratings on the product page are separate.** They come from the **Product rating** block on the [Product page](../../templates/product-page/), which reads the standard `reviews.rating` metafield.

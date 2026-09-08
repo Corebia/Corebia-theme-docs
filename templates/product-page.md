@@ -70,7 +70,7 @@ Limit 1.
 Limit 1.
 
 - **Text style** — **Body** (default), **Subheading** or **Uppercase**.
-- **Low inventory threshold** — Below this quantity the status reads as low stock. Range: 0 to 100. Default: 10.
+- **Low inventory threshold** — Below this quantity the status switches to low stock. Range: 0 to 100. Default: 10.
 - **Show inventory count** — Shows the actual number remaining. Default: on.
 
 ### Variant picker

@@ -34,4 +34,4 @@ For letting a buyer send a card straight to someone else with a message, see the
 
 - **Test with a real card.** Issue one to yourself from `Shopify admin > Products > Gift cards`, open the link from the email, and check the QR scans and the Wallet button installs. It is the one page you can't preview meaningfully from the theme editor.
 - **Print is not an afterthought.** A gift card is often printed and put in an envelope, so the printed version is part of the product.
-- **The page has no settings on purpose.** It renders whatever the card holds, and Shopify controls the data. If it looks wrong, the cause is almost always the card rather than the theme.
+- **There is nothing here to configure.** The page renders whatever the card holds, and Shopify controls that data. If it looks wrong, the cause is almost always the card rather than the theme.

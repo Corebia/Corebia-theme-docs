@@ -61,7 +61,7 @@ A single inline link in the panel.
 
 ## Tips
 
-- **Branding is off by default on purpose.** The home page opens with the hero, which already carries the brand; on every other page the branding is the way back to the home page. Turn it on if your hero doesn't include a wordmark.
+- **Branding starts switched off for a reason.** The home page opens with the hero, which already carries the brand; on every other page the branding is the way back to the home page. Turn it on if your hero doesn't include a wordmark.
 - **Hover trigger only applies to the home page.** Everywhere else the panel opens on click. Lower the value for a calmer feel, raise it if shoppers are missing the trigger.
 - **Structure the menu in Shopify, not here.** For a large catalog, build `main-menu` in your admin with parent items and sub-menus; the panel renders all three levels without further setup.
 - **Leave the customer account menu empty unless you have a reason.** The default account links cover the usual flows. Set a menu when you want to add something of your own, such as a loyalty page.

@@ -23,7 +23,7 @@ Complementary products are set per product. A product with no pairings has nothi
 
 ## What happens when nothing is set
 
-The section renders **nothing at all** — no heading, no empty row, no placeholder. That is deliberate: a recommendations row with no recommendations reads as a broken page.
+The section renders **nothing at all**: no heading, no empty row, no placeholder. A recommendations row with no recommendations looks like a broken page, so the theme leaves it out.
 
 This also means the section is safe to add to the product template before you have finished pairing everything up. It appears on the products you have done and stays invisible on the rest.
 
@@ -38,4 +38,4 @@ They serve different moments and most stores want both. See the comparison table
 
 - **Pair across categories, not within them.** Complementary works when the second product is something the shopper wouldn't have searched for.
 - **Three or four pairings per product is plenty.** The list is a suggestion, not a catalog.
-- **Start with your best sellers.** Pairing is manual work; the products that already sell are where it pays back first.
+- **Start with your best sellers.** Pairing is manual work, and those are the products where it shows up in the order value first.

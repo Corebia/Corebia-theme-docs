@@ -14,7 +14,7 @@ It belongs to the `header` section group, so it can only be placed above or belo
 
 ## Settings
 
-- **Color scheme** — Default: scheme-2, so the bar reads as a band against the page rather than blending into it.
+- **Color scheme** — Default: scheme-2, so the bar sits as a band against the page rather than blending into it.
 - **Motion** — How messages animate. Default: **Rotate**.
   - **Rotate (cross-fade between messages)** — One message at a time, cross-fading to the next.
   - **Marquee (continuous horizontal scroll)** — All messages scrolling horizontally in a continuous loop.

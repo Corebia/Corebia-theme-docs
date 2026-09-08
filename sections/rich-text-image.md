@@ -51,4 +51,4 @@ Up to **six** blocks in total, within these per-type limits.
 - **Order the blocks the way they should read.** The stack is rendered top to bottom in the order you arrange it, so a heading placed after a paragraph will appear after it.
 - **Raise the overlay until the text is comfortable, then stop.** Anything past about 60% stops being a photograph and becomes a coloured panel.
 - **Choose the ratio for the amount of text.** Ultra-wide holds a heading and one line. Portrait holds a heading, a paragraph and a button without crowding.
-- **One button.** The block limit is one on purpose: a section with two competing calls to action converts worse than one with a single clear one.
+- **One button.** The block limit stops at one because a section with two competing calls to action converts worse than one with a single clear one.
