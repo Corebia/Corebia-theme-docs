@@ -62,6 +62,15 @@ defaults:
       path: ""
     values:
       layout: default
+  # Undo that default under assets/. Just the Docs generates its search index
+  # as assets/js/search-data.json, and a site-wide layout wraps that JSON in
+  # the HTML page template — so the browser fetches the index, tries to parse
+  # a `<!DOCTYPE html>` as JSON, throws "Unexpected token '<'", and search
+  # silently returns nothing on every page.
+  - scope:
+      path: "assets"
+    values:
+      layout: null
 
 exclude:
   - README.md
