@@ -10,6 +10,8 @@ permalink: /sections/rich-text-image/
 
 **Rich text with image** lays text over a background image. Unlike [Brand message](../brand-message/), where the text sits beside the picture, here it sits on top of it, so the image is chosen for what it can carry rather than for what it shows.
 
+On a phone (below 750px) the section stacks instead: the image shows at its aspect ratio with no overlay, and the heading, text and button follow it underneath in the section's color scheme.
+
 It can't be placed in the header or footer groups.
 
 ## Settings
@@ -17,8 +19,8 @@ It can't be placed in the header or footer groups.
 ### Image
 
 - **Image.** The background image.
-- **Image aspect ratio.** **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**. The ratio is a minimum: when the text needs more room, as it often does on a phone, the section grows taller and the image is cropped, so the text is never cut off.
-- **Overlay darkness.** Higher values darken the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%. Set to 0 to remove the overlay.
+- **Image aspect ratio.** **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**. From 750px the ratio is a minimum: when the text needs more room, the section grows taller and the image is cropped, so the text is never cut off. On a phone the ratio is the image's own shape, above the text.
+- **Overlay darkness.** Higher values darken the image so the text stays legible. It applies from 750px; on a phone the text sits below the image, so there is no overlay. Range: 0% to 80% in 5% steps. Default: 35%. Set to 0 to remove the overlay.
 
 ### Colors
 
