@@ -28,10 +28,10 @@ Two presets are available when you add the section: **Newsletter**, on a plain b
 
 - **Show consent checkbox.** Default: on. Required for EU markets under GDPR. Without the checkbox, the form records consent when it's submitted.
 - **Consent text.** Inline rich text, and it may contain links. Ships pointing at `/policies/privacy-policy`. Shown when the consent checkbox is on.
-- **Color scheme.** Default: scheme-1.
 
 ### Background
 
+- **Color scheme.** Default: scheme-1.
 - **Background.** **None** (default) or **Image**.
 - **Image.** The background photograph. Shown when **Background** is set to Image.
 - **Overlay opacity.** A wash of the color scheme's background laid over the photograph so the text stays readable. Range: 65% to 90% in 5% steps. Default: 80%. Shown when **Background** is set to Image.

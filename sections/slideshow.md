@@ -33,7 +33,7 @@ Up to **eight** Slide blocks. A slideshow with no slides shows nothing on the st
 - **Image.** The slide's image. Without one, a placeholder illustration shows.
 - **Mobile image.** Shown on screens narrower than 750 px. Leave it blank to use the image.
 - **Content position.** Where the heading, text and button sit on the slide. **Bottom left** (default), **Bottom center**, **Center** or **Top left**.
-- **Overlay opacity.** Darkens the image behind the text. Range: 0% to 80% in 5% steps. Default: 30%.
+- **Overlay opacity.** Darkens the whole slide evenly so the text stays readable. Range: 0% to 80% in 5% steps. Default: 30%.
 
 Each slide takes [Heading](../theme-blocks/#heading), [Text](../theme-blocks/#text) and [Button](../theme-blocks/#button) blocks, in any order. A new slide starts with one of each.
 

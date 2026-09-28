@@ -22,7 +22,8 @@ It can't be placed in the header or footer groups. It is added with four Product
 
 ### Products
 
-- **Columns on desktop.** Range: 2 to 4. Default: 4. Mobile always shows fewer.
+- **Columns on desktop.** Range: 2 to 4. Default: 4.
+- **Columns on mobile.** **1 column** or **2 columns** (default). Applies below 750px.
 - **Image ratio.** **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
 - **Show vendor.** Default: off.
 - **Show second image on hover.** Shows the product's alternate image when a shopper hovers the card. Default: on.

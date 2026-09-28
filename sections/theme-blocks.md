@@ -35,7 +35,7 @@ Two images in one frame, split by a handle the shopper drags to compare them: be
 
 - **Before image** / **After image.** Without an image, a placeholder shows in its place.
 - **Before label** / **After label.** Short captions on each side. Defaults: `Before` and `After`. Leave one empty to hide it.
-- **Starting position.** Where the handle sits when the page loads, from the left edge. Range: 0% to 100% in 1% steps. Default: 50%.
+- **Starting position.** Where the handle sits when the page loads, measured from the left edge. At 0% the after image shows in full. Range: 0% to 100% in 1% steps. Default: 50%.
 - **Aspect ratio.** **Adapt to before image** (default), **Landscape (16:9)**, **Standard (4:3)**, **Square (1:1)** or **Portrait (4:5)**.
 
 Use two images of the same size and framing. Anything that moves between them other than the change you are showing makes the comparison hard to read.

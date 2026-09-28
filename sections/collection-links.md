@@ -18,6 +18,8 @@ It can't be placed in the header or footer groups.
 - **Layout.**
   - **Image beside links** (default). The images sit in a column beside the list. The first collection's image shows until a shopper points at or tabs to another link, which brings that collection's image forward.
   - **Large text links.** The list takes the full width, and a collection's image appears when a shopper points at or tabs to its link.
+
+  Phones show the collections as a scrolling row with either layout.
 - **Image position.** **Left** or **Right** (default). Shown with **Image beside links**.
 - **Section width.** **Page width** (default) or **Full width**.
 - **Alignment.** **Left** (default), **Center** or **Right**. Aligns the links.

@@ -41,7 +41,7 @@ Sections that make up a specific template, such as the product page, the cart an
 - [Collection list](collection-list/)
 - [Collection links](collection-links/)
 - [Collection tabs](collection-tabs/)
-- [Shop by colour](shop-by-color/)
+- [Shop by color](shop-by-color/)
 - [Featured product](featured-product/)
 - [Shoppable image](shoppable-image/)
 - [Shoppable videos](shoppable-videos/)

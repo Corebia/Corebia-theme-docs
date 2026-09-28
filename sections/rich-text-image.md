@@ -17,7 +17,7 @@ It can't be placed in the header or footer groups.
 ### Image
 
 - **Image.** The background image.
-- **Image aspect ratio.** **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**.
+- **Image aspect ratio.** **Ultra-wide (21:9)**, **Wide (16:9)** (default), **Standard (4:3)**, **Square (1:1)** or **Portrait (3:4)**. The ratio is a minimum: when the text needs more room, as it often does on a phone, the section grows taller and the image is cropped, so the text is never cut off.
 - **Overlay darkness.** Higher values darken the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%. Set to 0 to remove the overlay.
 
 ### Colors

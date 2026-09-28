@@ -1,14 +1,14 @@
 ---
-title: Shop by colour
+title: Shop by color
 layout: default
 parent: Sections
 nav_order: 24
 permalink: /sections/shop-by-color/
 ---
 
-# Shop by colour
+# Shop by color
 
-**Shop by colour** is a row of color swatches, one for each color in the collection's color filter. A shopper taps a color and the collection reloads filtered to it; tapping the active color again removes the filter. The name in the theme editor uses British spelling, so look for **Shop by colour** under **Add section**.
+**Shop by color** is a row of color swatches, one for each color in the collection's color filter. A shopper taps a color and the collection reloads filtered to it; tapping the active color again removes the filter.
 
 It reads the filters of the collection it sits on, so it belongs on a [collection template](../../templates/collection-page/). Placed anywhere else, it has no collection to read and shows nothing. It can't be placed in the header or footer groups.
 

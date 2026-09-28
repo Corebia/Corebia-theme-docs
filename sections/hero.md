@@ -21,7 +21,7 @@ It can't be placed in the header or footer groups. Three presets are available w
 - **Background video.** Plays muted and on a loop over the image once the page has loaded, with a pause button. The image stays as the poster, and it is all that visitors who ask for reduced motion see.
 - **Image focal point.** Where the desktop image crops. **Top** (default), **Center** or **Bottom**. Used only when the image has no focal point of its own: a focal point set on the image in the image picker takes its place.
 - **Mobile image focal point.** **Top** (default), **Center**, **Bottom**, **Left** or **Right**. The same rule applies to the image shown on mobile.
-- **Overlay opacity.** Darkens the image so the text stays legible. Range: 0% to 80% in 5% steps. Default: 35%.
+- **Overlay opacity.** Darkens the image from the left and bottom edges, where the text sits, so it stays legible. Range: 0% to 80% in 5% steps. Default: 35%.
 
 **Mobile image (optional)** and the two focal point settings are shown once a background image is set.
 
@@ -30,13 +30,13 @@ It can't be placed in the header or footer groups. Three presets are available w
 - **Show brand name.** Default: on. Turn it off when the header logo already shows over the hero. On the home page the name stays in place as the page heading for screen readers.
 - **Brand name.** The large text over the image. Defaults to the shop name if empty.
 - **Subheading.** Optional one-liner below the brand name. For example, `Crafted slowly. Built to last.`
-- **Font size scale.** Scales the brand text. Range: 50% to 150% in 5% steps. Default: 100%.
+- **Font size scale.** Resizes the brand name, which always stays between 56 px and 256 px. Range: 50% to 150% in 5% steps. Default: 100%.
 - **Text position.** **Bottom left** (default) or **Bottom center**.
 - **Color scheme.** Applied to the text overlay. Default: scheme-1.
 
 ### Editorial accents
 
-- **Show side rail.** A vertical metadata strip on the left edge, desktop only. Default: on.
+- **Show side rail.** A vertical line of text along the left edge, desktop only, showing the **Side rail text** or your store name. Default: on.
 - **Side rail text.** Defaults to the shop name if empty. Shown when the side rail is on.
 - **Show scroll indicator.** Default: on.
 - **Scroll indicator label.** Default: `Scroll`. Shown when the scroll indicator is on.
