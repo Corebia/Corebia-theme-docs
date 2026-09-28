@@ -25,7 +25,7 @@ How shoppers choose between sizes, colors and materials, on every product page a
   - **By option type** gives color options swatches, size options buttons (or a menu with the **Dropdown menu** style) and every other option a menu.
   - **Same for every option** follows the style above for all options.
 - **Show selected value next to the option name.** The chosen value appears beside the option name, so it reads `Color Sand` rather than `Color` on its own. Default: on.
-- **Out-of-stock variant style.** How unavailable combinations are presented. Default: **Strikethrough**.
+- **Out-of-stock variant style.** How unavailable combinations are presented. It applies to swatches and buttons whose value has no in-stock variant with the other options chosen. Default: **Strikethrough**.
 
   | Option | Behavior |
   |---|---|

@@ -14,7 +14,7 @@ Pave has two carts that share these settings: the **cart drawer**, which slides 
 
 ## Settings
 
-- **Show discount code field.** Puts a discount code field on the cart page. Default: on.
+- **Show discount code field.** Adds a discount code field to the order summary on the cart page. Shoppers can also enter codes at checkout. Default: on.
 - **Cart type.** What happens when a shopper opens the cart. **Drawer** (default) slides the cart in over the current page; **Page** takes them to the cart page.
 - **Open the cart drawer after adding to cart.** Shown when **Cart type** is **Drawer**. Default: on. Off: the cart count in the header bumps instead.
 - **Free shipping threshold.** In your store's currency. Must match your free shipping rate's minimum order price. Default: 0, which hides the bar.
@@ -56,7 +56,7 @@ CAD 75
 
 ## Product suggestions
 
-Suggestions sit below the cart items, each with an **Add** button, and leave out anything already in the cart. Set **Suggested products** to choose them yourself, such as small add-ons that suit almost any order. Leave it empty and Shopify's recommendations for the first product in the cart are used instead.
+Suggestions sit below the cart items, each with its price and an **Add** button, and leave out anything already in the cart. A product on sale shows its compare-at price struck through beside the sale price, as it does on a product card. Set **Suggested products** to choose them yourself, such as small add-ons that suit almost any order. Leave it empty and Shopify's recommendations for the first product in the cart are used instead.
 
 **Empty cart suggestions** are separate. They fill the empty cart, in the drawer and on the page, so a shopper who opens it with nothing inside has somewhere to go.
 

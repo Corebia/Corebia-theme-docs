@@ -14,7 +14,7 @@ What a sale badge says is set under [Discount display](../discount-display/); ho
 
 ## Settings
 
-- **Position.** Where the badge sits on a product card image. **Top left** (default), **Top right** or **Bottom left**. Badges shown next to a price are unaffected.
+- **Position.** Where the badge sits on a product card image. **Top left** (default), **Top right** or **Bottom left**. Badges shown next to a price are unaffected. A sold-out product's **Sold out** badge takes the same corner, and on a sold-out card it is the only badge shown.
 - **Corner radius.** Rounds every badge to the same radius. Range: 0 to 100 px in 2 px steps. Default: 100 px. At 100 the theme keeps its own shapes instead: a pill on card images, a softly rounded chip beside a price.
 - **Font.** Applies to every badge, both on product card images and beside a price. **Body** (default), **Subheading**, **Heading** or **Accent**. The fonts themselves are set in [Typography](../typography/).
 - **Text case.** **As typed** or **Uppercase** (default). Uppercase matches the other labels in the theme.

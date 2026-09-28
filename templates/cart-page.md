@@ -33,7 +33,9 @@ Blocks render below the cart, and they render on the empty cart too.
 
 ## What the cart shows
 
-None of these are set on the cart page itself. Each appears when the store, the line item or a [Cart settings](../../theme-settings/cart-settings/) option calls for it.
+The page opens with a `Continue shopping` back link to your catalog of all products, in the same style as the back link on other pages, and the `Your cart` heading.
+
+None of the rest are set on the cart page itself. Each appears when the store, the line item or a [Cart settings](../../theme-settings/cart-settings/) option calls for it.
 
 - **Line items**, with image, options, any line item properties, an editable quantity and a remove control.
 - **Subscription details**: the selling plan's name on any line bought on a plan. See [Selling plans](../../features/selling-plans/).
@@ -46,11 +48,11 @@ None of these are set on the cart page itself. Each appears when the store, the 
 - **Check out** and **accelerated checkout buttons**, for whichever wallets your store accepts. See [Accelerated checkout](../../features/accelerated-checkout/).
 - **A tax note**: `Tax included.` when your prices include tax, and `Tax excluded.` for B2B buyers whose prices exclude it.
 - **Order notes**, a message to you that arrives with the order. The field is collapsed unless **Open the order note by default** is on, and a note the shopper has already written always shows.
-- **Product suggestions**, when **Show product suggestions** is on: up to four products not already in the cart.
+- **Product suggestions**, when **Show product suggestions** is on: up to four products not already in the cart. A product on sale shows its compare-at price struck through, as on its product card.
 
 ## The empty cart
 
-An empty cart shows `Your cart is empty` and a button to the catalog rather than a blank page. Choose an **Empty cart suggestions** collection under Cart settings to show up to four of its products below the message.
+An empty cart shows `Your cart is empty` and a button to the catalog rather than a blank page. Choose an **Empty cart suggestions** collection under Cart settings to show up to four of its products below the message, headed by the collection's name. On the cart page that heading takes the size of a section heading; in the drawer it stays small.
 
 ## Tips
 

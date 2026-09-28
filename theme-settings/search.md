@@ -15,7 +15,7 @@ The results that appear once a shopper starts typing come from the [Predictive s
 ## Settings
 
 - **Featured collection.** Products shown in the search drawer before a shopper types. Leave it empty to show none.
-- **Products to show.** Shown once a featured collection is set. Range: 2 to 10. Default: 4.
+- **Products to show.** How many products from the featured collection the search drawer shows before a shopper types. Shown once a featured collection is set. Range: 2 to 10. Default: 4.
 - **Popular searches menu.** Each menu item becomes a link in the search drawer. Leave it empty to show none.
 - **Show recent searches.** Lists the shopper's last 5 searches in the search drawer. The terms are kept in their own browser only, and they can remove any of them. Default: off.
 

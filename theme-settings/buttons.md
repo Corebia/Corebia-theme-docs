@@ -14,15 +14,15 @@ The shape and lettering of every button in the store. Pave has two kinds: the **
 
 ### Primary button
 
-- **Border thickness.** Range: 0 to 4 px. Default: 0 px.
-- **Corner radius.** Range: 0 to 100 px. Default: 100 px, a full pill.
+- **Border thickness.** Range: 0 to 4 px. Default: 0 px. At 0 px the button has no border.
+- **Corner radius.** Range: 0 to 100 px. Default: 100 px, a full pill. 0 px gives square corners, and higher values round them until the button becomes a pill.
 - **Font.** **Body** (default), **Accent** or **Heading**. The fonts themselves are set under [Typography](../typography/).
 - **Text case.** **Default** (default) or **Uppercase**.
 
 ### Secondary button
 
-- **Border thickness.** Range: 0 to 4 px. Default: 1 px.
-- **Corner radius.** Range: 0 to 100 px. Default: 100 px.
+- **Border thickness.** Range: 0 to 4 px. Default: 1 px. At 0 px the button has no border.
+- **Corner radius.** Range: 0 to 100 px. Default: 100 px. As for the primary button, 0 px gives square corners.
 - **Font.** **Body** (default), **Accent** or **Heading**.
 - **Text case.** **Default** (default) or **Uppercase**.
 

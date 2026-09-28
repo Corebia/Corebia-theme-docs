@@ -12,8 +12,8 @@ These settings apply to the product card wherever it appears: collection pages, 
 
 ## Settings
 
-- **Image ratio.** **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**.
-- **Show quick add button.** Adds a `+` button to product cards. Products with one variant are added straight to the cart; products with several add the first available variant. Default: on.
+- **Image ratio.** **Adapt to image**, **Portrait (3:4)**, **Square (1:1)** (default) or **Landscape (4:3)**. **Adapt to image** follows the shape of each card's image. Sections with their own image ratio setting use that instead.
+- **Show quick add button.** Adds a `+` button to product cards. Products with one variant are added straight to the cart. Products with several variants open a popup where shoppers choose the options and add to the cart. Default: on.
 - **Show an image carousel on cards.** Lets shoppers page through up to 5 of a product's images on the card with arrow buttons, without opening the product page. Products with one image are unchanged. Default: off.
 - **Play a product video on card hover.** On a mouse, resting on a card plays the product's first video, muted and looping. Nothing is downloaded until the pointer arrives, and touch devices and shoppers who have asked for reduced motion see only a still frame. Default: off.
 - **Show a quick view button on cards.** Lets shoppers open a product's media, price, options and add-to-cart in a popup from the grid, without leaving the page. Default: off.
@@ -38,13 +38,13 @@ The position, font and shape of card badges are set under [Badges](../badges/), 
 
 The three shortcuts do different jobs:
 
-- **Quick add** puts a product in the cart from the grid, choosing the first available variant for the shopper.
+- **Quick add** puts a product in the cart from the grid. A product with one variant goes straight in, and so does a product whose only option is color, in the color chosen on the card's swatches. For any other product with options to choose, the `+` opens the same popup as quick view, where the shopper picks the options and adds.
 - **Quick view** opens the product in a popup so the shopper can choose a variant properly before adding.
 - **The size selector** lets the shopper pick a size on the card itself, which then points the card's link and price at that size.
 
 On collection and catalog pages, quick add is also controlled by the page's own section, which has its own **Show quick add button** setting. The button only shows there when both are on.
 
-A card showing a size selector doesn't also show the quick view button, to keep the card uncluttered. The size selector finds the size option by its name (Size, Talla, Taille, Größe and others), so an option named anything else shows no selector.
+A card showing a size selector doesn't also show the quick view button, to keep the card uncluttered. For the same reason, a product with options to choose shows no `+` on a card that has a size selector, and none on Recently viewed cards. The size selector finds the size option by its name (Size, Talla, Taille, Größe and others), so an option named anything else shows no selector.
 
 ## A note on Image ratio
 
@@ -61,7 +61,7 @@ Products without a color option simply show no swatches; nothing needs turning o
 ## Tips
 
 - **Quick add earns its place on repeat-purchase catalogs.** Consumables, refills, basics. On a considered-purchase catalog it can short-circuit a decision the product page was going to help with.
-- **Quick add on a multi-variant product picks the first available variant.** That is right for a product where the variants are sizes of the same thing, and wrong for one where they are meaningfully different. Quick view or the size selector suit those catalogs better.
+- **Quick add never guesses a variant.** On a product with options it opens the popup, so the shopper always chooses. If you want shoppers to see the options before any tap, the size selector puts sizes on the card itself.
 - **30 days is a sensible new badge.** Long enough that a shopper sees it, short enough that it still means something. Stores that add stock rarely may want 60; stores adding daily may want 7.
 - **Badges never stack.** A product that is both new and on sale shows the sale badge, because that is the one that moves a decision. See [which badge wins](../discount-display/#which-badge-wins).
 - **Pick one card extra, not all of them.** A carousel, swatches, a size selector, ratings and a quick view button on one small card compete for the same space. Choose the one or two your catalog actually needs.
