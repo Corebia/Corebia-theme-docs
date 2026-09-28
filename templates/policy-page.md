@@ -2,7 +2,7 @@
 title: Policy page
 layout: default
 parent: Templates
-nav_order: 15
+nav_order: 18
 permalink: /templates/policy-page/
 ---
 
@@ -10,7 +10,7 @@ permalink: /templates/policy-page/
 
 Your store policies: refund, privacy, terms of service, shipping, and any others Shopify supports. Each is written in `Shopify admin > Settings > Policies` and rendered by the **Policy page** section.
 
-The content itself is not editable from the theme. These settings control the frame around it.
+The template is a Liquid file, `policy.liquid`, holding that one section. You can't add other sections around it, but you can select the section in the theme editor while previewing a policy and change its settings and blocks. The policy text itself is not editable from the theme.
 
 ## Section settings
 
@@ -18,11 +18,11 @@ The content itself is not editable from the theme. These settings control the fr
 
 ### Content
 
-- **Show back link and breadcrumb.** Default: on.
-- **Show home page link.** An additional link back to the home page. Default: off.
+- **Show back link and breadcrumb.** A back link above the title. Default: on. It returns the shopper to the collection, search results or page they came from, and to the home page otherwise. Policy pages show the link without a breadcrumb trail.
+- **Show home page link.** A second link, labeled `Home`, that always goes to the home page. Default: off.
 - **Show divider.** A rule between the heading and the policy text. Default: on.
 - **Show last updated date.** Default: off.
-- **Last updated date.** The text to show. For example, `January 2026`.
+- **Last updated date.** The text to show. For example, `January 2026`. Shown when **Show last updated date** is on.
 
 ### Spacing
 
@@ -30,8 +30,10 @@ The content itself is not editable from the theme. These settings control the fr
 
 ## Blocks
 
+Blocks render below the policy text.
+
 - **App block.** Any block offered by an installed app.
-- **Custom Liquid.** See [Custom Liquid](../../sections/custom-liquid/).
+- **Custom Liquid.** See [Custom Liquid](../../sections/theme-blocks/#custom-liquid).
 
 ## The last updated date is typed, not automatic
 
@@ -47,6 +49,7 @@ Some markets require specific policies to be published. Shopify offers templates
 
 ## Tips
 
+- **One back link is usually enough.** The back link already falls back to the home page; turn on **Show home page link** only if you want a home link that never changes.
 - **Write the refund policy first.** It is the one shoppers look for before buying, and the one that generates support mail when it is missing.
 - **Keep the divider on.** Policy text is long and undifferentiated; the rule gives the eye a start line.
 - **Link them from the footer**, which is where shoppers expect them. The header panel already carries them automatically.

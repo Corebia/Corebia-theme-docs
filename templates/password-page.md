@@ -2,7 +2,7 @@
 title: Password page
 layout: default
 parent: Templates
-nav_order: 14
+nav_order: 17
 permalink: /templates/password-page/
 ---
 
@@ -23,18 +23,18 @@ Turn password protection on and off under `Shopify admin > Online Store > Prefer
 ### Content
 
 - **Heading.** Default: `Opening soon`.
-- **Message.** Default: `We're putting the finishing touches on something new. Enter the password below for early access.`
+- **Message.** Default: `We're putting the finishing touches on something new. Enter the password below for early access.` A message you write in `Shopify admin > Online Store > Preferences`, under the password page settings, takes precedence over this one; this text only shows while that admin field is empty.
 
 ### Countdown
 
 - **Launch date.** Format: `YYYY-MM-DD`, for example `2026-06-01`. Leave blank to hide the countdown.
 - **Launch time.** Format: `HH:MM` in 24-hour time, for example `09:00`. Used together with the date and timezone. Default: `00:00`.
-- **Timezone.** The timezone the launch date and time are read in. Default: UTC. The list covers major zones from Auckland to Los Angeles.
+- **Timezone.** The timezone the launch date and time are read in. Default: **UTC**. The list covers major zones from **Auckland (NZST/NZDT)** to **Los Angeles (PST/PDT)**, **São Paulo (BRT)** and **Buenos Aires (ART)**.
 
 ### Email signup
 
 - **Show email signup form.** Default: off.
-- **Signup prompt text.** Default: `Be the first to know when we launch`.
+- **Signup prompt text.** Default: `Be the first to know when we launch`. Shown when the signup form is on.
 
 ### Background
 
@@ -46,11 +46,12 @@ Set under `Shopify admin > Online Store > Preferences`, not in the theme. The pa
 
 ## Where signups go
 
-Addresses collected here land in `Shopify admin > Customers`, tagged as accepting marketing, the same place the [Newsletter](../../sections/newsletter/) section sends them. A pre-launch list is usually the most valuable one a store ever builds, so it is worth turning the form on even for a short closed period.
+Addresses collected here land in `Shopify admin > Customers` as subscribers to email marketing, tagged `password-page` so you can find the pre-launch list later. It is the same place the [Newsletter](../../sections/newsletter/) section sends them. A pre-launch list is usually the most valuable one a store ever builds, so it is worth turning the form on even for a short closed period.
 
 ## Tips
 
 - **Set the timezone.** It defaults to UTC, which is the wrong local hour almost everywhere. A countdown that hits zero at the wrong time is worse than none.
 - **Turn the countdown off unless the date is firm.** A countdown that expires with the store still closed reads badly.
+- **Check which message is live.** If the admin's password page message is filled in, it is the one visitors read, whatever the theme editor shows in **Message**.
 - **Use one strong image.** This page is one screen with no scrolling; it is the whole first impression.
 - **Preview it while logged out.** Signed in to your admin you bypass the password, so use a private window to see what visitors see.

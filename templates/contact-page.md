@@ -2,17 +2,21 @@
 title: Contact page
 layout: default
 parent: Templates
-nav_order: 11
+nav_order: 13
 permalink: /templates/contact-page/
 ---
 
 # Contact page
 
-An alternate page template, `page.contact.json`, using the **Contact form** section: a form on one side, your contact details on the other.
+An alternate page template, `page.contact.json`, using the **Contact form** section built for it: a form on one side, your contact details on the other.
 
-To use it, create a page in `Shopify admin > Content > Pages` and set its **Theme template** to `contact`.
+To use it, create a page in `Shopify admin > Content > Pages` and set its **Theme template** to `contact`. The page's title becomes the heading. The page's body is not shown; the **Description** setting below takes its place.
+
+Two sections in the editor are called **Contact form**. This one belongs to the contact template and carries the details panel. The other is a [Contact form](../../sections/contact-form/) section you can add to any page, which is just the form. The [Contact and stores](../page-templates/#contact-and-stores) and [FAQ](../page-templates/#faq) page templates use that one.
 
 ## Section settings
+
+- **Show back link and breadcrumb.** A back link and a `Home / <page title>` breadcrumb above the heading. Default: on.
 
 ### Header
 
@@ -23,7 +27,7 @@ To use it, create a page in `Shopify admin > Content > Pages` and set its **Them
 
 ### Contact details
 
-The panel beside the form. Each line can be hidden.
+The panel beside the form. Each line can be hidden: the ones with a **Show** switch show their text fields in the editor only while the switch is on, and the phone number hides when left blank.
 
 - **Show email.** Default: on.
 - **Email address.** Default: `hello@yourstore.com`. **Change this before launch.**
@@ -48,6 +52,10 @@ The panel beside the form. Each line can be hidden.
 ### Colors
 
 - **Color scheme.** Default: scheme-1.
+
+### Spacing
+
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 95 px top and 55 px bottom. This is the padding on screens 1920 px and wider; it scales down on smaller screens.
 
 ## Where messages go
 

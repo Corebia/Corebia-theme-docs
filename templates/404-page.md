@@ -2,7 +2,7 @@
 title: 404 page
 layout: default
 parent: Templates
-nav_order: 12
+nav_order: 15
 permalink: /templates/404-page/
 ---
 
@@ -16,11 +16,15 @@ Shown when a shopper reaches a URL that doesn't exist: a deleted product, a mist
 - **Subheading.** Default: `It looks like the page you were looking for has moved or no longer exists.`
 - **Button label.** Default: `Back to home page`.
 - **Button link.** Where the button goes. Leave empty for the home page.
-- **Featured collection.** The collection whose products are offered below the message.
+- **Featured collection.** The collection whose products are offered below the message. The three settings below appear once one is chosen.
 - **Number of products.** Range: 2 to 8. Default: 4.
 - **Products section heading.** Default: `You might like`.
 - **Show product vendor.** Default: off.
 - **Color scheme.** Default: scheme-1.
+
+### Spacing
+
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 110 px each. This is the padding on screens 1920 px and wider; it scales down on smaller screens.
 
 ## Why the product row matters
 
@@ -30,7 +34,7 @@ Setting **Featured collection** turns the page into a soft landing: an apology, 
 
 ## Tips
 
-- **Keep the message plain.** A 404 is a small failure on your side; humour lands badly on a shopper who has been sent somewhere that doesn't exist.
+- **Keep the message plain.** A 404 is a small failure on your side; humor lands badly on a shopper who has been sent somewhere that doesn't exist.
 - **Set up redirects for URLs you retire.** A 404 is the fallback, not the plan. When you delete a product or rename a collection, add a redirect under `Shopify admin > Online Store > Navigation > URL redirects` so the old link still works.
 - **Check it after a catalog change.** Deleting products in bulk is the usual way a store starts generating 404s.
 - **Four products is plenty.** This page is a recovery, not a collection page.

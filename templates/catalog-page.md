@@ -2,13 +2,13 @@
 title: Catalog page
 layout: default
 parent: Templates
-nav_order: 4
+nav_order: 5
 permalink: /templates/catalog-page/
 ---
 
 # Catalog page
 
-The catalog is the page at `/collections/all`: everything you sell, in one filterable grid. It uses the **Main catalog** section, which is close to the [Collection page](../collection-page/) but replaces the hero banner with a text heading and a sidebar menu.
+The catalog is the page at `/collections/all`: everything you sell, in one filterable grid. It uses the **Main catalog** section, which is close to the [Collection page](../collection-page/) but replaces the hero banner with a text heading and a sidebar menu. It has none of the collection page's grid styles, pagination choices or promotional tiles: the catalog is a plain, numbered grid.
 
 It is an alternate template, `collection.all.json`, so editing it doesn't affect your individual collection pages.
 
@@ -19,8 +19,8 @@ It is an alternate template, `collection.all.json`, so editing it doesn't affect
 ### Catalog heading
 
 - **Show catalog heading.** Displays a heading above the sidebar and on mobile. Default: on.
-- **Catalog heading.** Leave empty to use the collection name.
-- **Heading link.** Optional URL the heading links to.
+- **Catalog heading.** Leave empty to use the collection name. Shown when the heading is on.
+- **Heading link.** Optional URL the heading links to. Shown when the heading is on.
 - **Sidebar navigation.** A menu shown at the top of the sidebar.
 
 ### Filters and toolbar
@@ -31,7 +31,7 @@ It is an alternate template, `collection.all.json`, so editing it doesn't affect
 ### Product grid
 
 - **Products per page.** Range: 4 to 24 in steps of 2. Default: 12.
-- **Desktop columns.** **2**, **3** (default) or **4 columns**.
+- **Desktop columns.** **2 columns**, **3 columns** (default) or **4 columns**.
 - **Show vendor.** Default: off.
 - **Show second image on hover.** Displays the alternate product image on hover. Default: on.
 - **Show quick add button.** Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/).
@@ -39,6 +39,10 @@ It is an alternate template, `collection.all.json`, so editing it doesn't affect
 ### Colors
 
 - **Color scheme.** Default: scheme-1.
+
+### Spacing
+
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 95 px and 65 px. The largest padding, used on screens 1920 px and wider; it scales down on smaller screens.
 
 ## Blocks
 

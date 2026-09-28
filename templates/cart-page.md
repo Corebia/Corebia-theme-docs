@@ -2,43 +2,60 @@
 title: Cart page
 layout: default
 parent: Templates
-nav_order: 6
+nav_order: 9
 permalink: /templates/cart-page/
 ---
 
 # Cart page
 
-The cart uses the **Main cart** section. It has almost no settings, because nearly everything on it follows your store rather than the theme.
+The cart at `/cart`, using the **Main cart** section. Its own settings are only color and spacing, because what the cart shows is decided store-wide under [Cart settings](../../theme-settings/cart-settings/), and the same settings drive the cart drawer.
+
+## Cart drawer or cart page
+
+Under **Theme settings > Cart**, **Cart type** is **Drawer** by default: the cart icon and **Add to cart** open a panel over the current page, and the shopper can keep browsing. Set it to **Page** to send shoppers to `/cart` instead.
+
+The cart page exists either way. With the drawer, a shopper still reaches it from the drawer's **View cart** link or by going to `/cart` directly, and the drawer never opens on top of the cart page itself.
 
 ## Section settings
 
 - **Color scheme.** Default: scheme-1.
 
+### Spacing
+
+- **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 110 px each. This is the padding on screens 1920 px and wider; it scales down on smaller screens.
+
 ## Blocks
 
-- **App block.** Any block offered by an installed app. Upsell and shipping-estimate apps usually go here.
-- **Custom Liquid.** See [Custom Liquid](../../sections/custom-liquid/).
+- **App block.** Any block offered by an installed app. Upsell, trust badge and shipping-estimate apps usually go here.
+- **Custom Liquid.** See [Custom Liquid](../../sections/theme-blocks/#custom-liquid).
 
-## What the cart always includes
+Blocks render below the cart, and they render on the empty cart too.
 
-None of these need configuring; they appear when the store or the line item calls for them.
+## What the cart shows
 
-- **Line quantities**, editable in place, with a remove control.
-- **Order notes**, for a message to you with the order.
-- **A discount code field**, when **Show discount code field** is on under [Cart settings](../../theme-settings/cart-settings/).
-- **Discounts**, shown per line and on the order total as they apply. See [Discount codes](../../features/discounts/).
-- **Subscription details** on any line bought on a selling plan, showing the plan name and its delivery frequency. See [Selling plans](../../features/selling-plans/).
-- **Unit prices** where a product has them, for markets that require price per unit. See [Unit pricing](../../features/unit-pricing/).
-- **Accelerated checkout buttons**, showing whichever methods your store accepts. See [Accelerated checkout](../../features/accelerated-checkout/).
-- **Taxes and shipping note**, as Shopify calculates them for the shopper's market.
+None of these are set on the cart page itself. Each appears when the store, the line item or a [Cart settings](../../theme-settings/cart-settings/) option calls for it.
+
+- **Line items**, with image, options, any line item properties, an editable quantity and a remove control.
+- **Subscription details**: the selling plan's name on any line bought on a plan. See [Selling plans](../../features/selling-plans/).
+- **Unit prices** where a product has them. See [Unit pricing](../../features/unit-pricing/).
+- **A free shipping bar**, when **Free shipping threshold** is set. It counts down to the threshold in the shopper's currency and confirms once it is reached.
+- **Discounts**, named with their amount, and a **You're saving** line for savings on individual lines. See [Discount codes](../../features/discounts/).
+- **A gift wrap checkbox**, when a **Gift wrap product** is chosen and available.
+- **A discount code field**, when **Show discount code field** is on.
+- **The subtotal**, followed by a Shop Pay Installments message when **Show Shop Pay Installments** is on and installments are enabled in your payment settings. See [Shop Pay Installments](../../features/shop-pay-installments/).
+- **Check out** and **accelerated checkout buttons**, for whichever wallets your store accepts. See [Accelerated checkout](../../features/accelerated-checkout/).
+- **A tax note**: `Tax included.` when your prices include tax, and `Tax excluded.` for B2B buyers whose prices exclude it.
+- **Order notes**, a message to you that arrives with the order. The field is collapsed unless **Open the order note by default** is on, and a note the shopper has already written always shows.
+- **Product suggestions**, when **Show product suggestions** is on: up to four products not already in the cart.
 
 ## The empty cart
 
-An empty cart shows a message and a route back to shopping rather than a blank page. It needs no setup.
+An empty cart shows `Your cart is empty` and a button to the catalog rather than a blank page. Choose an **Empty cart suggestions** collection under Cart settings to show up to four of its products below the message.
 
 ## Tips
 
-- **Keep app blocks below the totals.** An upsell above the checkout button competes with the thing the shopper came to do.
+- **Keep app blocks modest.** They sit below the checkout button, which is right; an app that pushes a large widget there still competes with the thing the shopper came to do.
 - **Don't hide the discount field if you run promotions.** A shopper with a code who can't find where to put it will leave the checkout to look for one.
+- **Match the free shipping threshold to your shipping rate.** The bar is a promise. If it says free shipping and checkout charges for it, the bar has cost you the sale.
 - **Order notes are read by you, not by Shopify.** Nothing acts on them automatically; they arrive with the order in your admin.
-- **Test the cart with a subscription product** if you sell any. The plan name and frequency have to be right before a shopper commits to a recurring charge.
+- **Test the cart with a subscription product** if you sell any. The plan name has to be right before a shopper commits to a recurring charge.

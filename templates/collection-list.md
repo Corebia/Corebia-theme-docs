@@ -2,7 +2,7 @@
 title: Collections list page
 layout: default
 parent: Templates
-nav_order: 5
+nav_order: 7
 permalink: /templates/collection-list/
 ---
 
