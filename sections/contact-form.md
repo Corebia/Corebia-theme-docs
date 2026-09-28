@@ -28,7 +28,9 @@ It can't be placed in the header or footer groups.
 
 ## The form
 
-The form asks for a name, an email address (required) and a message, plus a phone number when **Show phone field** is on. After sending, the shopper sees a confirmation in place of the form. A hidden field turns away most spam bots without asking shoppers to solve a puzzle.
+The form asks for a name, an email address and a message, plus a phone number when **Show phone field** is on. The email address and the message are required. Name and email sit side by side where the form is wide enough, and stack on phones. The fields are the same ones the [Contact page](../../templates/contact-page/) uses, so every contact form in the store looks alike.
+
+The form sits in the same column as a page's title and body text, so under the **Main page** section it lines up with them. If a submission is turned away, the reason shows under the email field, with the email and message the shopper typed kept in place. After sending, the shopper sees a confirmation in place of the form. A hidden field turns away most spam bots without asking shoppers to solve a puzzle.
 
 More than one contact form on a page works: each shows its own confirmation or error, not the other's.
 

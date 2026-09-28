@@ -31,6 +31,7 @@ Every preset ships with sample copy. It is shown to customers, so replace it bef
 ## Settings
 
 - **Color scheme.** Default: scheme-1.
+- **Content width.** **Full width** (default) or **Reading column**. **Reading column** narrows the section to the column of a page's body text and sets its headings and text as they are in a page body, so a section placed under a page's title and body reads as part of it. Several of the [alternate page templates](../../templates/page-templates/) use it.
 - **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 60 px each.
 
 ## Blocks
@@ -41,4 +42,5 @@ Every [theme block](../theme-blocks/), app blocks, and the [Divider](../theme-bl
 
 - **Start from the closest preset.** Rebuilding a three-column layout from an empty section takes several steps; the Multicolumn preset starts there.
 - **Set nested groups to Fill.** In a horizontal group, child groups set to **Width: Fill** share the row equally and stack on narrow screens, which is how the column presets work.
+- **Use Reading column for prose under a page.** A statement, an introduction or instructions below the Main page section line up with the page's title and text instead of running the full width.
 - **Check it on a phone.** Horizontal groups wrap on small screens. Look at the result at phone width before publishing.

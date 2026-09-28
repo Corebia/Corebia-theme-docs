@@ -8,7 +8,7 @@ permalink: /templates/article-page/
 
 # Article page
 
-A single blog post, using the **Main article** section. Like the product page, it is built from blocks you order yourself, so the byline can sit above or below the featured image, and the back link can be at the top or the end.
+A single blog post, using the **Main article** section. Like the product page, it is built from blocks you order yourself, so the byline can sit above or below the featured image, and a **Back button** block can go at the top or the end.
 
 Below it, the template ships a [Related articles](../../sections/related-articles/) section.
 
@@ -18,6 +18,7 @@ A fresh install lays the article out in this order: **Heading**, **Date**, **Rea
 
 ## Section settings
 
+- **Show back link and breadcrumb.** A back link and a `Home / <blog title> / <article title>` breadcrumb above the article, as on the other templates. Default: on. The back link returns to the previous page in your store, or to the blog when there is none, and the blog's name in the breadcrumb links to the blog. It is separate from the **Back button** block, so with both you get a link at the top and a button wherever you placed the block.
 - **Color scheme.** Default: scheme-1.
 
 ### Spacing

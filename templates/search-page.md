@@ -14,7 +14,7 @@ The dropdown that appears while typing is configured separately, in [Predictive 
 
 ## Section settings
 
-- **Show back link and breadcrumb.** Default: on.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 
 ### Filters and toolbar
 

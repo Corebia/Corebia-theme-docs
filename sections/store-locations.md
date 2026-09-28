@@ -17,6 +17,7 @@ It can't be placed in the header or footer groups. The preset starts with two ex
 - **Heading.** Default: `Visit us`.
 - **Text.** Optional rich text under the heading.
 - **Columns on desktop.** Range: 1 to 3. Default: 2. Tablets show at most two columns, and phones one.
+- **Content width.** **Full width** (default) or **Reading column**, which narrows the section to the column of a page's body text so the stores line up with a page title above them.
 - **Color scheme.** Default: scheme-1.
 
 ### Spacing

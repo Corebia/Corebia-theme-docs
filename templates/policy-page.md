@@ -18,7 +18,7 @@ The template is a Liquid file, `policy.liquid`, holding that one section. You ca
 
 ### Content
 
-- **Show back link and breadcrumb.** A back link above the title. Default: on. It returns the shopper to the collection, search results or page they came from, and to the home page otherwise. Policy pages show the link without a breadcrumb trail.
+- **Show back link.** A back link above the title. Default: on. It returns the shopper to the previous page in your store, and to the home page when there is none. Policy pages have no breadcrumb.
 - **Show home page link.** A second link, labeled `Home`, that always goes to the home page. Default: off.
 - **Show divider.** A rule between the heading and the policy text. Default: on.
 - **Show last updated date.** Default: off.

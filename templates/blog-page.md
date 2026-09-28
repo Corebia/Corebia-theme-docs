@@ -13,7 +13,7 @@ The list of articles in a blog, using the **Main blog** section. It lays the art
 ## Section settings
 
 - **Color scheme.** Default: scheme-1.
-- **Show back link and breadcrumb.** A back link and a `Home` breadcrumb above the heading. Default: on.
+- **Show back link and breadcrumb.** A back link and a `Home / <blog title>` breadcrumb above the heading. The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 
 ### Layout
 

@@ -8,9 +8,9 @@ permalink: /templates/page-templates/
 
 # Alternate page templates
 
-Besides the default [Page](../page/) template and the [Contact page](../contact-page/), Pave ships eight page templates, each a ready-made arrangement of sections for a kind of page most stores need. They save you building the layout from scratch; the words and images are yours to write.
+Besides the default [Page](../page/) template and the [Contact page](../contact-page/), Pave ships eight page templates, each a ready-made arrangement of sections for a kind of page most stores need. They save you building the layout from scratch; the words and images are yours to write. The sample text in each one describes what belongs there, such as the year you started or how your products are made, rather than telling another brand's story, and image slots start empty.
 
-Every one of them starts with the **Main page** section, so the page's own title, and its body if it has one, come first. The sections below it are ordinary sections: select them in the theme editor to change them, reorder them, remove them or add others.
+Every one of them starts with the **Main page** section, so the page's own title, and its body if it has one, come first. The sections below it are ordinary sections: select them in the theme editor to change them, reorder them, remove them or add others. The ones that carry running text, such as the accessibility statement, the size guide's measuring instructions, the lookbook's introduction and the store list, use the **Reading column** content width, so they continue the column of the page title above them.
 
 ## Using a template
 
@@ -37,7 +37,7 @@ Template `about`. A brand story told in sections.
 Template `accessibility`. An accessibility statement.
 
 1. **Main page**.
-2. [Section](../../sections/section/) with alternating [Heading](../../sections/theme-blocks/#heading) and [Text](../../sections/theme-blocks/#text) blocks: an opening paragraph, then **What we have done**, **Known limits** and **Report a barrier**.
+2. [Section](../../sections/section/) in the **Reading column** content width, with alternating [Heading](../../sections/theme-blocks/#heading) and [Text](../../sections/theme-blocks/#text) blocks: an opening paragraph, then **What we have done**, **Known limits** and **Report a barrier**.
 
 The sample text states an aim of WCAG 2.2 level AA and points to your contact page for reporting problems.
 
@@ -50,7 +50,7 @@ The sample text states an aim of WCAG 2.2 level AA and points to your contact pa
 Template `contact-stores`. For stores with physical locations.
 
 1. **Main page**.
-2. [Store locations](../../sections/store-locations/), headed `Visit a store`, with two example stores. Each store block holds a name, address and opening hours.
+2. [Store locations](../../sections/store-locations/) in the **Reading column** content width, with no heading of its own, so the page title heads it, and a line of introduction. It holds two example stores, each with a name, address and opening hours.
 3. [Contact form](../../sections/contact-form/), headed `Get in touch`, with the phone field on.
 
 **When to use it:** when shoppers can visit you. With no shops, the [Contact page](../contact-page/) template, with its details panel, is the better fit.
@@ -84,7 +84,7 @@ Template `editorial`. A shoppable campaign page.
 Template `faq`. A full-page set of questions and answers.
 
 1. **Main page**.
-2. [FAQ](../../sections/faq/), headed `Frequently asked questions`, with seven questions on shipping, returns, sizing, care, payment, gift cards and changing an order.
+2. [FAQ](../../sections/faq/), with its **Show heading** off so it doesn't repeat the page title, and seven questions on shipping, returns, sizing, care, payment, gift cards and changing an order.
 3. [Contact form](../../sections/contact-form/), headed `Still have a question?`.
 
 **When to use it:** as the one page your footer's Help or FAQ link points to.
@@ -96,7 +96,7 @@ Template `faq`. A full-page set of questions and answers.
 Template `lookbook`. A visual page for a collection or a season.
 
 1. **Main page**.
-2. [Section](../../sections/section/) with a heading and an introduction.
+2. [Section](../../sections/section/) in the **Reading column** content width, with a heading and an introduction.
 3. [Shoppable image](../../sections/shoppable-image/): a campaign photograph with three product hotspots.
 4. [Collage](../../sections/collage/), headed `The edit`, with five image tiles, each linked to a collection.
 5. [Media with content](../../sections/media-with-content/), image on the right, with a button to the collection.
@@ -108,7 +108,7 @@ Template `lookbook`. A visual page for a collection or a season.
 Template `size-guide`. A standalone size guide page.
 
 1. **Main page**, whose body carries your size chart.
-2. [Section](../../sections/section/) headed `How to measure`, with measuring instructions for chest, waist, hips and inside leg.
+2. [Section](../../sections/section/) in the **Reading column** content width, headed `How to measure`, with measuring instructions for chest, waist, hips and inside leg.
 
 **When to use it:** together with the product page's size guide link. On the [Product page](../product-page/), the **Variant picker** block's **Size guide page** setting puts a size guide link next to the size option, and it opens the chosen page in a popup. A product can point to a different page through the `custom.size_guide` metafield.
 

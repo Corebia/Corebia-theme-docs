@@ -14,10 +14,10 @@ This is the template. For a hand-picked selection of collections on the home pag
 
 ## Section settings
 
-- **Show back link and breadcrumb.** Default: on.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 - **Heading.** Default: `Collections`.
 - **Subheading.** Optional.
-- **Heading alignment.** **Left**, **Center** (default) or **Right**.
+- **Heading alignment.** **Left** (default), **Center** or **Right**.
 - **Image ratio.** **Adapt to image**, **Square (1:1)**, **Portrait (3:4)** (default) or **Landscape (4:3)**.
 - **Desktop columns.** Range: 2 to 5. Default: 3.
 - **Mobile columns.** **1 column** or **2 columns** (default).

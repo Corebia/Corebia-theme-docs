@@ -14,7 +14,7 @@ It is an alternate template, `collection.all.json`, so editing it doesn't affect
 
 ## Section settings
 
-- **Show back link and breadcrumb.** Default: on.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 
 ### Catalog heading
 

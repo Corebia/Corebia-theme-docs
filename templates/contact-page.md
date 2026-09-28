@@ -16,7 +16,7 @@ Two sections in the editor are called **Contact form**. This one belongs to the 
 
 ## Section settings
 
-- **Show back link and breadcrumb.** A back link and a `Home / <page title>` breadcrumb above the heading. Default: on.
+- **Show back link and breadcrumb.** A back link and a `Home / <page title>` breadcrumb above the heading. The back link returns to the previous page in your store. Default: on.
 
 ### Header
 
@@ -56,6 +56,10 @@ The panel beside the form. Each line can be hidden: the ones with a **Show** swi
 ### Spacing
 
 - **Top padding** / **Bottom padding.** Range: 0 to 300 px in 5 px steps. Default: 95 px top and 55 px bottom. This is the padding on screens 1920 px and wider; it scales down on smaller screens.
+
+## The form
+
+The form asks for a name, an email address and a message, plus a phone number when **Show phone field** is on and a subject when **Subject options** has at least one line. The email address and the message are required. Name and email sit side by side where the card is wide enough, and stack on phones. These are the same fields as the [Contact form](../../sections/contact-form/) section, so every contact form in the store looks alike. If a submission is turned away, the reason shows under the email field, with the email and message the shopper typed kept in place.
 
 ## Where messages go
 

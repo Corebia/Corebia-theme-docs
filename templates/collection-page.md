@@ -14,7 +14,7 @@ The same section, set up differently, drives the [Lookbook collection page](../l
 
 ## Section settings
 
-- **Show back link and breadcrumb.** Default: on.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 
 ### Hero banner
 
@@ -23,7 +23,7 @@ The same section, set up differently, drives the [Lookbook collection page](../l
 - **Mobile image (optional).** 3:4 aspect ratio recommended. Falls back to the collection image.
 - **Image focal point.** **Use the image's focal point** (default), **Top**, **Center**, **Bottom**, **Left** or **Right**. The default follows the crop set on the image in your Files area. The collection template Pave installs comes with **Center** selected, so switch it to the first option if you set focal points on your collection images.
 - **Text position.** **Bottom center** (default), **Center** or **Bottom left**.
-- **Hero overlay darkness.** Range: 0% to 80% in 5% steps. Default: 35%.
+- **Hero overlay darkness.** Darkens the hero image from the bottom up so the text on it stays readable. Range: 0% to 80% in 5% steps. Default: 35%.
 
 The hero settings are shown while **Show hero banner** is on.
 
@@ -33,7 +33,7 @@ The hero settings are shown while **Show hero banner** is on.
 ### Filters and toolbar
 
 - **Show filters.** Default: on.
-- **Filter layout.** **Sidebar** (default) or **Horizontal bar above the grid**. Where the filters sit on desktop. On mobile both layouts open the same slide-in drawer. Shown when filters are on.
+- **Filter layout.** **Sidebar** (default) or **Horizontal bar above the grid**. Where the filters sit on desktop. On mobile both layouts open the same slide-in drawer. Shown when filters are on. The collection template Pave installs comes with **Horizontal bar above the grid** selected.
 - **Sidebar navigation.** A menu shown at the top of the sidebar.
 - **Show sort options.** Default: on.
 
@@ -46,7 +46,7 @@ The hero settings are shown while **Show hero banner** is on.
   - **Editorial index** lists the products as large names and reveals each photograph as a shopper points at or focuses a name. On touch screens, and for shoppers who reduce motion, every name keeps its photograph beside it. The grid view control is hidden in this style.
   - **Lookbook spread** keeps the product cards but varies their proportions and widths on a repeating six-cell pattern. It is the grid the [Lookbook collection page](../lookbook-collection/) ships with.
 - **Let customers change the grid view.** Adds a control above the grid for 2, 3 or 4 columns, or a list. Your desktop column choice is where it starts. Default: on.
-- **Desktop columns.** **2 columns**, **3 columns** (default) or **4 columns**.
+- **Desktop columns.** **2 columns**, **3 columns** (default) or **4 columns**. The collection template Pave installs comes with **4 columns** selected. Phones show two columns either way.
 - **Show vendor.** Default: off.
 - **Show second image on hover.** Displays the alternate product image on hover. Default: on.
 - **Show quick add button.** Shows the quick add `+` button on the cards in this grid. Default: on. It also needs **Show quick add button** to be on under [Product cards](../../theme-settings/product-cards/); this setting can only turn it off for this grid, not on.
@@ -71,7 +71,7 @@ Three fixed tile slots that sit inside the product grid, for a campaign image, a
 - **Body text.**
 - **Link label** / **Link.** Both a label and a link are needed for the link to show.
 - **Columns wide.** Range: 1 to 3. Default: 1. Kept to one column in the list view.
-- **Rows tall.** Range: 1 to 3. Default: 1.
+- **Rows tall.** Each row matches the height of a row of product cards. Range: 1 to 3. Default: 1.
 
 All three slots start at position 3. Give each tile you use its own position, or two tiles will sit side by side.
 

@@ -10,9 +10,11 @@ permalink: /templates/page/
 
 The default template for any page you create in `Shopify admin > Content > Pages`: Stockists, Shipping information, Terms of trade. It uses the **Main page** section, which renders the page's title and body.
 
+The back link, the title and the body share one centered reading column, about 75 characters to a line on a wide screen, with the body set at a comfortable long-form size. Headings you write in the body step down in size, so a Heading 2 in the text stays smaller than the page title.
+
 ## Section settings
 
-- **Show back link and breadcrumb.** A back link and a `Home / <page title>` breadcrumb above the title. Default: on. The back link returns the shopper to the collection, search results or page they came from, and to the home page otherwise.
+- **Show back link and breadcrumb.** A back link and a `Home / <page title>` breadcrumb above the title. Default: on. The back link returns the shopper to the previous page in your store, and to the home page otherwise.
 - **Color scheme.** Default: scheme-1.
 
 ### Spacing
@@ -28,7 +30,7 @@ The default template for any page you create in `Shopify admin > Content > Pages
 
 The page body is a rich text field, which is enough for text and images but not for layout. For a landing page, such as a campaign or a brand story, add sections below the Main page section in the theme editor:
 
-- [Section](../../sections/section/), a free-form container for headings, text, images and buttons
+- [Section](../../sections/section/), a free-form container for headings, text, images and buttons. Set its **Content width** to **Reading column** to continue the page's own column
 - [Media with content](../../sections/media-with-content/) and [Rich text with image](../../sections/rich-text-image/) for image-and-copy blocks
 - [Brand image](../../sections/brand-image/) for a full-width photograph or video
 - [Featured product](../../sections/featured-product/) to make one product buyable in place
