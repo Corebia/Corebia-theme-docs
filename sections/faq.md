@@ -2,22 +2,22 @@
 title: FAQ
 layout: default
 parent: Sections
-nav_order: 14
+nav_order: 44
 permalink: /sections/faq/
 ---
 
 # FAQ
 
-**FAQ** is an accordion of questions and answers. It takes up to fifteen items, and each one can be set to open by default.
+**FAQ** is an accordion of questions and answers. It takes up to fifteen items, and each one can be set to open by default. With two or more items, an **Expand all** button above the list opens or closes every answer at once.
 
 It can't be placed in the header or footer groups.
 
 ## Settings
 
 - **Heading.** Default: `Frequently asked questions`.
-- **Subheading.** Optional.
-- **Heading alignment.** **Left** (default), **Center** or **Right**.
-- **Show heading.** Default: on. Turn it off when the section sits under a heading of its own.
+- **Subheading.** Optional. A line under the heading.
+- **Heading alignment.** **Left**, **Center** (default) or **Right**.
+- **Show heading.** Default: on. Turn it off when the section sits under a heading of its own. The three settings above only appear while it is on.
 - **Color scheme.** Default: scheme-1.
 
 ### Spacing

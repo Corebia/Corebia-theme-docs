@@ -2,15 +2,15 @@
 title: New arrivals
 layout: default
 parent: Sections
-nav_order: 5
+nav_order: 20
 permalink: /sections/new-arrivals/
 ---
 
 # New arrivals
 
-**New arrivals** is a hand-picked product grid with a heading and an optional "view all" link. You choose the products yourself, one block each, up to six.
+**New arrivals** is a hand-picked product grid with a heading and an optional "View all" link. You choose the products yourself, one block each, up to six.
 
-It can't be placed in the header or footer groups.
+It can't be placed in the header or footer groups. It is added with four Product blocks.
 
 ## Settings
 
@@ -18,7 +18,7 @@ It can't be placed in the header or footer groups.
 
 - **Heading.** Default: `New arrivals`.
 - **View all label.** Default: `View all`. Leave empty to hide the link.
-- **View all link.** Where that link points, usually a collection.
+- **View all link.** Where that link points, usually a collection. Left empty, it goes to the catalog of all products.
 
 ### Products
 
@@ -39,11 +39,11 @@ It can't be placed in the header or footer groups.
 
 Up to **six** Product blocks.
 
-- **Product.** The product to show in this slot.
+- **Product.** The product to show in this slot. Left empty, the block shows the product at the same position in your catalog of all products, so a fresh install shows real products rather than placeholders.
 
 ## Tips
 
 - **Match the block count to the columns.** Four products in four columns fill one clean row; five in four columns leaves an orphan.
 - **Choose the ratio for your photography, not for the grid.** Portrait suits clothing on a model, square suits objects shot flat, and Adapt to image is the honest choice when your catalog isn't shot consistently.
-- **Point "view all" somewhere real.** If you don't have a collection worth landing on, hide the link by clearing its label rather than sending shoppers to the whole catalog.
-- **This section doesn't auto-update.** Products are picked by hand, so a "new arrivals" row goes stale unless you revisit it. If you'd rather it maintain itself, use a collection on the [Collection page](../../templates/collection-page/) and link to it from the home page instead.
+- **Point "View all" somewhere real.** If you don't have a collection worth landing on, hide the link by clearing its label rather than sending shoppers to the whole catalog.
+- **Pick the products.** Empty blocks fall back to your catalog order, which is not the same as your newest products, and picked products stay until you change them, so a "new arrivals" row goes stale unless you revisit it. If you'd rather it maintain itself, use a collection on the [Collection page](../../templates/collection-page/) and link to it from the home page instead.

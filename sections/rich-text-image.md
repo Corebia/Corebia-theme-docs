@@ -2,7 +2,7 @@
 title: Rich text with image
 layout: default
 parent: Sections
-nav_order: 12
+nav_order: 15
 permalink: /sections/rich-text-image/
 ---
 
@@ -30,25 +30,17 @@ It can't be placed in the header or footer groups.
 
 ## Blocks
 
-Up to **six** blocks in total, within these per-type limits.
+Up to **six** blocks in total, in any mix of these theme blocks:
 
-### Heading, up to 2
+- [Heading](../theme-blocks/#heading). Ships with `Our story`.
+- [Text](../theme-blocks/#text). Ships with sample copy; replace it before you go live, because it is shown to customers on the storefront.
+- [Button](../theme-blocks/#button). **Primary** or **Secondary** style.
 
-- **Heading.** Default: `Our story`.
-
-### Text, up to 3
-
-- **Text.** Rich text. Ships with sample copy; replace it before you go live, because it is shown to customers on the storefront.
-
-### Button, up to 1
-
-- **Label**
-- **Link**
-- **Style.** **Primary** (default) or **Secondary**.
+The section is added with one of each.
 
 ## Tips
 
 - **Order the blocks the way they should read.** The stack is rendered top to bottom in the order you arrange it, so a heading placed after a paragraph will appear after it.
-- **Raise the overlay until the text is comfortable, then stop.** Anything past about 60% stops being a photograph and becomes a coloured panel.
+- **Raise the overlay until the text is comfortable, then stop.** Anything past about 60% stops being a photograph and becomes a colored panel.
 - **Choose the ratio for the amount of text.** Ultra-wide holds a heading and one line. Portrait holds a heading, a paragraph and a button without crowding.
-- **One button.** The block limit stops at one because a section with two competing calls to action converts worse than one with a single clear one.
+- **One button is usually enough.** You can add more, but a section with two competing calls to action converts worse than one with a single clear one. If you do add a second, give it the **Secondary** style.

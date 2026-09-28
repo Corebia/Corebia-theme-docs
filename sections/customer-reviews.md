@@ -2,7 +2,7 @@
 title: Customer reviews
 layout: default
 parent: Sections
-nav_order: 13
+nav_order: 43
 permalink: /sections/customer-reviews/
 ---
 
@@ -39,7 +39,7 @@ Any block offered by a reviews app installed on your store. What it renders and 
 
 ### Custom Liquid
 
-- **Liquid code.** For an app that gives you a snippet to paste rather than a block.
+- **Liquid code.** For an app that gives you a snippet to paste rather than a block. This is the theme's shared [Custom Liquid block](../theme-blocks/#custom-liquid).
 
 ## Tips
 

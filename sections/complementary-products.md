@@ -2,7 +2,7 @@
 title: Complementary products
 layout: default
 parent: Sections
-nav_order: 18
+nav_order: 30
 permalink: /sections/complementary-products/
 ---
 
@@ -10,7 +10,9 @@ permalink: /sections/complementary-products/
 
 Complementary products are the ones you pair up yourself: the belt that goes with the trousers, the refill that goes with the bottle.
 
-In Pave they are **not a separate section**. They are a mode of [Product recommendations](../product-recommendations/): add that section and set **Recommendation type** to **Complementary products**. Everything else about it works the same way in both modes: heading, maximum products and color scheme.
+In Pave they are **not a separate section**. They are a mode of [Product recommendations](../product-recommendations/): add that section and set **Recommendation type** to **Complementary products**. Everything else about it works the same way in both modes: heading, maximum products, color scheme and spacing. Left blank, the heading reads `Pairs well with` in this mode.
+
+The default product template already carries two Product recommendations sections, one in each mode, with complementary products first.
 
 ## Setting them up
 

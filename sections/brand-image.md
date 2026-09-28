@@ -2,7 +2,7 @@
 title: Brand image
 layout: default
 parent: Sections
-nav_order: 8
+nav_order: 13
 permalink: /sections/brand-image/
 ---
 
@@ -17,16 +17,18 @@ It can't be placed in the header or footer groups.
 ### Image
 
 - **Image.** Used on desktop, and on mobile when no mobile image is set. Alt text is read from the image asset itself. Set it in the file editor, for screen readers and for SEO.
-- **Mobile image.** Optional. Shown on screens narrower than 750 px. Leave empty to use the same image with the mobile focal point below.
+- **Mobile image.** Optional. Shown on screens narrower than 750 px. Leave empty to use the same image with the mobile focal point below. Appears once an image is set.
 - **Desktop focal point.** Where the image crops on screens 750 px and wider. **Top**, **Center** (default) or **Bottom**.
 - **Mobile focal point.** Where the image crops on narrower screens when no mobile image is set. **Top**, **Center** (default), **Bottom**, **Left** or **Right**.
+The two focal point settings appear once an image or a video is set.
+
 - **Proportion.** **Cinematic (panoramic)**, **Balanced (default)** or **Portrait (taller)**.
 - **Prioritize loading.** Use when this section is the first thing on its template. Turns off the fade-in reveal so the image appears sooner. Default: off.
 
 ### Video (optional)
 
-- **Video.** When set, replaces the image with an autoplay, muted, looping background video. The image above stays as the poster and as the accessibility fallback. Respects `prefers-reduced-motion` and Data Saver.
-- **Mobile video.** Optional. Shown on screens narrower than 750 px. Leave empty to use the desktop video.
+- **Video.** When set, replaces the image with an autoplay, muted, looping background video. The image above stays as the poster and as the accessibility fallback. Shoppers who ask their device for reduced motion, or who have Data Saver on, see the image instead.
+- **Mobile video.** Optional. Shown on screens narrower than 750 px. Leave empty to use the desktop video. Appears once a video is set.
 
 ### Colors
 

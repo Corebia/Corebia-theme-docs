@@ -2,7 +2,7 @@
 title: Recently viewed
 layout: default
 parent: Sections
-nav_order: 15
+nav_order: 31
 permalink: /sections/recently-viewed/
 ---
 
@@ -24,8 +24,9 @@ It can't be placed in the header or footer groups.
 
 ## How the list is built
 
-- Products are recorded as the shopper visits them, in their browser's local storage.
+- Products are recorded in the shopper's browser (local storage) when they open a product page **that carries this section**. The default product template has it. The alternate product templates don't, so products using them are only recorded if you add the section there too.
 - The product currently being viewed is excluded, so the section never shows the page it sits on.
+- A **Clear history** button next to the heading lets the shopper empty the list.
 - The list is per browser and per device. The same person on a phone and a laptop has two separate lists.
 - Clearing browsing data clears the list, and the section then renders nothing at all rather than an empty shell.
 

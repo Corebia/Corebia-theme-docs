@@ -2,7 +2,7 @@
 title: Collection list
 layout: default
 parent: Sections
-nav_order: 7
+nav_order: 21
 permalink: /sections/collection-list/
 ---
 
@@ -10,14 +10,14 @@ permalink: /sections/collection-list/
 
 **Collection list** shows up to five collections as image tiles, either as an editorial mosaic or as a uniform grid. Each tile uses the collection's own image and title.
 
-It can't be placed in the header or footer groups.
+It can't be placed in the header or footer groups. It is added with five Collection blocks, ready to fill.
 
 ## Settings
 
 - **Heading.** Default: `Collections`.
 - **Layout.** **Editorial mosaic** (default) sizes tiles unevenly for a magazine feel; **Uniform grid** gives every collection the same weight.
-- **Image ratio.** **Portrait (4:5)** (default), **Square (1:1)** or **Landscape (3:2)**.
-- **Number of columns on desktop.** Range: 2 to 4. Default: 3.
+- **Image ratio.** **Portrait (4:5)** (default), **Square (1:1)** or **Landscape (3:2)**. Shown when **Layout** is set to Uniform grid; the mosaic sizes its own tiles.
+- **Number of columns on desktop.** Range: 2 to 4. Default: 3. Shown when **Layout** is set to Uniform grid.
 - **Color scheme.** Default: scheme-1.
 - **Image overlay intensity.** **Soft**, **Medium** (default) or **Strong**. Strengthens the gradient behind tile titles so they stay readable on bright or busy imagery.
 
@@ -30,7 +30,7 @@ It can't be placed in the header or footer groups.
 Up to **five** Collection blocks.
 
 - **Collections.** The collection this tile points to.
-- **Image crop focal point.** Where to anchor the image when it's cropped for this tile. **Auto** (default) uses the image's own focal point from Shopify admin; the other nine options pin it to a corner, edge or the center.
+- **Image crop focal point.** Where to anchor the image when it's cropped for this tile. **Auto** (default) uses the image's own focal point from Shopify admin; **Top left**, **Top**, **Top right**, **Left**, **Center**, **Right**, **Bottom left**, **Bottom** and **Bottom right** pin it to that point instead.
 
 ## Tips
 

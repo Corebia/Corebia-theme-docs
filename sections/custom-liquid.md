@@ -2,7 +2,7 @@
 title: Custom Liquid
 layout: default
 parent: Sections
-nav_order: 20
+nav_order: 50
 permalink: /sections/custom-liquid/
 ---
 
@@ -10,7 +10,7 @@ permalink: /sections/custom-liquid/
 
 **Custom Liquid** is an empty section that renders whatever Liquid, HTML, CSS or JavaScript you put in it. It is the escape hatch: the place for an app snippet, or for something the theme's own sections don't cover.
 
-It can be added to any template that takes sections.
+It can be added to any template that takes sections, and to the header and footer groups.
 
 ## Settings
 
@@ -18,7 +18,7 @@ It can be added to any template that takes sections.
 
 ## The block, as well as the section
 
-Several sections also offer a **Custom Liquid block**, which does the same thing inside an existing layout rather than as a section of its own. The block is available on the product page, the collection and catalog pages, the cart, articles, blog, pages, policies, customer reviews and featured product.
+Several sections also offer a **Custom Liquid block**, which does the same thing inside an existing layout rather than as a section of its own. It has the same single **Liquid code** setting. The block is available on the product page, the collection and catalog pages, the cart, articles, blog, pages, policies, customer reviews and featured product, and inside any section that takes theme blocks, such as [Section](../section/), [Media with content](../media-with-content/) and a [Group](../theme-blocks/#group). See [Theme blocks](../theme-blocks/#custom-liquid).
 
 Use the **block** when the code belongs inside a section that is already there, such as a badge under the buy buttons. Use the **section** when it needs its own slot in the page.
 
