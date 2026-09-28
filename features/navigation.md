@@ -8,7 +8,7 @@ permalink: /features/navigation/
 
 # Navigation
 
-Pave navigates from two places that share one menu: a bar across the top of the page on desktop, and a side panel that opens from the menu button on every screen size.
+Pave navigates from two places that share one menu: a bar across the top of the page on desktop, and a side panel that opens from the menu button.
 
 ## The desktop bar
 
@@ -25,6 +25,8 @@ Images come from the collection or product the menu item links to, so there is n
 ## The side panel
 
 Below 990 px, and on desktop when the bar is turned off, the menu button opens a panel carrying the menu, search, the cart and your policy links. The customer account icon sits beside the menu button rather than inside the panel, so it is always one tap away. On the home page, the panel also opens when the pointer rests in the top corner of the screen; **Hover trigger size** sets how large that corner is.
+
+With the inline bar, desktop screens show the menu button only when the panel carries something the bar doesn't: a **Custom link** block, a second **Navigation** block, the Follow on Shop button, or a B2B buyer's locations. When the bar already shows everything, the menu button and the hover corner are left out, and the bar is the only navigation on desktop.
 
 The panel renders up to three levels of nesting. Sub-menus expand in place, inside the panel. To build them, drag a menu item under another in the Shopify navigation editor so it indents.
 
@@ -56,7 +58,7 @@ The [Header](../../sections/header/) section also sets:
 - **Show back-to-top button.** A button that appears after about a screen of scrolling. Off by default.
 - **Show mobile bottom navigation.** A bar fixed to the bottom of the screen below 990 px, with links to the home page, search, the cart and the account. Off by default.
 
-Most pages also open with a back link and a breadcrumb trail, controlled by each template's **Show back link and breadcrumb** setting. Long page names are shortened with an ellipsis so the row stays on one line.
+Most pages also open with a back link and a breadcrumb trail, controlled by each template's **Show back link and breadcrumb** setting. The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page, so an article reads `Home / <blog title> / <article title>`. Policy pages have a back link only, under **Show back link**, and the cart page opens with a back link to your catalog. Long page names are shortened with an ellipsis so the row stays on one line.
 
 ## Tips
 

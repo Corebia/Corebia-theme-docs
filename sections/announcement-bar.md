@@ -16,7 +16,7 @@ It belongs to the `header` section group, so it can only be placed above or belo
 
 - **Color scheme.** Default: scheme-2, so the bar sits as a band against the page rather than blending into it.
 - **Motion.** How messages animate. Default: **Rotate**.
-  - **Rotate (cross-fade between messages).** One message at a time, cross-fading to the next.
+  - **Rotate (cross-fade between messages).** One message at a time: the current message fades out, then the next fades in, so two messages never overlap. The bar keeps the height of its tallest message, so the page below doesn't move as the messages change, and a message that isn't showing can't be reached with the keyboard.
   - **Marquee (continuous horizontal scroll).** All messages scrolling horizontally in a continuous loop.
 - **Rotation interval.** How long each message shows before the next rotates in. Range: 3000 to 9500 ms in 500 ms steps. Default: 5000 ms. Only used when there are two or more messages. A marquee also uses it for shoppers who have asked their device for reduced motion, since the bar then shows one message at a time instead of scrolling.
 - **Marquee speed.** **Slow** (default), **Medium** or **Fast**. Slow keeps the bar editorial; fast competes with the page below. Shown when **Motion** is set to Marquee.
@@ -43,7 +43,7 @@ Up to **five** Message blocks. Every field below the first two is optional, and 
 #### Countdown
 
 - **Countdown end date and time.** When the countdown ends, written as `2026-12-31T23:59:59-08:00`, where the last part is your timezone's offset from Greenwich Mean Time. Without an offset the time is read as Greenwich Mean Time. Leave blank to hide the countdown.
-- **Countdown format.** **Days : Hours : Minutes : Seconds** (default), **Hours : Minutes : Seconds**, **Minutes : Seconds**, or **Days only**.
+- **Countdown format.** **Days : Hours : Minutes : Seconds** (default), **Hours : Minutes : Seconds**, **Minutes : Seconds**, or **Days only**. Formats without days add the days to the hours or minutes, so 2 days and 3 hours reads as 51 hours.
 - **Countdown prefix label.** Optional text before the digits. Defaults to `Sale ends in` when blank.
 - **When the countdown reaches zero.** **Remove this block from the bar** (default) or **Show an expired message in this block**.
 - **Expired message.** Defaults to `This offer has ended.` when blank. Shown when the block is set to show an expired message.
@@ -58,7 +58,7 @@ The countdown settings below the end date appear once an end date is filled in.
 
 ## Tips
 
-- **Keep each message short.** The bar is one line on mobile, and a long message either truncates or forces the marquee to do the reading for you.
+- **Keep each message short.** The bar is one line on mobile, and a long message either truncates or forces the marquee to do the reading for you. With Rotate, the longest message also sets the bar's height for all of them.
 - **Pick motion to match the number of messages.** One message doesn't need motion at all. Two or three suit Rotate. Five short messages are what Marquee is for.
 - **Set the timezone offset on countdowns.** Without the offset the deadline is read as Greenwich Mean Time, which will end your sale at the wrong local hour.
 - **Decide what happens at zero before you launch.** Removing the block is the safe default; showing an expired message only makes sense if the message itself is worth reading afterwards.

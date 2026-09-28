@@ -92,7 +92,7 @@ Pave supports every standard feature of Shopify Online Store 2.0, including sect
 
 ### How do customer accounts work in Pave?
 
-The account entry point is an avatar icon in the header, beside the menu button, on every page. It is Shopify's own component, so it shows a signed-out or signed-in state by itself and needs no setup beyond enabling accounts in `Shopify admin > Settings > Customer accounts`.
+The account entry point is an avatar icon at the top right of the header, on every page. It is Shopify's own component, so it shows a signed-out or signed-in state by itself and needs no setup beyond enabling accounts in `Shopify admin > Settings > Customer accounts`.
 
 The account pages themselves are rendered by Shopify, not by the theme. The one thing you control from the theme is which menu appears inside the account sheet, through the header's **Customer account menu** setting. See [Customer accounts](../../features/customer-accounts/).
 

@@ -19,7 +19,7 @@ Your logo, and an optional light version of it for dark backgrounds.
 
 ## Where the logo appears
 
-- In the [Header](../../sections/header/), when **Show shop branding** is on, which it is by default. On the home page the header normally leaves the branding out, because the hero carries the brand there. Upload an **Inverse logo** and the home page shows it over the hero instead.
+- In the [Header](../../sections/header/), when **Show shop branding** is on, which it is by default. On the home page the header leaves the branding out while it sits over the hero, because the hero carries the brand there, and shows it once the shopper scrolls. Upload an **Inverse logo** and the home page shows it over the hero as well.
 - On the [Password page](../../templates/password-page/), when its **Show logo** setting is on.
 - In your store's structured data, where search engines read it as your organization's logo.
 

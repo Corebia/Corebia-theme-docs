@@ -14,7 +14,7 @@ The pages a customer uses to manage their account: signing in, viewing orders, e
 
 ## How customers reach their account
 
-The account entry point sits in the [Header](../../sections/header/), beside the menu button, on every page and at every screen size. It is Shopify's own account component: it shows a signed-out or a signed-in avatar automatically, opens its own account sheet, and needs no setup beyond enabling customer accounts.
+The account entry point sits in the [Header](../../sections/header/), at the top right, beside the menu button when there is one, on every page and at every screen size. It is Shopify's own account component: it shows a signed-out or a signed-in avatar automatically, opens its own account sheet, and needs no setup beyond enabling customer accounts.
 
 The one thing the theme controls is which menu appears inside that sheet, through the header's **Customer account menu** setting. Leave it empty to use Shopify's default account links.
 

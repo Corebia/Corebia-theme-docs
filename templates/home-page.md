@@ -39,7 +39,7 @@ Almost every section in the theme can go on the home page. The exceptions are th
 ## What the home page does differently
 
 - **The header sits over the hero.** On the home page the header is transparent and its icons adapt to the image beneath them.
-- **The top-left brand mark is hidden**, because the hero already carries the name. To show a mark over the hero anyway, upload a light version of your logo as **Inverse logo** under [Logo](../../theme-settings/logo/). When the header's **Desktop menu style** is the inline bar, the desktop bar keeps your regular logo either way.
+- **The top-left brand mark waits for the scroll.** It is hidden while the header sits over the hero, because the hero already carries the name, and appears once the shopper scrolls and the header takes a solid background. To show a mark over the hero too, upload a light version of your logo as **Inverse logo** under [Logo](../../theme-settings/logo/). When the header's **Desktop menu style** is the inline bar, the desktop bar keeps your regular logo either way.
 - **The menu panel opens on hover.** On a desktop with a mouse, pointing at the top-right corner of the page opens the navigation panel (top-left in right-to-left languages). The size of that corner is the header's **Hover trigger size** setting. Everywhere else the panel opens on click.
 
 ## Tips

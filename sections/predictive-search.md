@@ -8,7 +8,7 @@ permalink: /sections/predictive-search/
 
 # Predictive search
 
-**Predictive search** is the results panel that drops down as a shopper types in the header's search field, in the navigation panel and in the desktop header bar. It isn't a section you add to a page, and it isn't listed in the theme editor: the theme fetches it in the background each time the shopper types.
+**Predictive search** is the results panel that drops down as a shopper types in the header's search field, in the navigation panel, in the desktop header bar and on the search page, which the search icon opens on phones. It isn't a section you add to a page, and it isn't listed in the theme editor: the theme fetches it in the background each time the shopper types.
 
 What you can configure lives in theme settings. See [Search](../../theme-settings/search/) for the featured collection, the popular searches menu and recent searches that fill the panel before anything is typed.
 
@@ -18,7 +18,9 @@ As the shopper types, the panel lists, in this order:
 
 - **Suggestions.** Search terms Shopify suggests from what has been typed.
 - **Products.** Up to four, each with its image, title and price.
-- **Collections**, **Pages** and **Articles** that match.
+- **Collections**, **Pages** and **Articles** that match, articles with their featured image.
+
+The part of each suggestion that matches what the shopper typed is shown in bold.
 
 Each group appears only when it has a match. Sold-out products are listed after available ones.
 

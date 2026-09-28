@@ -12,7 +12,7 @@ Pave puts a customer account entry point in the header on every page, so a shopp
 
 ## Where it appears
 
-In the [Header](../../sections/header/), as an avatar icon beside the menu button, on both desktop and mobile. It is always present while customer accounts are enabled, with no setting to hide it, and it shows a signed-out or a signed-in state on its own. When **Show mobile bottom navigation** is on in the header, the bottom bar also carries an account link.
+In the [Header](../../sections/header/), as an avatar icon at the top right, beside the menu button when there is one, on both desktop and mobile. It is always present while customer accounts are enabled, with no setting to hide it, and it shows a signed-out or a signed-in state on its own. When **Show mobile bottom navigation** is on in the header, the bottom bar also carries an account link.
 
 ## It is rendered by Shopify
 
