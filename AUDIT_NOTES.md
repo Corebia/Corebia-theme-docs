@@ -2,7 +2,7 @@
 
 Internal notes on the state of this documentation and of the theme it documents. Excluded from the built site by `_config.yml`.
 
-Last reconciled against the theme: **2026-09-08**, theme at `Pave 1.0.0`.
+Last reconciled against the theme: **2026-09-28**, theme at `Pave 1.0.0`, branch `feature/f19-submission` (commit `505f32db`).
 
 ## How this documentation is kept true
 
@@ -11,6 +11,8 @@ Every reference page under [Sections](sections/), [Templates](templates/) and [T
 Those labels come from `plantilla/locales/en.default.schema.json`, resolved from the `t:` keys in each section's `{% schema %}`. When the theme changes a label, an option or a default, the corresponding page here is wrong until it is updated. The failure mode is silent: nothing breaks, the page simply lies.
 
 **Before any Theme Store submission, re-check the reference pages against the theme's schemas.** The drift found on 2026-09-08 had accumulated over four months and touched every reference page in the site. One page alone was missing 47 settings.
+
+The 2026-09-28 pass came after F1 to F19 (theme blocks, languages and RTL, B2B, accessibility, motion, editorial sections): three weeks of feature work that again touched every reference page, and added 17 merchant-facing sections (21 new section files in all), 9 theme settings groups, 12 theme blocks and 12 templates the site did not document.
 
 ## Theme metadata this site depends on
 
@@ -55,7 +57,7 @@ written inside a comment must not contain Liquid tags.
 
 1. **The contact form is not live yet.** The page is built for it; the form itself has to be created. See below.
 2. **No screenshots.** Every reference page is text. Screenshots of the sections in place would help, and can only be taken once a demo store exists.
-3. **English only.** Matches the theme, which ships `en.default` alone.
+3. **English only.** The theme now ships storefront and editor translations in ten languages (en, es, fr, it, de, pt-BR, pt-PT, nl, sv, pl), but this site documents the English editor labels only. A merchant working in another admin language sees translated labels.
 
 ## Building the contact form
 
@@ -101,7 +103,11 @@ Do **not** ask for budget, phone number or project type. §21 names those as the
 
 ## Things the theme does that are worth knowing when writing docs
 
-- **Complementary products is not a section.** It is a mode of the Product recommendations section, chosen with its **Recommendation type** setting. A page exists at `sections/complementary-products.md` because merchants search for the term.
-- **The theme ships two alternate templates**, `collection.all.json` (catalog) and `page.contact.json` (contact), documented as their own pages.
+- **Complementary products is not a section.** It is a mode of the Product recommendations section, chosen with its **Recommendation type** setting. A page exists at `sections/complementary-products.md` because merchants search for the term; the Sections index lists it as a mode, not a section.
+- **Collection list is `sections/collections-list.liquid`.** The docs page is `sections/collection-list.md` because the editor calls the section "Collection list". Keep the docs name and URL; the theme file name is not something a merchant sees.
+- **The theme ships fourteen alternate templates**: three product (`editorial`, `gift-card`, `quick-order`), two collection (`all`, `lookbook`) and nine page (`contact` plus `about`, `accessibility`, `contact-stores`, `drop`, `editorial`, `faq`, `lookbook`, `size-guide`). Catalog, contact and lookbook collection have their own pages; the rest are grouped in `templates/product-templates.md` and `templates/page-templates.md`.
 - **Customer pages are Shopify's**, not the theme's. The theme ships no `templates/customers/*` and the account entry point in the header is Shopify's own component.
-- **Product card fragment** is a section with no settings, requested over the network by Recently viewed. It is not merchant-facing.
+- **Sections with no editor presence.** Product card fragment, Product quick view, Search empty state, Cart drawer and Cart suggestions have no settings and no presets; they are rendered by the layout or fetched over the network. Cart drawer and suggestions are configured under Theme settings > Cart. **Predictive search** does have six settings in its schema, but the section sits in no template or group, so a merchant can never reach them and they always run at their defaults. The docs page describes the results panel instead of the settings.
+- **Newsletter popup** is rendered from `layout/theme.liquid` and is **off by default** since F19.
+- **Theme labels are not all American English.** "Shop by colour", "Personalisation" and "centre" in some help texts. The docs quote labels verbatim and write prose in American English.
+- **Some theme help texts contain em dashes** (`badge_tag_pairs`, `card_swatch_radius`). Rephrase them, never copy them.
