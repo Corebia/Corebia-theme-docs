@@ -2,20 +2,20 @@
 title: Discount display
 layout: default
 parent: Theme settings
-nav_order: 8
+nav_order: 12
 permalink: /theme-settings/discount-display/
 ---
 
 # Discount display
 
-These settings control how a reduced price is presented, everywhere one appears: product cards, product pages, featured products and the cart.
+These settings control how a reduced price is presented, everywhere one appears: product cards, product pages, featured products and quick view.
 
 They govern **presentation only**. The discounts themselves are created under `Shopify admin > Discounts`, or by setting a compare-at price on a variant.
 
 ## Settings
 
-- **Show discount badge.** Shows the discount badge wherever a reduced price appears. Default: on. Strikethrough prices still show when the badge is hidden.
-- **Badge label format.** How badges are written. Default: **Minus percentage**.
+- **Show discount badge.** Shows the discount badge wherever a reduced price appears. Default: on. Strikethrough prices still show when the badge is hidden. On product cards, turning it off empties the badge slot altogether, so promotion labels, tag badges and the new badge go too.
+- **Badge label format.** How discount badges are written on product cards, product pages, and featured products. Default: **Minus percentage**.
 
   | Option | Reads as |
   |---|---|
@@ -31,6 +31,8 @@ They govern **presentation only**. The discounts themselves are created under `S
 - **Badge text color.** Defaults to the surface color of the active color scheme. Keep a contrast ratio of at least 4.5:1 against the badge background.
 - **Use a promotion label from product metafields.** Default: off. A product's promotion label replaces its sale badge, for offers set up outside Shopify discounts.
 
+Where the badge sits, its font, case and corner radius are set under [Badges](../badges/).
+
 ## Promotion labels from metafields
 
 With **Use a promotion label from product metafields** on, the theme reads two metafields per product:
@@ -42,11 +44,20 @@ With **Use a promotion label from product metafields** on, the theme reads two m
 
 Define them once under `Shopify admin > Settings > Metafields and metaobjects > Products`, then fill them in per product.
 
-This is for offers Shopify's discount engine doesn't model: a bundle handled by an app, a members' price, a seasonal promotion run outside Shopify. A product with a promotion label set shows that label in place of its calculated sale badge.
+This is for offers Shopify's discount engine doesn't model: a bundle handled by an app, a members' price, a seasonal promotion run outside Shopify. A product with a promotion label set shows that label in place of any other badge.
+
+## Which badge wins
+
+A product card shows one badge at a time. When more than one applies, the first in this order wins:
+
+1. A **promotion label** from the product's metafields, when the setting above is on.
+2. A **tag badge**, from **Tag badges** under [Badges](../badges/).
+3. The **sale badge**, when the discount clears **Minimum discount to show badge**.
+4. The **new badge**, from **Days to show the new badge** under [Product cards](../product-cards/).
 
 ## Tips
 
-- **Set a minimum threshold.** A `−3%` badge draws attention to how small the saving is. Somewhere between 10% and 15% is where a badge starts to earn its space.
+- **Set a minimum threshold.** A `-3%` badge draws attention to how small the saving is. Somewhere between 10% and 15% is where a badge starts to earn its space.
 - **Leave the badge colors empty unless you have to change them.** Empty means the badge follows each section's color scheme, so it stays legible when a section is dark and when it is light. A fixed color is fixed everywhere, including on the scheme where it clashes.
 - **If you do set them, check the contrast.** 4.5:1 between badge text and badge background. A red badge with white text often lands just under.
 - **Hiding the badge doesn't hide the discount.** The compare-at price still shows struck through. Turning the badge off makes a store read quieter, not cheaper.

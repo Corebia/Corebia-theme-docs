@@ -2,15 +2,17 @@
 title: Social media
 layout: default
 parent: Theme settings
-nav_order: 3
+nav_order: 8
 permalink: /theme-settings/social-media/
 ---
 
 # Social media
 
-The profile links behind the icons in the footer. Fill in the ones you use; leave the rest empty.
+The profile links behind the social icons in the footer and the announcement bar. Fill in the ones you use; leave the rest empty.
 
 ## Settings
+
+### Social accounts
 
 Every field takes a **full URL** to your own profile.
 
@@ -23,9 +25,12 @@ Every field takes a **full URL** to your own profile.
 
 ## Where the icons appear
 
-In the [Footer](../../sections/footer/), when its **Show social media icons** setting is on. An empty field renders no icon, so the row only ever contains accounts you actually have.
+- In the [Footer](../../sections/footer/), when its **Show social media icons** setting is on. It is on by default.
+- In the [Announcement bar](../../sections/announcement-bar/), when its own **Show social media icons** setting is on. It is off by default.
 
-If you fill nothing in, no icon row appears at all and the footer closes tighter.
+An empty field renders no icon, so the row only ever contains accounts you actually have. If you fill nothing in, no icon row appears at all.
+
+The same links are also added to your store's structured data, which helps search engines connect your storefront to your social profiles.
 
 ## Tips
 

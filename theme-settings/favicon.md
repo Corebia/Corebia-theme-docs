@@ -2,7 +2,7 @@
 title: Favicon
 layout: default
 parent: Theme settings
-nav_order: 5
+nav_order: 10
 permalink: /theme-settings/favicon/
 ---
 
@@ -22,6 +22,8 @@ The small icon in the browser tab, the bookmarks bar and the mobile home screen.
 - **A mark, not a wordmark.** Text is unreadable at 32 px. Use a symbol, a monogram or a single letter.
 - **High contrast, few colors.** Fine detail turns to mud.
 - **Transparent background** so it works on light and dark browser themes.
+
+Until you upload one, the theme shows a placeholder icon of its own: a light letter on a dark rounded square. It keeps the browser from showing an error, but it is Pave's mark, not yours.
 
 ## Social share image
 
@@ -44,6 +46,6 @@ So the setting matters most for your home page, which is the link people share m
 
 ## Tips
 
-- **Set both before launch.** A missing favicon shows a generic globe next to your tab; a missing share image gives a link preview with no picture at all.
+- **Set both before launch.** Without a favicon your tab shows the theme's placeholder rather than your brand; without a share image, a link to your home page previews with no picture at all.
 - **Check the preview after changing it.** Social platforms cache aggressively. Facebook's Sharing Debugger and X's card validator will force a re-fetch.
 - **The share image is not the logo.** It has room for a photograph, and a photograph performs better in a feed than a mark on a plain background.
