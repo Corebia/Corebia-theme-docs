@@ -2,7 +2,7 @@
 
 Internal notes on the state of this documentation and of the theme it documents. Excluded from the built site by `_config.yml`.
 
-Last reconciled against the theme: **2026-09-28**, theme at `Pave 1.0.0`, branch `feature/f19-submission` (commit `505f32db`).
+Last reconciled against the theme: **2026-09-28**, theme at `Pave 1.0.0`, branch `feature/f19-submission` (commit `fe6c0e3b`).
 
 ## How this documentation is kept true
 
@@ -13,6 +13,8 @@ Those labels come from `plantilla/locales/en.default.schema.json`, resolved from
 **Before any Theme Store submission, re-check the reference pages against the theme's schemas.** The drift found on 2026-09-08 had accumulated over four months and touched every reference page in the site. One page alone was missing 47 settings.
 
 The 2026-09-28 pass came after F1 to F19 (theme blocks, languages and RTL, B2B, accessibility, motion, editorial sections): three weeks of feature work that again touched every reference page, and added 17 merchant-facing sections (21 new section files in all), 9 theme settings groups, 12 theme blocks and 12 templates the site did not document.
+
+A second pass the same day took in the 25 non-merge theme commits from `505f32db` to `fe6c0e3b` (F19 review rounds): four new settings (Content width on Section and Store locations, Columns on mobile on New arrivals, Show back link and breadcrumb on Main article), renamed labels (the mobile gallery options, the policy page's back link, Shop by color, Personalization), 56 new help texts and 4 reworded ones, changed template defaults and a round of storefront behavior changes, touching 42 published pages.
 
 ## Theme metadata this site depends on
 
@@ -109,5 +111,7 @@ Do **not** ask for budget, phone number or project type. §21 names those as the
 - **Customer pages are Shopify's**, not the theme's. The theme ships no `templates/customers/*` and the account entry point in the header is Shopify's own component.
 - **Sections with no editor presence.** Product card fragment, Product quick view, Search empty state, Cart drawer and Cart suggestions have no settings and no presets; they are rendered by the layout or fetched over the network. Cart drawer and suggestions are configured under Theme settings > Cart. **Predictive search** does have six settings in its schema, but the section sits in no template or group, so a merchant can never reach them and they always run at their defaults. The docs page describes the results panel instead of the settings.
 - **Newsletter popup** is rendered from `layout/theme.liquid` and is **off by default** since F19.
-- **Theme labels are not all American English.** "Shop by colour", "Personalisation" and "centre" in some help texts. The docs quote labels verbatim and write prose in American English.
+- **Theme labels are American English** since F19 (`2c1d8484`): "Shop by color", "Personalization" and "center". The docs quote labels verbatim and write prose in American English.
+- **Template defaults can differ from section defaults.** `templates/product.json` ships the gallery as **2 columns** with **Large** media, and `templates/collection.json` ships the **Horizontal bar above the grid** filter layout with **4 columns**, while the schemas keep **Thumbnails**, **Medium**, **Sidebar** and **3 columns** so existing stores don't move on upgrade. The reference pages give the schema default and name the template's value beside it.
+- **Quick add and quick view share one popup.** With quick add on, a card's `+` on a product with options to choose opens the quick view popup, even when **Show a quick view button on cards** is off. Products with one variant, or with color as their only option, are added directly.
 - **Some theme help texts contain em dashes** (`badge_tag_pairs`, `card_swatch_radius`). Rephrase them, never copy them.
