@@ -18,7 +18,7 @@ See [Cart settings](../../theme-settings/cart-settings/).
 
 ## How savings are presented
 
-The badge wording, its colours and the minimum discount worth badging are all set once under [Discount display](../../theme-settings/discount-display/), and applies to product cards, product pages, featured products and the cart alike.
+The badge wording, its colors and the minimum discount worth badging are all set once under [Discount display](../../theme-settings/discount-display/), and apply to product cards, product pages, featured products and the cart alike.
 
 That page also covers promotion labels driven by product metafields, for offers Shopify's discount engine doesn't model.
 
@@ -56,7 +56,7 @@ For percentage-off, fixed-amount-off, or buy-X-get-Y discounts that apply to the
 ## Troubleshooting
 
 - **Customer reports the code is invalid.** Confirm the code is active, within its date range, and that any conditions (minimum spend, specific products, customer eligibility) are met.
-- **Discount field doesn't appear on the cart page.** Confirm **Enable discount code field** is on in **Theme settings > Cart**.
+- **Discount field doesn't appear on the cart page.** Confirm **Show discount code field** is on in **Theme settings > Cart**. The field is on the cart page only; the cart drawer leaves codes to checkout.
 - **Discount applied at checkout but not in cart.** Some discount types (like checkout-only buy-X-get-Y) don't pre-calculate in the cart. They appear at checkout. This is Shopify's behavior, not a theme bug.
 
 ## Related

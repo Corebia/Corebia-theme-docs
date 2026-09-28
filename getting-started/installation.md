@@ -43,7 +43,8 @@ When you are ready to make Pave the live theme on your storefront:
 ## What to expect on first install
 
 - **Demo content does not transfer.** The screenshots and demo content shown on the Theme Store listing are illustrative. Your store starts with your real products, collections, and content.
-- **The chosen preset determines the initial look.** Pave ships with one preset. After publishing, the home page shows its seven bundled sections, ready for you to populate: hero banner, new arrivals, brand message, collection list, journal, brand image and newsletter. See [Home page](../../templates/home-page/).
+- **The chosen preset determines the initial look.** Pave ships with one preset. After publishing, the home page shows its six bundled sections, ready for you to populate: hero banner, new arrivals, brand message, collection list, journal and brand image. A newsletter signup sits above the footer on every page. See [Home page](../../templates/home-page/).
+- **Alternate templates are ready to assign.** Pave ships extra templates for products (editorial, gift card, quick order), collections (lookbook) and pages (about, accessibility, contact with stores, drop, editorial, FAQ, lookbook, size guide). See [Templates](../../templates/).
 - **Sample text ships with the theme and must be replaced.** Default copy such as "Crafted with intention", "From the journal" and the sample paragraphs in Brand message and Rich text with image are placeholders. Anything published with them still in place reads as unfinished.
 
 ## Recommended plan and prerequisites
@@ -51,9 +52,9 @@ When you are ready to make Pave the live theme on your storefront:
 Pave works on every Shopify plan. To unlock the full feature set:
 
 - **Shopify Payments.** Required for [Shop Pay Installments](../../features/shop-pay-installments/) and [accelerated checkout](../../features/accelerated-checkout/).
-- **Markets.** Required for [multi-currency and multi-language](../../features/multi-currency-language/) selectors in the footer.
+- **Markets.** Required for the [multi-currency and multi-language](../../features/multi-currency-language/) selectors. The theme's own text already ships in ten languages.
 - **Shopify Search & Discovery** app, required for [complementary product](../../features/product-recommendations/) configuration.
-- **A Shopify reviews app.** Required for the [Customer reviews](../../sections/customer-reviews/) section to display content. Pave is compatible with the `reviews.rating` metafield used by most reviews apps.
+- **A Shopify reviews app.** Needed for star ratings on product pages and product cards, and for review widgets in the [Customer reviews](../../sections/customer-reviews/) section. Pave reads the standard `reviews.rating` metafield that most reviews apps fill. Without an app, the Customer reviews section can still show quotes you type in yourself.
 
 For details on each, see the [Shopify Help Center](https://help.shopify.com/).
 

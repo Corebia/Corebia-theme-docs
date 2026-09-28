@@ -15,7 +15,7 @@ Pave offers two kinds of cross-sell, and both come from **one section**: [Produc
 | **Related products** | Shopify, from order history and product data | None |
 | **Complementary products** | You, per product | Search & Discovery app |
 
-To run both on a product page, which is the usual arrangement, add the section twice and set each instance to a different type.
+The default product template already runs both: one instance set to complementary products, then one set to related products. To add them to another template, add the section twice and set each instance to a different type.
 
 ## Related products
 
@@ -46,7 +46,12 @@ See [Complementary products](../../sections/complementary-products/) for the ful
 
 Below the product description, not above it. A shopper still reading about this product is not ready to be offered another one.
 
-The conventional order is complementary first, as "goes with this", then related, as "you might also like".
+The conventional order is complementary first, as "goes with this", then related, as "you might also like". That is the order the default product template uses.
+
+## Other ways to cross-sell
+
+- **[Complete the look](../../sections/complete-the-look/)** shows a set of products you pick, which the shopper can tick and add to the cart in one go. It suits an outfit or a room rather than a single product.
+- **Cart suggestions** show up to four products in the cart drawer and on the cart page. They are on by default. Choose the products under [Cart settings](../../theme-settings/cart-settings/), or leave the list empty to use Shopify's recommendations for the first product in the cart.
 
 ## Tips
 

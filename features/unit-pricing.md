@@ -12,10 +12,12 @@ Unit pricing displays the price per unit of measurement (per kg, per liter, per 
 
 ## Where it appears
 
-- Product cards in collection grids and the search page.
-- The product page price.
-- Cart line items.
-- Order confirmation pages.
+- Product cards, in every grid: collections, search, recommendations and recently viewed.
+- The product page price, and the price in Featured product and quick view.
+- Cart lines, in the cart drawer and on the cart page.
+- Rows of the [Quick order list](../../sections/quick-order-list/).
+
+Order confirmations and checkout are Shopify's pages, and show unit prices on their own.
 
 ## Configuring unit pricing for a product
 

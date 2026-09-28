@@ -12,7 +12,7 @@ Pave puts a customer account entry point in the header on every page, so a shopp
 
 ## Where it appears
 
-In the navigation panel of the [Header](../../sections/header/), on both desktop and mobile. It is always present, with no setting to hide it, and it shows a signed-out or a signed-in state on its own.
+In the [Header](../../sections/header/), as an avatar icon beside the menu button, on both desktop and mobile. It is always present while customer accounts are enabled, with no setting to hide it, and it shows a signed-out or a signed-in state on its own. When **Show mobile bottom navigation** is on in the header, the bottom bar also carries an account link.
 
 ## It is rendered by Shopify
 
@@ -20,11 +20,11 @@ The account entry point is Shopify's own component, not theme markup. That has t
 
 - **It needs no setup.** Enable customer accounts in your admin and it works.
 - **Its contents are Shopify's.** Order history, addresses and profile live on Shopify's pages, and the theme ships no customer templates. See [Customer pages](../../templates/customer-pages/).
-- **Its colours and fonts follow the theme**, but its structure does not. There is nothing to lay out.
+- **Its colors and fonts follow the theme**, but its structure does not. There is nothing to lay out.
 
 ## What you control
 
-One thing: the menu shown inside the account panel, through the header's **Customer account menu** setting. Leave it empty to use Shopify's default account links, or point it at a menu of your own to add something like a loyalty page or a returns portal.
+One thing: the menu shown inside the account sheet, through the header's **Customer account menu** setting. Leave it empty to use Shopify's default account links, or point it at a menu of your own to add something like a loyalty page or a returns portal.
 
 ## Turning accounts on
 
@@ -33,6 +33,12 @@ Under `Shopify admin > Settings > Customer accounts`:
 - **Accounts are optional.** Customers can create one or check out as a guest. The safe default.
 - **Accounts are required.** Customers must sign in to check out.
 - **Accounts are disabled.** Guest checkout only, and the entry point disappears from the header.
+
+## B2B buyers
+
+A customer who buys for a company sees the company and location they are ordering for in the header, and can switch location there when they have more than one. See [B2B](../b2b/).
+
+## Signing in
 
 Shopify's current customer accounts sign in with a code sent by email rather than a password, so there is no password to reset and nothing for the theme to render.
 
@@ -47,3 +53,4 @@ Shopify's current customer accounts sign in with a code sent by email rather tha
 - [Header section reference](../../sections/header/)
 - [Customer pages](../../templates/customer-pages/)
 - [Follow on Shop](../follow-on-shop/)
+- [B2B](../b2b/)

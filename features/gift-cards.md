@@ -18,6 +18,10 @@ Pave fully supports Shopify's gift card feature: a dedicated gift card landing p
 
 The gift card now appears on your storefront as a regular product. The customer adds a denomination to cart and checks out.
 
+### A product template made for gift cards
+
+Pave ships a `gift-card` product template with a simpler product layout, without the Details block, and a short FAQ under the product about how the card works. To use it, open the gift card product in `Shopify admin > Products`, choose `gift-card` under **Theme template**, and save. Edit the FAQ's questions in the theme editor with that template open. See [Alternate product templates](../../templates/product-templates/#gift-card).
+
 ## Recipient personalization
 
 Pave's product page supports the gift card recipient form. When the customer is buying a gift card product, they can enter:
@@ -26,7 +30,7 @@ Pave's product page supports the gift card recipient form. When the customer is 
 - The recipient's email
 - A personal message
 
-To enable this on the product page, in the **Buy buttons** block, enable **Show recipient information form for gift card products**. See [Product page](../../templates/product-page/).
+This is controlled by **Show recipient information form for gift card products** in the **Buy buttons** block, which is on by default. See [Product page](../../templates/product-page/).
 
 When configured, the recipient receives the gift card by email at the time chosen by the buyer.
 
@@ -72,3 +76,4 @@ If the order total exceeds the gift card balance, the customer pays the remainde
 
 - [Gift card page template reference](../../templates/gift-card-page/)
 - [Product page > Buy buttons block](../../templates/product-page/)
+- [Alternate product templates](../../templates/product-templates/)

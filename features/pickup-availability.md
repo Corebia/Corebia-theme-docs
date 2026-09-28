@@ -12,7 +12,7 @@ When local pickup is configured for any of your store locations, Pave automatica
 
 ## Where it appears
 
-- The [Product page](../../templates/product-page/), below the buy buttons.
+- The [Product page](../../templates/product-page/) and [Featured product](../../sections/featured-product/), in the **Buy buttons** block, below the buttons.
 
 ## Prerequisites
 
@@ -28,12 +28,11 @@ Once configured, Pave automatically renders the availability section on every pr
 
 For the currently selected variant, Pave shows:
 
-- Whether the variant is **available** at the nearest pickup location.
+- Whether pickup is **available** at the first location Shopify lists for that variant, with its name.
 - The pickup-ready time estimate (for example, "Usually ready in 24 hours").
-- A "Check availability at other locations" link that opens a popup listing every pickup-enabled location and the variant's stock status at each.
-- The pickup instructions, if you've configured any.
+- When more than one location offers pickup, a **View store information** link that expands a list of every pickup location, with the variant's availability, ready time and address at each.
 
-When the customer changes variant, the availability re-fetches and updates.
+When the customer changes variant, the availability updates for the new variant. Pickup instructions are not shown on the product page; Shopify includes them in the order confirmation.
 
 ## Out-of-stock variants
 
@@ -43,12 +42,12 @@ If a variant is out of stock at every pickup location, the availability section 
 
 - **Enable pickup at every location where you can fulfill it.** Even if your warehouse can't easily handle pickup, enabling it for one or two locations adds a fast option for nearby customers.
 - **Set realistic pickup-ready times.** "Usually ready in 24 hours" sets expectations. "Usually ready in 1 hour" promises the customer something they may not get on busy days.
-- **Be specific in pickup instructions.** "Use the front entrance, ask for [name]" is more useful than "Pickup available". Custom instructions appear after the customer places the order.
+- **Be specific in pickup instructions.** "Use the front entrance, ask for [name]" is more useful than "Pickup available". Custom instructions reach the customer with the order confirmation.
 
 ## Troubleshooting
 
 - **The pickup section doesn't appear.** Confirm at least one location has local pickup enabled. If no location has pickup enabled, the section is hidden.
-- **The wrong location appears as nearest.** Pave displays the location based on Shopify's data. Customers can click "Check availability at other locations" to see all locations.
+- **The wrong location appears first.** The order comes from Shopify. Customers can open **View store information** to see every location.
 - **Variant shows as unavailable but I have stock.** Confirm the variant is assigned inventory at the pickup location in `Shopify admin > Products > [product] > Inventory`.
 
 ## Related

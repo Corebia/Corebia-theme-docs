@@ -8,27 +8,31 @@ permalink: /features/search/
 
 # Search
 
-Pave provides two search experiences: **predictive search** in the header (suggestions as the customer types) and **faceted filtering** on the search results, collection, and catalog pages.
+Pave provides two search experiences: **predictive search** in the header, with suggestions as the customer types, and **faceted filtering** on the search results, collection and catalog pages.
 
 ## Predictive search
 
-When the customer opens the header search bar and starts typing, Pave fetches suggestions in real time without a page reload.
+When the customer opens search in the header and types, Pave fetches suggestions in real time without a page reload.
 
 ### Where it appears
 
-- In the inline search field that expands inside the header navigation panel.
+- In the search popover of the desktop header bar.
+- In the search field inside the header's navigation panel.
+- At the top of the [Search page](../../templates/search-page/).
 
 ### What is shown
 
-Matching products, and optionally collections, pages and articles.
+Suggested search terms, matching products with their price, and matching collections, pages and articles. Suggestions start after two characters.
 
-### How to configure it
+### Before the customer types
 
-Open the theme editor and select the **Predictive search** section, in the header group alongside the Header. Its settings are documented in full at [Predictive search](../../sections/predictive-search/):
+The search drawer doesn't have to open empty. Under [Theme settings > Search](../../theme-settings/search/) you can fill it with:
 
-- **Show vendor** and **Show price** set what each product result carries.
-- **Show collections**, **Show pages** and **Show articles** set which other content types appear.
-- **Product results limit.** How many products the panel shows, from 2 to 10. Default: 4.
+- **Featured collection.** Products from one collection, shown before a query. **Products to show** sets how many, from 2 to 10.
+- **Popular searches menu.** A menu whose items become links in the drawer. Build it under `Online Store > Navigation` like any other menu.
+- **Show recent searches.** The shopper's last five searches, kept in their own browser only. They can remove any of them. Off by default.
+
+With none of these set, the drawer shows nothing until the customer types.
 
 ## Faceted filtering
 
@@ -40,36 +44,41 @@ Faceted filtering lets customers narrow the product grid by attributes: collecti
 - The [Catalog page](../../templates/catalog-page/).
 - The [Search page](../../templates/search-page/).
 
+On the collection page, the **Filter layout** setting places the filters in a sidebar or in a horizontal bar above the grid. On mobile, both open the same slide-in drawer.
+
 ### Filter source
 
-Filter options come from the **Search and discovery** configuration in your Shopify admin:
+Filter options come from Shopify's **Search & Discovery** app:
 
-1. In `Shopify admin > Online Store > Navigation`, scroll to **Search and discovery**, or install the **Search & Discovery** app from the Shopify App Store.
-2. Configure filters per collection or globally. You can include filters based on product type, vendor, price, color, size, availability, and any product metafield you've defined.
+1. Install the free **Search & Discovery** app from the Shopify App Store.
+2. In the app, open **Filters** and add the filters you want: product type, vendor, price, color, size, availability, or any product metafield you've defined.
 3. Save.
 
-The **Show filters** setting on the relevant section must be enabled for filters to appear. See the section settings on each page.
+The **Show filters** setting on the relevant section must be on for filters to appear. See the section settings on each page.
 
 ### Filter behavior
 
 - Selected filters are reflected in the URL, so a filtered view can be bookmarked and shared.
-- Multiple filters compose with AND logic.
-- Within a single filter (for example, color), multiple values compose with OR logic.
+- Multiple filters combine with AND logic.
+- Within a single filter (for example, color), multiple values combine with OR logic.
 
 ### Sort options
 
-Sort options are also controlled by Shopify and rendered when **Show sort options** is enabled on the section. Default sorts include: Featured, Best selling, Alphabetical (A–Z, Z–A), Price (low → high, high → low), Date (new → old, old → new).
+Sort options are controlled by Shopify and shown when **Show sort options** is on in the section. The usual sorts are Featured, Best selling, Alphabetical (A to Z, Z to A), Price (low to high, high to low) and Date (new to old, old to new).
 
 ## Search results page
 
 When the customer presses Enter in the search field, they land on the [Search page](../../templates/search-page/). It shows the matching products in a grid with the same filtering and sort tools as the collection page.
 
-If a search returns no products, the **Featured collection (shown when no results)** setting on the section can fall back to a curated collection.
+Above the results, a row of links switches between **All** results, **Products**, **Articles** and **Pages**. Filters and sorting apply to products, so they are hidden while the customer looks at articles or pages.
+
+If a search returns nothing, the page can offer a way forward: **Featured collection (shown when no results)** shows a curated collection, and **Contact link (shown when no results)** adds a link to a page you choose, usually your contact page.
 
 ## Troubleshooting
 
-- **My filters don't appear.** Confirm **Show filters** is enabled on the relevant section, and that filters are configured in `Shopify admin > Online Store > Navigation > Search and discovery`.
-- **Predictive search shows nothing.** The customer may have typed fewer than two characters; predictive search waits for at least two. Also confirm the storefront is not in a frozen-cache state from a recent theme deploy.
+- **My filters don't appear.** Confirm **Show filters** is on in the relevant section, and that filters are set up in the Search & Discovery app.
+- **Predictive search shows nothing.** The customer may have typed fewer than two characters; predictive search waits for at least two.
+- **The drawer is empty before typing.** Set a featured collection or a popular searches menu under [Theme settings > Search](../../theme-settings/search/).
 - **A product is not searchable.** Check that the product status is **Active**, and that it is published to the **Online Store** sales channel.
 - **Custom synonyms.** Configure synonyms in the Search & Discovery app so common alternate terms map to the right products.
 
@@ -77,3 +86,4 @@ If a search returns no products, the **Featured collection (shown when no result
 
 - [Search page template reference](../../templates/search-page/)
 - [Collection page template reference](../../templates/collection-page/)
+- [Search settings](../../theme-settings/search/)

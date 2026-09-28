@@ -8,13 +8,13 @@ permalink: /features/selling-plans/
 
 # Selling plans
 
-Selling plans are Shopify's mechanism for subscriptions, prepaid plans, and any recurring or scheduled order arrangement. Pave displays selling plans on the product page, cart, and customer order detail pages.
+Selling plans are Shopify's mechanism for subscriptions, prepaid plans, and any recurring or scheduled order arrangement. Pave displays selling plans on the product page and in the cart. Order history belongs to Shopify's customer account pages, which show a subscription's details on their own.
 
 ## Where selling plans appear
 
 - **Product page.** The selling plan picker appears in the **Variant picker** block. Customers choose between one-time purchase or one of the available subscription / scheduled options.
-- **Cart page.** Each cart line item that has a selling plan shows the chosen plan name and the recurring schedule.
-- **Customer order detail page.** Past orders with selling plans show the plan and the recurring details.
+- **Cart drawer and cart page.** Each cart line that has a selling plan shows the chosen plan's name.
+- **Customer account pages.** Past orders are shown by Shopify's customer accounts, not by the theme. See [Customer pages](../../templates/customer-pages/).
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Pave reads the selling plans from the products automatically, so no theme config
 1. On the product page, the customer sees a "One-time purchase" option and one or more selling plan options (e.g., "Subscribe and save 10%").
 2. The customer picks an option.
 3. The buy buttons reflect the selected plan and price.
-4. After Add to cart, the cart shows the plan and recurring schedule on that line.
+4. After Add to cart, the cart shows the plan on that line.
 5. Checkout proceeds normally; the subscription is created on the first order.
 
 ## Customer subscription management
@@ -65,4 +65,4 @@ Customers manage their subscriptions through the subscription app, typically fro
 
 - [Product page template reference](../../templates/product-page/): Variant picker block.
 - [Cart page template reference](../../templates/cart-page/)
-- [Customer pages template reference](../../templates/customer-pages/)
+- [Customer pages](../../templates/customer-pages/)

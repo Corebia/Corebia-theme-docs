@@ -65,9 +65,9 @@ This is one reason hiring a partner is recommended: a partner can document and r
 
 ## Custom translations
 
-Editing the locale file (translations) is also a code-level customization. To translate Pave's default content into other languages or to override default English copy, use **Translate & Adapt** (Shopify's free translation app) or a paid tool like Langify or Weglot. These apps overlay translations without modifying the locale file.
+Pave ships its own text in ten languages (see [Multi-currency and language](../../features/multi-currency-language/#languages-the-theme-ships)). To change that wording, or to translate it into a language the theme doesn't ship, use **Edit default theme content** under `Online Store > Themes`, **Translate & Adapt** (Shopify's free translation app) or a paid tool like Langify or Weglot. These overlay your wording without modifying the theme's locale files.
 
-If you do edit the locale file directly, the changes count as custom code and are not covered by support.
+Editing the locale files themselves is a code-level customization, and is not covered by support.
 
 ## Tutorials
 

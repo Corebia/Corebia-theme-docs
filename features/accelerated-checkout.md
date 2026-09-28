@@ -8,11 +8,12 @@ permalink: /features/accelerated-checkout/
 
 # Accelerated checkout
 
-Accelerated checkout buttons let customers skip the standard checkout flow and pay in one or two taps using a stored payment method. Pave displays accelerated checkout buttons on both the product page and the cart page.
+Accelerated checkout buttons let customers skip the standard checkout flow and pay in one or two taps using a stored payment method. Pave displays accelerated checkout buttons on the product page, in the cart drawer and on the cart page.
 
 ## Where they appear
 
 - **Product page.** In the **Buy buttons** block, below the **Add to cart** button. Toggle with **Show dynamic checkout buttons**.
+- **Cart drawer.** Below the checkout button, above the link to the full cart.
 - **Cart page.** Below the main checkout button.
 
 ## Available payment methods

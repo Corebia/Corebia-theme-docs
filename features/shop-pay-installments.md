@@ -8,11 +8,12 @@ permalink: /features/shop-pay-installments/
 
 # Shop Pay Installments
 
-Shop Pay Installments lets customers split the cost of a qualifying purchase into 4 interest-free payments or longer monthly installments. Pave displays the Shop Pay Installments banner on the product page, letting customers see the pay-in-installments option before checkout.
+Shop Pay Installments lets customers split the cost of a qualifying purchase into 4 interest-free payments or longer monthly installments. Pave displays the Shop Pay Installments banner on the product page and in the cart, letting customers see the pay-in-installments option before checkout.
 
 ## Where it appears
 
-- The [Product page](../../templates/product-page/), below the buy buttons. The banner reads "or 4 interest-free payments of $X.XX. [Learn more]" or similar, depending on the price and customer eligibility.
+- The [Product page](../../templates/product-page/), in the **Buy buttons** block, below the buttons. The banner reads "or 4 interest-free payments of $X.XX. [Learn more]" or similar, depending on the price and customer eligibility.
+- The cart drawer and the [Cart page](../../templates/cart-page/), for the cart total, when **Show Shop Pay Installments** is on under [Cart settings](../../theme-settings/cart-settings/). It is on by default.
 
 ## Prerequisites
 
@@ -47,7 +48,7 @@ If any of these conditions are not met, the banner is automatically hidden.
 
 ## Troubleshooting
 
-- **The banner doesn't appear.** Confirm Shopify Payments and Shop Pay are enabled, your store is in a supported country, and the product price is within the eligible range.
+- **The banner doesn't appear.** Confirm Shopify Payments and Shop Pay are enabled, your store is in a supported country, and the price is within the eligible range. In the cart, also check **Show Shop Pay Installments** under Cart settings.
 - **The banner shows the wrong plan.** Plans are calculated by Shopify based on the price. There's no theme-level configuration; if the wrong plan is shown, contact Shopify Support.
 
 ## Related

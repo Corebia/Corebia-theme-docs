@@ -12,15 +12,15 @@ permalink: /support/faq/
 
 ### How do I change the logo?
 
-Open the theme editor (**Online Store > Themes > Customize** on Pave), click **Theme settings**, then open the **Logo** category. Upload your logo image and adjust the width. The logo appears in sections that have shop branding enabled. See [Logo](../../theme-settings/logo/).
+Open the theme editor (**Online Store > Themes > Customize** on Pave), click **Theme settings**, then open the **Logo** category. Upload your logo image and adjust the width, with a separate width for mobile. The logo appears in the header. See [Logo](../../theme-settings/logo/).
 
 ### How do I change colors and fonts?
 
-In **Theme settings**, the **Colors** category controls every color via reusable color schemes; the **Typography** category controls heading and body fonts and their scaling. See [Colors](../../theme-settings/colors/) and [Typography](../../theme-settings/typography/).
+In **Theme settings**, the **Colors** category controls every color via reusable color schemes; the **Typography** category controls the fonts, the size of each heading level and the text size. See [Colors](../../theme-settings/colors/) and [Typography](../../theme-settings/typography/).
 
 ### How do I add products to the menu?
 
-In your Shopify admin, go to **Online Store > Navigation**. Edit the **Main menu** (or any menu), and add menu items linking to your products, collections, or pages. The header and footer in Pave automatically render the menus you configure here. See [Navigation](../../features/navigation/).
+In your Shopify admin, go to **Online Store > Navigation**. Edit the **Main menu** (or any menu), and add menu items linking to your products, collections, or pages. The header's Navigation block and the footer's navigation blocks each point at one of these menus, which you choose in the theme editor. See [Navigation](../../features/navigation/).
 
 ### How do I add a new section to a page?
 
@@ -28,7 +28,9 @@ In the theme editor, click **Add section** at the position you want. Pick from t
 
 ### How do I create an alternate template for a specific product or page?
 
-In the theme editor, click the page selector dropdown at the top, then **Create template**. Name the template (for example, `landing-page`) and customize the sections. Then in the Shopify admin, assign the template to the product, page, or article that should use it. See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).
+Pave already ships several: product templates for editorial products, gift cards and quick order, a lookbook collection template, and page templates for an about page, accessibility statement, contact with store locations, a drop, an editorial page, FAQ, lookbook and size guide. Assign one to a product, collection or page under **Theme template** in the Shopify admin. See [Templates](../../templates/).
+
+To make your own, click the page selector dropdown at the top of the theme editor, then **Create template**. Name the template (for example, `landing-page`) and customize the sections. Then in the Shopify admin, assign the template to the product, page or article that should use it. See [Shopify Help: Alternate templates](https://help.shopify.com/en/manual/online-store/themes/templates).
 
 ## Features
 
@@ -38,7 +40,7 @@ Shop Pay Installments requires Shopify Payments, Shop Pay enabled, a supported c
 
 ### How do I configure multi-currency or multi-language?
 
-Both are configured in your Shopify admin under `Settings > Markets` and `Settings > Languages`. Once you have at least two markets or two languages, the country and language selectors appear automatically in Pave's footer. See [Multi-currency and language](../../features/multi-currency-language/).
+Both are configured in your Shopify admin under `Settings > Markets` and `Settings > Languages`. Once you have at least two markets or two languages, the country and language selectors appear automatically in Pave's footer, and you can add them to the header and the announcement bar too. The theme's own text ships in ten languages. See [Multi-currency and language](../../features/multi-currency-language/).
 
 ### Does the theme support a wishlist app, reviews app, or any other Shopify app?
 
@@ -46,11 +48,11 @@ Pave supports **Shopify app blocks** in many sections, which lets compatible app
 
 ### Does Pave support subscriptions?
 
-Yes. Pave displays selling plans on the product page, cart, and order detail. You'll need a separate subscription app (like the free **Shopify Subscriptions** app) to create the plans. See [Selling plans](../../features/selling-plans/).
+Yes. Pave displays selling plans on the product page and in the cart. You'll need a separate subscription app (like the free **Shopify Subscriptions** app) to create the plans. See [Selling plans](../../features/selling-plans/).
 
 ### How do I set up complementary products?
 
-Install the Shopify **Search & Discovery** app (free), then under `Recommendations`, pick the complementary products for each source product. In the theme, add the **Product recommendations** section to the product template and set its **Recommendation type** to **Complementary products**. A product with no pairings shows nothing at all, so the section is safe to add before you have finished pairing your catalog. See [Complementary products](../../sections/complementary-products/).
+Install the Shopify **Search & Discovery** app (free), then under `Recommendations`, pick the complementary products for each source product. In the theme, the default product template already has a **Product recommendations** section with its **Recommendation type** set to **Complementary products**; on other templates, add the section and choose that type. A product with no pairings shows nothing at all, so the section is safe to add before you have finished pairing your catalog. See [Complementary products](../../sections/complementary-products/).
 
 ## Updates and customizations
 
@@ -90,9 +92,9 @@ Pave supports every standard feature of Shopify Online Store 2.0, including sect
 
 ### How do customer accounts work in Pave?
 
-The account entry point sits in the header's navigation panel on every page. It is Shopify's own component, so it shows a signed-out or signed-in state by itself and needs no setup beyond enabling accounts in `Shopify admin > Settings > Customer accounts`.
+The account entry point is an avatar icon in the header, beside the menu button, on every page. It is Shopify's own component, so it shows a signed-out or signed-in state by itself and needs no setup beyond enabling accounts in `Shopify admin > Settings > Customer accounts`.
 
-The account pages themselves are rendered by Shopify, not by the theme. The one thing you control from the theme is which menu appears inside the account panel, through the header's **Customer account menu** setting. See [Customer accounts](../../features/customer-accounts/).
+The account pages themselves are rendered by Shopify, not by the theme. The one thing you control from the theme is which menu appears inside the account sheet, through the header's **Customer account menu** setting. See [Customer accounts](../../features/customer-accounts/).
 
 ### What plan do I need?
 

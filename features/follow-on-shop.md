@@ -12,7 +12,10 @@ The **Follow on Shop** button lets a shopper follow your store from the Shop app
 
 ## Where it appears
 
-In the navigation panel of the [Header](../../sections/header/), when its **Show Follow on Shop** setting is on. That setting is on by default.
+Two places, and you can use either or both:
+
+- In the navigation panel of the [Header](../../sections/header/), when its **Show Follow on Shop** setting is on. That setting is on by default.
+- In the [Footer](../../sections/footer/), as a **Follow on Shop** block with its own heading. Add it from the footer's block list.
 
 ## What you need
 
@@ -26,9 +29,9 @@ A button carrying the Shop logo and wordmark, translated to their locale. Tappin
 - **On mobile without it.** Offers to install the app, then follows.
 - **On desktop.** Opens Shop on the web, or shows a code to scan.
 
-## Its colours can't be changed
+## Its colors can't be changed
 
-The button is branded by Shopify, and the Theme Store requires that branded checkout and accelerator button colours are not modified. The theme sets none, and neither should any custom CSS you add.
+The button is branded by Shopify, and the Theme Store requires that branded checkout and accelerator button colors are not modified. The theme sets none, and neither should any custom CSS you add.
 
 ## Tips
 
@@ -38,10 +41,11 @@ The button is branded by Shopify, and the Theme Store requires that branded chec
 
 ## Troubleshooting
 
-- **The button doesn't appear.** Check **Show Follow on Shop** in the Header section, then confirm Shopify Payments is set up, since Shop is part of that stack.
+- **The button doesn't appear.** Check **Show Follow on Shop** in the Header section, or that the footer has a Follow on Shop block, then confirm Shopify Payments is set up, since Shop is part of that stack.
 - **Nothing happens on desktop.** Expected. Without the app, desktop opens Shop on the web or shows a QR code.
 
 ## Related
 
 - [Header section reference](../../sections/header/)
+- [Footer section reference](../../sections/footer/)
 - [Shopify Help: Shop app](https://help.shopify.com/manual/shop)
