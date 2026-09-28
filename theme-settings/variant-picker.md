@@ -31,7 +31,7 @@ How shoppers choose between sizes, colors and materials, on every product page a
   |---|---|
   | Strikethrough | Shown, struck through, still selectable |
   | Faded and not selectable | Shown, dimmed, can't be chosen |
-  | Hidden | Removed from the picker entirely |
+  | Hidden | Removed from the picker. The selected value always stays, and an option with no available value at all keeps its values, struck through, so it is never left empty |
 
 - **Remember the shopper's size.** Preselects the size a shopper last picked when they open another product. Stored in their browser only, and only when they allow preferences under your store's privacy settings. Default: on.
 

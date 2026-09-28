@@ -28,9 +28,9 @@ It can't be placed in the header or footer groups. Three presets are available w
 ### Text
 
 - **Show brand name.** Default: on. Turn it off when the header logo already shows over the hero. On the home page the name stays in place as the page heading for screen readers.
-- **Brand name.** The large text over the image. Defaults to the shop name if empty.
+- **Brand name.** The large text over the image. Defaults to the shop name if empty. A very long name is scaled down to fit in about two and a half lines on desktop and seven on phones; names up to about 30 characters keep their full size.
 - **Subheading.** Optional one-liner below the brand name. For example, `Crafted slowly. Built to last.`
-- **Font size scale.** Resizes the brand name, which always stays between 56 px and 256 px. Range: 50% to 150% in 5% steps. Default: 100%.
+- **Font size scale.** Resizes the brand name, which stays between 56 px and 256 px unless a very long name has to shrink to fit. Range: 50% to 150% in 5% steps. Default: 100%.
 - **Text position.** **Bottom left** (default) or **Bottom center**.
 - **Color scheme.** Applied to the text overlay. Default: scheme-1.
 
@@ -50,7 +50,7 @@ Both are the largest values, used on the widest screens, and they scale down on 
 
 ## Blocks
 
-Up to **two** [Button](../theme-blocks/#button) blocks, shown below the subheading. Give one the **Primary** style and the other **Secondary** so the two don't compete.
+Up to **two** [Button](../theme-blocks/#button) blocks, shown below the subheading. Give one the **Primary** style and the other **Secondary** so the two don't compete. A long button label wraps onto a second line instead of running off a phone's screen.
 
 ## Tips
 

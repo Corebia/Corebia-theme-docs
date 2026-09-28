@@ -39,11 +39,13 @@ Any section that isn't restricted to the header or footer can be added below the
 
 - **Desktop media width.** **Small**, **Medium** (default) or **Large**. The default product template ships with **Large**.
 - **Desktop media position.** **Left** (default) or **Right**.
-- **Extend media to screen edge.** Runs the media column out to the edge of the window on its own side, while the buy box stays aligned with the rest of the page. Default: on.
+- **Extend media to screen edge.** Runs the media column out to the edge of the window on its own side, while the buy box stays aligned with the rest of the page. The back link and breadcrumb stay on the page margin, where they start on every other template. Default: on.
 - **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**. The default product template ships with **2 columns**.
   - **Stacked** shows every media item one under another, on phones too.
   - **2 columns** shows a large first item over a two-column grid. When the grid would leave the last item alone beside an empty cell, that item takes the full row. On phones it uses the **Mobile layout** below.
   - **Thumbnails** and **Thumbnail slideshow** show one large item with its thumbnails below, wrapped in rows or scrolled with arrows.
+
+  In every layout, a link to a particular variant, such as a product card's link to one color, opens the gallery on that variant's image. See [Product media](../../features/product-media/#variant-images).
 - **Mobile layout.** **Carousel with dots** (default), **Carousel** or **2 columns**. Applies below 990 px. Both carousels swipe through one item at a time, with or without position dots, and **2 columns** shows every item in a grid. Shown for every desktop layout except **Stacked**.
 - **Use sticky product information on desktop.** On screens 990 px and wider, keeps the buy box in view while the gallery scrolls. Default: on.
 - **Hide other variant media after one is selected.** Once a variant is picked, the gallery shows that variant's media and any media not attached to a variant, and hides the media of the other variants. If that would leave the gallery empty, it shows everything. Default: off.
@@ -162,9 +164,11 @@ Label and value rows, in the same accordion style as the collapsible tabs. The b
 - **Heading.** Leave blank to use the default heading.
 - **Show category attributes.** Adds a row for each apparel attribute set in the product's category metafields: fabric, color, pattern, neckline, sleeve length, fit, waist rise, top length and pants length. Default: on.
 
-#### Custom rows
+#### First row, Second row, Third row, Fourth row
 
-- **Row 1 label** / **Row 1 value**, through to **Row 4 label** / **Row 4 value.** A row shows when both its label and its value are filled. Connect a value to a metafield to vary it per product.
+Up to four rows of your own, each under its own header with the same two settings.
+
+- **Label** / **Value.** A row shows when both its label and its value are filled. Connect a value to a metafield to vary it per product.
 
 ### Pop-up
 

@@ -14,7 +14,7 @@ Shown when a shopper reaches a URL that doesn't exist: a deleted product, a mist
 
 - **Heading.** Default: `We can't find that page`.
 - **Subheading.** Default: `It looks like the page you were looking for has moved or no longer exists.`
-- **Button label.** Default: `Back to home page`.
+- **Button label.** Default: `Continue shopping`.
 - **Button link.** Where the button goes. Leave empty for the home page.
 - **Featured collection.** The collection whose products are offered below the message. The three settings below appear once one is chosen.
 - **Number of products.** Range: 2 to 8. Default: 4.

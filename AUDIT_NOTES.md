@@ -2,7 +2,7 @@
 
 Internal notes on the state of this documentation and of the theme it documents. Excluded from the built site by `_config.yml`.
 
-Last reconciled against the theme: **2026-09-28**, theme at `Pave 1.0.0`, branch `feature/f19-submission` (commit `fe6c0e3b`).
+Last reconciled against the theme: **2026-09-28**, theme at `Pave 1.0.0`, branch `feature/f19-submission` (commit `cf15c1ed`).
 
 ## How this documentation is kept true
 
@@ -15,6 +15,8 @@ Those labels come from `plantilla/locales/en.default.schema.json`, resolved from
 The 2026-09-28 pass came after F1 to F19 (theme blocks, languages and RTL, B2B, accessibility, motion, editorial sections): three weeks of feature work that again touched every reference page, and added 17 merchant-facing sections (21 new section files in all), 9 theme settings groups, 12 theme blocks and 12 templates the site did not document.
 
 A second pass the same day took in the 25 non-merge theme commits from `505f32db` to `fe6c0e3b` (F19 review rounds): four new settings (Content width on Section and Store locations, Columns on mobile on New arrivals, Show back link and breadcrumb on Main article), renamed labels (the mobile gallery options, the policy page's back link, Shop by color, Personalization), 56 new help texts and 4 reworded ones, changed template defaults and a round of storefront behavior changes, touching 42 published pages.
+
+A third pass took in the 15 non-merge commits from `fe6c0e3b` to `cf15c1ed` (the Theme Store text fixes and the settings-matrix fixes): the Details block's custom rows now open with **First row** to **Fourth row** headers and read **Label** and **Value** (setting ids unchanged), the 404 button defaults to `Continue shopping`, the recommendations help text names the "Shopify Search and Discovery" app, and storefront fixes for long names in the hero and header, the placeholder slide, a 0 px input border, the hidden unavailable style, the drop template's fresh install and `?variant=` links, touching 10 published pages.
 
 ## Theme metadata this site depends on
 

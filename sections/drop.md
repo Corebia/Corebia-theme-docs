@@ -49,6 +49,8 @@ It can't be placed in the header or footer groups.
 
 **After**, anyone arriving sees the live content straight away. If you left every live setting empty, the section disappears at the launch moment instead.
 
+**Straight after install**, the `page.drop` template's Drop section has no date, product, collection or image, so it shows the live heading beside a placeholder illustration in the image's place. In the theme editor, a line under the heading asks you to set a date, or choose a product, a collection or an image. Setting any one of them removes both the placeholder and the hint.
+
 ## The waitlist
 
 The signup creates a customer in Shopify admin, subscribed to email marketing and tagged with the **Waitlist tag**. To email them when the drop goes live, filter customers by that tag in `Shopify admin > Customers`, or build a segment on it in Shopify Email or your email app.

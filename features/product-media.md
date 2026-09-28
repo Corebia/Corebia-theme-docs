@@ -38,7 +38,7 @@ The gallery is configured in the **Main product** section. See the [Product page
 
 ## Variant images
 
-When a customer picks a variant that has its own image, the gallery jumps to that image. The variant image is set in `Shopify admin > Products > [product] > Variants > [variant]`.
+When a customer picks a variant that has its own image, the gallery jumps to that image. A link that opens the product on a variant, such as a product card's link to one color or a shared URL ending in `?variant=`, puts that variant's image first in the gallery, ahead of the others in their usual order, so the photo matches the option already selected. The variant image is set in `Shopify admin > Products > [product] > Variants > [variant]`.
 
 To set up:
 

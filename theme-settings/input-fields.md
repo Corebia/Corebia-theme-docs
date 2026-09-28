@@ -12,7 +12,7 @@ The shape of text fields, selects and text areas across the store: the newslette
 
 ## Settings
 
-- **Border thickness.** Applies to text fields and quantity selectors. Range: 0 to 4 px. Default: 1 px. The border is what sets a field apart from the page, so at 0 px fields can be hard to find.
+- **Border thickness.** Applies to text fields and quantity selectors. Range: 0 to 4 px. Default: 1 px. At 0 px, text fields keep a thin underline in the color scheme's input border color, so they can still be found on the page.
 - **Corner radius.** Applies to text fields and quantity selectors. Range: 0 to 32 px. Default: 8 px. 0 px gives square corners.
 
 The colors of a field (its background, text and border) belong to each color scheme, under **Form fields** in [Colors](../colors/#form-fields).

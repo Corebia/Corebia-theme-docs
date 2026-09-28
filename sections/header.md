@@ -22,7 +22,7 @@ The Header lives in the `header` section group, so it can't be removed or placed
 ### Branding
 
 - **Show shop branding.** Displays the shop logo or name in the top left of every page. Default: on. On the home page, without an **Inverse logo** set in [Logo](../../theme-settings/logo/), the brand stays hidden while the header sits over the hero, because the hero already carries your name there, and appears once the page scrolls and the header takes its solid background. With an inverse logo, that version shows over the hero. From 990 px up, the inline bar shows your logo or brand text in its own place, so this setting governs smaller screens and the **Menu panel** style.
-- **Brand text.** Defaults to the shop name if left empty. Only visible when no logo is set.
+- **Brand text.** Defaults to the shop name if left empty. Only visible when no logo is set. A long name stays on one line and is cut short with an ellipsis before the search, cart, account and menu icons.
 - **Brand text size.** Range: 10 to 32 px in 1 px steps. Default: 16 px.
 - **Brand link.** Where the brand links to. Defaults to the home page if left empty. The logo in the desktop bar uses the same link.
 
