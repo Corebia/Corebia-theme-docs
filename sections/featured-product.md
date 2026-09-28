@@ -17,16 +17,16 @@ It can't be placed in the header or footer groups.
 ## Settings
 
 - **Product.** The product to feature.
-- **Show back link and breadcrumb.** Default: on. Usually worth turning **off** here: on a home page there is nothing to go back to.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on. Usually worth turning **off** here: on a home page there is nothing to go back to.
 
 ### Media
 
 - **Desktop media width.** **Small**, **Medium** (default) or **Large**.
 - **Desktop media position.** **Left** (default) or **Right**.
-- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**.
-- **Mobile layout.** **Show thumbnails** (default), **Hide thumbnails** or **2 columns**. Shown only with the **Thumbnails** or **Thumbnail slideshow** gallery layout.
-- **Use sticky product information on desktop.** Keeps the buy box in view while the media column scrolls. Default: on.
-- **Use video looping.** Default: off.
+- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**. The layouts work as on the [Product page](../../templates/product-page/#media): **2 columns** puts a large first item over a two-column grid and hands over to the **Mobile layout** on phones.
+- **Mobile layout.** **Carousel with dots** (default), **Carousel** or **2 columns**. Applies below 990 px. Shown for every desktop layout except **Stacked**, which shows every item on phones too.
+- **Use sticky product information on desktop.** On screens 990 px and wider, keeps the buy box in view while the gallery scrolls. Default: on.
+- **Use video looping.** Product videos, including YouTube and Vimeo, start again when they end. Default: off.
 
 ### General
 
@@ -78,12 +78,12 @@ The picker's style is set once for the whole store, in the [Variant picker](../.
 - **Show dynamic checkout buttons.** Shows the shopper's preferred payment method, such as PayPal or Apple Pay, from those available on your store. Default: on.
 - **Show recipient information form for gift card products.** Lets a gift card be sent straight to a recipient with a personal message. Default: on.
 
-### Personalisation
+### Personalization
 
 A text field the shopper fills in before adding to cart, such as a monogram. What they type is shown in the cart and saved on the order.
 
-- **Label.** The label above the field. Default: `Personalisation`.
-- **Property name.** The name the value is saved under on the order, for example `Monogram`. Default: `Personalisation`.
+- **Label.** The label above the field. Default: `Personalization`.
+- **Property name.** The name the value is saved under on the order, for example `Monogram`. Default: `Personalization`.
 - **Field type.** **Single line** (default) or **Multiple lines**.
 - **Maximum characters.** Range: 5 to 250 in steps of 5. Default: 20.
 - **Placeholder.** Example text inside the empty field.
@@ -119,7 +119,7 @@ Three short lines, each with an icon or an image, such as shipping, payment and 
 - **Icon / image size.** Range: 16 to 48 px in 2 px steps. Default: 24 px.
 - **First heading**, **Second heading**, **Third heading.** Defaults: `Shipping`, `Payment` and `Returns`.
 - **First icon source**, **Second icon source**, **Third icon source.** **Upload image** (default) or **Built-in icon**.
-- **First image**, **Second image**, **Third image.** Used with **Upload image**.
+- **First image**, **Second image**, **Third image.** Used with **Upload image**. Shown at the icon size and never cropped; a square image of at least 96 x 96 px stays sharp.
 - **First icon**, **Second icon**, **Third icon.** Used with **Built-in icon**: **Truck (shipping)**, **Shield (security)**, **Lock (secure payment)**, **Leaf (sustainability)**, **Package**, **Refresh (returns)**, **Heart**, **Star**, **Check (guarantee)**, **Clock (fast)** or **Credit card**. Defaults: Truck, Shield and Refresh.
 
 ### Custom Liquid

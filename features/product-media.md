@@ -29,12 +29,12 @@ Pave's product page supports rich media: images, videos, 3D models, and external
 
 The gallery is configured in the **Main product** section. See the [Product page reference](../../templates/product-page/) for every setting; the ones that shape the gallery are:
 
-- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (the default) or **Thumbnail slideshow**.
-- **Mobile layout.** **Show thumbnails**, **Hide thumbnails** or **2 columns**. Offered with the two thumbnail layouts.
+- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (the section default) or **Thumbnail slideshow**. The default product template uses **2 columns**: a large first image over a two-column grid.
+- **Mobile layout.** **Carousel with dots**, **Carousel** or **2 columns**, below 990 px. Offered with every desktop layout except **Stacked**, which shows every item on phones too.
 - **Extend media to screen edge.** Lets the media column run to the edge of the screen instead of stopping at the page margin. On by default.
 - **Enable image zoom.** Clicking an image opens it full screen, where it can be magnified. On by default.
 - **Hide other variant media after one is selected.** See below. Off by default.
-- **Use video looping.** Makes uploaded videos loop. Off by default. External videos follow the provider's own behavior.
+- **Use video looping.** Product videos, including YouTube and Vimeo, start again when they end. Off by default.
 
 ## Variant images
 

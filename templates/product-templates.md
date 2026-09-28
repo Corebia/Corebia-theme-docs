@@ -20,9 +20,9 @@ A product left on **Default product** keeps the standard page.
 
 ## Editorial
 
-`product.editorial.json` is for hero products that deserve a story: a flagship piece, a new material, a collaboration. The buy box stays the same, with a larger gallery, and the page below it tells the product's story in images and copy.
+`product.editorial.json` is for hero products that deserve a story: a flagship piece, a new material, a collaboration. The buy box stays the same, and the page below it tells the product's story in images and copy.
 
-**Main product** is set to a **Large** desktop media width. The buy box holds the same blocks as the default template, except that the description sits in a **Description** collapsible tab rather than in the open.
+**Main product** is set to a **Large** desktop media width with the **Thumbnails** gallery, one large image at a time, where the default template shows **2 columns**. The buy box holds the same blocks as the default template, except that the description sits in a **Description** collapsible tab rather than in the open.
 
 Below it:
 

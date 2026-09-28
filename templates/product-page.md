@@ -16,7 +16,7 @@ The buy box blocks are shared with [Featured product](../../sections/featured-pr
 
 ## What the default template contains
 
-Out of the box, `product.json` lays out the buy box as Media, Previous / next product, Vendor, Heading, a Text block for the subtitle, Price, Variant picker, Inventory status, Buy buttons, Product description, Details, two Collapsible tabs (composition and care, then shipping and returns), Share, Pop-up and Ask a question.
+Out of the box, `product.json` shows the gallery as **2 columns** in a **Large** media column, which differs from the section's own defaults listed below, and lays out the buy box as Media, Previous / next product, Vendor, Heading, a Text block for the subtitle, Price, Variant picker, Inventory status, Buy buttons, Product description, Details, two Collapsible tabs (composition and care, then shipping and returns), Share, Pop-up and Ask a question.
 
 Below the main section it adds:
 
@@ -33,19 +33,22 @@ Any section that isn't restricted to the header or footer can be added below the
 
 ## Section settings
 
-- **Show back link and breadcrumb.** Default: on.
+- **Show back link and breadcrumb.** The back link returns to the previous page in your store, and the breadcrumb traces the path from the home page. Default: on.
 
 ### Media
 
-- **Desktop media width.** **Small**, **Medium** (default) or **Large**.
+- **Desktop media width.** **Small**, **Medium** (default) or **Large**. The default product template ships with **Large**.
 - **Desktop media position.** **Left** (default) or **Right**.
 - **Extend media to screen edge.** Runs the media column out to the edge of the window on its own side, while the buy box stays aligned with the rest of the page. Default: on.
-- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**.
-- **Mobile layout.** **Show thumbnails** (default), **Hide thumbnails** or **2 columns**. Shown when the desktop layout is Thumbnails or Thumbnail slideshow.
-- **Use sticky product information on desktop.** Keeps the buy box in view while the media column scrolls. Default: on.
-- **Hide other variant media after one is selected.** Once a variant is picked, the gallery shows that variant's media and any media not attached to a variant, and hides the media of the other variants. Default: off.
+- **Desktop gallery layout.** **Stacked**, **2 columns**, **Thumbnails** (default) or **Thumbnail slideshow**. The default product template ships with **2 columns**.
+  - **Stacked** shows every media item one under another, on phones too.
+  - **2 columns** shows a large first item over a two-column grid. When the grid would leave the last item alone beside an empty cell, that item takes the full row. On phones it uses the **Mobile layout** below.
+  - **Thumbnails** and **Thumbnail slideshow** show one large item with its thumbnails below, wrapped in rows or scrolled with arrows.
+- **Mobile layout.** **Carousel with dots** (default), **Carousel** or **2 columns**. Applies below 990 px. Both carousels swipe through one item at a time, with or without position dots, and **2 columns** shows every item in a grid. Shown for every desktop layout except **Stacked**.
+- **Use sticky product information on desktop.** On screens 990 px and wider, keeps the buy box in view while the gallery scrolls. Default: on.
+- **Hide other variant media after one is selected.** Once a variant is picked, the gallery shows that variant's media and any media not attached to a variant, and hides the media of the other variants. If that would leave the gallery empty, it shows everything. Default: off.
 - **Enable image zoom.** Adds a zoom button to each product image that opens it full screen. Videos and 3D models are not zoomed. Default: on.
-- **Use video looping.** Loops product videos. Default: off.
+- **Use video looping.** Product videos, including YouTube and Vimeo, start again when they end. Default: off.
 
 ### General
 
@@ -90,7 +93,7 @@ A free line of copy in the buy box. Empty text renders nothing, which is what ma
 Shows only for variants whose inventory Shopify tracks.
 
 - **Text style.** **Body** (default), **Subheading** or **Uppercase**.
-- **Low inventory threshold.** At or below this quantity the status switches to low stock. Range: 0 to 100. Default: 10.
+- **Low inventory threshold.** The low stock message shows when a variant has this many or fewer in stock. Range: 0 to 100. Default: 10.
 - **Show inventory count.** Shows the actual number remaining. Default: on.
 - **Show stock bar when stock is low.** Adds a short meter under the status while stock is at or below the threshold. Default: on.
 - **Pre-order message.** Shown when a tracked variant has no stock but keeps selling because **Continue selling when out of stock** is on for it. Default: `Pre-order: ships as soon as it's back in stock`.
@@ -109,14 +112,16 @@ The picker's appearance is set store-wide under [Variant picker](../../theme-set
 - **Show dynamic checkout buttons.** Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. Default: on. See [Accelerated checkout](../../features/accelerated-checkout/).
 - **Show recipient information form for gift card products.** Gift card products can optionally be sent direct to a recipient along with a personal message. Default: on. See [Gift cards](../../features/gift-cards/).
 
+When the selected variant is sold out, the Add to cart button, the quantity selector and the unbranded **Buy it now** button are all disabled and dimmed together. Wallet buttons such as Shop Pay keep Shopify's own disabled look.
+
 The Shop Pay Installments message appears under the buttons whenever installments are on in your payment settings. See [Shop Pay Installments](../../features/shop-pay-installments/).
 
-### Personalisation
+### Personalization
 
 A text field the shopper fills in before adding to cart, such as a monogram or an engraving. What they type is saved on the cart line and on the order.
 
-- **Label.** The field's label on the page. Default: `Personalisation`.
-- **Property name.** Shown in the cart and saved on the order, for example `Monogram`. Default: `Personalisation`.
+- **Label.** The field's label on the page. Default: `Personalization`.
+- **Property name.** Shown in the cart and saved on the order, for example `Monogram`. Default: `Personalization`.
 - **Field type.** **Single line** (default) or **Multiple lines**.
 - **Maximum characters.** Range: 5 to 250 in steps of 5. Default: 20.
 - **Placeholder.** Example text shown in the empty field.
@@ -132,8 +137,8 @@ Tells the shopper when an order placed now ships and when it should arrive, for 
 #### Working days
 
 - **Monday** to **Sunday.** The days you dispatch orders. Default: Monday to Friday on, Saturday and Sunday off.
-- **Processing days.** Working days between the order and dispatch. Range: 0 to 10. Default: 0.
-- **Minimum transit days** / **Maximum transit days.** The carrier's delivery window. Range: 0 to 30. Default: 2 and 5.
+- **Processing days.** Working days from the order day until the order ships. At 0 it ships on the order day. Range: 0 to 10. Default: 0.
+- **Minimum transit days** / **Maximum transit days.** The carrier's delivery window: working days from shipping to the earliest and the latest delivery date. A maximum below the minimum counts as the minimum. Range: 0 to 30. Default: 2 and 5.
 - **Holidays.** Days with no dispatch or delivery, one per line as `YYYY-MM-DD`, for example `2026-12-25`.
 
 ### Product description
@@ -194,7 +199,7 @@ Then the same four settings for each of the three points:
 
 - **First heading**, **Second heading**, **Third heading.** Inline rich text. Defaults: `Shipping`, `Payment`, `Returns`.
 - **First icon source**, **Second icon source**, **Third icon source.** **Upload image** (default) or **Built-in icon**.
-- **First image**, **Second image**, **Third image.** Used when that source is Upload image.
+- **First image**, **Second image**, **Third image.** Used when that source is Upload image. Shown at the icon size and never cropped; a square image of at least 96 x 96 px stays sharp.
 - **First icon**, **Second icon**, **Third icon.** Shown when that source is Built-in icon. Choose from **Truck (shipping)**, **Shield (security)**, **Lock (secure payment)**, **Leaf (sustainability)**, **Package**, **Refresh (returns)**, **Heart**, **Star**, **Check (guarantee)**, **Clock (fast)** and **Credit card**. Defaults: Truck, Shield, Refresh.
 
 ### Custom Liquid
